@@ -1,0 +1,59 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Sandbox.Common.ObjectBuilders.Definitions.SerializableDefinitionId
+// Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: AEA4A40D-6023-45C7-A56E-9FAD0E8F073F
+// Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
+
+using ProtoBuf;
+using Sandbox.Common.ObjectBuilders;
+using System.Xml.Serialization;
+
+namespace Sandbox.Common.ObjectBuilders.Definitions
+{
+  [ProtoContract]
+  public struct SerializableDefinitionId
+  {
+    [XmlIgnore]
+    public MyObjectBuilderType TypeId;
+    [XmlIgnore]
+    public string SubtypeName;
+
+    [XmlElement("TypeId")]
+    [ProtoMember(1)]
+    public string TypeIdString
+    {
+      get
+      {
+        return this.TypeId.ToString();
+      }
+      set
+      {
+        this.TypeId = MyObjectBuilderType.ParseBackwardsCompatible(value);
+      }
+    }
+
+    [ProtoMember(2)]
+    public string SubtypeId
+    {
+      get
+      {
+        return this.SubtypeName;
+      }
+      set
+      {
+        this.SubtypeName = value;
+      }
+    }
+
+    public SerializableDefinitionId(MyObjectBuilderType typeId, string subtypeName)
+    {
+      this.TypeId = typeId;
+      this.SubtypeName = subtypeName;
+    }
+
+    public override string ToString()
+    {
+      return string.Format("{0}/{1}", (object) this.TypeId, (object) this.SubtypeName);
+    }
+  }
+}

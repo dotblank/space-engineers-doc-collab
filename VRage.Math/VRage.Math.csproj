@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Math.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4423AA4C-A6E4-444E-858B-5CC64BED5C12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>VRage.Math</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>VRageMath</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.XML" />
+    <Reference Include="VRage.Library">
+      <HintPath>lib\VRage.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base27Directions.cs" />
+    <Compile Include="Base6Directions.cs" />
+    <Compile Include="BoundingBox.cs" />
+    <Compile Include="BoundingFrustum.cs" />
+    <Compile Include="BoundingSphere.cs" />
+    <Compile Include="BoundingBoxD.cs" />
+    <Compile Include="BoundingSphereD.cs" />
+    <Compile Include="BoundingFrustumD.cs" />
+    <Compile Include="CapsuleD.cs" />
+    <Compile Include="QuaternionD.cs" />
+    <Compile Include="Vector4D.cs" />
+    <Compile Include="MyOrientedBoundingBoxD.cs" />
+    <Compile Include="PlaneD.cs" />
+    <Compile Include="GjkD.cs" />
+    <Compile Include="LineD.cs" />
+    <Compile Include="RayD.cs" />
+    <Compile Include="MatrixD.cs" />
+    <Compile Include="DoubleExtensions.cs" />
+    <Compile Include="MyDynamicAABBTreeD.cs" />
+    <Compile Include="Vector3D.cs" />
+    <Compile Include="MatrixI.cs" />
+    <Compile Include="MyMortonCode3D.cs" />
+    <Compile Include="MyQuad.cs" />
+    <Compile Include="MyQuadD.cs" />
+    <Compile Include="MyShort4.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="ColorExtensions.cs" />
+    <Compile Include="ContainmentType.cs" />
+    <Compile Include="Capsule.cs" />
+    <Compile Include="FloatExtensions.cs" />
+    <Compile Include="MyBlockOrientation.cs" />
+    <Compile Include="MyBounds.cs" />
+    <Compile Include="MyOrientedBoundingBox.cs" />
+    <Compile Include="MyTransform.cs" />
+    <Compile Include="MyUShort4.cs" />
+    <Compile Include="Vector3B.cs" />
+    <Compile Include="Vector3INormalEqualityComparer.cs" />
+    <Compile Include="Vector3S.cs" />
+    <Compile Include="Vector2I.cs" />
+    <Compile Include="Vector3UByte.cs" />
+    <Compile Include="Vector3Ushort.cs" />
+    <Compile Include="Vector4I.cs" />
+    <Compile Include="Vector3I.cs" />
+    <Compile Include="Curve.cs" />
+    <Compile Include="CurveContinuity.cs" />
+    <Compile Include="CurveKey.cs" />
+    <Compile Include="CurveKeyCollection.cs" />
+    <Compile Include="CurveLoopType.cs" />
+    <Compile Include="CurveTangent.cs" />
+    <Compile Include="Gjk.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="MyLineSegmentOverlapResult`1.cs" />
+    <Compile Include="MathHelper.cs" />
+    <Compile Include="Matrix.cs" />
+    <Compile Include="Plane.cs" />
+    <Compile Include="PlaneIntersectionType.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Quaternion.cs" />
+    <Compile Include="Ray.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="RectangleF.cs" />
+    <Compile Include="MyDynamicAABBTree.cs" />
+    <Compile Include="Vector2.cs" />
+    <Compile Include="Vector3.cs" />
+    <Compile Include="Vector4.cs" />
+    <Compile Include="Vector4UByte.cs" />
+    <Compile Include="Spatial\MyVector3Grid`1.cs" />
+    <Compile Include="Spatial\MyClusterTree.cs" />
+    <Compile Include="PackedVector\IPackedVector.cs" />
+    <Compile Include="PackedVector\IPackedVector`1.cs" />
+    <Compile Include="PackedVector\HalfVector3.cs" />
+    <Compile Include="PackedVector\Byte4.cs" />
+    <Compile Include="PackedVector\HalfUtils.cs" />
+    <Compile Include="PackedVector\HalfVector2.cs" />
+    <Compile Include="PackedVector\HalfVector4.cs" />
+    <Compile Include="PackedVector\NormalizedByte4.cs" />
+    <Compile Include="PackedVector\PackUtils.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
