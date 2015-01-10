@@ -7,7 +7,7 @@ This repository contains a decompiled, edited copy of the Sandbox.Common.dll.
 
 ## Editing the project
 First of all, you'll need to fork or download this repository.
-You can help by removing elements which cannot be accessed from the programmable block and by adding XML summaries above fields, properties, methods, interfaces, etc.
+You can help by removing elements which cannot be accessed from the programmable block and by adding XML summaries above fields, properties, methods, interfaces, etc. which explain usage.
 Example summary:
 ```c#
 /// <summary>
