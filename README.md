@@ -24,6 +24,7 @@ bool TransferItemTo(IMyInventory dst, int sourceItemIndex, int? targetItemIndex 
 <sup>*Does not actually depict the success of the transfer - text only included for example</sup>
 
 The summary above will look like [this <sup>[imgur.com]</sup>](http://i.imgur.com/fBiAZ1L.png) in the documentation.
+
 If something cannot be accessed from the programmable block, please add the following summary above it:
 ```c#
 /// <summary>
