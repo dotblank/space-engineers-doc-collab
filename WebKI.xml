@@ -20,8 +20,8 @@
   <HelpKINode Title="AcceptJoin method" Url="html/M_Sandbox_ModAPI_IMyFactionCollection_AcceptJoin.htm" />
   <HelpKINode Title="AcceptPeace method" Url="html/M_Sandbox_ModAPI_IMyFactionCollection_AcceptPeace.htm" />
   <HelpKINode Title="AccumulatedDamage property">
-    <HelpKINode Title="IMySlimBlock.AccumulatedDamage Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_AccumulatedDamage.htm" />
     <HelpKINode Title="IMySlimBlock.AccumulatedDamage Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_AccumulatedDamage.htm" />
+    <HelpKINode Title="IMySlimBlock.AccumulatedDamage Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_AccumulatedDamage.htm" />
   </HelpKINode>
   <HelpKINode Title="Action field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ToolbarItemTerminal_Action.htm" />
   <HelpKINode Title="Activate method" Url="html/M_Sandbox_ModAPI_IMyCubeBuilder_Activate.htm" />
@@ -609,8 +609,8 @@
   </HelpKINode>
   <HelpKINode Title="ChatHistory field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_ChatHistory.htm" />
   <HelpKINode Title="CheckConnectionAllowed property">
-    <HelpKINode Title="IMyCubeBlock.CheckConnectionAllowed Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_CheckConnectionAllowed.htm" />
     <HelpKINode Title="IMyCubeBlock.CheckConnectionAllowed Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_CheckConnectionAllowed.htm" />
+    <HelpKINode Title="IMyCubeBlock.CheckConnectionAllowed Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_CheckConnectionAllowed.htm" />
   </HelpKINode>
   <HelpKINode Title="Checkpoint field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_World_Checkpoint.htm" />
   <HelpKINode Title="Chocolate property" Url="html/P_VRageMath_Color_Chocolate.htm" />
@@ -872,9 +872,9 @@
     <HelpKINode Title="methods" Url="html/Methods_T_VRageMath_Vector2I_ComparerClass.htm" />
   </HelpKINode>
   <HelpKINode Title="ComparerType class">
+    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_Common_ObjectBuilders_MyObjectBuilderType_ComparerType.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_VRageMath_BoundingBoxD_ComparerType.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_VRageMath_BoundingBox_ComparerType.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_Common_ObjectBuilders_MyObjectBuilderType_ComparerType.htm" />
   </HelpKINode>
   <HelpKINode Title="CompareTo method">
     <HelpKINode Title="CurveKey.CompareTo Method " Url="html/M_VRageMath_CurveKey_CompareTo.htm" />
@@ -1117,11 +1117,11 @@
     <HelpKINode Title="Matrix.CreateWorld Method " Url="html/Overload_VRageMath_Matrix_CreateWorld.htm" />
     <HelpKINode Title="MatrixD.CreateWorld Method " Url="html/Overload_VRageMath_MatrixD_CreateWorld.htm" />
   </HelpKINode>
-  <HelpKINode Title="Creative enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyGameModeEnum.htm" />
   <HelpKINode Title="CREATIVE enumeration member">
     <HelpKINode Title="MySessionGameType Enumeration" Url="html/T_Sandbox_Common_ObjectBuilders_MySessionGameType.htm" />
     <HelpKINode Title="MySessionHarvestMode Enumeration" Url="html/T_Sandbox_Common_ObjectBuilders_MySessionHarvestMode.htm" />
   </HelpKINode>
+  <HelpKINode Title="Creative enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyGameModeEnum.htm" />
   <HelpKINode Title="CreativeMode property" Url="html/P_Sandbox_ModAPI_IMySession_CreativeMode.htm" />
   <HelpKINode Title="Crimson property" Url="html/P_VRageMath_Color_Crimson.htm" />
   <HelpKINode Title="Cross method">
@@ -1235,8 +1235,8 @@
   </HelpKINode>
   <HelpKINode Title="Damaged enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyItemFlags.htm" />
   <HelpKINode Title="DamageRatio property">
-    <HelpKINode Title="IMySlimBlock.DamageRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_DamageRatio.htm" />
     <HelpKINode Title="IMySlimBlock.DamageRatio Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_DamageRatio.htm" />
+    <HelpKINode Title="IMySlimBlock.DamageRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_DamageRatio.htm" />
   </HelpKINode>
   <HelpKINode Title="DampenersEnabled field">
     <HelpKINode Title="MyObjectBuilder_Character.DampenersEnabled Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Character_DampenersEnabled.htm" />
@@ -1289,8 +1289,8 @@
     <HelpKINode Title="MyObjectBuilder_ToolbarItemWeapon.defId Property " Url="html/P_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ToolbarItemWeapon_defId.htm" />
   </HelpKINode>
   <HelpKINode Title="DefinitionDisplayNameText property">
-    <HelpKINode Title="IMyCubeBlock.DefinitionDisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DefinitionDisplayNameText.htm" />
     <HelpKINode Title="IMyCubeBlock.DefinitionDisplayNameText Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_DefinitionDisplayNameText.htm" />
+    <HelpKINode Title="IMyCubeBlock.DefinitionDisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DefinitionDisplayNameText.htm" />
   </HelpKINode>
   <HelpKINode Title="DefinitionId field">
     <HelpKINode Title="MyObjectBuilder_GlobalEventBase.DefinitionId Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_GlobalEventBase_DefinitionId.htm" />
@@ -1578,8 +1578,8 @@
     <HelpKINode Title="Vector4D.Equality Operator " Url="html/M_VRageMath_Vector4D_op_Equality.htm" />
   </HelpKINode>
   <HelpKINode Title="EqualityComparer class">
-    <HelpKINode Title="methods" Url="html/Methods_T_VRageMath_Vector3UByte_EqualityComparer.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_VRageMath_Vector3I_EqualityComparer.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_VRageMath_Vector3UByte_EqualityComparer.htm" />
   </HelpKINode>
   <HelpKINode Title="Equals method">
     <HelpKINode Title="BoundingBox.Equals Method " Url="html/Overload_VRageMath_BoundingBox_Equals.htm" />
@@ -1682,8 +1682,8 @@
   <HelpKINode Title="Fit method" Url="html/M_VRageMath_Vector3B_Fit.htm" />
   <HelpKINode Title="FixBones method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_FixBones.htm" />
   <HelpKINode Title="FixTargetCube method">
-    <HelpKINode Title="IMyCubeGrid.FixTargetCube Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_FixTargetCube.htm" />
     <HelpKINode Title="IMyCubeGrid.FixTargetCube Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_FixTargetCube.htm" />
+    <HelpKINode Title="IMyCubeGrid.FixTargetCube Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_FixTargetCube.htm" />
   </HelpKINode>
   <HelpKINode Title="Flags field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_PhysicalObject_Flags.htm" />
   <HelpKINode Title="Flags property" Url="html/P_Sandbox_ModAPI_IMyEntity_Flags.htm" />
@@ -1759,13 +1759,13 @@
   <HelpKINode Title="GamePaths property" Url="html/P_Sandbox_ModAPI_IMyUtilities_GamePaths.htm" />
   <HelpKINode Title="GameTime field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_GameTime.htm" />
   <HelpKINode Title="GameType property" Url="html/P_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_GameType.htm" />
-  <HelpKINode Title="GetAabb method">
-    <HelpKINode Title="MyDynamicAABBTreeD.GetAabb Method " Url="html/M_VRageMath_MyDynamicAABBTreeD_GetAabb.htm" />
-    <HelpKINode Title="MyDynamicAABBTree.GetAabb Method " Url="html/M_VRageMath_MyDynamicAABBTree_GetAabb.htm" />
-  </HelpKINode>
   <HelpKINode Title="GetAABB method">
     <HelpKINode Title="MyOrientedBoundingBox.GetAABB Method " Url="html/M_VRageMath_MyOrientedBoundingBox_GetAABB.htm" />
     <HelpKINode Title="MyOrientedBoundingBoxD.GetAABB Method " Url="html/M_VRageMath_MyOrientedBoundingBoxD_GetAABB.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetAabb method">
+    <HelpKINode Title="MyDynamicAABBTree.GetAabb Method " Url="html/M_VRageMath_MyDynamicAABBTree_GetAabb.htm" />
+    <HelpKINode Title="MyDynamicAABBTreeD.GetAabb Method " Url="html/M_VRageMath_MyDynamicAABBTreeD_GetAabb.htm" />
   </HelpKINode>
   <HelpKINode Title="GetActions method">
     <HelpKINode Title="IMyTerminalActionsHelper.GetActions Method " Url="html/M_Sandbox_ModAPI_IMyTerminalActionsHelper_GetActions.htm" />
@@ -1796,12 +1796,12 @@
   <HelpKINode Title="GetBaseAxisDirection method" Url="html/M_VRageMath_Base6Directions_GetBaseAxisDirection.htm" />
   <HelpKINode Title="GetBlockOrientation method" Url="html/M_VRageMath_MatrixI_GetBlockOrientation.htm" />
   <HelpKINode Title="GetBlocks method">
-    <HelpKINode Title="IMyCubeGrid.GetBlocks Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_GetBlocks.htm" />
     <HelpKINode Title="IMyCubeGrid.GetBlocks Method " Url="html/Overload_Sandbox_ModAPI_IMyCubeGrid_GetBlocks.htm" />
+    <HelpKINode Title="IMyCubeGrid.GetBlocks Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_GetBlocks.htm" />
   </HelpKINode>
   <HelpKINode Title="GetBlocksInsideSphere method">
-    <HelpKINode Title="IMyCubeGrid.GetBlocksInsideSphere Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GetBlocksInsideSphere.htm" />
     <HelpKINode Title="IMyCubeGrid.GetBlocksInsideSphere Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_GetBlocksInsideSphere.htm" />
+    <HelpKINode Title="IMyCubeGrid.GetBlocksInsideSphere Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GetBlocksInsideSphere.htm" />
   </HelpKINode>
   <HelpKINode Title="GetBlocksOfType(Of T) method" Url="html/M_Sandbox_ModAPI_Ingame_IMyGridTerminalSystem_GetBlocksOfType__1.htm" />
   <HelpKINode Title="GetBlocksOfType&lt;T&gt; method" Url="html/M_Sandbox_ModAPI_Ingame_IMyGridTerminalSystem_GetBlocksOfType__1.htm" />
@@ -1813,8 +1813,8 @@
     <HelpKINode Title="MyDynamicAABBTreeD.GetChildren Method " Url="html/M_VRageMath_MyDynamicAABBTreeD_GetChildren.htm" />
   </HelpKINode>
   <HelpKINode Title="GetClosestCorner method">
-    <HelpKINode Title="IMyCubeGrid.GetClosestCorner Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_GetClosestCorner.htm" />
     <HelpKINode Title="IMyCubeGrid.GetClosestCorner Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GetClosestCorner.htm" />
+    <HelpKINode Title="IMyCubeGrid.GetClosestCorner Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_GetClosestCorner.htm" />
   </HelpKINode>
   <HelpKINode Title="GetClosestDirection method">
     <HelpKINode Title="Base6Directions.GetClosestDirection Method " Url="html/Overload_VRageMath_Base6Directions_GetClosestDirection.htm" />
@@ -1894,9 +1894,9 @@
     <HelpKINode Title="BoundingSphereD.GetHashCode Method " Url="html/M_VRageMath_BoundingSphereD_GetHashCode.htm" />
     <HelpKINode Title="Color.GetHashCode Method " Url="html/M_VRageMath_Color_GetHashCode.htm" />
     <HelpKINode Title="ComparerClass.GetHashCode Method " Url="html/Overload_VRageMath_Vector2I_ComparerClass_GetHashCode.htm" />
-    <HelpKINode Title="ComparerType.GetHashCode Method " Url="html/Overload_VRageMath_BoundingBoxD_ComparerType_GetHashCode.htm" />
     <HelpKINode Title="ComparerType.GetHashCode Method " Url="html/Overload_Sandbox_Common_ObjectBuilders_MyObjectBuilderType_ComparerType_GetHashCode.htm" />
     <HelpKINode Title="ComparerType.GetHashCode Method " Url="html/Overload_VRageMath_BoundingBox_ComparerType_GetHashCode.htm" />
+    <HelpKINode Title="ComparerType.GetHashCode Method " Url="html/Overload_VRageMath_BoundingBoxD_ComparerType_GetHashCode.htm" />
     <HelpKINode Title="CurveKey.GetHashCode Method " Url="html/M_VRageMath_CurveKey_GetHashCode.htm" />
     <HelpKINode Title="EqualityComparer.GetHashCode Method " Url="html/Overload_VRageMath_Vector3I_EqualityComparer_GetHashCode.htm" />
     <HelpKINode Title="EqualityComparer.GetHashCode Method " Url="html/Overload_VRageMath_Vector3UByte_EqualityComparer_GetHashCode.htm" />
@@ -1987,14 +1987,14 @@
   </HelpKINode>
   <HelpKINode Title="GetOverlappingWithSphere method" Url="html/M_Sandbox_ModAPI_IMyVoxelMaps_GetOverlappingWithSphere.htm" />
   <HelpKINode Title="GetOwnerFactionTag method">
-    <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetOwnerFactionTag.htm" />
     <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetOwnerFactionTag.htm" />
+    <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetOwnerFactionTag.htm" />
   </HelpKINode>
   <HelpKINode Title="GetPerpendicular method" Url="html/M_VRageMath_Base6Directions_GetPerpendicular.htm" />
   <HelpKINode Title="GetPlayerControllingEntity method" Url="html/M_Sandbox_ModAPI_IMyPlayerCollection_GetPlayerControllingEntity.htm" />
   <HelpKINode Title="GetPlayerRelationToOwner method">
-    <HelpKINode Title="IMyCubeBlock.GetPlayerRelationToOwner Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetPlayerRelationToOwner.htm" />
     <HelpKINode Title="IMyCubeBlock.GetPlayerRelationToOwner Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetPlayerRelationToOwner.htm" />
+    <HelpKINode Title="IMyCubeBlock.GetPlayerRelationToOwner Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetPlayerRelationToOwner.htm" />
   </HelpKINode>
   <HelpKINode Title="GetPlayers method" Url="html/M_Sandbox_ModAPI_IMyPlayerCollection_GetPlayers.htm" />
   <HelpKINode Title="GetPosition method">
@@ -2039,8 +2039,8 @@
     <HelpKINode Title="MyDynamicAABBTreeD.GetUserData(T) Method " Url="html/M_VRageMath_MyDynamicAABBTreeD_GetUserData__1.htm" />
   </HelpKINode>
   <HelpKINode Title="GetUserRelationToOwner method">
-    <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetUserRelationToOwner.htm" />
     <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetUserRelationToOwner.htm" />
+    <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetUserRelationToOwner.htm" />
   </HelpKINode>
   <HelpKINode Title="GetVector method">
     <HelpKINode Title="Base27Directions.GetVector Method " Url="html/Overload_VRageMath_Base27Directions_GetVector.htm" />
@@ -2079,13 +2079,13 @@
   </HelpKINode>
   <HelpKINode Title="Grids property" Url="html/P_Sandbox_ModAPI_IMyPlayer_Grids.htm" />
   <HelpKINode Title="GridSize property">
-    <HelpKINode Title="IMyCubeGrid.GridSize Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_GridSize.htm" />
     <HelpKINode Title="IMyCubeGrid.GridSize Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_GridSize.htm" />
+    <HelpKINode Title="IMyCubeGrid.GridSize Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_GridSize.htm" />
   </HelpKINode>
   <HelpKINode Title="GridSizeEnum field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_CubeGrid_GridSizeEnum.htm" />
   <HelpKINode Title="GridSizeEnum property">
-    <HelpKINode Title="IMyCubeGrid.GridSizeEnum Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_GridSizeEnum.htm" />
     <HelpKINode Title="IMyCubeGrid.GridSizeEnum Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_GridSizeEnum.htm" />
+    <HelpKINode Title="IMyCubeGrid.GridSizeEnum Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_GridSizeEnum.htm" />
   </HelpKINode>
   <HelpKINode Title="GrinderSpeedMultiplier field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SessionSettings_GrinderSpeedMultiplier.htm" />
   <HelpKINode Title="GrinderSpeedMultiplier property" Url="html/P_Sandbox_ModAPI_IMySession_GrinderSpeedMultiplier.htm" />
@@ -2211,14 +2211,14 @@
   <HelpKINode Title="IMyButtonPanel interface">
     <HelpKINode Title="IMyButtonPanel Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
     <HelpKINode Title="IMyButtonPanel Interface" Url="html/T_Sandbox_ModAPI_IMyButtonPanel.htm" />
-    <HelpKINode Title="about IMyButtonPanel interface" Url="html/T_Sandbox_ModAPI_IMyButtonPanel.htm" />
     <HelpKINode Title="about IMyButtonPanel interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
+    <HelpKINode Title="about IMyButtonPanel interface" Url="html/T_Sandbox_ModAPI_IMyButtonPanel.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyButtonPanel.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyButtonPanel.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyButtonPanel.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyButtonPanel.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyButtonPanel.AnyoneCanUse property" Url="html/P_Sandbox_ModAPI_Ingame_IMyButtonPanel_AnyoneCanUse.htm" />
   <HelpKINode Title="IMyButtonPanel.ButtonPressed event" Url="html/E_Sandbox_ModAPI_IMyButtonPanel_ButtonPressed.htm" />
@@ -2351,34 +2351,34 @@
     <HelpKINode Title="IMyCubeBlock.CheckConnectionAllowed Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_CheckConnectionAllowed.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.CubeGrid property">
-    <HelpKINode Title="IMyCubeBlock.CubeGrid Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_CubeGrid.htm" />
     <HelpKINode Title="IMyCubeBlock.CubeGrid Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_CubeGrid.htm" />
+    <HelpKINode Title="IMyCubeBlock.CubeGrid Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_CubeGrid.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.DebugDraw method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_DebugDraw.htm" />
   <HelpKINode Title="IMyCubeBlock.DefinitionDisplayNameText property">
-    <HelpKINode Title="IMyCubeBlock.DefinitionDisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DefinitionDisplayNameText.htm" />
     <HelpKINode Title="IMyCubeBlock.DefinitionDisplayNameText Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_DefinitionDisplayNameText.htm" />
+    <HelpKINode Title="IMyCubeBlock.DefinitionDisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DefinitionDisplayNameText.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.DisassembleRatio property">
     <HelpKINode Title="IMyCubeBlock.DisassembleRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_DisassembleRatio.htm" />
     <HelpKINode Title="IMyCubeBlock.DisassembleRatio Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DisassembleRatio.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.DisplayNameText property">
-    <HelpKINode Title="IMyCubeBlock.DisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DisplayNameText.htm" />
     <HelpKINode Title="IMyCubeBlock.DisplayNameText Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_DisplayNameText.htm" />
+    <HelpKINode Title="IMyCubeBlock.DisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DisplayNameText.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.GetObjectBuilderCubeBlock method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetObjectBuilderCubeBlock.htm" />
   <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag method">
-    <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetOwnerFactionTag.htm" />
     <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetOwnerFactionTag.htm" />
+    <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetOwnerFactionTag.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.GetPlayerRelationToOwner method">
     <HelpKINode Title="IMyCubeBlock.GetPlayerRelationToOwner Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetPlayerRelationToOwner.htm" />
     <HelpKINode Title="IMyCubeBlock.GetPlayerRelationToOwner Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetPlayerRelationToOwner.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner method">
-    <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetUserRelationToOwner.htm" />
     <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetUserRelationToOwner.htm" />
+    <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetUserRelationToOwner.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.Init method" Url="html/Overload_Sandbox_ModAPI_IMyCubeBlock_Init.htm" />
   <HelpKINode Title="IMyCubeBlock.IsBeingHacked property">
@@ -2386,12 +2386,12 @@
     <HelpKINode Title="IMyCubeBlock.IsBeingHacked Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsBeingHacked.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.IsFunctional property">
-    <HelpKINode Title="IMyCubeBlock.IsFunctional Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsFunctional.htm" />
     <HelpKINode Title="IMyCubeBlock.IsFunctional Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_IsFunctional.htm" />
+    <HelpKINode Title="IMyCubeBlock.IsFunctional Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsFunctional.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.IsWorking property">
-    <HelpKINode Title="IMyCubeBlock.IsWorking Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsWorking.htm" />
     <HelpKINode Title="IMyCubeBlock.IsWorking Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_IsWorking.htm" />
+    <HelpKINode Title="IMyCubeBlock.IsWorking Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsWorking.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.IsWorkingChanged event" Url="html/E_Sandbox_ModAPI_IMyCubeBlock_IsWorkingChanged.htm" />
   <HelpKINode Title="IMyCubeBlock.Max property">
@@ -2403,8 +2403,8 @@
     <HelpKINode Title="IMyCubeBlock.Min Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_Min.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.NumberInGrid property">
-    <HelpKINode Title="IMyCubeBlock.NumberInGrid Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_NumberInGrid.htm" />
     <HelpKINode Title="IMyCubeBlock.NumberInGrid Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_NumberInGrid.htm" />
+    <HelpKINode Title="IMyCubeBlock.NumberInGrid Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_NumberInGrid.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.OnBuildSuccess method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_OnBuildSuccess.htm" />
   <HelpKINode Title="IMyCubeBlock.OnDestroy method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_OnDestroy.htm" />
@@ -2465,13 +2465,13 @@
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyCubeGrid.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyCubeGrid.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyCubeGrid.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyCubeGrid.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyCubeGrid.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyCubeGrid.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.ApplyDestructionDeformation method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_ApplyDestructionDeformation.htm" />
   <HelpKINode Title="IMyCubeGrid.BigOwners property">
-    <HelpKINode Title="IMyCubeGrid.BigOwners Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_BigOwners.htm" />
     <HelpKINode Title="IMyCubeGrid.BigOwners Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_BigOwners.htm" />
+    <HelpKINode Title="IMyCubeGrid.BigOwners Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_BigOwners.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.CalculateMergeTransform method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_CalculateMergeTransform.htm" />
   <HelpKINode Title="IMyCubeGrid.CanMergeCubes method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_CanMergeCubes.htm" />
@@ -2479,24 +2479,24 @@
   <HelpKINode Title="IMyCubeGrid.ClearSymmetries method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_ClearSymmetries.htm" />
   <HelpKINode Title="IMyCubeGrid.ColorBlocks method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_ColorBlocks.htm" />
   <HelpKINode Title="IMyCubeGrid.ConvertToDynamic method">
-    <HelpKINode Title="IMyCubeGrid.ConvertToDynamic Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_ConvertToDynamic.htm" />
     <HelpKINode Title="IMyCubeGrid.ConvertToDynamic Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_ConvertToDynamic.htm" />
+    <HelpKINode Title="IMyCubeGrid.ConvertToDynamic Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_ConvertToDynamic.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.CubeExists method">
-    <HelpKINode Title="IMyCubeGrid.CubeExists Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_CubeExists.htm" />
     <HelpKINode Title="IMyCubeGrid.CubeExists Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_CubeExists.htm" />
+    <HelpKINode Title="IMyCubeGrid.CubeExists Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_CubeExists.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.FixTargetCube method">
-    <HelpKINode Title="IMyCubeGrid.FixTargetCube Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_FixTargetCube.htm" />
     <HelpKINode Title="IMyCubeGrid.FixTargetCube Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_FixTargetCube.htm" />
+    <HelpKINode Title="IMyCubeGrid.FixTargetCube Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_FixTargetCube.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.GetBlocks method">
-    <HelpKINode Title="IMyCubeGrid.GetBlocks Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_GetBlocks.htm" />
     <HelpKINode Title="IMyCubeGrid.GetBlocks Method " Url="html/Overload_Sandbox_ModAPI_IMyCubeGrid_GetBlocks.htm" />
+    <HelpKINode Title="IMyCubeGrid.GetBlocks Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_GetBlocks.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.GetBlocksInsideSphere method">
-    <HelpKINode Title="IMyCubeGrid.GetBlocksInsideSphere Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GetBlocksInsideSphere.htm" />
     <HelpKINode Title="IMyCubeGrid.GetBlocksInsideSphere Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_GetBlocksInsideSphere.htm" />
+    <HelpKINode Title="IMyCubeGrid.GetBlocksInsideSphere Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GetBlocksInsideSphere.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.GetClosestCorner method">
     <HelpKINode Title="IMyCubeGrid.GetClosestCorner Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GetClosestCorner.htm" />
@@ -2517,8 +2517,8 @@
     <HelpKINode Title="IMyCubeGrid.GridSize Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_GridSize.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.GridSizeEnum property">
-    <HelpKINode Title="IMyCubeGrid.GridSizeEnum Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_GridSizeEnum.htm" />
     <HelpKINode Title="IMyCubeGrid.GridSizeEnum Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_GridSizeEnum.htm" />
+    <HelpKINode Title="IMyCubeGrid.GridSizeEnum Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_GridSizeEnum.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.IsStatic property">
     <HelpKINode Title="IMyCubeGrid.IsStatic Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_IsStatic.htm" />
@@ -2527,8 +2527,8 @@
   <HelpKINode Title="IMyCubeGrid.IsTouchingAnyNeighbor method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_IsTouchingAnyNeighbor.htm" />
   <HelpKINode Title="IMyCubeGrid.IsTrash method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_IsTrash.htm" />
   <HelpKINode Title="IMyCubeGrid.Max property">
-    <HelpKINode Title="IMyCubeGrid.Max Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_Max.htm" />
     <HelpKINode Title="IMyCubeGrid.Max Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_Max.htm" />
+    <HelpKINode Title="IMyCubeGrid.Max Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_Max.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.MergeGrid_CopyPaste method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_MergeGrid_CopyPaste.htm" />
   <HelpKINode Title="IMyCubeGrid.MergeGrid_MergeBlock method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_MergeGrid_MergeBlock.htm" />
@@ -2540,26 +2540,26 @@
   <HelpKINode Title="IMyCubeGrid.OnBlockOwnershipChanged event" Url="html/E_Sandbox_ModAPI_IMyCubeGrid_OnBlockOwnershipChanged.htm" />
   <HelpKINode Title="IMyCubeGrid.OnBlockRemoved event" Url="html/E_Sandbox_ModAPI_IMyCubeGrid_OnBlockRemoved.htm" />
   <HelpKINode Title="IMyCubeGrid.RayCastBlocks method">
-    <HelpKINode Title="IMyCubeGrid.RayCastBlocks Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_RayCastBlocks.htm" />
     <HelpKINode Title="IMyCubeGrid.RayCastBlocks Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_RayCastBlocks.htm" />
+    <HelpKINode Title="IMyCubeGrid.RayCastBlocks Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_RayCastBlocks.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.RayCastCells method">
-    <HelpKINode Title="IMyCubeGrid.RayCastCells Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_RayCastCells.htm" />
     <HelpKINode Title="IMyCubeGrid.RayCastCells Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_RayCastCells.htm" />
+    <HelpKINode Title="IMyCubeGrid.RayCastCells Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_RayCastCells.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.RazeBlock method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_RazeBlock.htm" />
   <HelpKINode Title="IMyCubeGrid.RazeBlocks method" Url="html/Overload_Sandbox_ModAPI_IMyCubeGrid_RazeBlocks.htm" />
   <HelpKINode Title="IMyCubeGrid.RemoveBlock method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_RemoveBlock.htm" />
   <HelpKINode Title="IMyCubeGrid.RemoveDestroyedBlock method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_RemoveDestroyedBlock.htm" />
   <HelpKINode Title="IMyCubeGrid.SmallOwners property">
-    <HelpKINode Title="IMyCubeGrid.SmallOwners Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_SmallOwners.htm" />
     <HelpKINode Title="IMyCubeGrid.SmallOwners Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_SmallOwners.htm" />
+    <HelpKINode Title="IMyCubeGrid.SmallOwners Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_SmallOwners.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.UpdateBlockNeighbours method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_UpdateBlockNeighbours.htm" />
   <HelpKINode Title="IMyCubeGrid.UpdateOwnership method" Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_UpdateOwnership.htm" />
   <HelpKINode Title="IMyCubeGrid.WorldToGridInteger method">
-    <HelpKINode Title="IMyCubeGrid.WorldToGridInteger Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_WorldToGridInteger.htm" />
     <HelpKINode Title="IMyCubeGrid.WorldToGridInteger Method " Url="html/Overload_Sandbox_ModAPI_IMyCubeGrid_WorldToGridInteger.htm" />
+    <HelpKINode Title="IMyCubeGrid.WorldToGridInteger Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_WorldToGridInteger.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyDestroyableObject interface">
     <HelpKINode Title="IMyDestroyableObject Interface" Url="html/T_Sandbox_ModAPI_Interfaces_IMyDestroyableObject.htm" />
@@ -2571,10 +2571,10 @@
   <HelpKINode Title="IMyDestroyableObject.Integrity property" Url="html/P_Sandbox_ModAPI_Interfaces_IMyDestroyableObject_Integrity.htm" />
   <HelpKINode Title="IMyDestroyableObject.OnDestroy method" Url="html/M_Sandbox_ModAPI_Interfaces_IMyDestroyableObject_OnDestroy.htm" />
   <HelpKINode Title="IMyDoor interface">
-    <HelpKINode Title="IMyDoor Interface" Url="html/T_Sandbox_ModAPI_IMyDoor.htm" />
     <HelpKINode Title="IMyDoor Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyDoor.htm" />
-    <HelpKINode Title="about IMyDoor interface" Url="html/T_Sandbox_ModAPI_IMyDoor.htm" />
+    <HelpKINode Title="IMyDoor Interface" Url="html/T_Sandbox_ModAPI_IMyDoor.htm" />
     <HelpKINode Title="about IMyDoor interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyDoor.htm" />
+    <HelpKINode Title="about IMyDoor interface" Url="html/T_Sandbox_ModAPI_IMyDoor.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyDoor.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyDoor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyDoor.htm" />
@@ -2795,8 +2795,8 @@
   <HelpKINode Title="IMyFactionCollection.TryGetFactionById method" Url="html/M_Sandbox_ModAPI_IMyFactionCollection_TryGetFactionById.htm" />
   <HelpKINode Title="IMyFactionCollection.TryGetPlayerFaction method" Url="html/M_Sandbox_ModAPI_IMyFactionCollection_TryGetPlayerFaction.htm" />
   <HelpKINode Title="IMyFunctionalBlock interface">
-    <HelpKINode Title="IMyFunctionalBlock Interface" Url="html/T_Sandbox_ModAPI_IMyFunctionalBlock.htm" />
     <HelpKINode Title="IMyFunctionalBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyFunctionalBlock.htm" />
+    <HelpKINode Title="IMyFunctionalBlock Interface" Url="html/T_Sandbox_ModAPI_IMyFunctionalBlock.htm" />
     <HelpKINode Title="about IMyFunctionalBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyFunctionalBlock.htm" />
     <HelpKINode Title="about IMyFunctionalBlock interface" Url="html/T_Sandbox_ModAPI_IMyFunctionalBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyFunctionalBlock.htm" />
@@ -2900,8 +2900,8 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyInteriorLight.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyInventory interface">
-    <HelpKINode Title="IMyInventory Interface" Url="html/T_Sandbox_ModAPI_IMyInventory.htm" />
     <HelpKINode Title="IMyInventory Interface" Url="html/T_Sandbox_ModAPI_Interfaces_IMyInventory.htm" />
+    <HelpKINode Title="IMyInventory Interface" Url="html/T_Sandbox_ModAPI_IMyInventory.htm" />
     <HelpKINode Title="about IMyInventory interface" Url="html/T_Sandbox_ModAPI_Interfaces_IMyInventory.htm" />
     <HelpKINode Title="about IMyInventory interface" Url="html/T_Sandbox_ModAPI_IMyInventory.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyInventory.htm" />
@@ -2957,10 +2957,10 @@
   <HelpKINode Title="IMyLandingGear interface">
     <HelpKINode Title="IMyLandingGear Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyLandingGear.htm" />
     <HelpKINode Title="IMyLandingGear Interface" Url="html/T_Sandbox_ModAPI_IMyLandingGear.htm" />
-    <HelpKINode Title="about IMyLandingGear interface" Url="html/T_Sandbox_ModAPI_IMyLandingGear.htm" />
     <HelpKINode Title="about IMyLandingGear interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyLandingGear.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyLandingGear.htm" />
+    <HelpKINode Title="about IMyLandingGear interface" Url="html/T_Sandbox_ModAPI_IMyLandingGear.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyLandingGear.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyLandingGear.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyLandingGear.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyLandingGear.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyLandingGear.htm" />
@@ -3040,16 +3040,16 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyMotorBase.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyMotorStator interface">
-    <HelpKINode Title="IMyMotorStator Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
     <HelpKINode Title="IMyMotorStator Interface" Url="html/T_Sandbox_ModAPI_IMyMotorStator.htm" />
-    <HelpKINode Title="about IMyMotorStator interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
+    <HelpKINode Title="IMyMotorStator Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
     <HelpKINode Title="about IMyMotorStator interface" Url="html/T_Sandbox_ModAPI_IMyMotorStator.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
+    <HelpKINode Title="about IMyMotorStator interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyMotorStator.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyMotorStator.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyMotorStator.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyMotorStator.BrakingTorque property" Url="html/P_Sandbox_ModAPI_Ingame_IMyMotorStator_BrakingTorque.htm" />
   <HelpKINode Title="IMyMotorStator.Displacement property" Url="html/P_Sandbox_ModAPI_Ingame_IMyMotorStator_Displacement.htm" />
@@ -3111,8 +3111,8 @@
   <HelpKINode Title="IMyParallelTask.Start method" Url="html/Overload_Sandbox_ModAPI_IMyParallelTask_Start.htm" />
   <HelpKINode Title="IMyParallelTask.StartBackground method" Url="html/Overload_Sandbox_ModAPI_IMyParallelTask_StartBackground.htm" />
   <HelpKINode Title="IMyPistonBase interface">
-    <HelpKINode Title="IMyPistonBase Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyPistonBase.htm" />
     <HelpKINode Title="IMyPistonBase Interface" Url="html/T_Sandbox_ModAPI_IMyPistonBase.htm" />
+    <HelpKINode Title="IMyPistonBase Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyPistonBase.htm" />
     <HelpKINode Title="about IMyPistonBase interface" Url="html/T_Sandbox_ModAPI_IMyPistonBase.htm" />
     <HelpKINode Title="about IMyPistonBase interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyPistonBase.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyPistonBase.htm" />
@@ -3160,12 +3160,12 @@
   <HelpKINode Title="IMyPlayerCollection.TryExtendControl method" Url="html/M_Sandbox_ModAPI_IMyPlayerCollection_TryExtendControl.htm" />
   <HelpKINode Title="IMyPlayerCollection.TryReduceControl method" Url="html/M_Sandbox_ModAPI_IMyPlayerCollection_TryReduceControl.htm" />
   <HelpKINode Title="IMyProductionBlock interface">
-    <HelpKINode Title="IMyProductionBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
     <HelpKINode Title="IMyProductionBlock Interface" Url="html/T_Sandbox_ModAPI_IMyProductionBlock.htm" />
+    <HelpKINode Title="IMyProductionBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
     <HelpKINode Title="about IMyProductionBlock interface" Url="html/T_Sandbox_ModAPI_IMyProductionBlock.htm" />
     <HelpKINode Title="about IMyProductionBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyProductionBlock.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyProductionBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
@@ -3243,16 +3243,16 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyRemoteControl.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySensorBlock interface">
-    <HelpKINode Title="IMySensorBlock Interface" Url="html/T_Sandbox_ModAPI_IMySensorBlock.htm" />
     <HelpKINode Title="IMySensorBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
-    <HelpKINode Title="about IMySensorBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
+    <HelpKINode Title="IMySensorBlock Interface" Url="html/T_Sandbox_ModAPI_IMySensorBlock.htm" />
     <HelpKINode Title="about IMySensorBlock interface" Url="html/T_Sandbox_ModAPI_IMySensorBlock.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
+    <HelpKINode Title="about IMySensorBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMySensorBlock.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMySensorBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMySensorBlock.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySensorBlock.BackExtend property" Url="html/P_Sandbox_ModAPI_Ingame_IMySensorBlock_BackExtend.htm" />
   <HelpKINode Title="IMySensorBlock.BottomExtend property" Url="html/P_Sandbox_ModAPI_Ingame_IMySensorBlock_BottomExtend.htm" />
@@ -3381,12 +3381,12 @@
   <HelpKINode Title="IMyShipMergeBlock interface">
     <HelpKINode Title="IMyShipMergeBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyShipMergeBlock.htm" />
     <HelpKINode Title="IMyShipMergeBlock Interface" Url="html/T_Sandbox_ModAPI_IMyShipMergeBlock.htm" />
-    <HelpKINode Title="about IMyShipMergeBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyShipMergeBlock.htm" />
     <HelpKINode Title="about IMyShipMergeBlock interface" Url="html/T_Sandbox_ModAPI_IMyShipMergeBlock.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyShipMergeBlock.htm" />
+    <HelpKINode Title="about IMyShipMergeBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyShipMergeBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyShipMergeBlock.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyShipMergeBlock.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyShipMergeBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyShipMergeBlock.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyShipMergeBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyShipMergeBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyShipMergeBlock.htm" />
   </HelpKINode>
@@ -3407,14 +3407,14 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyShipWelder.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock interface">
-    <HelpKINode Title="IMySlimBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMySlimBlock.htm" />
     <HelpKINode Title="IMySlimBlock Interface" Url="html/T_Sandbox_ModAPI_IMySlimBlock.htm" />
-    <HelpKINode Title="about IMySlimBlock interface" Url="html/T_Sandbox_ModAPI_IMySlimBlock.htm" />
+    <HelpKINode Title="IMySlimBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMySlimBlock.htm" />
     <HelpKINode Title="about IMySlimBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMySlimBlock.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMySlimBlock.htm" />
+    <HelpKINode Title="about IMySlimBlock interface" Url="html/T_Sandbox_ModAPI_IMySlimBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMySlimBlock.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMySlimBlock.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMySlimBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMySlimBlock.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMySlimBlock.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.AccumulatedDamage property">
     <HelpKINode Title="IMySlimBlock.AccumulatedDamage Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_AccumulatedDamage.htm" />
@@ -3423,8 +3423,8 @@
   <HelpKINode Title="IMySlimBlock.AddNeighbours method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_AddNeighbours.htm" />
   <HelpKINode Title="IMySlimBlock.ApplyAccumulatedDamage method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_ApplyAccumulatedDamage.htm" />
   <HelpKINode Title="IMySlimBlock.BuildIntegrity property">
-    <HelpKINode Title="IMySlimBlock.BuildIntegrity Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_BuildIntegrity.htm" />
     <HelpKINode Title="IMySlimBlock.BuildIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_BuildIntegrity.htm" />
+    <HelpKINode Title="IMySlimBlock.BuildIntegrity Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_BuildIntegrity.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.BuildLevelRatio property">
     <HelpKINode Title="IMySlimBlock.BuildLevelRatio Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_BuildLevelRatio.htm" />
@@ -3443,19 +3443,19 @@
     <HelpKINode Title="IMySlimBlock.CurrentDamage Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_CurrentDamage.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.DamageRatio property">
-    <HelpKINode Title="IMySlimBlock.DamageRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_DamageRatio.htm" />
     <HelpKINode Title="IMySlimBlock.DamageRatio Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_DamageRatio.htm" />
+    <HelpKINode Title="IMySlimBlock.DamageRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_DamageRatio.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.FatBlock property">
-    <HelpKINode Title="IMySlimBlock.FatBlock Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_FatBlock.htm" />
     <HelpKINode Title="IMySlimBlock.FatBlock Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_FatBlock.htm" />
+    <HelpKINode Title="IMySlimBlock.FatBlock Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_FatBlock.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.FixBones method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_FixBones.htm" />
   <HelpKINode Title="IMySlimBlock.GetColorMask method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_GetColorMask.htm" />
   <HelpKINode Title="IMySlimBlock.GetCopyObjectBuilder method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_GetCopyObjectBuilder.htm" />
   <HelpKINode Title="IMySlimBlock.GetMissingComponents method">
-    <HelpKINode Title="IMySlimBlock.GetMissingComponents Method " Url="html/M_Sandbox_ModAPI_IMySlimBlock_GetMissingComponents.htm" />
     <HelpKINode Title="IMySlimBlock.GetMissingComponents Method " Url="html/M_Sandbox_ModAPI_Ingame_IMySlimBlock_GetMissingComponents.htm" />
+    <HelpKINode Title="IMySlimBlock.GetMissingComponents Method " Url="html/M_Sandbox_ModAPI_IMySlimBlock_GetMissingComponents.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.GetObjectBuilder method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_GetObjectBuilder.htm" />
   <HelpKINode Title="IMySlimBlock.HasDeformation property">
@@ -3468,8 +3468,8 @@
     <HelpKINode Title="IMySlimBlock.IsDestroyed Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_IsDestroyed.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.IsFullIntegrity property">
-    <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_IsFullIntegrity.htm" />
     <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_IsFullIntegrity.htm" />
+    <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_IsFullIntegrity.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.IsFullyDismounted property">
     <HelpKINode Title="IMySlimBlock.IsFullyDismounted Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_IsFullyDismounted.htm" />
@@ -3480,12 +3480,12 @@
     <HelpKINode Title="IMySlimBlock.MaxDeformation Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_MaxDeformation.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.MaxIntegrity property">
-    <HelpKINode Title="IMySlimBlock.MaxIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_MaxIntegrity.htm" />
     <HelpKINode Title="IMySlimBlock.MaxIntegrity Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_MaxIntegrity.htm" />
+    <HelpKINode Title="IMySlimBlock.MaxIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_MaxIntegrity.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.Position property">
-    <HelpKINode Title="IMySlimBlock.Position Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_Position.htm" />
     <HelpKINode Title="IMySlimBlock.Position Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_Position.htm" />
+    <HelpKINode Title="IMySlimBlock.Position Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_Position.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.RemoveNeighbours method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_RemoveNeighbours.htm" />
   <HelpKINode Title="IMySlimBlock.SetToConstructionSite method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_SetToConstructionSite.htm" />
@@ -3500,8 +3500,8 @@
     <HelpKINode Title="IMySlimBlock.StockpileAllocated Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_StockpileAllocated.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.StockpileEmpty property">
-    <HelpKINode Title="IMySlimBlock.StockpileEmpty Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_StockpileEmpty.htm" />
     <HelpKINode Title="IMySlimBlock.StockpileEmpty Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_StockpileEmpty.htm" />
+    <HelpKINode Title="IMySlimBlock.StockpileEmpty Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_StockpileEmpty.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.UpdateVisual method">
     <HelpKINode Title="IMySlimBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_IMySlimBlock_UpdateVisual.htm" />
@@ -3568,14 +3568,14 @@
   <HelpKINode Title="IMyTerminalActionsHelper.GetTerminalSystemForGrid method" Url="html/M_Sandbox_ModAPI_IMyTerminalActionsHelper_GetTerminalSystemForGrid.htm" />
   <HelpKINode Title="IMyTerminalActionsHelper.SearchActionsOfName method" Url="html/M_Sandbox_ModAPI_IMyTerminalActionsHelper_SearchActionsOfName.htm" />
   <HelpKINode Title="IMyTerminalBlock interface">
-    <HelpKINode Title="IMyTerminalBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
     <HelpKINode Title="IMyTerminalBlock Interface" Url="html/T_Sandbox_ModAPI_IMyTerminalBlock.htm" />
+    <HelpKINode Title="IMyTerminalBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
     <HelpKINode Title="about IMyTerminalBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
     <HelpKINode Title="about IMyTerminalBlock interface" Url="html/T_Sandbox_ModAPI_IMyTerminalBlock.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyTerminalBlock.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyTerminalBlock.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyTerminalBlock.htm" />
   </HelpKINode>
@@ -3836,8 +3836,8 @@
     <HelpKINode Title="Base6Directions.IsBaseDirection Method " Url="html/Overload_VRageMath_Base6Directions_IsBaseDirection.htm" />
   </HelpKINode>
   <HelpKINode Title="IsBeingHacked property">
-    <HelpKINode Title="IMyCubeBlock.IsBeingHacked Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_IsBeingHacked.htm" />
     <HelpKINode Title="IMyCubeBlock.IsBeingHacked Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsBeingHacked.htm" />
+    <HelpKINode Title="IMyCubeBlock.IsBeingHacked Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_IsBeingHacked.htm" />
   </HelpKINode>
   <HelpKINode Title="IsBoxIntersectingBoundingBoxOfThisVoxelMap method" Url="html/M_Sandbox_ModAPI_IMyVoxelMap_IsBoxIntersectingBoundingBoxOfThisVoxelMap.htm" />
   <HelpKINode Title="IsCameraAwaitingEntity property" Url="html/P_Sandbox_ModAPI_IMySession_IsCameraAwaitingEntity.htm" />
@@ -3862,16 +3862,16 @@
   <HelpKINode Title="IsFounder method" Url="html/M_Sandbox_ModAPI_IMyFaction_IsFounder.htm" />
   <HelpKINode Title="IsFull property" Url="html/P_Sandbox_ModAPI_Interfaces_IMyInventory_IsFull.htm" />
   <HelpKINode Title="IsFullIntegrity property">
-    <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_IsFullIntegrity.htm" />
     <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_IsFullIntegrity.htm" />
+    <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_IsFullIntegrity.htm" />
   </HelpKINode>
   <HelpKINode Title="IsFullyDismounted property">
-    <HelpKINode Title="IMySlimBlock.IsFullyDismounted Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_IsFullyDismounted.htm" />
     <HelpKINode Title="IMySlimBlock.IsFullyDismounted Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_IsFullyDismounted.htm" />
+    <HelpKINode Title="IMySlimBlock.IsFullyDismounted Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_IsFullyDismounted.htm" />
   </HelpKINode>
   <HelpKINode Title="IsFunctional property">
-    <HelpKINode Title="IMyCubeBlock.IsFunctional Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_IsFunctional.htm" />
     <HelpKINode Title="IMyCubeBlock.IsFunctional Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsFunctional.htm" />
+    <HelpKINode Title="IMyCubeBlock.IsFunctional Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_IsFunctional.htm" />
   </HelpKINode>
   <HelpKINode Title="IsInFirstPersonView field">
     <HelpKINode Title="MyObjectBuilder_Character.IsInFirstPersonView Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Character_IsInFirstPersonView.htm" />
@@ -3930,8 +3930,8 @@
   <HelpKINode Title="IsSpherePenetrating method" Url="html/M_Sandbox_ModAPI_IMyEntities_IsSpherePenetrating.htm" />
   <HelpKINode Title="IsStatic field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_CubeGrid_IsStatic.htm" />
   <HelpKINode Title="IsStatic property">
-    <HelpKINode Title="IMyCubeGrid.IsStatic Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_IsStatic.htm" />
     <HelpKINode Title="IMyCubeGrid.IsStatic Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_IsStatic.htm" />
+    <HelpKINode Title="IMyCubeGrid.IsStatic Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_IsStatic.htm" />
   </HelpKINode>
   <HelpKINode Title="IsTouchingAnyNeighbor method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_IsTouchingAnyNeighbor.htm" />
   <HelpKINode Title="IsTrash method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_IsTrash.htm" />
@@ -4533,8 +4533,8 @@
     <HelpKINode Title="Vector4D.Max Method " Url="html/Overload_VRageMath_Vector4D_Max.htm" />
   </HelpKINode>
   <HelpKINode Title="Max property">
-    <HelpKINode Title="IMyCubeBlock.Max Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_Max.htm" />
     <HelpKINode Title="IMyCubeBlock.Max Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_Max.htm" />
+    <HelpKINode Title="IMyCubeBlock.Max Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_Max.htm" />
     <HelpKINode Title="IMyCubeGrid.Max Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_Max.htm" />
     <HelpKINode Title="IMyCubeGrid.Max Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_Max.htm" />
   </HelpKINode>
@@ -7000,8 +7000,8 @@
     <HelpKINode Title="Vector3D.NegativeInfinity Field" Url="html/F_VRageMath_Vector3D_NegativeInfinity.htm" />
   </HelpKINode>
   <HelpKINode Title="NegativeIntegrityTotal property" Url="html/P_Sandbox_ModAPI_IMySession_NegativeIntegrityTotal.htm" />
-  <HelpKINode Title="nextItemId field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Inventory_nextItemId.htm" />
   <HelpKINode Title="NextItemId field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ProductionBlock_NextItemId.htm" />
+  <HelpKINode Title="nextItemId field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Inventory_nextItemId.htm" />
   <HelpKINode Title="NextItemId property" Url="html/P_Sandbox_ModAPI_Ingame_IMyProductionBlock_NextItemId.htm" />
   <HelpKINode Title="None enumeration member">
     <HelpKINode Title="EntityFlags Enumeration" Url="html/T_Sandbox_ModAPI_EntityFlags.htm" />
@@ -7146,8 +7146,8 @@
   <HelpKINode Title="Owner field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_CubeBlock_Owner.htm" />
   <HelpKINode Title="Owner property" Url="html/P_Sandbox_ModAPI_Interfaces_IMyInventory_Owner.htm" />
   <HelpKINode Title="OwnerId property">
-    <HelpKINode Title="IMyCubeBlock.OwnerId Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_OwnerId.htm" />
     <HelpKINode Title="IMyCubeBlock.OwnerId Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_OwnerId.htm" />
+    <HelpKINode Title="IMyCubeBlock.OwnerId Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_OwnerId.htm" />
   </HelpKINode>
   <HelpKINode Title="OwnershipChanged event" Url="html/E_Sandbox_ModAPI_IMyTerminalBlock_OwnershipChanged.htm" />
   <HelpKINode Title="P0 field">
@@ -7260,8 +7260,8 @@
     <HelpKINode Title="MyObjectBuilder_Identity.PlayerId Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Identity_PlayerId.htm" />
     <HelpKINode Title="MyObjectBuilder_Player.PlayerId Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Player_PlayerId.htm" />
   </HelpKINode>
-  <HelpKINode Title="PlayerID property" Url="html/P_Sandbox_ModAPI_IMyPlayer_PlayerID.htm" />
   <HelpKINode Title="PlayerId property" Url="html/P_Sandbox_ModAPI_IMyIdentity_PlayerId.htm" />
+  <HelpKINode Title="PlayerID property" Url="html/P_Sandbox_ModAPI_IMyPlayer_PlayerID.htm" />
   <HelpKINode Title="PlayerId structure">
     <HelpKINode Title="fields" Url="html/Fields_T_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_PlayerId.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_PlayerId.htm" />
@@ -7326,8 +7326,8 @@
     <HelpKINode Title="CurveKey.Position Property " Url="html/P_VRageMath_CurveKey_Position.htm" />
     <HelpKINode Title="IMyCubeBlock.Position Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_Position.htm" />
     <HelpKINode Title="IMyCubeBlock.Position Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_Position.htm" />
-    <HelpKINode Title="IMySlimBlock.Position Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_Position.htm" />
     <HelpKINode Title="IMySlimBlock.Position Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_Position.htm" />
+    <HelpKINode Title="IMySlimBlock.Position Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_Position.htm" />
   </HelpKINode>
   <HelpKINode Title="PositionAndOrientation field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_EntityBase_PositionAndOrientation.htm" />
   <HelpKINode Title="PositionComp property" Url="html/P_Sandbox_ModAPI_IMyEntity_PositionComp.htm" />
@@ -7529,12 +7529,12 @@
   <HelpKINode Title="Ray.Ray constructor" Url="html/M_VRageMath_Ray__ctor.htm" />
   <HelpKINode Title="Ray.ToString method" Url="html/M_VRageMath_Ray_ToString.htm" />
   <HelpKINode Title="RayCastBlocks method">
-    <HelpKINode Title="IMyCubeGrid.RayCastBlocks Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_RayCastBlocks.htm" />
     <HelpKINode Title="IMyCubeGrid.RayCastBlocks Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_RayCastBlocks.htm" />
+    <HelpKINode Title="IMyCubeGrid.RayCastBlocks Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_RayCastBlocks.htm" />
   </HelpKINode>
   <HelpKINode Title="RayCastCells method">
-    <HelpKINode Title="IMyCubeGrid.RayCastCells Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_RayCastCells.htm" />
     <HelpKINode Title="IMyCubeGrid.RayCastCells Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_RayCastCells.htm" />
+    <HelpKINode Title="IMyCubeGrid.RayCastCells Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_RayCastCells.htm" />
   </HelpKINode>
   <HelpKINode Title="RaycastDetectors method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_RaycastDetectors.htm" />
   <HelpKINode Title="RayD structure">
@@ -8226,8 +8226,8 @@
   <HelpKINode Title="ShowOnHUD property" Url="html/P_Sandbox_ModAPI_Ingame_IMyTerminalBlock_ShowOnHUD.htm" />
   <HelpKINode Title="ShowOnHUDChanged event" Url="html/E_Sandbox_ModAPI_IMyTerminalBlock_ShowOnHUDChanged.htm" />
   <HelpKINode Title="ShowParts property">
-    <HelpKINode Title="IMySlimBlock.ShowParts Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_ShowParts.htm" />
     <HelpKINode Title="IMySlimBlock.ShowParts Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_ShowParts.htm" />
+    <HelpKINode Title="IMySlimBlock.ShowParts Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_ShowParts.htm" />
   </HelpKINode>
   <HelpKINode Title="ShowPlayerNamesOnHud field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SessionSettings_ShowPlayerNamesOnHud.htm" />
   <HelpKINode Title="ShowPlayerNamesOnHud property">
@@ -8284,8 +8284,8 @@
   <HelpKINode Title="Small enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyCubeSize.htm" />
   <HelpKINode Title="SmallCockpit enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyToolbarType.htm" />
   <HelpKINode Title="SmallOwners property">
-    <HelpKINode Title="IMyCubeGrid.SmallOwners Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_SmallOwners.htm" />
     <HelpKINode Title="IMyCubeGrid.SmallOwners Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_SmallOwners.htm" />
+    <HelpKINode Title="IMyCubeGrid.SmallOwners Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_SmallOwners.htm" />
   </HelpKINode>
   <HelpKINode Title="SMALL_LINE enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ConveyorLine_LineType.htm" />
   <HelpKINode Title="Smooth enumeration member">
@@ -8341,11 +8341,11 @@
     <HelpKINode Title="IMyLandingGear.StateChanged Event" Url="html/E_Sandbox_ModAPI_IMyLandingGear_StateChanged.htm" />
     <HelpKINode Title="IMySensorBlock.StateChanged Event" Url="html/E_Sandbox_ModAPI_IMySensorBlock_StateChanged.htm" />
   </HelpKINode>
+  <HelpKINode Title="SteamID field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Player_SteamID.htm" />
   <HelpKINode Title="SteamId field">
     <HelpKINode Title="MyObjectBuilder_Checkpoint.PlayerItem.SteamId Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_PlayerItem_SteamId.htm" />
     <HelpKINode Title="MyObjectBuilder_Client.SteamId Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Client_SteamId.htm" />
   </HelpKINode>
-  <HelpKINode Title="SteamID field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Player_SteamID.htm" />
   <HelpKINode Title="SteamIDOwner field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ModInfo_SteamIDOwner.htm" />
   <HelpKINode Title="SteamPort field" Url="html/F_Sandbox_Common_ObjectBuilders_MyConfigDedicatedData_SteamPort.htm" />
   <HelpKINode Title="SteamPort property" Url="html/P_Sandbox_ModAPI_IMyConfigDedicated_SteamPort.htm" />
@@ -8361,8 +8361,8 @@
     <HelpKINode Title="Vector3D.Step Method " Url="html/M_VRageMath_Vector3D_Step.htm" />
   </HelpKINode>
   <HelpKINode Title="StockpileAllocated property">
-    <HelpKINode Title="IMySlimBlock.StockpileAllocated Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_StockpileAllocated.htm" />
     <HelpKINode Title="IMySlimBlock.StockpileAllocated Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_StockpileAllocated.htm" />
+    <HelpKINode Title="IMySlimBlock.StockpileAllocated Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_StockpileAllocated.htm" />
   </HelpKINode>
   <HelpKINode Title="StockpileEmpty property">
     <HelpKINode Title="IMySlimBlock.StockpileEmpty Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_StockpileEmpty.htm" />
@@ -8412,8 +8412,8 @@
     <HelpKINode Title="BoundingBox.SurfaceArea Method " Url="html/M_VRageMath_BoundingBox_SurfaceArea.htm" />
     <HelpKINode Title="BoundingBoxD.SurfaceArea Method " Url="html/M_VRageMath_BoundingBoxD_SurfaceArea.htm" />
   </HelpKINode>
-  <HelpKINode Title="Survival enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyGameModeEnum.htm" />
   <HelpKINode Title="SURVIVAL enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MySessionGameType.htm" />
+  <HelpKINode Title="Survival enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyGameModeEnum.htm" />
   <HelpKINode Title="SurvivalMode property" Url="html/P_Sandbox_ModAPI_IMySession_SurvivalMode.htm" />
   <HelpKINode Title="SwapYZCoordinates method">
     <HelpKINode Title="Matrix.SwapYZCoordinates Method " Url="html/M_VRageMath_Matrix_SwapYZCoordinates.htm" />
@@ -8533,12 +8533,12 @@
     <HelpKINode Title="QuaternionD.ToVector4 Method " Url="html/M_VRageMath_QuaternionD_ToVector4.htm" />
   </HelpKINode>
   <HelpKINode Title="TransferItemFrom method">
-    <HelpKINode Title="IMyInventory.TransferItemFrom Method " Url="html/Overload_Sandbox_ModAPI_IMyInventory_TransferItemFrom.htm" />
     <HelpKINode Title="IMyInventory.TransferItemFrom Method " Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_TransferItemFrom.htm" />
+    <HelpKINode Title="IMyInventory.TransferItemFrom Method " Url="html/Overload_Sandbox_ModAPI_IMyInventory_TransferItemFrom.htm" />
   </HelpKINode>
   <HelpKINode Title="TransferItemTo method">
-    <HelpKINode Title="IMyInventory.TransferItemTo Method " Url="html/Overload_Sandbox_ModAPI_IMyInventory_TransferItemTo.htm" />
     <HelpKINode Title="IMyInventory.TransferItemTo Method " Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_TransferItemTo.htm" />
+    <HelpKINode Title="IMyInventory.TransferItemTo Method " Url="html/Overload_Sandbox_ModAPI_IMyInventory_TransferItemTo.htm" />
   </HelpKINode>
   <HelpKINode Title="Transform method">
     <HelpKINode Title="BoundingBox.Transform Method " Url="html/Overload_VRageMath_BoundingBox_Transform.htm" />
@@ -8685,10 +8685,10 @@
   </HelpKINode>
   <HelpKINode Title="UpdateOwnership method" Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_UpdateOwnership.htm" />
   <HelpKINode Title="UpdateVisual method">
-    <HelpKINode Title="IMyCubeBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_UpdateVisual.htm" />
     <HelpKINode Title="IMyCubeBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_UpdateVisual.htm" />
-    <HelpKINode Title="IMySlimBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_Ingame_IMySlimBlock_UpdateVisual.htm" />
+    <HelpKINode Title="IMyCubeBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_UpdateVisual.htm" />
     <HelpKINode Title="IMySlimBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_IMySlimBlock_UpdateVisual.htm" />
+    <HelpKINode Title="IMySlimBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_Ingame_IMySlimBlock_UpdateVisual.htm" />
   </HelpKINode>
   <HelpKINode Title="UpDown enumeration member" Url="html/T_VRageMath_Base6Directions_Axis.htm" />
   <HelpKINode Title="Upgrade method" Url="html/M_Sandbox_Common_ObjectBuilders_MyObjectBuilder_CubeBlock_Upgrade.htm" />
