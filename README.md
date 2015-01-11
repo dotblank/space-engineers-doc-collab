@@ -25,7 +25,7 @@ I am utilizing the [`<include>` tag](http://msdn.microsoft.com/en-us/library/9h8
 		<param name="dst">Target inventory</param>
 		<param name="sourceItemIndex">The target item's index in this inventory</param>
 		<param name="targetItemIndex">The index at which the item will be placed in the target inventory</param>
-		<param name="stackIfPossible">Add the items to an existing stack of items instead of creating a new stack</param>
+		<param name="stackIfPossible"></param>
 		<param name="amount">Amount of items to transfer</param>
 		<returns></returns>
 		<example>
@@ -35,6 +35,7 @@ I am utilizing the [`<include>` tag](http://msdn.microsoft.com/en-us/library/9h8
 	</Member>
 </Documentation>
 ```
+The example code snippet can also be placed inside the` <code>` tags, in the case of which the source attribute would be left out.
 When documenting a member without previous documentation, please add a new `<Member>` section with the method's name to the .xml file and include it in the class' .cs file. The above will also include a code example from the file `Interfaces.IMyInventory.TransferItemsTo.cs`. If using a relative path, the Sandcastle Help File Builder will read them relative to the `.shfbproj` project file's location, hence the `Examples` folder can be found from the `Sandcastle Files` folder.
 
 A list of documentation comment tags can be found [here](http://msdn.microsoft.com/en-us/library/5ast78ax.aspx).
