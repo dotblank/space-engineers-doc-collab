@@ -54,6 +54,7 @@ In Visual Studio, the XML documentation generation can be enabled like so: Proje
 
 # Links
 * [**Download** a local copy here!](https://github.com/jCuber/space-engineers-doc-collab/tree/gh-pages)
+* [**Sandcastle Help File Builder**](https://shfb.codeplex.com/)
 * [Related KeenSWH forum thread](http://forums.keenswh.com/post?id=7224725)
 
 ##### XML Comments References
