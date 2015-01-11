@@ -11,22 +11,22 @@ Example summary:
 // ModAPI\Interfaces\IMyInventory.cs
 
 /// <summary>
-    /// Transfers items from the inventory to the target inventory.
-    /// </summary>
-    /// <param name="dst">Target inventory</param>
-    /// <param name="sourceItemIndex">Index of the item being transferred in the source inventory</param>
-    /// <param name="targetItemIndex">Index to which the item will be placed in the target inventory</param>
-    /// <param name="stackIfPossible"></param>
-    /// <param name="amount">Amount of items to transfer</param>
-    /// <returns></returns>
-    /// <remarks>
-    /// 	When using this method in a loop, note that the item indexes will automatically change as the inventory fills the empty inventory spaces left by item transfers. It is thus recommended to set <paramref name="sourceItemIndex"/> to zero when looping over every element in the inventory.
-    /// </remarks>
-    /// <example>
-    /// 	The following example demonstrates the <c>TransferItemTo</c> method.
-    /// 	<code source="Examples\Interfaces.IMyInventory.TransferItemTo.cs" lang="cs"></code>
-    /// </example>
-    bool TransferItemTo(IMyInventory dst, int sourceItemIndex, int? targetItemIndex = null, bool? stackIfPossible = null, MyFixedPoint? amount = null);
+/// Transfers items from the inventory to the target inventory.
+/// </summary>
+/// <param name="dst">Target inventory</param>
+/// <param name="sourceItemIndex">Index of the item being transferred in the source inventory</param>
+/// <param name="targetItemIndex">Index to which the item will be placed in the target inventory</param>
+/// <param name="stackIfPossible"></param>
+/// <param name="amount">Amount of items to transfer</param>
+/// <returns></returns>
+/// <remarks>
+/// 	<note type="caution">When using this method in a loop, the item indexes will change as the inventory automatically fills the empty inventory spaces left by item transfers. It is thus recommended to set <paramref name="sourceItemIndex"/> to zero when iterating over every element in the inventory.</note>
+/// </remarks>
+/// <example>
+/// 	The following example demonstrates the <c>TransferItemTo</c> method.
+/// 	<code source="Examples\Interfaces.IMyInventory.TransferItemTo.cs" lang="cs"></code>
+/// </example>
+bool TransferItemTo(IMyInventory dst, int sourceItemIndex, int? targetItemIndex = null, bool? stackIfPossible = null, MyFixedPoint? amount = null);
 ```
 The example code snippet can also be placed inside the` <code>` tags, in the case of which the source attribute would be left out. The above will also include a code example from the file `Interfaces.IMyInventory.TransferItemTo.cs`. If using a relative path, the Sandcastle Help File Builder will read them relative to the `.shfbproj` project file's location, hence the `Examples` folder can be found from the `Sandcastle Files` folder in this repository.
 
