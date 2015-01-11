@@ -62,7 +62,7 @@ namespace Sandbox.ModAPI.Interfaces
     /// <param name="amount">Amount of items to transfer</param>
     /// <returns></returns>
     /// <remarks>
-    ///   When using this method in a loop, note that the item indexes will automatically change as the inventory fills the empty inventory spaces left by item transfers. It is thus recommended to set <paramref name="sourceItemIndex"/> to zero when looping over every element in the inventory.
+    /// 	<note type="caution">When using this method in a loop, the item indexes will change as the inventory automatically fills the empty inventory spaces left by item transfers. It is thus recommended to set <paramref name="sourceItemIndex"/> to zero when iterating over every element in the inventory.</note>
     /// </remarks>
     /// <example>
     ///   The following example demonstrates the <c>TransferItemFrom</c> method.

@@ -14,7 +14,7 @@
     <Name>Documentation</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
-    <OutputPath>..\..\spen-doc-collab-gh-pages\</OutputPath>
+    <OutputPath>..\..\space-engineers-doc-collab-gh-pages\</OutputPath>
     <HtmlHelpName>SE_Ingame_API</HtmlHelpName>
     <Language>en-US</Language>
     <BuildAssemblerVerbosity>OnlyErrors</BuildAssemblerVerbosity>
