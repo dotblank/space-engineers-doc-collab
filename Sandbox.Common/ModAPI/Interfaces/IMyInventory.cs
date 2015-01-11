@@ -33,15 +33,12 @@ namespace Sandbox.ModAPI.Interfaces
     bool ContainItems(MyFixedPoint amount, MyObjectBuilder_PhysicalObject ob);
 
     MyFixedPoint GetItemAmount(SerializableDefinitionId contentId, MyItemFlags flags = MyItemFlags.None);
+    
+    // TODO: What does TransferItemTo's return depict?
     /// <summary>
     /// Transfers items from this inventory to the target inventory.
     /// </summary>
-    /// <param name="dst">Target inventory</param>
-    /// <param name="sourceItemIndex">The target item's index in this inventory</param>
-    /// <param name="targetItemIndex">The index at which the item will be placed in the target inventory</param>
-    /// <param name="stackIfPossible">Add the items to an existing stack of items instead of creating a new stack</param>
-    /// <param name="amount">Amount of items to transfer</param>
-    /// <returns>A boolean value depicting whether the transfer was successful</returns>
+    /// <include file='/IMyInventory.xml' path='Documentation/Member[@name="TransferItemsTo"]/*'/>
     bool TransferItemTo(IMyInventory dst, int sourceItemIndex, int? targetItemIndex = null, bool? stackIfPossible = null, MyFixedPoint? amount = null);
 
     bool TransferItemFrom(IMyInventory sourceInventory, int sourceItemIndex, int? targetItemIndex = null, bool? stackIfPossible = null, MyFixedPoint? amount = null);

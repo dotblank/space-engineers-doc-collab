@@ -82,6 +82,7 @@
     <Compile Include="ModAPI\IMySlimBlock.cs" />
     <Compile Include="ModAPI\IMyTerminalActionsHelper.cs" />
     <Compile Include="ModAPI\MessageEnteredDel.cs" />
+    <Compile Include="ModAPI\NamespaceDoc.cs" />
     <Compile Include="ModAPI\ResultEnum.cs" />
     <Compile Include="ModAPI\IMyUtilities.cs" />
     <Compile Include="ModAPI\IMyVoxelMap.cs" />
@@ -546,6 +547,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Common\Resources\MyTexts.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModAPI\Interfaces\IMyInventory.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
