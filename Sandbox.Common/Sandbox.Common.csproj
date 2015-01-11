@@ -548,10 +548,5 @@
   <ItemGroup>
     <EmbeddedResource Include="Common\Resources\MyTexts.resx" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="ModAPI\Interfaces\IMyInventory.xml">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

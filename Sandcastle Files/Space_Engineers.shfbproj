@@ -14,7 +14,7 @@
     <Name>Documentation</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
-    <OutputPath>Sandbox.Common\</OutputPath>
+    <OutputPath>..\..\spen-doc-collab-gh-pages\</OutputPath>
     <HtmlHelpName>SE_Ingame_API</HtmlHelpName>
     <Language>en-US</Language>
     <BuildAssemblerVerbosity>OnlyErrors</BuildAssemblerVerbosity>
@@ -39,28 +39,27 @@
 <DocumentationSource sourceFile="..\VRage.Math\VRage.Math.csproj" /></DocumentationSources>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="Sandbox.Common" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Common.Components" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Common.Input" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Common.Localization" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Common.News" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders" isDocumented="True" />
-      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Audio" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Conveyors" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Definitions" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Gui" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Serializer" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Voxels" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.VRageData" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Definitions" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Engine.Multiplayer" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Engine.Physics" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Game.Entities" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.Game.Weapons" isDocumented="False" />
-      <NamespaceSummaryItem name="(global)" isDocumented="False" />
-      <NamespaceSummaryItem name="Sandbox.ModAPI" isDocumented="False" />
-      <NamespaceSummaryItem name="VRageMath.PackedVector" isDocumented="False" />
-      <NamespaceSummaryItem name="VRageMath.Spatial" isDocumented="False" />
-    </NamespaceSummaries>
+<NamespaceSummaryItem name="Sandbox.Common.Components" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.Input" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.Localization" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.News" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders" isDocumented="True" />
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Audio" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Conveyors" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Definitions" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Gui" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Serializer" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Voxels" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.VRageData" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Definitions" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Engine.Multiplayer" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Engine.Physics" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Game.Entities" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Game.Weapons" isDocumented="False" />
+<NamespaceSummaryItem name="(global)" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.ModAPI" isDocumented="True">Only specific members of this namespace are accessible from the programmable block.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="VRageMath.PackedVector" isDocumented="False" />
+<NamespaceSummaryItem name="VRageMath.Spatial" isDocumented="False" /></NamespaceSummaries>
     <MissingTags>AutoDocumentCtors, AutoDocumentDispose</MissingTags>
     <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
     <FeedbackEMailLinkText>
@@ -99,16 +98,6 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' ">
   </PropertyGroup>
-  <ItemGroup>
-    <Folder Include="icons\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="icons\icon.png">
-      <ImageId>icon</ImageId>
-      <AlternateText>icon</AlternateText>
-      <ExcludeFromToc>True</ExcludeFromToc>
-    </Content>
-  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>

@@ -34,15 +34,45 @@ namespace Sandbox.ModAPI.Interfaces
 
     MyFixedPoint GetItemAmount(SerializableDefinitionId contentId, MyItemFlags flags = MyItemFlags.None);
     
-    // TODO: What does TransferItemTo's return depict?
     /// <summary>
-    /// Transfers items from this inventory to the target inventory.
+    /// Transfers items from the inventory to the target inventory.
     /// </summary>
-    /// <include file='/IMyInventory.xml' path='Documentation/Member[@name="TransferItemsTo"]/*'/>
+    /// <param name="dst">Target inventory</param>
+    /// <param name="sourceItemIndex">Index of the item being transferred in the source inventory</param>
+    /// <param name="targetItemIndex">Index to which the item will be placed in the target inventory</param>
+    /// <param name="stackIfPossible"></param>
+    /// <param name="amount">Amount of items to transfer</param>
+    /// <returns></returns>
+    /// <remarks>
+    /// 	<note type="caution">When using this method in a loop, the item indexes will change as the inventory automatically fills the empty inventory spaces left by item transfers. It is thus recommended to set <paramref name="sourceItemIndex"/> to zero when iterating over every element in the inventory.</note>
+    /// </remarks>
+    /// <example>
+    /// 	The following example demonstrates the <c>TransferItemTo</c> method.
+    /// 	<code source="Examples\Interfaces.IMyInventory.TransferItemTo.cs" lang="cs"></code>
+    /// </example>
     bool TransferItemTo(IMyInventory dst, int sourceItemIndex, int? targetItemIndex = null, bool? stackIfPossible = null, MyFixedPoint? amount = null);
-
+    // TODO: What does TransferItemTo/From's return depict?
+    /// <summary>
+    /// Transfers items from the target inventory
+    /// </summary>
+    /// <param name="sourceInventory">Source inventory from which the items will be transferred</param>
+    /// <param name="sourceItemIndex">Index of the item being transferred in the source inventory</param>
+    /// <param name="targetItemIndex">Index to which the item will be placed in the inventory</param>
+    /// <param name="stackIfPossible"></param>
+    /// <param name="amount">Amount of items to transfer</param>
+    /// <returns></returns>
+    /// <remarks>
+    ///   When using this method in a loop, note that the item indexes will automatically change as the inventory fills the empty inventory spaces left by item transfers. It is thus recommended to set <paramref name="sourceItemIndex"/> to zero when looping over every element in the inventory.
+    /// </remarks>
+    /// <example>
+    ///   The following example demonstrates the <c>TransferItemFrom</c> method.
+    ///   <code source="Examples\Interfaces.IMyInventory.TransferItemFrom.cs" lang="cs"></code>
+    /// </example>
     bool TransferItemFrom(IMyInventory sourceInventory, int sourceItemIndex, int? targetItemIndex = null, bool? stackIfPossible = null, MyFixedPoint? amount = null);
-
+    /// <summary>
+    /// Returns a list of all <see cref="IMyInventoryItem"/>s in the inventory.
+    /// </summary>
+    /// <returns>A list containing all of of the inventory's items.</returns>
     List<IMyInventoryItem> GetItems();
 
     IMyInventoryItem GetItemByID(uint id);
