@@ -28,7 +28,7 @@ Example summary:
     /// </example>
     bool TransferItemTo(IMyInventory dst, int sourceItemIndex, int? targetItemIndex = null, bool? stackIfPossible = null, MyFixedPoint? amount = null);
 ```
-The example code snippet can also be placed inside the` <code>` tags, in the case of which the source attribute would be left out. The above will also include a code example from the file `Interfaces.IMyInventory.TransferItemsTo.cs`. If using a relative path, the Sandcastle Help File Builder will read them relative to the `.shfbproj` project file's location, hence the `Examples` folder can be found from the `Sandcastle Files` folder in this repository.
+The example code snippet can also be placed inside the` <code>` tags, in the case of which the source attribute would be left out. The above will also include a code example from the file `Interfaces.IMyInventory.TransferItemTo.cs`. If using a relative path, the Sandcastle Help File Builder will read them relative to the `.shfbproj` project file's location, hence the `Examples` folder can be found from the `Sandcastle Files` folder in this repository.
 
 Please see the **XML Comments References** in the *Links*-section for a comprehensive list of supported documentation XML tags.
 <hr>
