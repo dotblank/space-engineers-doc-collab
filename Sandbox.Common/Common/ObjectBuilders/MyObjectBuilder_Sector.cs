@@ -12,21 +12,18 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_Sector : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public Vector3I Position;
-    [ProtoMember(3)]
-    public MyObjectBuilder_GlobalEvents SectorEvents;
-    [ProtoMember(4)]
-    public int AppVersion;
-    [ProtoMember(5)]
-    public MyObjectBuilder_Encounters Encounters;
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_Sector : MyObjectBuilder_Base
+    {
+        [ProtoMember(1)] public Vector3I Position;
+        [ProtoMember(3)] public MyObjectBuilder_GlobalEvents SectorEvents;
+        [ProtoMember(4)] public int AppVersion;
+        [ProtoMember(5)] public MyObjectBuilder_Encounters Encounters;
 
-    [XmlArrayItem("MyObjectBuilder_EntityBase", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_EntityBase>))]
-    [ProtoMember(2)]
-    public List<MyObjectBuilder_EntityBase> SectorObjects { get; set; }
-  }
+        [XmlArrayItem("MyObjectBuilder_EntityBase", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_EntityBase>))
+        ]
+        [ProtoMember(2)]
+        public List<MyObjectBuilder_EntityBase> SectorObjects { get; set; }
+    }
 }

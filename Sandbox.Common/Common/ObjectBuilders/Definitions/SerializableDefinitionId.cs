@@ -10,50 +10,36 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  public struct SerializableDefinitionId
-  {
-    [XmlIgnore]
-    public MyObjectBuilderType TypeId;
-    [XmlIgnore]
-    public string SubtypeName;
-
-    [XmlElement("TypeId")]
-    [ProtoMember(1)]
-    public string TypeIdString
+    [ProtoContract]
+    public struct SerializableDefinitionId
     {
-      get
-      {
-        return this.TypeId.ToString();
-      }
-      set
-      {
-        this.TypeId = MyObjectBuilderType.ParseBackwardsCompatible(value);
-      }
-    }
+        [XmlIgnore] public MyObjectBuilderType TypeId;
+        [XmlIgnore] public string SubtypeName;
 
-    [ProtoMember(2)]
-    public string SubtypeId
-    {
-      get
-      {
-        return this.SubtypeName;
-      }
-      set
-      {
-        this.SubtypeName = value;
-      }
-    }
+        [XmlElement("TypeId")]
+        [ProtoMember(1)]
+        public string TypeIdString
+        {
+            get { return this.TypeId.ToString(); }
+            set { this.TypeId = MyObjectBuilderType.ParseBackwardsCompatible(value); }
+        }
 
-    public SerializableDefinitionId(MyObjectBuilderType typeId, string subtypeName)
-    {
-      this.TypeId = typeId;
-      this.SubtypeName = subtypeName;
-    }
+        [ProtoMember(2)]
+        public string SubtypeId
+        {
+            get { return this.SubtypeName; }
+            set { this.SubtypeName = value; }
+        }
 
-    public override string ToString()
-    {
-      return string.Format("{0}/{1}", (object) this.TypeId, (object) this.SubtypeName);
+        public SerializableDefinitionId(MyObjectBuilderType typeId, string subtypeName)
+        {
+            this.TypeId = typeId;
+            this.SubtypeName = subtypeName;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("{0}/{1}", (object) this.TypeId, (object) this.SubtypeName);
+        }
     }
-  }
 }

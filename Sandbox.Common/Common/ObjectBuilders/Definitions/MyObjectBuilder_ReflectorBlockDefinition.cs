@@ -9,12 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ReflectorBlockDefinition : MyObjectBuilder_LightingBlockDefinition
-  {
-    [ProtoMember(1)]
-    [ModdableContentFile("dds")]
-    public string ReflectorTexture = "Textures\\Lights\\reflector_large.dds";
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ReflectorBlockDefinition : MyObjectBuilder_LightingBlockDefinition
+    {
+        [ProtoMember(1)] [ModdableContentFile("dds")] public string ReflectorTexture =
+            "Textures\\Lights\\reflector_large.dds";
+    }
 }

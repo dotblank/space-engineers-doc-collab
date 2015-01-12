@@ -6,7 +6,7 @@
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyControllerInfo
-  {
-  }
+    public interface IMyControllerInfo
+    {
+    }
 }

@@ -6,8 +6,8 @@
 
 namespace Sandbox.Common
 {
-  public interface IMyUserInputComponent
-  {
-    void HandleInput();
-  }
+    public interface IMyUserInputComponent
+    {
+        void HandleInput();
+    }
 }

@@ -6,11 +6,11 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum MyAmmoCategoryEnum
-  {
-    SmallCaliber,
-    LargeCaliber,
-    Missile,
-    Shrapnel,
-  }
+    public enum MyAmmoCategoryEnum
+    {
+        SmallCaliber,
+        LargeCaliber,
+        Missile,
+        Shrapnel,
+    }
 }

@@ -9,50 +9,51 @@ using VRageMath;
 
 namespace Sandbox.ModAPI.Interfaces
 {
-  public interface IMyControllableEntity
-  {
-    IMyEntity Entity { get; }
+    public interface IMyControllableEntity
+    {
+        IMyEntity Entity { get; }
 
-    bool ForceFirstPersonCamera { get; set; }
+        bool ForceFirstPersonCamera { get; set; }
 
-    bool PrimaryLookaround { get; }
+        bool PrimaryLookaround { get; }
 
-    MatrixD GetHeadMatrix(bool includeY, bool includeX = true, bool forceHeadAnim = false, bool forceHeadBone = false);
+        MatrixD GetHeadMatrix(bool includeY, bool includeX = true, bool forceHeadAnim = false,
+            bool forceHeadBone = false);
 
-    void MoveAndRotate(Vector3 moveIndicator, Vector2 rotationIndicator, float rollIndicator);
+        void MoveAndRotate(Vector3 moveIndicator, Vector2 rotationIndicator, float rollIndicator);
 
-    void MoveAndRotateStopped();
+        void MoveAndRotateStopped();
 
-    void Use();
+        void Use();
 
-    void UseContinues();
+        void UseContinues();
 
-    void Jump();
+        void Jump();
 
-    void Walk();
+        void Walk();
 
-    void Up();
+        void Up();
 
-    void Crouch();
+        void Crouch();
 
-    void Down();
+        void Down();
 
-    void ShowInventory();
+        void ShowInventory();
 
-    void ShowTerminal();
+        void ShowTerminal();
 
-    void SwitchThrusts();
+        void SwitchThrusts();
 
-    void SwitchDamping();
+        void SwitchDamping();
 
-    void SwitchLights();
+        void SwitchLights();
 
-    void SwitchLeadingGears();
+        void SwitchLeadingGears();
 
-    void DrawHud(IMyCameraController camera, long playerId);
+        void DrawHud(IMyCameraController camera, long playerId);
 
-    void SwitchReactors();
+        void SwitchReactors();
 
-    void Die();
-  }
+        void Die();
+    }
 }

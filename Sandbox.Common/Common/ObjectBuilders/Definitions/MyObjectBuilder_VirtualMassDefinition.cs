@@ -9,13 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_VirtualMassDefinition : MyObjectBuilder_CubeBlockDefinition
-  {
-    [ProtoMember(1)]
-    public float RequiredPowerInput;
-    [ProtoMember(2)]
-    public float VirtualMass;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_VirtualMassDefinition : MyObjectBuilder_CubeBlockDefinition
+    {
+        [ProtoMember(1)] public float RequiredPowerInput;
+        [ProtoMember(2)] public float VirtualMass;
+    }
 }

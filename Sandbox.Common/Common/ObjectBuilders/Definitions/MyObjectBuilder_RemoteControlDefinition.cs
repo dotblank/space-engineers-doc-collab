@@ -9,11 +9,10 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_RemoteControlDefinition : MyObjectBuilder_ShipControllerDefinition
-  {
-    [ProtoMember(1)]
-    public float RequiredPowerInput;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_RemoteControlDefinition : MyObjectBuilder_ShipControllerDefinition
+    {
+        [ProtoMember(1)] public float RequiredPowerInput;
+    }
 }

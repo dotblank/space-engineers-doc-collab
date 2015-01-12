@@ -6,9 +6,9 @@
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  public enum MyGameModeEnum
-  {
-    Creative,
-    Survival,
-  }
+    public enum MyGameModeEnum
+    {
+        Creative,
+        Survival,
+    }
 }

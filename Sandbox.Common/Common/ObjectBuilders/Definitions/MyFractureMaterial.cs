@@ -6,9 +6,9 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum MyFractureMaterial
-  {
-    Stone,
-    Wood,
-  }
+    public enum MyFractureMaterial
+    {
+        Stone,
+        Wood,
+    }
 }

@@ -9,10 +9,9 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.News
 {
-  [XmlRoot(ElementName = "News")]
-  public class MyNews
-  {
-    [XmlElement("Entry")]
-    public List<MyNewsEntry> Entry;
-  }
+    [XmlRoot(ElementName = "News")]
+    public class MyNews
+    {
+        [XmlElement("Entry")] public List<MyNewsEntry> Entry;
+    }
 }

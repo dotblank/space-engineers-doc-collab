@@ -6,11 +6,11 @@
 
 namespace Sandbox.Common
 {
-  public enum MyRelationsBetweenPlayerAndBlock
-  {
-    Owner,
-    FactionShare,
-    Neutral,
-    Enemies,
-  }
+    public enum MyRelationsBetweenPlayerAndBlock
+    {
+        Owner,
+        FactionShare,
+        Neutral,
+        Enemies,
+    }
 }

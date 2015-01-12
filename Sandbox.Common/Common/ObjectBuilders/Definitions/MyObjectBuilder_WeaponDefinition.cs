@@ -10,43 +10,32 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_WeaponDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_WeaponDefinition.WeaponAmmoData ProjectileAmmoData;
-    [ProtoMember(2)]
-    public MyObjectBuilder_WeaponDefinition.WeaponAmmoData MissileAmmoData;
-    [ProtoMember(3)]
-    public string NoAmmoSoundName;
-    [ProtoMember(4)]
-    public float DeviateShotAngle;
-    [ProtoMember(5)]
-    public float ReleaseTimeAfterFire;
-    [ProtoMember(6)]
-    public int MuzzleFlashLifeSpan;
-    [ProtoMember(8)]
-    [XmlArrayItem("AmmoMagazine")]
-    public MyObjectBuilder_WeaponDefinition.WeaponAmmoMagazine[] AmmoMagazines;
-
+    [MyObjectBuilderDefinition]
     [ProtoContract]
-    public class WeaponAmmoData
+    public class MyObjectBuilder_WeaponDefinition : MyObjectBuilder_DefinitionBase
     {
-      [XmlAttribute]
-      public int RateOfFire;
-      [XmlAttribute]
-      public string ShootSoundName;
-    }
+        [ProtoMember(1)] public MyObjectBuilder_WeaponDefinition.WeaponAmmoData ProjectileAmmoData;
+        [ProtoMember(2)] public MyObjectBuilder_WeaponDefinition.WeaponAmmoData MissileAmmoData;
+        [ProtoMember(3)] public string NoAmmoSoundName;
+        [ProtoMember(4)] public float DeviateShotAngle;
+        [ProtoMember(5)] public float ReleaseTimeAfterFire;
+        [ProtoMember(6)] public int MuzzleFlashLifeSpan;
 
-    [ProtoContract]
-    public class WeaponAmmoMagazine
-    {
-      [XmlIgnore]
-      public MyObjectBuilderType Type = (MyObjectBuilderType) typeof (MyObjectBuilder_AmmoMagazine);
-      [ProtoMember(1)]
-      [XmlAttribute]
-      public string Subtype;
+        [ProtoMember(8)] [XmlArrayItem("AmmoMagazine")] public MyObjectBuilder_WeaponDefinition.WeaponAmmoMagazine[]
+            AmmoMagazines;
+
+        [ProtoContract]
+        public class WeaponAmmoData
+        {
+            [XmlAttribute] public int RateOfFire;
+            [XmlAttribute] public string ShootSoundName;
+        }
+
+        [ProtoContract]
+        public class WeaponAmmoMagazine
+        {
+            [XmlIgnore] public MyObjectBuilderType Type = (MyObjectBuilderType) typeof (MyObjectBuilder_AmmoMagazine);
+            [ProtoMember(1)] [XmlAttribute] public string Subtype;
+        }
     }
-  }
 }

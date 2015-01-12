@@ -8,14 +8,14 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.Localization
 {
-  public class MyLanguageDescriptionAttribute : DescriptionAttribute
-  {
-    public readonly float GuiTextScale;
-
-    public MyLanguageDescriptionAttribute(string description, float guiTextScale = 1f)
-      : base(description)
+    public class MyLanguageDescriptionAttribute : DescriptionAttribute
     {
-      this.GuiTextScale = guiTextScale;
+        public readonly float GuiTextScale;
+
+        public MyLanguageDescriptionAttribute(string description, float guiTextScale = 1f)
+            : base(description)
+        {
+            this.GuiTextScale = guiTextScale;
+        }
     }
-  }
 }

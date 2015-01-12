@@ -8,12 +8,12 @@ using System;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [Obsolete("For compatibility")]
-  public enum MySessionGameType
-  {
-    SURVIVAL,
-    THREE_TIMES,
-    TEN_TIMES,
-    CREATIVE,
-  }
+    [Obsolete("For compatibility")]
+    public enum MySessionGameType
+    {
+        SURVIVAL,
+        THREE_TIMES,
+        TEN_TIMES,
+        CREATIVE,
+    }
 }

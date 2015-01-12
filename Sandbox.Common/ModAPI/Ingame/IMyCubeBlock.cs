@@ -11,46 +11,46 @@ using VRageMath;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyCubeBlock : IMyEntity
-  {
-    SerializableDefinitionId BlockDefinition { get; }
+    public interface IMyCubeBlock : IMyEntity
+    {
+        SerializableDefinitionId BlockDefinition { get; }
 
-    bool CheckConnectionAllowed { get; }
+        bool CheckConnectionAllowed { get; }
 
-    IMyCubeGrid CubeGrid { get; }
+        IMyCubeGrid CubeGrid { get; }
 
-    string DefinitionDisplayNameText { get; }
+        string DefinitionDisplayNameText { get; }
 
-    float DisassembleRatio { get; }
+        float DisassembleRatio { get; }
 
-    string DisplayNameText { get; }
+        string DisplayNameText { get; }
 
-    bool IsBeingHacked { get; }
+        bool IsBeingHacked { get; }
 
-    bool IsFunctional { get; }
+        bool IsFunctional { get; }
 
-    bool IsWorking { get; }
+        bool IsWorking { get; }
 
-    Vector3I Max { get; }
+        Vector3I Max { get; }
 
-    Vector3I Min { get; }
+        Vector3I Min { get; }
 
-    int NumberInGrid { get; }
+        int NumberInGrid { get; }
 
-    MyBlockOrientation Orientation { get; }
+        MyBlockOrientation Orientation { get; }
 
-    long OwnerId { get; }
+        long OwnerId { get; }
 
-    Vector3I Position { get; }
+        Vector3I Position { get; }
 
-    string GetOwnerFactionTag();
+        string GetOwnerFactionTag();
 
-    MyRelationsBetweenPlayerAndBlock GetPlayerRelationToOwner();
+        MyRelationsBetweenPlayerAndBlock GetPlayerRelationToOwner();
 
-    MyRelationsBetweenPlayerAndBlock GetUserRelationToOwner(long playerId);
+        MyRelationsBetweenPlayerAndBlock GetUserRelationToOwner(long playerId);
 
-    void UpdateIsWorking();
+        void UpdateIsWorking();
 
-    void UpdateVisual();
-  }
+        void UpdateVisual();
+    }
 }

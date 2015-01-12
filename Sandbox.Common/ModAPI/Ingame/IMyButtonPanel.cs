@@ -8,8 +8,8 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyButtonPanel : IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool AnyoneCanUse { get; }
-  }
+    public interface IMyButtonPanel : IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool AnyoneCanUse { get; }
+    }
 }

@@ -8,7 +8,7 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyShipGrinder : IMyShipToolBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-  }
+    public interface IMyShipGrinder : IMyShipToolBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+    }
 }

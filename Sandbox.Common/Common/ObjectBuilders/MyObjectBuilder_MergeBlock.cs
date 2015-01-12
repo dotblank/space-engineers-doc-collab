@@ -8,9 +8,9 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_MergeBlock : MyObjectBuilder_FunctionalBlock
-  {
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_MergeBlock : MyObjectBuilder_FunctionalBlock
+    {
+    }
 }

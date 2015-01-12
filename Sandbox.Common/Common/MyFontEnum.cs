@@ -6,13 +6,13 @@
 
 namespace Sandbox.Common
 {
-  public enum MyFontEnum
-  {
-    Debug,
-    Red,
-    Green,
-    Blue,
-    White,
-    DarkBlue,
-  }
+    public enum MyFontEnum
+    {
+        Debug,
+        Red,
+        Green,
+        Blue,
+        White,
+        DarkBlue,
+    }
 }

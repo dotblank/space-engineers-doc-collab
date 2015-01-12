@@ -9,13 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ShipControllerDefinition : MyObjectBuilder_CubeBlockDefinition
-  {
-    [ProtoMember(1)]
-    public bool EnableFirstPerson;
-    [ProtoMember(2)]
-    public bool EnableShipControl;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ShipControllerDefinition : MyObjectBuilder_CubeBlockDefinition
+    {
+        [ProtoMember(1)] public bool EnableFirstPerson;
+        [ProtoMember(2)] public bool EnableShipControl;
+    }
 }

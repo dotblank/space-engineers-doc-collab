@@ -10,28 +10,28 @@ using System.Collections.Generic;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyPlayerCollection
-  {
-    long Count { get; }
+    public interface IMyPlayerCollection
+    {
+        long Count { get; }
 
-    void ExtendControl(IMyControllableEntity entityWithControl, IMyEntity entityGettingControl);
+        void ExtendControl(IMyControllableEntity entityWithControl, IMyEntity entityGettingControl);
 
-    void GetPlayers(List<IMyPlayer> players, Func<IMyPlayer, bool> collect = null);
+        void GetPlayers(List<IMyPlayer> players, Func<IMyPlayer, bool> collect = null);
 
-    bool HasExtendedControl(IMyControllableEntity firstEntity, IMyEntity secondEntity);
+        bool HasExtendedControl(IMyControllableEntity firstEntity, IMyEntity secondEntity);
 
-    void ReduceControl(IMyControllableEntity entityWhichKeepsControl, IMyEntity entityWhichLoosesControl);
+        void ReduceControl(IMyControllableEntity entityWhichKeepsControl, IMyEntity entityWhichLoosesControl);
 
-    void RemoveControlledEntity(IMyEntity entity);
+        void RemoveControlledEntity(IMyEntity entity);
 
-    void TryExtendControl(IMyControllableEntity entityWithControl, IMyEntity entityGettingControl);
+        void TryExtendControl(IMyControllableEntity entityWithControl, IMyEntity entityGettingControl);
 
-    bool TryReduceControl(IMyControllableEntity entityWhichKeepsControl, IMyEntity entityWhichLoosesControl);
+        bool TryReduceControl(IMyControllableEntity entityWhichKeepsControl, IMyEntity entityWhichLoosesControl);
 
-    void SetControlledEntity(ulong steamUserId, IMyEntity entity);
+        void SetControlledEntity(ulong steamUserId, IMyEntity entity);
 
-    IMyPlayer GetPlayerControllingEntity(IMyEntity entity);
+        IMyPlayer GetPlayerControllingEntity(IMyEntity entity);
 
-    void GetAllIdentites(List<IMyIdentity> identities, Func<IMyIdentity, bool> collect = null);
-  }
+        void GetAllIdentites(List<IMyIdentity> identities, Func<IMyIdentity, bool> collect = null);
+    }
 }

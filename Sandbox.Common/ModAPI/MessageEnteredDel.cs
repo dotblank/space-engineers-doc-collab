@@ -6,5 +6,5 @@
 
 namespace Sandbox.ModAPI
 {
-  public delegate void MessageEnteredDel(string messageText, ref bool sendToOthers);
+    public delegate void MessageEnteredDel(string messageText, ref bool sendToOthers);
 }

@@ -9,18 +9,18 @@ using System.Text;
 
 namespace Sandbox.ModAPI.Interfaces
 {
-  public interface ITerminalAction
-  {
-    string Id { get; }
+    public interface ITerminalAction
+    {
+        string Id { get; }
 
-    string Icon { get; }
+        string Icon { get; }
 
-    StringBuilder Name { get; }
+        StringBuilder Name { get; }
 
-    void Apply(IMyCubeBlock block);
+        void Apply(IMyCubeBlock block);
 
-    void WriteValue(IMyCubeBlock block, StringBuilder appendTo);
+        void WriteValue(IMyCubeBlock block, StringBuilder appendTo);
 
-    bool IsEnabled(IMyCubeBlock block);
-  }
+        bool IsEnabled(IMyCubeBlock block);
+    }
 }

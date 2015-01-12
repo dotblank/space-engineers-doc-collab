@@ -9,12 +9,12 @@ using System;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyEntityController
-  {
-    IMyControllableEntity ControlledEntity { get; }
+    public interface IMyEntityController
+    {
+        IMyControllableEntity ControlledEntity { get; }
 
-    event Action<IMyControllableEntity, IMyControllableEntity> ControlledEntityChanged;
+        event Action<IMyControllableEntity, IMyControllableEntity> ControlledEntityChanged;
 
-    void TakeControl(IMyControllableEntity entity);
-  }
+        void TakeControl(IMyControllableEntity entity);
+    }
 }

@@ -8,11 +8,10 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_AmmoMagazine : MyObjectBuilder_PhysicalObject
-  {
-    [ProtoMember(3)]
-    public int ProjectilesCount;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_AmmoMagazine : MyObjectBuilder_PhysicalObject
+    {
+        [ProtoMember(3)] public int ProjectilesCount;
+    }
 }

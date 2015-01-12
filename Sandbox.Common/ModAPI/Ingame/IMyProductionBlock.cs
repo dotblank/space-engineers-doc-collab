@@ -8,18 +8,18 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyProductionBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool IsProducing { get; }
+    public interface IMyProductionBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool IsProducing { get; }
 
-    bool IsQueueEmpty { get; }
+        bool IsQueueEmpty { get; }
 
-    uint NextItemId { get; }
+        uint NextItemId { get; }
 
-    bool UseConveyorSystem { get; }
+        bool UseConveyorSystem { get; }
 
-    void MoveQueueItemRequest(uint queueItemId, int targetIdx);
+        void MoveQueueItemRequest(uint queueItemId, int targetIdx);
 
-    void RemoveQueueItemRequest(int itemIdx);
-  }
+        void RemoveQueueItemRequest(int itemIdx);
+    }
 }

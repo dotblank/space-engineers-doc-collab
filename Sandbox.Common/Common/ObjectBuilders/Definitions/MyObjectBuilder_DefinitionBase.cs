@@ -11,27 +11,15 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public abstract class MyObjectBuilder_DefinitionBase : MyObjectBuilder_Base
-  {
-    [DefaultValue(true)]
-    [ProtoMember(5)]
-    public bool Public = true;
-    [DefaultValue(true)]
-    [XmlAttribute(AttributeName = "Enabled")]
-    [ProtoMember(6)]
-    public bool Enabled = true;
-    [ProtoMember(1)]
-    public SerializableDefinitionId Id;
-    [ProtoMember(2)]
-    [DefaultValue("")]
-    public string DisplayName;
-    [ProtoMember(3)]
-    [DefaultValue("")]
-    public string Description;
-    [ProtoMember(4)]
-    [ModdableContentFile("dds")]
-    public string Icon;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public abstract class MyObjectBuilder_DefinitionBase : MyObjectBuilder_Base
+    {
+        [DefaultValue(true)] [ProtoMember(5)] public bool Public = true;
+        [DefaultValue(true)] [XmlAttribute(AttributeName = "Enabled")] [ProtoMember(6)] public bool Enabled = true;
+        [ProtoMember(1)] public SerializableDefinitionId Id;
+        [ProtoMember(2)] [DefaultValue("")] public string DisplayName;
+        [ProtoMember(3)] [DefaultValue("")] public string Description;
+        [ProtoMember(4)] [ModdableContentFile("dds")] public string Icon;
+    }
 }

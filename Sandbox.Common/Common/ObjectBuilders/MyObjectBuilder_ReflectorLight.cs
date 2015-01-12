@@ -8,9 +8,9 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ReflectorLight : MyObjectBuilder_LightingBlock
-  {
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ReflectorLight : MyObjectBuilder_LightingBlock
+    {
+    }
 }

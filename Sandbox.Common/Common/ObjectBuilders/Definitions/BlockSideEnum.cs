@@ -6,13 +6,13 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum BlockSideEnum
-  {
-    Right,
-    Top,
-    Front,
-    Left,
-    Bottom,
-    Back,
-  }
+    public enum BlockSideEnum
+    {
+        Right,
+        Top,
+        Front,
+        Left,
+        Bottom,
+        Back,
+    }
 }

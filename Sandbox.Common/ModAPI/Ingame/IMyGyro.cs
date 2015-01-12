@@ -8,16 +8,16 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyGyro : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    float GyroPower { get; }
+    public interface IMyGyro : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        float GyroPower { get; }
 
-    bool GyroOverride { get; }
+        bool GyroOverride { get; }
 
-    float Yaw { get; }
+        float Yaw { get; }
 
-    float Pitch { get; }
+        float Pitch { get; }
 
-    float Roll { get; }
-  }
+        float Roll { get; }
+    }
 }

@@ -8,12 +8,12 @@ using Sandbox.Common.ObjectBuilders.Definitions;
 
 namespace Sandbox.ModAPI.Interfaces
 {
-  public interface IMyDestroyableObject
-  {
-    float Integrity { get; }
+    public interface IMyDestroyableObject
+    {
+        float Integrity { get; }
 
-    void OnDestroy();
+        void OnDestroy();
 
-    void DoDamage(float damage, MyDamageType damageType, bool sync);
-  }
+        void DoDamage(float damage, MyDamageType damageType, bool sync);
+    }
 }

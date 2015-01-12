@@ -9,11 +9,10 @@ using Sandbox.Common.ObjectBuilders.Definitions;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public abstract class MyObjectBuilder_ToolbarItemDefinition : MyObjectBuilder_ToolbarItem
-  {
-    [ProtoMember(1)]
-    public SerializableDefinitionId DefinitionId;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public abstract class MyObjectBuilder_ToolbarItemDefinition : MyObjectBuilder_ToolbarItem
+    {
+        [ProtoMember(1)] public SerializableDefinitionId DefinitionId;
+    }
 }

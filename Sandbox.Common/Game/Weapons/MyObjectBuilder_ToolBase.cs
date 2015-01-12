@@ -9,9 +9,9 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Game.Weapons
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ToolBase : MyObjectBuilder_DeviceBase
-  {
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ToolBase : MyObjectBuilder_DeviceBase
+    {
+    }
 }

@@ -9,13 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_RespawnShipDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(1)]
-    public string Prefab;
-    [ProtoMember(2)]
-    public int CooldownSeconds;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_RespawnShipDefinition : MyObjectBuilder_DefinitionBase
+    {
+        [ProtoMember(1)] public string Prefab;
+        [ProtoMember(2)] public int CooldownSeconds;
+    }
 }

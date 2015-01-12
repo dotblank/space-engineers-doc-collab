@@ -9,28 +9,17 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_MotorStator : MyObjectBuilder_MotorBase
-  {
-    [ProtoMember(3)]
-    [DefaultValue(1f)]
-    public float Force = 1f;
-    [DefaultValue(0.0f)]
-    [ProtoMember(4)]
-    public float Friction;
-    [ProtoMember(5)]
-    public float TargetVelocity;
-    [ProtoMember(6)]
-    public float? MinAngle;
-    [ProtoMember(7)]
-    public float? MaxAngle;
-    [ProtoMember(8)]
-    public float CurrentAngle;
-    [ProtoMember(9)]
-    public bool LimitsActive;
-    [DefaultValue(0.0f)]
-    [ProtoMember(10)]
-    public float DummyDisplacement;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_MotorStator : MyObjectBuilder_MotorBase
+    {
+        [ProtoMember(3)] [DefaultValue(1f)] public float Force = 1f;
+        [DefaultValue(0.0f)] [ProtoMember(4)] public float Friction;
+        [ProtoMember(5)] public float TargetVelocity;
+        [ProtoMember(6)] public float? MinAngle;
+        [ProtoMember(7)] public float? MaxAngle;
+        [ProtoMember(8)] public float CurrentAngle;
+        [ProtoMember(9)] public bool LimitsActive;
+        [DefaultValue(0.0f)] [ProtoMember(10)] public float DummyDisplacement;
+    }
 }

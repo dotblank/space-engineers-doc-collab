@@ -11,13 +11,11 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_Encounters : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public HashSet<MyEncounterId> SavedEcounters;
-    [ProtoMember(2)]
-    public SerializableDictionary<MyEncounterId, Vector3D> MovedOnlyEncounters;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_Encounters : MyObjectBuilder_Base
+    {
+        [ProtoMember(1)] public HashSet<MyEncounterId> SavedEcounters;
+        [ProtoMember(2)] public SerializableDictionary<MyEncounterId, Vector3D> MovedOnlyEncounters;
+    }
 }

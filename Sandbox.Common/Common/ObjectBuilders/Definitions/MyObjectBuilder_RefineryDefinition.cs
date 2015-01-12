@@ -9,13 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_RefineryDefinition : MyObjectBuilder_ProductionBlockDefinition
-  {
-    [ProtoMember(1)]
-    public float RefineSpeed;
-    [ProtoMember(2)]
-    public float MaterialEfficiency;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_RefineryDefinition : MyObjectBuilder_ProductionBlockDefinition
+    {
+        [ProtoMember(1)] public float RefineSpeed;
+        [ProtoMember(2)] public float MaterialEfficiency;
+    }
 }

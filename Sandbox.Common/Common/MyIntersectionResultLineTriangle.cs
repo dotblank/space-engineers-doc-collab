@@ -9,25 +9,27 @@ using VRageRender;
 
 namespace Sandbox.Common
 {
-  public struct MyIntersectionResultLineTriangle
-  {
-    public double Distance;
-    public MyTriangle_Vertexes InputTriangle;
-    public Vector3 InputTriangleNormal;
-
-    public MyIntersectionResultLineTriangle(ref MyTriangle_Vertexes triangle, ref Vector3 triangleNormal, double distance)
+    public struct MyIntersectionResultLineTriangle
     {
-      this.InputTriangle = triangle;
-      this.InputTriangleNormal = triangleNormal;
-      this.Distance = distance;
-    }
+        public double Distance;
+        public MyTriangle_Vertexes InputTriangle;
+        public Vector3 InputTriangleNormal;
 
-    public static MyIntersectionResultLineTriangle? GetCloserIntersection(ref MyIntersectionResultLineTriangle? a, ref MyIntersectionResultLineTriangle? b)
-    {
-      if (!a.HasValue && b.HasValue || a.HasValue && b.HasValue && b.Value.Distance < a.Value.Distance)
-        return b;
-      else
-        return a;
+        public MyIntersectionResultLineTriangle(ref MyTriangle_Vertexes triangle, ref Vector3 triangleNormal,
+            double distance)
+        {
+            this.InputTriangle = triangle;
+            this.InputTriangleNormal = triangleNormal;
+            this.Distance = distance;
+        }
+
+        public static MyIntersectionResultLineTriangle? GetCloserIntersection(ref MyIntersectionResultLineTriangle? a,
+            ref MyIntersectionResultLineTriangle? b)
+        {
+            if (!a.HasValue && b.HasValue || a.HasValue && b.HasValue && b.Value.Distance < a.Value.Distance)
+                return b;
+            else
+                return a;
+        }
     }
-  }
 }

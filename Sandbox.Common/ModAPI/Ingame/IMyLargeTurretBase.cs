@@ -8,10 +8,10 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyLargeTurretBase : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool CanControl { get; }
+    public interface IMyLargeTurretBase : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool CanControl { get; }
 
-    float Range { get; }
-  }
+        float Range { get; }
+    }
 }

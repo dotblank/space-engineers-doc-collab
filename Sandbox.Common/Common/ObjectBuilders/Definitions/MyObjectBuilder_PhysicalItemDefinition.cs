@@ -12,27 +12,19 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_PhysicalItemDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(3)]
-    [ModdableContentFile("mwm")]
-    public string Model = "Models\\Components\\Sphere.mwm";
-    [DefaultValue(null)]
-    [ProtoMember(4)]
-    public MyTextsWrapperEnum? IconSymbol = new MyTextsWrapperEnum?();
-    [ProtoMember(5)]
-    [DefaultValue(null)]
-    public float? Volume = new float?();
-    [ProtoMember(1)]
-    public Vector3 Size;
-    [ProtoMember(2)]
-    public float Mass;
-
-    public bool ShouldSerializeIconSymbol()
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_PhysicalItemDefinition : MyObjectBuilder_DefinitionBase
     {
-      return this.IconSymbol.HasValue;
+        [ProtoMember(3)] [ModdableContentFile("mwm")] public string Model = "Models\\Components\\Sphere.mwm";
+        [DefaultValue(null)] [ProtoMember(4)] public MyTextsWrapperEnum? IconSymbol = new MyTextsWrapperEnum?();
+        [ProtoMember(5)] [DefaultValue(null)] public float? Volume = new float?();
+        [ProtoMember(1)] public Vector3 Size;
+        [ProtoMember(2)] public float Mass;
+
+        public bool ShouldSerializeIconSymbol()
+        {
+            return this.IconSymbol.HasValue;
+        }
     }
-  }
 }

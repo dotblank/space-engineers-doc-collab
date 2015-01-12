@@ -10,14 +10,11 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_GravityGenerator : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(2)]
-    public SerializableVector3 FieldSize = new SerializableVector3(150f, 150f, 150f);
-    [ProtoMember(3)]
-    [DefaultValue(9.81f)]
-    public float GravityAcceleration = 9.81f;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_GravityGenerator : MyObjectBuilder_FunctionalBlock
+    {
+        [ProtoMember(2)] public SerializableVector3 FieldSize = new SerializableVector3(150f, 150f, 150f);
+        [ProtoMember(3)] [DefaultValue(9.81f)] public float GravityAcceleration = 9.81f;
+    }
 }

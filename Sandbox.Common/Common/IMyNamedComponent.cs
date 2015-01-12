@@ -6,10 +6,10 @@
 
 namespace Sandbox.Common
 {
-  public interface IMyNamedComponent
-  {
-    bool Enabled { get; set; }
+    public interface IMyNamedComponent
+    {
+        bool Enabled { get; set; }
 
-    string GetName();
-  }
+        string GetName();
+    }
 }

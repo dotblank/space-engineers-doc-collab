@@ -8,16 +8,16 @@ using VRageMath;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyIdentity
-  {
-    long PlayerId { get; }
+    public interface IMyIdentity
+    {
+        long PlayerId { get; }
 
-    string DisplayName { get; }
+        string DisplayName { get; }
 
-    string Model { get; }
+        string Model { get; }
 
-    Vector3? ColorMask { get; }
+        Vector3? ColorMask { get; }
 
-    bool IsDead { get; }
-  }
+        bool IsDead { get; }
+    }
 }

@@ -9,9 +9,9 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_MotorAdvancedStatorDefinition : MyObjectBuilder_MotorStatorDefinition
-  {
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_MotorAdvancedStatorDefinition : MyObjectBuilder_MotorStatorDefinition
+    {
+    }
 }

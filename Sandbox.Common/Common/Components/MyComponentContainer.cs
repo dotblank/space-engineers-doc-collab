@@ -10,72 +10,72 @@ using System.Collections.Generic;
 
 namespace Sandbox.Common.Components
 {
-  public class MyComponentContainer
-  {
-    private Dictionary<Type, MyComponentBase> m_components = new Dictionary<Type, MyComponentBase>();
-
-    public IMyEntity Entity { get; private set; }
-
-    public event Action<Type, MyComponentBase> ComponentAdded;
-
-    public event Action<Type, MyComponentBase> ComponentRemoved;
-
-    public MyComponentContainer(IMyEntity entity)
+    public class MyComponentContainer
     {
-      this.Entity = entity;
-    }
+        private Dictionary<Type, MyComponentBase> m_components = new Dictionary<Type, MyComponentBase>();
 
-    public void Add<T>(MyComponentBase component) where T : MyComponentBase
-    {
-      Type index = typeof (T);
-      this.Remove<T>();
-      if (component == null)
-        return;
-      this.m_components[index] = component;
-      component.OnAddedToContainer(this);
-      Action<Type, MyComponentBase> action = this.ComponentAdded;
-      if (action == null)
-        return;
-      action(index, component);
-    }
+        public IMyEntity Entity { get; private set; }
 
-    public void Remove<T>() where T : MyComponentBase
-    {
-      Type key = typeof (T);
-      MyComponentBase myComponentBase;
-      if (!this.m_components.TryGetValue(key, out myComponentBase))
-        return;
-      myComponentBase.OnRemovedFromContainer(this);
-      this.m_components.Remove(key);
-      Action<Type, MyComponentBase> action = this.ComponentRemoved;
-      if (action == null)
-        return;
-      action(key, myComponentBase);
-    }
+        public event Action<Type, MyComponentBase> ComponentAdded;
 
-    public T Get<T>() where T : MyComponentBase
-    {
-      MyComponentBase myComponentBase;
-      this.m_components.TryGetValue(typeof (T), out myComponentBase);
-      return myComponentBase as T;
-    }
+        public event Action<Type, MyComponentBase> ComponentRemoved;
 
-    public bool TryGet<T>(out T component) where T : MyComponentBase
-    {
-      MyComponentBase myComponentBase;
-      bool flag = this.m_components.TryGetValue(typeof (T), out myComponentBase);
-      component = myComponentBase as T;
-      return flag;
-    }
+        public MyComponentContainer(IMyEntity entity)
+        {
+            this.Entity = entity;
+        }
 
-    public bool Contains(Type type)
-    {
-      foreach (Type c in this.m_components.Keys)
-      {
-        if (type.IsAssignableFrom(c))
-          return true;
-      }
-      return false;
+        public void Add<T>(MyComponentBase component) where T : MyComponentBase
+        {
+            Type index = typeof (T);
+            this.Remove<T>();
+            if (component == null)
+                return;
+            this.m_components[index] = component;
+            component.OnAddedToContainer(this);
+            Action<Type, MyComponentBase> action = this.ComponentAdded;
+            if (action == null)
+                return;
+            action(index, component);
+        }
+
+        public void Remove<T>() where T : MyComponentBase
+        {
+            Type key = typeof (T);
+            MyComponentBase myComponentBase;
+            if (!this.m_components.TryGetValue(key, out myComponentBase))
+                return;
+            myComponentBase.OnRemovedFromContainer(this);
+            this.m_components.Remove(key);
+            Action<Type, MyComponentBase> action = this.ComponentRemoved;
+            if (action == null)
+                return;
+            action(key, myComponentBase);
+        }
+
+        public T Get<T>() where T : MyComponentBase
+        {
+            MyComponentBase myComponentBase;
+            this.m_components.TryGetValue(typeof (T), out myComponentBase);
+            return myComponentBase as T;
+        }
+
+        public bool TryGet<T>(out T component) where T : MyComponentBase
+        {
+            MyComponentBase myComponentBase;
+            bool flag = this.m_components.TryGetValue(typeof (T), out myComponentBase);
+            component = myComponentBase as T;
+            return flag;
+        }
+
+        public bool Contains(Type type)
+        {
+            foreach (Type c in this.m_components.Keys)
+            {
+                if (type.IsAssignableFrom(c))
+                    return true;
+            }
+            return false;
+        }
     }
-  }
 }

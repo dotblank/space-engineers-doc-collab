@@ -10,30 +10,30 @@ using VRageMath;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyVoxelMap
-  {
-    IMyStorage Storage { get; }
+    public interface IMyVoxelMap
+    {
+        IMyStorage Storage { get; }
 
-    Vector3D PositionLeftBottomCorner { get; }
+        Vector3D PositionLeftBottomCorner { get; }
 
-    string StorageName { get; }
+        string StorageName { get; }
 
-    void ClampVoxelCoord(ref Vector3I voxelCoord);
+        void ClampVoxelCoord(ref Vector3I voxelCoord);
 
-    void Init(MyObjectBuilder_EntityBase builder);
+        void Init(MyObjectBuilder_EntityBase builder);
 
-    MyObjectBuilder_EntityBase GetObjectBuilder(bool copy = false);
+        MyObjectBuilder_EntityBase GetObjectBuilder(bool copy = false);
 
-    void Close();
+        void Close();
 
-    bool DoOverlapSphereTest(float sphereRadius, Vector3D spherePos);
+        bool DoOverlapSphereTest(float sphereRadius, Vector3D spherePos);
 
-    bool GetIntersectionWithSphere(ref BoundingSphereD sphere);
+        bool GetIntersectionWithSphere(ref BoundingSphereD sphere);
 
-    bool IsBoxIntersectingBoundingBoxOfThisVoxelMap(ref BoundingBoxD boundingBox);
+        bool IsBoxIntersectingBoundingBoxOfThisVoxelMap(ref BoundingBoxD boundingBox);
 
-    float GetVoxelContentInBoundingBox(BoundingBoxD worldAabb, out float cellCount);
+        float GetVoxelContentInBoundingBox(BoundingBoxD worldAabb, out float cellCount);
 
-    Vector3I GetVoxelCoordinateFromMeters(Vector3D pos);
-  }
+        Vector3I GetVoxelCoordinateFromMeters(Vector3D pos);
+    }
 }

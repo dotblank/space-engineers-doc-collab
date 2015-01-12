@@ -10,14 +10,10 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders.Conveyors
 {
-  [ProtoContract]
-  public struct SerializableLineSectionInformation
-  {
-    [ProtoMember(1)]
-    [XmlAttribute]
-    public Base6Directions.Direction Direction;
-    [XmlAttribute]
-    [ProtoMember(2)]
-    public int Length;
-  }
+    [ProtoContract]
+    public struct SerializableLineSectionInformation
+    {
+        [ProtoMember(1)] [XmlAttribute] public Base6Directions.Direction Direction;
+        [XmlAttribute] [ProtoMember(2)] public int Length;
+    }
 }

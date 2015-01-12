@@ -8,16 +8,17 @@ using System;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyTerminalBlock : Sandbox.ModAPI.Ingame.IMyTerminalBlock, Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
-  {
-    event Action<IMyTerminalBlock> CustomNameChanged;
+    public interface IMyTerminalBlock : Sandbox.ModAPI.Ingame.IMyTerminalBlock, Sandbox.ModAPI.Ingame.IMyCubeBlock,
+        IMyEntity
+    {
+        event Action<IMyTerminalBlock> CustomNameChanged;
 
-    event Action<IMyTerminalBlock> OwnershipChanged;
+        event Action<IMyTerminalBlock> OwnershipChanged;
 
-    event Action<IMyTerminalBlock> PropertiesChanged;
+        event Action<IMyTerminalBlock> PropertiesChanged;
 
-    event Action<IMyTerminalBlock> ShowOnHUDChanged;
+        event Action<IMyTerminalBlock> ShowOnHUDChanged;
 
-    event Action<IMyTerminalBlock> VisibilityChanged;
-  }
+        event Action<IMyTerminalBlock> VisibilityChanged;
+    }
 }

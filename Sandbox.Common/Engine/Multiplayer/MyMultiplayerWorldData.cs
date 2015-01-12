@@ -9,9 +9,9 @@ using System;
 
 namespace Sandbox.Engine.Multiplayer
 {
-  [Obsolete]
-  [ProtoContract]
-  public class MyMultiplayerWorldData
-  {
-  }
+    [Obsolete]
+    [ProtoContract]
+    public class MyMultiplayerWorldData
+    {
+    }
 }

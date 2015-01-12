@@ -10,26 +10,22 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_PrefabDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(1)]
-    public bool RespawnShip;
-    [ProtoMember(2)]
-    public MyObjectBuilder_CubeGrid CubeGrid;
-    [XmlArrayItem("CubeGrid")]
-    [ProtoMember(3)]
-    public MyObjectBuilder_CubeGrid[] CubeGrids;
-
-    public bool ShouldSerializeRespawnShip()
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_PrefabDefinition : MyObjectBuilder_DefinitionBase
     {
-      return false;
-    }
+        [ProtoMember(1)] public bool RespawnShip;
+        [ProtoMember(2)] public MyObjectBuilder_CubeGrid CubeGrid;
+        [XmlArrayItem("CubeGrid")] [ProtoMember(3)] public MyObjectBuilder_CubeGrid[] CubeGrids;
 
-    public bool ShouldSerializeCubeGrid()
-    {
-      return false;
+        public bool ShouldSerializeRespawnShip()
+        {
+            return false;
+        }
+
+        public bool ShouldSerializeCubeGrid()
+        {
+            return false;
+        }
     }
-  }
 }

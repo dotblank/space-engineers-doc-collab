@@ -8,10 +8,10 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyTimerBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool IsCountingDown { get; }
+    public interface IMyTimerBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool IsCountingDown { get; }
 
-    float TriggerDelay { get; }
-  }
+        float TriggerDelay { get; }
+    }
 }

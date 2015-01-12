@@ -8,16 +8,16 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyLightingBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    float Radius { get; }
+    public interface IMyLightingBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        float Radius { get; }
 
-    float Intensity { get; }
+        float Intensity { get; }
 
-    float BlinkIntervalSeconds { get; }
+        float BlinkIntervalSeconds { get; }
 
-    float BlinkLenght { get; }
+        float BlinkLenght { get; }
 
-    float BlinkOffset { get; }
-  }
+        float BlinkOffset { get; }
+    }
 }

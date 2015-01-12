@@ -10,19 +10,13 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_BlueprintDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(5)]
-    public float BaseProductionTimeInSeconds = 1f;
-    [ProtoMember(1)]
-    [XmlArrayItem("Item")]
-    public BlueprintItem[] Prerequisites;
-    [ProtoMember(3)]
-    public BlueprintItem Result;
-    [ProtoMember(4)]
-    [XmlArrayItem("Item")]
-    public BlueprintItem[] Results;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_BlueprintDefinition : MyObjectBuilder_DefinitionBase
+    {
+        [ProtoMember(5)] public float BaseProductionTimeInSeconds = 1f;
+        [ProtoMember(1)] [XmlArrayItem("Item")] public BlueprintItem[] Prerequisites;
+        [ProtoMember(3)] public BlueprintItem Result;
+        [ProtoMember(4)] [XmlArrayItem("Item")] public BlueprintItem[] Results;
+    }
 }

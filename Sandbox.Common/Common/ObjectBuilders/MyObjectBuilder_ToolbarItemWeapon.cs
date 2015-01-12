@@ -9,25 +9,19 @@ using Sandbox.Common.ObjectBuilders.Definitions;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_ToolbarItemWeapon : MyObjectBuilder_ToolbarItemDefinition
-  {
-    public SerializableDefinitionId defId
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_ToolbarItemWeapon : MyObjectBuilder_ToolbarItemDefinition
     {
-      get
-      {
-        return this.DefinitionId;
-      }
-      set
-      {
-        this.DefinitionId = value;
-      }
-    }
+        public SerializableDefinitionId defId
+        {
+            get { return this.DefinitionId; }
+            set { this.DefinitionId = value; }
+        }
 
-    public bool ShouldSerializedefId()
-    {
-      return false;
+        public bool ShouldSerializedefId()
+        {
+            return false;
+        }
     }
-  }
 }

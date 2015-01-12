@@ -8,8 +8,8 @@ using Sandbox.ModAPI.Ingame;
 
 namespace Sandbox.Common.Components
 {
-  public abstract class MyIngameScript
-  {
-    public abstract void Init(IMyCubeBlock block);
-  }
+    public abstract class MyIngameScript
+    {
+        public abstract void Init(IMyCubeBlock block);
+    }
 }

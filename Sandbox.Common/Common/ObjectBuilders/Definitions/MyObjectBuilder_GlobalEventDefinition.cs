@@ -9,32 +9,28 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_GlobalEventDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(1)]
-    public MyGlobalEventTypeEnum EventType;
-    [ProtoMember(2)]
-    public long? MinActivationTimeMs;
-    [ProtoMember(3)]
-    public long? MaxActivationTimeMs;
-    [ProtoMember(4)]
-    public long? FirstActivationTimeMs;
-
-    public bool ShouldSerializeMinActivationTime()
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_GlobalEventDefinition : MyObjectBuilder_DefinitionBase
     {
-      return this.MinActivationTimeMs.HasValue;
-    }
+        [ProtoMember(1)] public MyGlobalEventTypeEnum EventType;
+        [ProtoMember(2)] public long? MinActivationTimeMs;
+        [ProtoMember(3)] public long? MaxActivationTimeMs;
+        [ProtoMember(4)] public long? FirstActivationTimeMs;
 
-    public bool ShouldSerializeMaxActivationTime()
-    {
-      return this.MaxActivationTimeMs.HasValue;
-    }
+        public bool ShouldSerializeMinActivationTime()
+        {
+            return this.MinActivationTimeMs.HasValue;
+        }
 
-    public bool ShouldSerializeFirstActivationTime()
-    {
-      return this.FirstActivationTimeMs.HasValue;
+        public bool ShouldSerializeMaxActivationTime()
+        {
+            return this.MaxActivationTimeMs.HasValue;
+        }
+
+        public bool ShouldSerializeFirstActivationTime()
+        {
+            return this.FirstActivationTimeMs.HasValue;
+        }
     }
-  }
 }

@@ -6,11 +6,11 @@
 
 namespace Sandbox.Definitions
 {
-  public enum ErrorSeverity
-  {
-    Notice,
-    Warning,
-    Error,
-    Critical,
-  }
+    public enum ErrorSeverity
+    {
+        Notice,
+        Warning,
+        Error,
+        Critical,
+    }
 }

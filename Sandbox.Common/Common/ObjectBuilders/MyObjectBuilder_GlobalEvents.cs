@@ -9,11 +9,11 @@ using System.Collections.Generic;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_GlobalEvents : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public List<MyObjectBuilder_GlobalEventBase> Events = new List<MyObjectBuilder_GlobalEventBase>();
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_GlobalEvents : MyObjectBuilder_Base
+    {
+        [ProtoMember(1)] public List<MyObjectBuilder_GlobalEventBase> Events =
+            new List<MyObjectBuilder_GlobalEventBase>();
+    }
 }

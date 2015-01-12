@@ -8,8 +8,8 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyBatteryBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool HasCapacityRemaining { get; }
-  }
+    public interface IMyBatteryBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool HasCapacityRemaining { get; }
+    }
 }

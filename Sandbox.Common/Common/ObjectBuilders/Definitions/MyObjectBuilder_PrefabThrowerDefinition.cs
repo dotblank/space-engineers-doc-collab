@@ -9,11 +9,10 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_PrefabThrowerDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(1)]
-    public float? Mass = new float?();
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_PrefabThrowerDefinition : MyObjectBuilder_DefinitionBase
+    {
+        [ProtoMember(1)] public float? Mass = new float?();
+    }
 }

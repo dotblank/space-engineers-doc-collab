@@ -8,8 +8,9 @@ using System;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyPistonBase : Sandbox.ModAPI.Ingame.IMyPistonBase, Sandbox.ModAPI.Ingame.IMyFunctionalBlock, Sandbox.ModAPI.Ingame.IMyTerminalBlock, Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
-  {
-    event Action<bool> LimitReached;
-  }
+    public interface IMyPistonBase : Sandbox.ModAPI.Ingame.IMyPistonBase, Sandbox.ModAPI.Ingame.IMyFunctionalBlock,
+        Sandbox.ModAPI.Ingame.IMyTerminalBlock, Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
+    {
+        event Action<bool> LimitReached;
+    }
 }

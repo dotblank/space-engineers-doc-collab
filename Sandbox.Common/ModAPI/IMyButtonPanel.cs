@@ -8,8 +8,9 @@ using System;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyButtonPanel : Sandbox.ModAPI.Ingame.IMyButtonPanel, Sandbox.ModAPI.Ingame.IMyTerminalBlock, Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
-  {
-    event Action<int> ButtonPressed;
-  }
+    public interface IMyButtonPanel : Sandbox.ModAPI.Ingame.IMyButtonPanel, Sandbox.ModAPI.Ingame.IMyTerminalBlock,
+        Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
+    {
+        event Action<int> ButtonPressed;
+    }
 }

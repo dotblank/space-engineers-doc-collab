@@ -10,28 +10,26 @@ using VRage.Common.Utils;
 
 namespace Sandbox.Definitions
 {
-  [ProtoContract]
-  public struct DefinitionIdBlit
-  {
-    [ProtoMember(1)]
-    public MyRuntimeObjectBuilderId TypeId;
-    [ProtoMember(2)]
-    public MyStringId SubtypeId;
-
-    public DefinitionIdBlit(MyObjectBuilderType type, MyStringId subtypeId)
+    [ProtoContract]
+    public struct DefinitionIdBlit
     {
-      this.TypeId = (MyRuntimeObjectBuilderId) type;
-      this.SubtypeId = subtypeId;
-    }
+        [ProtoMember(1)] public MyRuntimeObjectBuilderId TypeId;
+        [ProtoMember(2)] public MyStringId SubtypeId;
 
-    public static implicit operator MyDefinitionId(DefinitionIdBlit id)
-    {
-      return new MyDefinitionId((MyObjectBuilderType) id.TypeId, id.SubtypeId);
-    }
+        public DefinitionIdBlit(MyObjectBuilderType type, MyStringId subtypeId)
+        {
+            this.TypeId = (MyRuntimeObjectBuilderId) type;
+            this.SubtypeId = subtypeId;
+        }
 
-    public static implicit operator DefinitionIdBlit(MyDefinitionId id)
-    {
-      return new DefinitionIdBlit(id.TypeId, id.SubtypeId);
+        public static implicit operator MyDefinitionId(DefinitionIdBlit id)
+        {
+            return new MyDefinitionId((MyObjectBuilderType) id.TypeId, id.SubtypeId);
+        }
+
+        public static implicit operator DefinitionIdBlit(MyDefinitionId id)
+        {
+            return new DefinitionIdBlit(id.TypeId, id.SubtypeId);
+        }
     }
-  }
 }

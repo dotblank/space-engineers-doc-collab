@@ -10,12 +10,10 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_CompositeBlueprintDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [XmlArrayItem("Blueprint")]
-    [ProtoMember(1)]
-    public BlueprintItem[] Blueprints;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_CompositeBlueprintDefinition : MyObjectBuilder_DefinitionBase
+    {
+        [XmlArrayItem("Blueprint")] [ProtoMember(1)] public BlueprintItem[] Blueprints;
+    }
 }

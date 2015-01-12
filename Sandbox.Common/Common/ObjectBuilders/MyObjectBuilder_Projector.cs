@@ -9,25 +9,21 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_Projector : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_CubeGrid ProjectedGrid;
-    [ProtoMember(2)]
-    public Vector3I ProjectionOffset;
-    [ProtoMember(3)]
-    public Vector3I ProjectionRotation;
-    [ProtoMember(4)]
-    public bool KeepProjection;
-
-    public override void Remap(IMyRemapHelper remapHelper)
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_Projector : MyObjectBuilder_FunctionalBlock
     {
-      base.Remap(remapHelper);
-      if (this.ProjectedGrid == null)
-        return;
-      this.ProjectedGrid.Remap(remapHelper);
+        [ProtoMember(1)] public MyObjectBuilder_CubeGrid ProjectedGrid;
+        [ProtoMember(2)] public Vector3I ProjectionOffset;
+        [ProtoMember(3)] public Vector3I ProjectionRotation;
+        [ProtoMember(4)] public bool KeepProjection;
+
+        public override void Remap(IMyRemapHelper remapHelper)
+        {
+            base.Remap(remapHelper);
+            if (this.ProjectedGrid == null)
+                return;
+            this.ProjectedGrid.Remap(remapHelper);
+        }
     }
-  }
 }

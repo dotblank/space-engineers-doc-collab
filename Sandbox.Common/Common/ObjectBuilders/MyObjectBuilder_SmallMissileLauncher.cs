@@ -8,23 +8,20 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_SmallMissileLauncher : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(2)]
-    public bool UseConveyorSystem = true;
-    [ProtoMember(1)]
-    public MyObjectBuilder_Inventory Inventory;
-    [ProtoMember(3)]
-    public MyObjectBuilder_GunBase GunBase;
-
-    public override void SetupForProjector()
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_SmallMissileLauncher : MyObjectBuilder_FunctionalBlock
     {
-      base.SetupForProjector();
-      if (this.Inventory == null)
-        return;
-      this.Inventory.Clear();
+        [ProtoMember(2)] public bool UseConveyorSystem = true;
+        [ProtoMember(1)] public MyObjectBuilder_Inventory Inventory;
+        [ProtoMember(3)] public MyObjectBuilder_GunBase GunBase;
+
+        public override void SetupForProjector()
+        {
+            base.SetupForProjector();
+            if (this.Inventory == null)
+                return;
+            this.Inventory.Clear();
+        }
     }
-  }
 }

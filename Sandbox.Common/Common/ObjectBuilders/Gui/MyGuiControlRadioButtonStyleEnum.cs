@@ -6,15 +6,15 @@
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  public enum MyGuiControlRadioButtonStyleEnum
-  {
-    FilterCharacter,
-    FilterGrid,
-    FilterAll,
-    FilterEnergy,
-    FilterStorage,
-    FilterSystem,
-    ScenarioButton,
-    Rectangular,
-  }
+    public enum MyGuiControlRadioButtonStyleEnum
+    {
+        FilterCharacter,
+        FilterGrid,
+        FilterAll,
+        FilterEnergy,
+        FilterStorage,
+        FilterSystem,
+        ScenarioButton,
+        Rectangular,
+    }
 }

@@ -1,8 +1,8 @@
 void Main()
 {
-    var sourceInventory = (GridTerminalSystem.GetBlockWithName("Source") as IMyInventory).GetInventory(0);
-    var secondarySourceInventory = (GridTerminalSystem.GetBlockWithName("Secondary Source") as IMyInventory).GetInventory(0);
-    var targetInventory = (GridTerminalSystem.GetBlockWithName("Target") as IMyInventory).GetInventory(0);
+    var sourceInventory = (GridTerminalSystem.GetBlockWithName("Source") as IMyInventoryOwner).GetInventory(0);
+    var secondarySourceInventory = (GridTerminalSystem.GetBlockWithName("Secondary Source") as IMyInventoryOwner).GetInventory(0);
+    var targetInventory = (GridTerminalSystem.GetBlockWithName("Target") as IMyInventoryOwner).GetInventory(0);
     // Transfers every item in the inventory
     for (int i = 0; i < sourceInventory.GetItems().Count; i++)
         targetInventory.TransferItemsFrom(sourceInventory, 0, stackIfPossible: true);

@@ -9,9 +9,9 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ExtendedPistonBaseDefinition : MyObjectBuilder_PistonBaseDefinition
-  {
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ExtendedPistonBaseDefinition : MyObjectBuilder_PistonBaseDefinition
+    {
+    }
 }

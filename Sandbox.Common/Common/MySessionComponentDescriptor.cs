@@ -8,21 +8,21 @@ using System;
 
 namespace Sandbox.Common
 {
-  [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-  public class MySessionComponentDescriptor : Attribute
-  {
-    public MyUpdateOrder UpdateOrder;
-    public int Priority;
-
-    public MySessionComponentDescriptor(MyUpdateOrder updateOrder)
-      : this(updateOrder, 1000)
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
+    public class MySessionComponentDescriptor : Attribute
     {
-    }
+        public MyUpdateOrder UpdateOrder;
+        public int Priority;
 
-    public MySessionComponentDescriptor(MyUpdateOrder updateOrder, int priority)
-    {
-      this.UpdateOrder = updateOrder;
-      this.Priority = priority;
+        public MySessionComponentDescriptor(MyUpdateOrder updateOrder)
+            : this(updateOrder, 1000)
+        {
+        }
+
+        public MySessionComponentDescriptor(MyUpdateOrder updateOrder, int priority)
+        {
+            this.UpdateOrder = updateOrder;
+            this.Priority = priority;
+        }
     }
-  }
 }

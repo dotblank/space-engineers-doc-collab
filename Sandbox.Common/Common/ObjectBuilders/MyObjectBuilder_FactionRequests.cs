@@ -9,12 +9,10 @@ using System.Collections.Generic;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  public struct MyObjectBuilder_FactionRequests
-  {
-    [ProtoMember(1)]
-    public long FactionId;
-    [ProtoMember(2)]
-    public List<long> FactionRequests;
-  }
+    [ProtoContract]
+    public struct MyObjectBuilder_FactionRequests
+    {
+        [ProtoMember(1)] public long FactionId;
+        [ProtoMember(2)] public List<long> FactionRequests;
+    }
 }

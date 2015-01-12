@@ -9,9 +9,9 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [XmlType("StartingState")]
-  [MyObjectBuilderDefinition]
-  public abstract class MyObjectBuilder_WorldGeneratorPlayerStartingState : MyObjectBuilder_Base
-  {
-  }
+    [XmlType("StartingState")]
+    [MyObjectBuilderDefinition]
+    public abstract class MyObjectBuilder_WorldGeneratorPlayerStartingState : MyObjectBuilder_Base
+    {
+    }
 }

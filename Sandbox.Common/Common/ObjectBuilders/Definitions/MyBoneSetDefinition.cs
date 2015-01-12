@@ -8,12 +8,10 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  public class MyBoneSetDefinition
-  {
-    [ProtoMember(1)]
-    public string Name;
-    [ProtoMember(2)]
-    public string Bones;
-  }
+    [ProtoContract]
+    public class MyBoneSetDefinition
+    {
+        [ProtoMember(1)] public string Name;
+        [ProtoMember(2)] public string Bones;
+    }
 }

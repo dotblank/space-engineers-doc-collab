@@ -8,14 +8,14 @@ using System;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [Flags]
-  public enum MyBonesArea
-  {
-    Body = 1,
-    LeftHand = 2,
-    RightHand = 4,
-    LeftFingers = 8,
-    RightFingers = 16,
-    Head = 32,
-  }
+    [Flags]
+    public enum MyBonesArea
+    {
+        Body = 1,
+        LeftHand = 2,
+        RightHand = 4,
+        LeftFingers = 8,
+        RightFingers = 16,
+        Head = 32,
+    }
 }

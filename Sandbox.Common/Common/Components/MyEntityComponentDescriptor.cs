@@ -8,14 +8,14 @@ using System;
 
 namespace Sandbox.Common.Components
 {
-  [AttributeUsage(AttributeTargets.Class)]
-  public class MyEntityComponentDescriptor : Attribute
-  {
-    public Type EntityBuilderType;
-
-    public MyEntityComponentDescriptor(Type entityBuilderType)
+    [AttributeUsage(AttributeTargets.Class)]
+    public class MyEntityComponentDescriptor : Attribute
     {
-      this.EntityBuilderType = entityBuilderType;
+        public Type EntityBuilderType;
+
+        public MyEntityComponentDescriptor(Type entityBuilderType)
+        {
+            this.EntityBuilderType = entityBuilderType;
+        }
     }
-  }
 }

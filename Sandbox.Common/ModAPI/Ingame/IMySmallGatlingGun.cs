@@ -8,8 +8,8 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMySmallGatlingGun : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool UseConveyorSystem { get; }
-  }
+    public interface IMySmallGatlingGun : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool UseConveyorSystem { get; }
+    }
 }

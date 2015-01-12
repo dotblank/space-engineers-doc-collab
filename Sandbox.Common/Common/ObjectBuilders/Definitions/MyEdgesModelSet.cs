@@ -9,20 +9,12 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  public class MyEdgesModelSet
-  {
-    [ProtoMember(1)]
-    [ModdableContentFile("mwm")]
-    public string Vertical;
-    [ModdableContentFile("mwm")]
-    [ProtoMember(2)]
-    public string VerticalDiagonal;
-    [ProtoMember(3)]
-    [ModdableContentFile("mwm")]
-    public string Horisontal;
-    [ProtoMember(4)]
-    [ModdableContentFile("mwm")]
-    public string HorisontalDiagonal;
-  }
+    [ProtoContract]
+    public class MyEdgesModelSet
+    {
+        [ProtoMember(1)] [ModdableContentFile("mwm")] public string Vertical;
+        [ModdableContentFile("mwm")] [ProtoMember(2)] public string VerticalDiagonal;
+        [ProtoMember(3)] [ModdableContentFile("mwm")] public string Horisontal;
+        [ProtoMember(4)] [ModdableContentFile("mwm")] public string HorisontalDiagonal;
+    }
 }

@@ -10,13 +10,11 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [XmlRoot("ScenarioDefinitions")]
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_ScenarioDefinitions : MyObjectBuilder_Base
-  {
-    [XmlArrayItem("ScenarioDefinition")]
-    [ProtoMember(1)]
-    public MyObjectBuilder_ScenarioDefinition[] Scenarios;
-  }
+    [XmlRoot("ScenarioDefinitions")]
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_ScenarioDefinitions : MyObjectBuilder_Base
+    {
+        [XmlArrayItem("ScenarioDefinition")] [ProtoMember(1)] public MyObjectBuilder_ScenarioDefinition[] Scenarios;
+    }
 }

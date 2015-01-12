@@ -10,18 +10,12 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_PhysicalCubeBlockDefinition : MyObjectBuilder_PhysicalItemDefinition
-  {
-    [ProtoMember(1)]
-    [DefaultValue(null)]
-    public string CubeBlockSubtypeId;
-    [ProtoMember(2)]
-    [DefaultValue(null)]
-    public string OreSubtypeId;
-    [ProtoMember(3)]
-    [DefaultValue(null)]
-    public string PhysicalToolSubtypeId;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_PhysicalCubeBlockDefinition : MyObjectBuilder_PhysicalItemDefinition
+    {
+        [ProtoMember(1)] [DefaultValue(null)] public string CubeBlockSubtypeId;
+        [ProtoMember(2)] [DefaultValue(null)] public string OreSubtypeId;
+        [ProtoMember(3)] [DefaultValue(null)] public string PhysicalToolSubtypeId;
+    }
 }

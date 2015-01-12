@@ -6,10 +6,10 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum MyCustomHitMaterialMethodType
-  {
-    Unknown = -1,
-    Small = 0,
-    Normal = 1,
-  }
+    public enum MyCustomHitMaterialMethodType
+    {
+        Unknown = -1,
+        Small = 0,
+        Normal = 1,
+    }
 }

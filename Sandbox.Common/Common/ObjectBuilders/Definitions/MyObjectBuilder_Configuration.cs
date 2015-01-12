@@ -10,52 +10,31 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_Configuration : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_Configuration.CubeSizeSettings CubeSizes;
-    [ProtoMember(2)]
-    public MyObjectBuilder_Configuration.BaseBlockSettings BaseBlockPrefabs;
-    [ProtoMember(3)]
-    public MyObjectBuilder_Configuration.BaseBlockSettings BaseBlockPrefabsSurvival;
-
+    [MyObjectBuilderDefinition]
     [ProtoContract]
-    public struct CubeSizeSettings
+    public class MyObjectBuilder_Configuration : MyObjectBuilder_Base
     {
-      [ProtoMember(1)]
-      [XmlAttribute]
-      public float Large;
-      [ProtoMember(2)]
-      [XmlAttribute]
-      public float Small;
-      [XmlAttribute]
-      [ProtoMember(3)]
-      public float Medium;
-    }
+        [ProtoMember(1)] public MyObjectBuilder_Configuration.CubeSizeSettings CubeSizes;
+        [ProtoMember(2)] public MyObjectBuilder_Configuration.BaseBlockSettings BaseBlockPrefabs;
+        [ProtoMember(3)] public MyObjectBuilder_Configuration.BaseBlockSettings BaseBlockPrefabsSurvival;
 
-    [ProtoContract]
-    public struct BaseBlockSettings
-    {
-      [XmlAttribute]
-      [ProtoMember(1)]
-      public string SmallStatic;
-      [ProtoMember(2)]
-      [XmlAttribute]
-      public string LargeStatic;
-      [XmlAttribute]
-      [ProtoMember(3)]
-      public string SmallDynamic;
-      [XmlAttribute]
-      [ProtoMember(4)]
-      public string LargeDynamic;
-      [XmlAttribute]
-      [ProtoMember(5)]
-      public string MediumStatic;
-      [ProtoMember(6)]
-      [XmlAttribute]
-      public string MediumDynamic;
+        [ProtoContract]
+        public struct CubeSizeSettings
+        {
+            [ProtoMember(1)] [XmlAttribute] public float Large;
+            [ProtoMember(2)] [XmlAttribute] public float Small;
+            [XmlAttribute] [ProtoMember(3)] public float Medium;
+        }
+
+        [ProtoContract]
+        public struct BaseBlockSettings
+        {
+            [XmlAttribute] [ProtoMember(1)] public string SmallStatic;
+            [ProtoMember(2)] [XmlAttribute] public string LargeStatic;
+            [XmlAttribute] [ProtoMember(3)] public string SmallDynamic;
+            [XmlAttribute] [ProtoMember(4)] public string LargeDynamic;
+            [XmlAttribute] [ProtoMember(5)] public string MediumStatic;
+            [ProtoMember(6)] [XmlAttribute] public string MediumDynamic;
+        }
     }
-  }
 }

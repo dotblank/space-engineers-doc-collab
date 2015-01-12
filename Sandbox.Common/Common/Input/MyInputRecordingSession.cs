@@ -8,11 +8,11 @@ using System.Reflection;
 
 namespace Sandbox.Common.Input
 {
-  [Obfuscation(Exclude = true, Feature = "cw symbol renaming")]
-  public enum MyInputRecordingSession
-  {
-    Specific,
-    NewGame,
-    MainMenu,
-  }
+    [Obfuscation(Exclude = true, Feature = "cw symbol renaming")]
+    public enum MyInputRecordingSession
+    {
+        Specific,
+        NewGame,
+        MainMenu,
+    }
 }

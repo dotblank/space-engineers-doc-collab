@@ -8,13 +8,11 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_ChatItem : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public string Text;
-    [ProtoMember(2)]
-    public long IdentityId;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_ChatItem : MyObjectBuilder_Base
+    {
+        [ProtoMember(1)] public string Text;
+        [ProtoMember(2)] public long IdentityId;
+    }
 }

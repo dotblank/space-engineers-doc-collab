@@ -8,11 +8,10 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_Beacon : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(1)]
-    public float BroadcastRadius;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_Beacon : MyObjectBuilder_FunctionalBlock
+    {
+        [ProtoMember(1)] public float BroadcastRadius;
+    }
 }

@@ -9,25 +9,20 @@ using Sandbox.Common.ObjectBuilders.Definitions;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_Cockpit : MyObjectBuilder_ShipController
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_Character Pilot;
-    [ProtoMember(2)]
-    public MyPositionAndOrientation? PilotRelativeWorld;
-    [ProtoMember(3)]
-    public MyObjectBuilder_AutopilotBase Autopilot;
-    [ProtoMember(4)]
-    public SerializableDefinitionId? PilotGunDefinition;
-    [ProtoMember(5)]
-    public bool IsInFirstPersonView;
-
-    public void ClearPilotAndAutopilot()
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_Cockpit : MyObjectBuilder_ShipController
     {
-      this.Pilot = (MyObjectBuilder_Character) null;
-      this.Autopilot = (MyObjectBuilder_AutopilotBase) null;
+        [ProtoMember(1)] public MyObjectBuilder_Character Pilot;
+        [ProtoMember(2)] public MyPositionAndOrientation? PilotRelativeWorld;
+        [ProtoMember(3)] public MyObjectBuilder_AutopilotBase Autopilot;
+        [ProtoMember(4)] public SerializableDefinitionId? PilotGunDefinition;
+        [ProtoMember(5)] public bool IsInFirstPersonView;
+
+        public void ClearPilotAndAutopilot()
+        {
+            this.Pilot = (MyObjectBuilder_Character) null;
+            this.Autopilot = (MyObjectBuilder_AutopilotBase) null;
+        }
     }
-  }
 }

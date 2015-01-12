@@ -8,7 +8,7 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyControlPanel : IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-  }
+    public interface IMyControlPanel : IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+    }
 }

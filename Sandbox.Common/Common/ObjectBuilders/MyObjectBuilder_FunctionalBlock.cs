@@ -8,11 +8,10 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_FunctionalBlock : MyObjectBuilder_TerminalBlock
-  {
-    [ProtoMember(1)]
-    public bool Enabled = true;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_FunctionalBlock : MyObjectBuilder_TerminalBlock
+    {
+        [ProtoMember(1)] public bool Enabled = true;
+    }
 }

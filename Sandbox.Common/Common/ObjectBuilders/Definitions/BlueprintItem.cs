@@ -10,40 +10,24 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  public class BlueprintItem
-  {
-    [ProtoMember(1)]
-    [XmlIgnore]
-    public SerializableDefinitionId Id;
-    [ProtoMember(2)]
-    [XmlAttribute]
-    public string Amount;
-
-    [XmlAttribute]
-    public string TypeId
+    [ProtoContract]
+    public class BlueprintItem
     {
-      get
-      {
-        return this.Id.TypeId.ToString();
-      }
-      set
-      {
-        this.Id.TypeId = MyObjectBuilderType.ParseBackwardsCompatible(value);
-      }
-    }
+        [ProtoMember(1)] [XmlIgnore] public SerializableDefinitionId Id;
+        [ProtoMember(2)] [XmlAttribute] public string Amount;
 
-    [XmlAttribute]
-    public string SubtypeId
-    {
-      get
-      {
-        return this.Id.SubtypeId;
-      }
-      set
-      {
-        this.Id.SubtypeId = value;
-      }
+        [XmlAttribute]
+        public string TypeId
+        {
+            get { return this.Id.TypeId.ToString(); }
+            set { this.Id.TypeId = MyObjectBuilderType.ParseBackwardsCompatible(value); }
+        }
+
+        [XmlAttribute]
+        public string SubtypeId
+        {
+            get { return this.Id.SubtypeId; }
+            set { this.Id.SubtypeId = value; }
+        }
     }
-  }
 }

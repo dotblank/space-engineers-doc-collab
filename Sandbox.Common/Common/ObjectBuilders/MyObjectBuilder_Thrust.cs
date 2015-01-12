@@ -9,12 +9,10 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_Thrust : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(2)]
-    [DefaultValue(0.0f)]
-    public float ThrustOverride;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_Thrust : MyObjectBuilder_FunctionalBlock
+    {
+        [ProtoMember(2)] [DefaultValue(0.0f)] public float ThrustOverride;
+    }
 }

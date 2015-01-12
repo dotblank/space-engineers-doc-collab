@@ -9,26 +9,17 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_AnimationDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(4)]
-    public bool AllowInCockpit = true;
-    [ProtoMember(6)]
-    public string SupportedSkeletons = "Humanoid";
-    [ProtoMember(1)]
-    [ModdableContentFile("mwm")]
-    public string AnimationModel;
-    [ProtoMember(2)]
-    public int ClipIndex;
-    [ProtoMember(3)]
-    public MyBonesArea InfluenceArea;
-    [ProtoMember(5)]
-    public bool AllowWithWeapon;
-    [ProtoMember(7)]
-    public bool Loop;
-    [ProtoMember(8)]
-    public SerializableDefinitionId LeftHandItem;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_AnimationDefinition : MyObjectBuilder_DefinitionBase
+    {
+        [ProtoMember(4)] public bool AllowInCockpit = true;
+        [ProtoMember(6)] public string SupportedSkeletons = "Humanoid";
+        [ProtoMember(1)] [ModdableContentFile("mwm")] public string AnimationModel;
+        [ProtoMember(2)] public int ClipIndex;
+        [ProtoMember(3)] public MyBonesArea InfluenceArea;
+        [ProtoMember(5)] public bool AllowWithWeapon;
+        [ProtoMember(7)] public bool Loop;
+        [ProtoMember(8)] public SerializableDefinitionId LeftHandItem;
+    }
 }

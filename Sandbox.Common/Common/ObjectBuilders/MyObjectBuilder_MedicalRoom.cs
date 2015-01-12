@@ -8,15 +8,12 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_MedicalRoom : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(1)]
-    public ulong SteamUserId;
-    [ProtoMember(2)]
-    public string IdleSound;
-    [ProtoMember(3)]
-    public string ProgressSound;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_MedicalRoom : MyObjectBuilder_FunctionalBlock
+    {
+        [ProtoMember(1)] public ulong SteamUserId;
+        [ProtoMember(2)] public string IdleSound;
+        [ProtoMember(3)] public string ProgressSound;
+    }
 }

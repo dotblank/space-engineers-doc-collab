@@ -11,22 +11,20 @@ using System.Collections.Generic;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_FracturedPiece : MyObjectBuilder_EntityBase
-  {
-    [ProtoMember(1)]
-    public List<SerializableDefinitionId> BlockDefinitions = new List<SerializableDefinitionId>();
-    [ProtoMember(2)]
-    public List<MyObjectBuilder_FracturedPiece.Shape> Shapes = new List<MyObjectBuilder_FracturedPiece.Shape>();
-
+    [MyObjectBuilderDefinition]
     [ProtoContract]
-    public struct Shape
+    public class MyObjectBuilder_FracturedPiece : MyObjectBuilder_EntityBase
     {
-      [ProtoMember(1)]
-      public string Name;
-      [ProtoMember(2)]
-      public SerializableQuaternion Orientation;
+        [ProtoMember(1)] public List<SerializableDefinitionId> BlockDefinitions = new List<SerializableDefinitionId>();
+
+        [ProtoMember(2)] public List<MyObjectBuilder_FracturedPiece.Shape> Shapes =
+            new List<MyObjectBuilder_FracturedPiece.Shape>();
+
+        [ProtoContract]
+        public struct Shape
+        {
+            [ProtoMember(1)] public string Name;
+            [ProtoMember(2)] public SerializableQuaternion Orientation;
+        }
     }
-  }
 }

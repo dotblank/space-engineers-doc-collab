@@ -8,16 +8,15 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_ToolbarItemTerminalBlock : MyObjectBuilder_ToolbarItemTerminal
-  {
-    [ProtoMember(1)]
-    public long BlockEntityId;
-
-    public override void Remap(IMyRemapHelper remapHelper)
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_ToolbarItemTerminalBlock : MyObjectBuilder_ToolbarItemTerminal
     {
-      this.BlockEntityId = remapHelper.RemapEntityId(this.BlockEntityId);
+        [ProtoMember(1)] public long BlockEntityId;
+
+        public override void Remap(IMyRemapHelper remapHelper)
+        {
+            this.BlockEntityId = remapHelper.RemapEntityId(this.BlockEntityId);
+        }
     }
-  }
 }

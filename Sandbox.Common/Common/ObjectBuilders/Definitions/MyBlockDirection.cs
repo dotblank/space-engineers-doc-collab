@@ -8,11 +8,11 @@ using System;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [Flags]
-  public enum MyBlockDirection
-  {
-    Horizontal = 1,
-    Vertical = 2,
-    Both = Vertical | Horizontal,
-  }
+    [Flags]
+    public enum MyBlockDirection
+    {
+        Horizontal = 1,
+        Vertical = 2,
+        Both = Vertical | Horizontal,
+    }
 }

@@ -8,7 +8,7 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyReflectorLight : IMyLightingBlock, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-  }
+    public interface IMyReflectorLight : IMyLightingBlock, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+    }
 }

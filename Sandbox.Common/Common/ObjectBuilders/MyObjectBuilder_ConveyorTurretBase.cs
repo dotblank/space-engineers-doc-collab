@@ -9,12 +9,10 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ConveyorTurretBase : MyObjectBuilder_TurretBase
-  {
-    [ProtoMember(1)]
-    [DefaultValue(true)]
-    public bool UseConveyorSystem = true;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ConveyorTurretBase : MyObjectBuilder_TurretBase
+    {
+        [ProtoMember(1)] [DefaultValue(true)] public bool UseConveyorSystem = true;
+    }
 }

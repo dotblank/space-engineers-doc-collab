@@ -9,18 +9,12 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_BlueprintClassDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(4)]
-    [ModdableContentFile("dds")]
-    public string HighlightIcon;
-    [ProtoMember(5)]
-    [ModdableContentFile("dds")]
-    public string InputConstraintIcon;
-    [ProtoMember(6)]
-    [ModdableContentFile("dds")]
-    public string OutputConstraintIcon;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_BlueprintClassDefinition : MyObjectBuilder_DefinitionBase
+    {
+        [ProtoMember(4)] [ModdableContentFile("dds")] public string HighlightIcon;
+        [ProtoMember(5)] [ModdableContentFile("dds")] public string InputConstraintIcon;
+        [ProtoMember(6)] [ModdableContentFile("dds")] public string OutputConstraintIcon;
+    }
 }

@@ -9,15 +9,12 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_DoorDefinition : MyObjectBuilder_CubeBlockDefinition
-  {
-    [ProtoMember(1)]
-    public float MaxOpen;
-    [ProtoMember(2)]
-    public string OpenSound;
-    [ProtoMember(3)]
-    public string CloseSound;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_DoorDefinition : MyObjectBuilder_CubeBlockDefinition
+    {
+        [ProtoMember(1)] public float MaxOpen;
+        [ProtoMember(2)] public string OpenSound;
+        [ProtoMember(3)] public string CloseSound;
+    }
 }

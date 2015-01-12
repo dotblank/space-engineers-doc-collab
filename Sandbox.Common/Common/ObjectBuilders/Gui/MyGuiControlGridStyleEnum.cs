@@ -6,12 +6,12 @@
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  public enum MyGuiControlGridStyleEnum
-  {
-    Default,
-    Toolbar,
-    ToolsBlocks,
-    ToolsWeapons,
-    Inventory,
-  }
+    public enum MyGuiControlGridStyleEnum
+    {
+        Default,
+        Toolbar,
+        ToolsBlocks,
+        ToolsWeapons,
+        Inventory,
+    }
 }

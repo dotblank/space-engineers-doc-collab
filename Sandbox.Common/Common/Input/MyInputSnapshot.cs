@@ -11,17 +11,17 @@ using VRageMath;
 
 namespace Sandbox.Common.Input
 {
-  [Obfuscation(Exclude = true, Feature = "cw symbol renaming")]
-  public class MyInputSnapshot
-  {
-    public MyMouseSnapshot MouseSnapshot { get; set; }
+    [Obfuscation(Exclude = true, Feature = "cw symbol renaming")]
+    public class MyInputSnapshot
+    {
+        public MyMouseSnapshot MouseSnapshot { get; set; }
 
-    public List<Keys> KeyboardSnapshot { get; set; }
+        public List<Keys> KeyboardSnapshot { get; set; }
 
-    public MyJoystickStateSnapshot JoystickSnapshot { get; set; }
+        public MyJoystickStateSnapshot JoystickSnapshot { get; set; }
 
-    public int SnapshotTimestamp { get; set; }
+        public int SnapshotTimestamp { get; set; }
 
-    public Vector2 MouseCursorPosition { get; set; }
-  }
+        public Vector2 MouseCursorPosition { get; set; }
+    }
 }

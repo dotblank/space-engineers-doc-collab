@@ -8,9 +8,9 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_SmallMissileLauncherReload : MyObjectBuilder_SmallMissileLauncher
-  {
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_SmallMissileLauncherReload : MyObjectBuilder_SmallMissileLauncher
+    {
+    }
 }

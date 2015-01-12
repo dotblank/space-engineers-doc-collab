@@ -9,11 +9,10 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_SpaceBallDefinition : MyObjectBuilder_CubeBlockDefinition
-  {
-    [ProtoMember(1)]
-    public float MaxVirtualMass;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_SpaceBallDefinition : MyObjectBuilder_CubeBlockDefinition
+    {
+        [ProtoMember(1)] public float MaxVirtualMass;
+    }
 }

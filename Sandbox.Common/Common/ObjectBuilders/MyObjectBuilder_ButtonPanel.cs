@@ -8,19 +8,17 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ButtonPanel : MyObjectBuilder_TerminalBlock
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_Toolbar Toolbar;
-    [ProtoMember(2)]
-    public bool AnyoneCanUse;
-
-    public override void Remap(IMyRemapHelper remapHelper)
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ButtonPanel : MyObjectBuilder_TerminalBlock
     {
-      base.Remap(remapHelper);
-      this.Toolbar.Remap(remapHelper);
+        [ProtoMember(1)] public MyObjectBuilder_Toolbar Toolbar;
+        [ProtoMember(2)] public bool AnyoneCanUse;
+
+        public override void Remap(IMyRemapHelper remapHelper)
+        {
+            base.Remap(remapHelper);
+            this.Toolbar.Remap(remapHelper);
+        }
     }
-  }
 }

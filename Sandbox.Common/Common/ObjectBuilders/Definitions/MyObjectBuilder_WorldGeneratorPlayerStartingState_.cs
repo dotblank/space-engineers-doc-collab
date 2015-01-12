@@ -10,22 +10,18 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [XmlType("Transform")]
-  public class MyObjectBuilder_WorldGeneratorPlayerStartingState_Transform : MyObjectBuilder_WorldGeneratorPlayerStartingState
-  {
-    [ProtoMember(1)]
-    public MyPositionAndOrientation? Transform;
-    [XmlAttribute]
-    [ProtoMember(2)]
-    public bool JetpackEnabled;
-    [ProtoMember(3)]
-    [XmlAttribute]
-    public bool DampenersEnabled;
-
-    public bool ShouldSerializeTransform()
+    [MyObjectBuilderDefinition]
+    [XmlType("Transform")]
+    public class MyObjectBuilder_WorldGeneratorPlayerStartingState_Transform :
+        MyObjectBuilder_WorldGeneratorPlayerStartingState
     {
-      return this.Transform.HasValue;
+        [ProtoMember(1)] public MyPositionAndOrientation? Transform;
+        [XmlAttribute] [ProtoMember(2)] public bool JetpackEnabled;
+        [ProtoMember(3)] [XmlAttribute] public bool DampenersEnabled;
+
+        public bool ShouldSerializeTransform()
+        {
+            return this.Transform.HasValue;
+        }
     }
-  }
 }

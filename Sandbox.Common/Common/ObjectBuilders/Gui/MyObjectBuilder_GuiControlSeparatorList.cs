@@ -12,35 +12,35 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_GuiControlSeparatorList : MyObjectBuilder_GuiControlBase
-  {
-    [ProtoMember(1)]
-    public List<MyObjectBuilder_GuiControlSeparatorList.Separator> Separators = new List<MyObjectBuilder_GuiControlSeparatorList.Separator>();
-
     [ProtoContract]
-    public struct Separator
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_GuiControlSeparatorList : MyObjectBuilder_GuiControlBase
     {
-      [DefaultValue(0.0f)]
-      [XmlAttribute]
-      [ProtoMember(1)]
-      public float StartX { get; set; }
+        [ProtoMember(1)] public List<MyObjectBuilder_GuiControlSeparatorList.Separator> Separators =
+            new List<MyObjectBuilder_GuiControlSeparatorList.Separator>();
 
-      [DefaultValue(0.0f)]
-      [XmlAttribute]
-      [ProtoMember(2)]
-      public float StartY { get; set; }
+        [ProtoContract]
+        public struct Separator
+        {
+            [DefaultValue(0.0f)]
+            [XmlAttribute]
+            [ProtoMember(1)]
+            public float StartX { get; set; }
 
-      [DefaultValue(0.0f)]
-      [XmlAttribute]
-      [ProtoMember(3)]
-      public float SizeX { get; set; }
+            [DefaultValue(0.0f)]
+            [XmlAttribute]
+            [ProtoMember(2)]
+            public float StartY { get; set; }
 
-      [XmlAttribute]
-      [DefaultValue(0.0f)]
-      [ProtoMember(4)]
-      public float SizeY { get; set; }
+            [DefaultValue(0.0f)]
+            [XmlAttribute]
+            [ProtoMember(3)]
+            public float SizeX { get; set; }
+
+            [XmlAttribute]
+            [DefaultValue(0.0f)]
+            [ProtoMember(4)]
+            public float SizeY { get; set; }
+        }
     }
-  }
 }

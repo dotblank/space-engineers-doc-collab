@@ -10,22 +10,17 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_Gyro : MyObjectBuilder_FunctionalBlock
-  {
-    [DefaultValue(1)]
-    [ProtoMember(1)]
-    public float GyroPower = 1f;
-    [ProtoMember(3)]
-    public SerializableVector3 TargetAngularVelocity = new SerializableVector3(0.0f, 0.0f, 0.0f);
-    [ProtoMember(2)]
-    [DefaultValue(false)]
-    public bool GyroOverride;
-
-    public bool ShouldSerializeTargetAngularVelocity()
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_Gyro : MyObjectBuilder_FunctionalBlock
     {
-      return !this.TargetAngularVelocity.IsZero;
+        [DefaultValue(1)] [ProtoMember(1)] public float GyroPower = 1f;
+        [ProtoMember(3)] public SerializableVector3 TargetAngularVelocity = new SerializableVector3(0.0f, 0.0f, 0.0f);
+        [ProtoMember(2)] [DefaultValue(false)] public bool GyroOverride;
+
+        public bool ShouldSerializeTargetAngularVelocity()
+        {
+            return !this.TargetAngularVelocity.IsZero;
+        }
     }
-  }
 }

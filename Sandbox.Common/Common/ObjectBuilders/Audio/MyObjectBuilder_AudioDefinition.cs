@@ -14,44 +14,28 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Audio
 {
-  [MyObjectBuilderDefinition]
-  [XmlType("Sound")]
-  [ProtoContract]
-  public class MyObjectBuilder_AudioDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(2)]
-    public string Category = "Undefined";
-    [ProtoMember(3)]
-    [DefaultValue(MyAudioHelpers.CurveType.Custom_1)]
-    public MyAudioHelpers.CurveType VolumeCurve = MyAudioHelpers.CurveType.Custom_1;
-    [DefaultValue(1f)]
-    [ProtoMember(5)]
-    public float Volume = 1f;
-    [ProtoMember(4)]
-    public float MaxDistance;
-    [DefaultValue(0.0f)]
-    [ProtoMember(6)]
-    public float VolumeVariation;
-    [ProtoMember(7)]
-    [DefaultValue(0.0f)]
-    public float PitchVariation;
-    [DefaultValue(false)]
-    [ProtoMember(8)]
-    public bool Loopable;
-    [ProtoMember(9)]
-    public string Alternative2D;
-    [ProtoMember(10)]
-    [DefaultValue(false)]
-    public bool UseOcclusion;
-    [ProtoMember(11)]
-    public List<MyAudioHelpers.Wave> Waves;
-
-    public bool IsHudCue
+    [MyObjectBuilderDefinition]
+    [XmlType("Sound")]
+    [ProtoContract]
+    public class MyObjectBuilder_AudioDefinition : MyObjectBuilder_DefinitionBase
     {
-      get
-      {
-        return StringComparer.InvariantCultureIgnoreCase.Equals(this.Category, "hud");
-      }
+        [ProtoMember(2)] public string Category = "Undefined";
+
+        [ProtoMember(3)] [DefaultValue(MyAudioHelpers.CurveType.Custom_1)] public MyAudioHelpers.CurveType VolumeCurve =
+            MyAudioHelpers.CurveType.Custom_1;
+
+        [DefaultValue(1f)] [ProtoMember(5)] public float Volume = 1f;
+        [ProtoMember(4)] public float MaxDistance;
+        [DefaultValue(0.0f)] [ProtoMember(6)] public float VolumeVariation;
+        [ProtoMember(7)] [DefaultValue(0.0f)] public float PitchVariation;
+        [DefaultValue(false)] [ProtoMember(8)] public bool Loopable;
+        [ProtoMember(9)] public string Alternative2D;
+        [ProtoMember(10)] [DefaultValue(false)] public bool UseOcclusion;
+        [ProtoMember(11)] public List<MyAudioHelpers.Wave> Waves;
+
+        public bool IsHudCue
+        {
+            get { return StringComparer.InvariantCultureIgnoreCase.Equals(this.Category, "hud"); }
+        }
     }
-  }
 }

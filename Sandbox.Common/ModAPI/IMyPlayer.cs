@@ -10,26 +10,26 @@ using VRageMath;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyPlayer
-  {
-    IMyNetworkClient Client { get; }
+    public interface IMyPlayer
+    {
+        IMyNetworkClient Client { get; }
 
-    HashSet<long> Grids { get; }
+        HashSet<long> Grids { get; }
 
-    IMyEntityController Controller { get; }
+        IMyEntityController Controller { get; }
 
-    ulong SteamUserId { get; }
+        ulong SteamUserId { get; }
 
-    string DisplayName { get; }
+        string DisplayName { get; }
 
-    long PlayerID { get; }
+        long PlayerID { get; }
 
-    MyRelationsBetweenPlayerAndBlock GetRelationTo(long playerId);
+        MyRelationsBetweenPlayerAndBlock GetRelationTo(long playerId);
 
-    void AddGrid(long gridEntityId);
+        void AddGrid(long gridEntityId);
 
-    void RemoveGrid(long gridEntityId);
+        void RemoveGrid(long gridEntityId);
 
-    Vector3 GetPosition();
-  }
+        Vector3 GetPosition();
+    }
 }

@@ -8,15 +8,15 @@ using System;
 
 namespace Sandbox.Common
 {
-  [AttributeUsage(AttributeTargets.Class, Inherited = false)]
-  public class MyFactoryTagAttribute : Attribute
-  {
-    public readonly Type ObjectBuilderType;
-    public Type ProducedType;
-
-    public MyFactoryTagAttribute(Type objectBuilderType)
+    [AttributeUsage(AttributeTargets.Class, Inherited = false)]
+    public class MyFactoryTagAttribute : Attribute
     {
-      this.ObjectBuilderType = objectBuilderType;
+        public readonly Type ObjectBuilderType;
+        public Type ProducedType;
+
+        public MyFactoryTagAttribute(Type objectBuilderType)
+        {
+            this.ObjectBuilderType = objectBuilderType;
+        }
     }
-  }
 }

@@ -8,8 +8,10 @@ using System;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyShipMergeBlock : Sandbox.ModAPI.Ingame.IMyShipMergeBlock, Sandbox.ModAPI.Ingame.IMyFunctionalBlock, Sandbox.ModAPI.Ingame.IMyTerminalBlock, Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
-  {
-    event Action BeforeMerge;
-  }
+    public interface IMyShipMergeBlock : Sandbox.ModAPI.Ingame.IMyShipMergeBlock,
+        Sandbox.ModAPI.Ingame.IMyFunctionalBlock, Sandbox.ModAPI.Ingame.IMyTerminalBlock,
+        Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
+    {
+        event Action BeforeMerge;
+    }
 }

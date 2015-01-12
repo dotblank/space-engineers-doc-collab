@@ -8,14 +8,15 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyGravityGenerator : IMyGravityGeneratorBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    float FieldWidth { get; }
+    public interface IMyGravityGenerator : IMyGravityGeneratorBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock,
+        IMyEntity
+    {
+        float FieldWidth { get; }
 
-    float FieldHeight { get; }
+        float FieldHeight { get; }
 
-    float FieldDepth { get; }
+        float FieldDepth { get; }
 
-    float Gravity { get; }
-  }
+        float Gravity { get; }
+    }
 }

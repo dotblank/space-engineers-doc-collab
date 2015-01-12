@@ -13,83 +13,74 @@ using VRage;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_InventoryItem : MyObjectBuilder_Base
-  {
-    [XmlElement("Amount")]
-    [ProtoMember(1)]
-    public MyFixedPoint Amount;
-    [XmlElement("PhysicalContent", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_PhysicalObject>))]
-    [ProtoMember(2)]
-    public MyObjectBuilder_PhysicalObject PhysicalContent;
-    [ProtoMember(3)]
-    public uint ItemId;
-
-    [XmlElement("AmountDecimal")]
-    public Decimal Obsolete_AmountDecimal
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_InventoryItem : MyObjectBuilder_Base
     {
-      get
-      {
-        return (Decimal) this.Amount;
-      }
-      set
-      {
-        this.Amount = (MyFixedPoint) value;
-      }
-    }
+        [XmlElement("Amount")] [ProtoMember(1)] public MyFixedPoint Amount;
+        [XmlElement("PhysicalContent", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_PhysicalObject>))] [ProtoMember(2)] public MyObjectBuilder_PhysicalObject PhysicalContent;
+        [ProtoMember(3)] public uint ItemId;
 
-    public MyObjectBuilder_Base Content
-    {
-      get
-      {
-        return (MyObjectBuilder_Base) this.PhysicalContent;
-      }
-      set
-      {
-        if (value is MyObjectBuilder_PhysicalObject)
-          this.PhysicalContent = (MyObjectBuilder_PhysicalObject) value;
-        else if (value is MyObjectBuilder_HandDrill)
+        [XmlElement("AmountDecimal")]
+        public Decimal Obsolete_AmountDecimal
         {
-          MyObjectBuilder_PhysicalGunObject newObject = MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_PhysicalGunObject>("HandDrillItem");
-          newObject.GunEntity = (MyObjectBuilder_EntityBase) value;
-          newObject.GunEntity.EntityId = 0L;
-          this.PhysicalContent = (MyObjectBuilder_PhysicalObject) newObject;
+            get { return (Decimal) this.Amount; }
+            set { this.Amount = (MyFixedPoint) value; }
         }
-        else if (value is MyObjectBuilder_AutomaticRifle)
-        {
-          MyObjectBuilder_PhysicalGunObject newObject = MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_PhysicalGunObject>("AutomaticRifleItem");
-          newObject.GunEntity = (MyObjectBuilder_EntityBase) value;
-          newObject.GunEntity.EntityId = 0L;
-          this.PhysicalContent = (MyObjectBuilder_PhysicalObject) newObject;
-        }
-        else if (value is MyObjectBuilder_Welder)
-        {
-          MyObjectBuilder_PhysicalGunObject newObject = MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_PhysicalGunObject>("WelderItem");
-          newObject.GunEntity = (MyObjectBuilder_EntityBase) value;
-          newObject.GunEntity.EntityId = 0L;
-          this.PhysicalContent = (MyObjectBuilder_PhysicalObject) newObject;
-        }
-        else
-        {
-          if (!(value is MyObjectBuilder_AngleGrinder))
-            return;
-          MyObjectBuilder_PhysicalGunObject newObject = MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_PhysicalGunObject>("AngleGrinderItem");
-          newObject.GunEntity = (MyObjectBuilder_EntityBase) value;
-          newObject.GunEntity.EntityId = 0L;
-          this.PhysicalContent = (MyObjectBuilder_PhysicalObject) newObject;
-        }
-      }
-    }
 
-    public bool ShouldSerializeAmountDecimal()
-    {
-      return false;
-    }
+        public MyObjectBuilder_Base Content
+        {
+            get { return (MyObjectBuilder_Base) this.PhysicalContent; }
+            set
+            {
+                if (value is MyObjectBuilder_PhysicalObject)
+                    this.PhysicalContent = (MyObjectBuilder_PhysicalObject) value;
+                else if (value is MyObjectBuilder_HandDrill)
+                {
+                    MyObjectBuilder_PhysicalGunObject newObject =
+                        MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_PhysicalGunObject>("HandDrillItem");
+                    newObject.GunEntity = (MyObjectBuilder_EntityBase) value;
+                    newObject.GunEntity.EntityId = 0L;
+                    this.PhysicalContent = (MyObjectBuilder_PhysicalObject) newObject;
+                }
+                else if (value is MyObjectBuilder_AutomaticRifle)
+                {
+                    MyObjectBuilder_PhysicalGunObject newObject =
+                        MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_PhysicalGunObject>(
+                            "AutomaticRifleItem");
+                    newObject.GunEntity = (MyObjectBuilder_EntityBase) value;
+                    newObject.GunEntity.EntityId = 0L;
+                    this.PhysicalContent = (MyObjectBuilder_PhysicalObject) newObject;
+                }
+                else if (value is MyObjectBuilder_Welder)
+                {
+                    MyObjectBuilder_PhysicalGunObject newObject =
+                        MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_PhysicalGunObject>("WelderItem");
+                    newObject.GunEntity = (MyObjectBuilder_EntityBase) value;
+                    newObject.GunEntity.EntityId = 0L;
+                    this.PhysicalContent = (MyObjectBuilder_PhysicalObject) newObject;
+                }
+                else
+                {
+                    if (!(value is MyObjectBuilder_AngleGrinder))
+                        return;
+                    MyObjectBuilder_PhysicalGunObject newObject =
+                        MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_PhysicalGunObject>("AngleGrinderItem");
+                    newObject.GunEntity = (MyObjectBuilder_EntityBase) value;
+                    newObject.GunEntity.EntityId = 0L;
+                    this.PhysicalContent = (MyObjectBuilder_PhysicalObject) newObject;
+                }
+            }
+        }
 
-    public bool ShouldSerializeContent()
-    {
-      return false;
+        public bool ShouldSerializeAmountDecimal()
+        {
+            return false;
+        }
+
+        public bool ShouldSerializeContent()
+        {
+            return false;
+        }
     }
-  }
 }

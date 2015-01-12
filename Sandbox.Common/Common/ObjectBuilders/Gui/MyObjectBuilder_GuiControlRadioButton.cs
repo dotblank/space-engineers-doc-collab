@@ -9,13 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_GuiControlRadioButton : MyObjectBuilder_GuiControlBase
-  {
-    [ProtoMember(1)]
-    public int Key;
-    [ProtoMember(2)]
-    public MyGuiControlRadioButtonStyleEnum VisualStyle;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_GuiControlRadioButton : MyObjectBuilder_GuiControlBase
+    {
+        [ProtoMember(1)] public int Key;
+        [ProtoMember(2)] public MyGuiControlRadioButtonStyleEnum VisualStyle;
+    }
 }

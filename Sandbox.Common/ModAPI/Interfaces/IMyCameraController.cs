@@ -8,22 +8,22 @@ using VRageMath;
 
 namespace Sandbox.ModAPI.Interfaces
 {
-  public interface IMyCameraController
-  {
-    bool IsInFirstPersonView { get; set; }
+    public interface IMyCameraController
+    {
+        bool IsInFirstPersonView { get; set; }
 
-    bool ForceFirstPersonCamera { get; set; }
+        bool ForceFirstPersonCamera { get; set; }
 
-    MatrixD GetViewMatrix();
+        MatrixD GetViewMatrix();
 
-    void Rotate(Vector2 rotationIndicator, float rollIndicator);
+        void Rotate(Vector2 rotationIndicator, float rollIndicator);
 
-    void RotateStopped();
+        void RotateStopped();
 
-    void OnAssumeControl(IMyCameraController previousCameraController);
+        void OnAssumeControl(IMyCameraController previousCameraController);
 
-    void OnReleaseControl(IMyCameraController newCameraController);
+        void OnReleaseControl(IMyCameraController newCameraController);
 
-    bool HandleUse();
-  }
+        bool HandleUse();
+    }
 }

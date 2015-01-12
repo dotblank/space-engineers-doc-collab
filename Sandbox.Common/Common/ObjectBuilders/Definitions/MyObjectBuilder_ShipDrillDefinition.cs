@@ -9,13 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ShipDrillDefinition : MyObjectBuilder_CubeBlockDefinition
-  {
-    [ProtoMember(1)]
-    public float SensorRadius;
-    [ProtoMember(2)]
-    public float SensorOffset;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ShipDrillDefinition : MyObjectBuilder_CubeBlockDefinition
+    {
+        [ProtoMember(1)] public float SensorRadius;
+        [ProtoMember(2)] public float SensorOffset;
+    }
 }

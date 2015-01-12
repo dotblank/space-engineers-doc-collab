@@ -9,22 +9,22 @@ using System.Collections.Generic;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyMultiplayer
-  {
-    bool MultiplayerActive { get; }
+    public interface IMyMultiplayer
+    {
+        bool MultiplayerActive { get; }
 
-    bool IsServer { get; }
+        bool IsServer { get; }
 
-    ulong ServerId { get; }
+        ulong ServerId { get; }
 
-    ulong MyId { get; }
+        ulong MyId { get; }
 
-    string MyName { get; }
+        string MyName { get; }
 
-    IMyPlayerCollection Players { get; }
+        IMyPlayerCollection Players { get; }
 
-    bool IsServerPlayer(IMyNetworkClient player);
+        bool IsServerPlayer(IMyNetworkClient player);
 
-    void SendEntitiesCreated(List<MyObjectBuilder_EntityBase> objectBuilders);
-  }
+        void SendEntitiesCreated(List<MyObjectBuilder_EntityBase> objectBuilders);
+    }
 }

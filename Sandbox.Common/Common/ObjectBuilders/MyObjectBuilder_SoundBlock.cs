@@ -8,17 +8,13 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_SoundBlock : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(1)]
-    public float Range = 50f;
-    [ProtoMember(2)]
-    public float Volume = 1f;
-    [ProtoMember(4)]
-    public float LoopPeriod = 1f;
-    [ProtoMember(3)]
-    public int CueId;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_SoundBlock : MyObjectBuilder_FunctionalBlock
+    {
+        [ProtoMember(1)] public float Range = 50f;
+        [ProtoMember(2)] public float Volume = 1f;
+        [ProtoMember(4)] public float LoopPeriod = 1f;
+        [ProtoMember(3)] public int CueId;
+    }
 }

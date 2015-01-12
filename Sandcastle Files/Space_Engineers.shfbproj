@@ -36,6 +36,7 @@
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\Sandbox.Common\Sandbox.Common.csproj" />
+<DocumentationSource sourceFile="..\VRage.Library\VRage.Library.csproj" />
 <DocumentationSource sourceFile="..\VRage.Math\VRage.Math.csproj" /></DocumentationSources>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="Sandbox.Common" isDocumented="False" />
@@ -59,7 +60,43 @@
 <NamespaceSummaryItem name="(global)" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.ModAPI" isDocumented="True">Only specific members of this namespace are accessible from the programmable block.</NamespaceSummaryItem>
 <NamespaceSummaryItem name="VRageMath.PackedVector" isDocumented="False" />
-<NamespaceSummaryItem name="VRageMath.Spatial" isDocumented="False" /></NamespaceSummaries>
+<NamespaceSummaryItem name="VRageMath.Spatial" isDocumented="False" />
+<NamespaceSummaryItem name="KeenSoftwareHouse.Library.Extensions" isDocumented="False" />
+<NamespaceSummaryItem name="KeenSoftwareHouse.Library.IO" isDocumented="False" />
+<NamespaceSummaryItem name="LitJson" isDocumented="False" />
+<NamespaceSummaryItem name="ParallelTasks" isDocumented="False" />
+<NamespaceSummaryItem name="ProtoBuf" isDocumented="False" />
+<NamespaceSummaryItem name="ProtoBuf.Meta" isDocumented="False" />
+<NamespaceSummaryItem name="ProtoBuf.ServiceModel" isDocumented="False" />
+<NamespaceSummaryItem name="System" isDocumented="False" />
+<NamespaceSummaryItem name="System.Collections.Generic" isDocumented="False" />
+<NamespaceSummaryItem name="System.IO" isDocumented="False" />
+<NamespaceSummaryItem name="System.Linq" isDocumented="False" />
+<NamespaceSummaryItem name="System.Linq.Expressions" isDocumented="False" />
+<NamespaceSummaryItem name="System.Net" isDocumented="False" />
+<NamespaceSummaryItem name="System.Reflection" isDocumented="False" />
+<NamespaceSummaryItem name="System.Runtime.CompilerServices" isDocumented="False" />
+<NamespaceSummaryItem name="System.Text" isDocumented="False" />
+<NamespaceSummaryItem name="VRage" isDocumented="True" />
+<NamespaceSummaryItem name="VRage.Algorithms" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Collections" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Common.Utils" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Compiler" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Compression" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Cryptography" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Extensions" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.FileSystem" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Native" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Parallelization" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Profiler" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Reflection" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Security" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Serialization" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Service" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Stats" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Trace" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Utils" isDocumented="False" />
+<NamespaceSummaryItem name="VRage.Win32" isDocumented="False" /></NamespaceSummaries>
     <MissingTags>AutoDocumentCtors, AutoDocumentDispose</MissingTags>
     <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
     <FeedbackEMailLinkText>

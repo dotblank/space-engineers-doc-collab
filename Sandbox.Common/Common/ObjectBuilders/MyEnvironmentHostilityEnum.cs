@@ -6,11 +6,11 @@
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  public enum MyEnvironmentHostilityEnum
-  {
-    SAFE,
-    NORMAL,
-    CATACLYSM,
-    CATACLYSM_UNREAL,
-  }
+    public enum MyEnvironmentHostilityEnum
+    {
+        SAFE,
+        NORMAL,
+        CATACLYSM,
+        CATACLYSM_UNREAL,
+    }
 }

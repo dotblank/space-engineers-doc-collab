@@ -8,16 +8,16 @@ using System;
 
 namespace Sandbox.Engine.Physics
 {
-  [Flags]
-  public enum RigidBodyFlag
-  {
-    RBF_DEFAULT = 0,
-    RBF_KINEMATIC = 2,
-    RBF_STATIC = 4,
-    RBF_DISABLE_COLLISION_RESPONSE = 64,
-    RBF_DOUBLED_KINEMATIC = 128,
-    RBF_BULLET = 256,
-    RBF_DEBRIS = 512,
-    RBF_KEYFRAMED_REPORTING = 1024,
-  }
+    [Flags]
+    public enum RigidBodyFlag
+    {
+        RBF_DEFAULT = 0,
+        RBF_KINEMATIC = 2,
+        RBF_STATIC = 4,
+        RBF_DISABLE_COLLISION_RESPONSE = 64,
+        RBF_DOUBLED_KINEMATIC = 128,
+        RBF_BULLET = 256,
+        RBF_DEBRIS = 512,
+        RBF_KEYFRAMED_REPORTING = 1024,
+    }
 }

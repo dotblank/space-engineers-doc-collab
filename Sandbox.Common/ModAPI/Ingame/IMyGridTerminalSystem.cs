@@ -9,16 +9,16 @@ using System.Collections.Generic;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyGridTerminalSystem
-  {
-    List<IMyTerminalBlock> Blocks { get; }
+    public interface IMyGridTerminalSystem
+    {
+        List<IMyTerminalBlock> Blocks { get; }
 
-    List<IMyBlockGroup> BlockGroups { get; }
+        List<IMyBlockGroup> BlockGroups { get; }
 
-    void GetBlocksOfType<T>(List<IMyTerminalBlock> blocks, Func<IMyTerminalBlock, bool> collect = null);
+        void GetBlocksOfType<T>(List<IMyTerminalBlock> blocks, Func<IMyTerminalBlock, bool> collect = null);
 
-    void SearchBlocksOfName(string name, List<IMyTerminalBlock> blocks, Func<IMyTerminalBlock, bool> collect = null);
+        void SearchBlocksOfName(string name, List<IMyTerminalBlock> blocks, Func<IMyTerminalBlock, bool> collect = null);
 
-    IMyTerminalBlock GetBlockWithName(string name);
-  }
+        IMyTerminalBlock GetBlockWithName(string name);
+    }
 }

@@ -8,12 +8,12 @@ using System;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [Flags]
-  public enum MyBlockRotation
-  {
-    None = 0,
-    Horizontal = 1,
-    Vertical = 2,
-    Both = Vertical | Horizontal,
-  }
+    [Flags]
+    public enum MyBlockRotation
+    {
+        None = 0,
+        Horizontal = 1,
+        Vertical = 2,
+        Both = Vertical | Horizontal,
+    }
 }

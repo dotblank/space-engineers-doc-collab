@@ -9,14 +9,11 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_TerminalBlock : MyObjectBuilder_CubeBlock
-  {
-    [DefaultValue(null)]
-    [ProtoMember(1)]
-    public string CustomName;
-    [ProtoMember(2)]
-    public bool ShowOnHUD;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_TerminalBlock : MyObjectBuilder_CubeBlock
+    {
+        [DefaultValue(null)] [ProtoMember(1)] public string CustomName;
+        [ProtoMember(2)] public bool ShowOnHUD;
+    }
 }

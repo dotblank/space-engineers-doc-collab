@@ -11,47 +11,34 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  public class BlueprintClassEntry
-  {
-    [ProtoMember(4)]
-    [DefaultValue(true)]
-    public bool Enabled = true;
-    [ProtoMember(1)]
-    [XmlAttribute]
-    public string Class;
-    [XmlIgnore]
-    public MyObjectBuilderType TypeId;
-    [ProtoMember(3)]
-    [XmlAttribute]
-    public string BlueprintSubtypeId;
-
-    [XmlAttribute]
-    [ProtoMember(2)]
-    public string BlueprintTypeId
+    [ProtoContract]
+    public class BlueprintClassEntry
     {
-      get
-      {
-        return this.TypeId.ToString();
-      }
-      set
-      {
-        this.TypeId = MyObjectBuilderType.ParseBackwardsCompatible(value);
-      }
-    }
+        [ProtoMember(4)] [DefaultValue(true)] public bool Enabled = true;
+        [ProtoMember(1)] [XmlAttribute] public string Class;
+        [XmlIgnore] public MyObjectBuilderType TypeId;
+        [ProtoMember(3)] [XmlAttribute] public string BlueprintSubtypeId;
 
-    public override bool Equals(object other)
-    {
-      BlueprintClassEntry blueprintClassEntry = other as BlueprintClassEntry;
-      if (blueprintClassEntry != null && blueprintClassEntry.Class.Equals(this.Class))
-        return blueprintClassEntry.BlueprintSubtypeId.Equals(this.BlueprintSubtypeId);
-      else
-        return false;
-    }
+        [XmlAttribute]
+        [ProtoMember(2)]
+        public string BlueprintTypeId
+        {
+            get { return this.TypeId.ToString(); }
+            set { this.TypeId = MyObjectBuilderType.ParseBackwardsCompatible(value); }
+        }
 
-    public override int GetHashCode()
-    {
-      return this.Class.GetHashCode() * 7607 + this.BlueprintSubtypeId.GetHashCode();
+        public override bool Equals(object other)
+        {
+            BlueprintClassEntry blueprintClassEntry = other as BlueprintClassEntry;
+            if (blueprintClassEntry != null && blueprintClassEntry.Class.Equals(this.Class))
+                return blueprintClassEntry.BlueprintSubtypeId.Equals(this.BlueprintSubtypeId);
+            else
+                return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return this.Class.GetHashCode()*7607 + this.BlueprintSubtypeId.GetHashCode();
+        }
     }
-  }
 }

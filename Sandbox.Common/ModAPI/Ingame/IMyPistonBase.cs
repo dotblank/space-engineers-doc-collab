@@ -8,12 +8,12 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyPistonBase : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    float Velocity { get; }
+    public interface IMyPistonBase : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        float Velocity { get; }
 
-    float MinLimit { get; }
+        float MinLimit { get; }
 
-    float MaxLimit { get; }
-  }
+        float MaxLimit { get; }
+    }
 }

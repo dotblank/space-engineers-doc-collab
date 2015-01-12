@@ -6,13 +6,13 @@
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  public enum MyGuiControlListboxStyleEnum
-  {
-    Default,
-    ContextMenu,
-    Blueprints,
-    ToolsBlocks,
-    SoundBlock,
-    IngameScipts,
-  }
+    public enum MyGuiControlListboxStyleEnum
+    {
+        Default,
+        ContextMenu,
+        Blueprints,
+        ToolsBlocks,
+        SoundBlock,
+        IngameScipts,
+    }
 }

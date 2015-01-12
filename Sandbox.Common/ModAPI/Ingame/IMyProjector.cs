@@ -6,18 +6,18 @@
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyProjector
-  {
-    int ProjectionOffsetX { get; }
+    public interface IMyProjector
+    {
+        int ProjectionOffsetX { get; }
 
-    int ProjectionOffsetY { get; }
+        int ProjectionOffsetY { get; }
 
-    int ProjectionOffsetZ { get; }
+        int ProjectionOffsetZ { get; }
 
-    int ProjectionRotX { get; }
+        int ProjectionRotX { get; }
 
-    int ProjectionRotY { get; }
+        int ProjectionRotY { get; }
 
-    int ProjectionRotZ { get; }
-  }
+        int ProjectionRotZ { get; }
+    }
 }

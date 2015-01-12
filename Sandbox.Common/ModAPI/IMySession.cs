@@ -14,134 +14,134 @@ using VRage;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMySession
-  {
-    float AssemblerEfficiencyMultiplier { get; }
+    public interface IMySession
+    {
+        float AssemblerEfficiencyMultiplier { get; }
 
-    float AssemblerSpeedMultiplier { get; }
+        float AssemblerSpeedMultiplier { get; }
 
-    bool AutoHealing { get; }
+        bool AutoHealing { get; }
 
-    uint AutoSaveInMinutes { get; }
+        uint AutoSaveInMinutes { get; }
 
-    IMyCameraController CameraController { get; }
+        IMyCameraController CameraController { get; }
 
-    bool CargoShipsEnabled { get; }
+        bool CargoShipsEnabled { get; }
 
-    bool ClientCanSave { get; }
+        bool ClientCanSave { get; }
 
-    bool CreativeMode { get; }
+        bool CreativeMode { get; }
 
-    string CurrentPath { get; }
+        string CurrentPath { get; }
 
-    string Description { get; set; }
+        string Description { get; set; }
 
-    TimeSpan ElapsedPlayTime { get; }
+        TimeSpan ElapsedPlayTime { get; }
 
-    bool EnableCopyPaste { get; }
+        bool EnableCopyPaste { get; }
 
-    MyEnvironmentHostilityEnum EnvironmentHostility { get; }
+        MyEnvironmentHostilityEnum EnvironmentHostility { get; }
 
-    DateTime GameDateTime { get; set; }
+        DateTime GameDateTime { get; set; }
 
-    float GrinderSpeedMultiplier { get; }
+        float GrinderSpeedMultiplier { get; }
 
-    float HackSpeedMultiplier { get; }
+        float HackSpeedMultiplier { get; }
 
-    float InventoryMultiplier { get; }
+        float InventoryMultiplier { get; }
 
-    bool IsCameraAwaitingEntity { get; set; }
+        bool IsCameraAwaitingEntity { get; set; }
 
-    short MaxFloatingObjects { get; }
+        short MaxFloatingObjects { get; }
 
-    short MaxPlayers { get; }
+        short MaxPlayers { get; }
 
-    bool MultiplayerAlive { get; set; }
+        bool MultiplayerAlive { get; set; }
 
-    bool MultiplayerDirect { get; set; }
+        bool MultiplayerDirect { get; set; }
 
-    double MultiplayerLastMsg { get; set; }
+        double MultiplayerLastMsg { get; set; }
 
-    string Name { get; set; }
+        string Name { get; set; }
 
-    float NegativeIntegrityTotal { get; set; }
+        float NegativeIntegrityTotal { get; set; }
 
-    MyOnlineModeEnum OnlineMode { get; }
+        MyOnlineModeEnum OnlineMode { get; }
 
-    string Password { get; set; }
+        string Password { get; set; }
 
-    float PositiveIntegrityTotal { get; set; }
+        float PositiveIntegrityTotal { get; set; }
 
-    float RefinerySpeedMultiplier { get; }
+        float RefinerySpeedMultiplier { get; }
 
-    bool ShowPlayerNamesOnHud { get; }
+        bool ShowPlayerNamesOnHud { get; }
 
-    bool SurvivalMode { get; }
+        bool SurvivalMode { get; }
 
-    bool ThrusterDamage { get; }
+        bool ThrusterDamage { get; }
 
-    string ThumbPath { get; }
+        string ThumbPath { get; }
 
-    TimeSpan TimeOnBigShip { get; }
+        TimeSpan TimeOnBigShip { get; }
 
-    TimeSpan TimeOnFoot { get; }
+        TimeSpan TimeOnFoot { get; }
 
-    TimeSpan TimeOnJetpack { get; }
+        TimeSpan TimeOnJetpack { get; }
 
-    TimeSpan TimeOnSmallShip { get; }
+        TimeSpan TimeOnSmallShip { get; }
 
-    bool WeaponsEnabled { get; }
+        bool WeaponsEnabled { get; }
 
-    float WelderSpeedMultiplier { get; }
+        float WelderSpeedMultiplier { get; }
 
-    ulong? WorkshopId { get; }
+        ulong? WorkshopId { get; }
 
-    string WorldID { get; set; }
+        string WorldID { get; set; }
 
-    IMyVoxelMaps VoxelMaps { get; }
+        IMyVoxelMaps VoxelMaps { get; }
 
-    IMyPlayer Player { get; }
+        IMyPlayer Player { get; }
 
-    IMyControllableEntity ControlledObject { get; }
+        IMyControllableEntity ControlledObject { get; }
 
-    MyObjectBuilder_SessionSettings SessionSettings { get; }
+        MyObjectBuilder_SessionSettings SessionSettings { get; }
 
-    IMyFactionCollection Factions { get; }
+        IMyFactionCollection Factions { get; }
 
-    void BeforeStartComponents();
+        void BeforeStartComponents();
 
-    void Draw();
+        void Draw();
 
-    void GameOver();
+        void GameOver();
 
-    void GameOver(MyTextsWrapperEnum? customMessage);
+        void GameOver(MyTextsWrapperEnum? customMessage);
 
-    MyObjectBuilder_Checkpoint GetCheckpoint(string saveName);
+        MyObjectBuilder_Checkpoint GetCheckpoint(string saveName);
 
-    MyObjectBuilder_Sector GetSector();
+        MyObjectBuilder_Sector GetSector();
 
-    Dictionary<string, byte[]> GetVoxelMapsArray();
+        Dictionary<string, byte[]> GetVoxelMapsArray();
 
-    MyObjectBuilder_World GetWorld();
+        MyObjectBuilder_World GetWorld();
 
-    bool IsPausable();
+        bool IsPausable();
 
-    void RegisterComponent(MySessionComponentBase component, MyUpdateOrder updateOrder, int priority);
+        void RegisterComponent(MySessionComponentBase component, MyUpdateOrder updateOrder, int priority);
 
-    bool Save(string customSaveName = null);
+        bool Save(string customSaveName = null);
 
-    void SetAsNotReady();
+        void SetAsNotReady();
 
-    void Unload();
+        void Unload();
 
-    void UnloadDataComponents();
+        void UnloadDataComponents();
 
-    void UnloadMultiplayer();
+        void UnloadMultiplayer();
 
-    void UnregisterComponent(MySessionComponentBase component);
+        void UnregisterComponent(MySessionComponentBase component);
 
-    void Update(MyTimeSpan time);
+        void Update(MyTimeSpan time);
 
-    void UpdateComponents();
-  }
+        void UpdateComponents();
+    }
 }

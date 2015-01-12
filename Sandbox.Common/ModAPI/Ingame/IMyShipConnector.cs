@@ -8,12 +8,12 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyShipConnector : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool ThrowOut { get; }
+    public interface IMyShipConnector : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool ThrowOut { get; }
 
-    bool CollectAll { get; }
+        bool CollectAll { get; }
 
-    bool IsLocked { get; }
-  }
+        bool IsLocked { get; }
+    }
 }

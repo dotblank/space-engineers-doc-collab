@@ -8,18 +8,18 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyMotorSuspension : IMyMotorBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool Steering { get; }
+    public interface IMyMotorSuspension : IMyMotorBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool Steering { get; }
 
-    bool Propulsion { get; }
+        bool Propulsion { get; }
 
-    float Damping { get; }
+        float Damping { get; }
 
-    float Strength { get; }
+        float Strength { get; }
 
-    float Friction { get; }
+        float Friction { get; }
 
-    float Power { get; }
-  }
+        float Power { get; }
+    }
 }

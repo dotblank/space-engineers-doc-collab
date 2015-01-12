@@ -6,10 +6,10 @@
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  public interface IMyRemapHelper
-  {
-    long RemapEntityId(long oldEntityId);
+    public interface IMyRemapHelper
+    {
+        long RemapEntityId(long oldEntityId);
 
-    void Clear();
-  }
+        void Clear();
+    }
 }

@@ -9,14 +9,11 @@ using Sandbox.Common;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  public struct MyObjectBuilder_FactionRelation
-  {
-    [ProtoMember(1)]
-    public long FactionId1;
-    [ProtoMember(2)]
-    public long FactionId2;
-    [ProtoMember(3)]
-    public MyRelationsBetweenFactions Relation;
-  }
+    [ProtoContract]
+    public struct MyObjectBuilder_FactionRelation
+    {
+        [ProtoMember(1)] public long FactionId1;
+        [ProtoMember(2)] public long FactionId2;
+        [ProtoMember(3)] public MyRelationsBetweenFactions Relation;
+    }
 }

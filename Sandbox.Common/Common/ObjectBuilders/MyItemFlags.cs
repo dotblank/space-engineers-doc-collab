@@ -8,10 +8,20 @@ using System;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [Flags]
-  public enum MyItemFlags : byte
-  {
-    None = (byte) 0,
-    Damaged = (byte) 2,
-  }
+    /// <summary>
+    ///     An object's status flags.
+    /// </summary>
+    [Flags]
+    public enum MyItemFlags : byte
+    {
+        /// <summary>
+        ///     Object has no applied status effects
+        /// </summary>
+        None = (byte) 0,
+
+        /// <summary>
+        ///     Object has been damaged
+        /// </summary>
+        Damaged = (byte) 2,
+    }
 }

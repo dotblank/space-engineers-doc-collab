@@ -9,27 +9,24 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_CargoContainer : MyObjectBuilder_TerminalBlock
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_Inventory Inventory;
-    [DefaultValue(null)]
-    [ProtoMember(2)]
-    public string ContainerType;
-
-    public bool ShouldSerializeContainerType()
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_CargoContainer : MyObjectBuilder_TerminalBlock
     {
-      return this.ContainerType != null;
-    }
+        [ProtoMember(1)] public MyObjectBuilder_Inventory Inventory;
+        [DefaultValue(null)] [ProtoMember(2)] public string ContainerType;
 
-    public override void SetupForProjector()
-    {
-      base.SetupForProjector();
-      if (this.Inventory == null)
-        return;
-      this.Inventory.Clear();
+        public bool ShouldSerializeContainerType()
+        {
+            return this.ContainerType != null;
+        }
+
+        public override void SetupForProjector()
+        {
+            base.SetupForProjector();
+            if (this.Inventory == null)
+                return;
+            this.Inventory.Clear();
+        }
     }
-  }
 }

@@ -8,17 +8,12 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.News
 {
-  public class MyNewsEntry
-  {
-    [XmlAttribute(AttributeName = "public")]
-    public bool Public = true;
-    [XmlAttribute(AttributeName = "title")]
-    public string Title;
-    [XmlAttribute(AttributeName = "date")]
-    public string Date;
-    [XmlAttribute(AttributeName = "version")]
-    public string Version;
-    [XmlText]
-    public string Text;
-  }
+    public class MyNewsEntry
+    {
+        [XmlAttribute(AttributeName = "public")] public bool Public = true;
+        [XmlAttribute(AttributeName = "title")] public string Title;
+        [XmlAttribute(AttributeName = "date")] public string Date;
+        [XmlAttribute(AttributeName = "version")] public string Version;
+        [XmlText] public string Text;
+    }
 }

@@ -8,12 +8,12 @@ using System;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [Obsolete("For compatibility")]
-  public enum MySessionHarvestMode
-  {
-    REALISTIC,
-    TEN_TIMES,
-    FIFTY_TIMES,
-    CREATIVE,
-  }
+    [Obsolete("For compatibility")]
+    public enum MySessionHarvestMode
+    {
+        REALISTIC,
+        TEN_TIMES,
+        FIFTY_TIMES,
+        CREATIVE,
+    }
 }

@@ -10,12 +10,10 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [XmlType("AddObjectsPrefab")]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_WorldGeneratorOperation_AddObjectsPrefab : MyObjectBuilder_WorldGeneratorOperation
-  {
-    [ProtoMember(1)]
-    [XmlAttribute]
-    public string PrefabFile;
-  }
+    [XmlType("AddObjectsPrefab")]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_WorldGeneratorOperation_AddObjectsPrefab : MyObjectBuilder_WorldGeneratorOperation
+    {
+        [ProtoMember(1)] [XmlAttribute] public string PrefabFile;
+    }
 }

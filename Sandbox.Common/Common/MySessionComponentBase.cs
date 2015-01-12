@@ -9,90 +9,86 @@ using System.Reflection;
 
 namespace Sandbox.Common
 {
-  public abstract class MySessionComponentBase : IMyUserInputComponent
-  {
-    public readonly string DebugName;
-    public readonly int Priority;
-    public readonly MyUpdateOrder UpdateOrder;
-    public bool Loaded;
-
-    public virtual Type[] Dependencies
+    public abstract class MySessionComponentBase : IMyUserInputComponent
     {
-      get
-      {
-        return Type.EmptyTypes;
-      }
-    }
+        public readonly string DebugName;
+        public readonly int Priority;
+        public readonly MyUpdateOrder UpdateOrder;
+        public bool Loaded;
 
-    public virtual bool IsRequiredByGame
-    {
-      get
-      {
-        return true;
-      }
-    }
+        public virtual Type[] Dependencies
+        {
+            get { return Type.EmptyTypes; }
+        }
 
-    public MySessionComponentBase()
-    {
-      Type type = this.GetType();
-      MySessionComponentDescriptor componentDescriptor = (MySessionComponentDescriptor) Attribute.GetCustomAttribute((MemberInfo) type, typeof (MySessionComponentDescriptor), false);
-      this.DebugName = type.Name;
-      this.Priority = componentDescriptor.Priority;
-      this.UpdateOrder = componentDescriptor.UpdateOrder;
-    }
+        public virtual bool IsRequiredByGame
+        {
+            get { return true; }
+        }
 
-    public virtual void LoadData()
-    {
-    }
+        public MySessionComponentBase()
+        {
+            Type type = this.GetType();
+            MySessionComponentDescriptor componentDescriptor =
+                (MySessionComponentDescriptor)
+                    Attribute.GetCustomAttribute((MemberInfo) type, typeof (MySessionComponentDescriptor), false);
+            this.DebugName = type.Name;
+            this.Priority = componentDescriptor.Priority;
+            this.UpdateOrder = componentDescriptor.UpdateOrder;
+        }
 
-    protected virtual void UnloadData()
-    {
-    }
+        public virtual void LoadData()
+        {
+        }
 
-    public void AfterLoadData()
-    {
-      this.Loaded = true;
-    }
+        protected virtual void UnloadData()
+        {
+        }
 
-    public void UnloadDataConditional()
-    {
-      if (!this.Loaded)
-        return;
-      this.UnloadData();
-      this.Loaded = false;
-    }
+        public void AfterLoadData()
+        {
+            this.Loaded = true;
+        }
 
-    public virtual void BeforeStart()
-    {
-    }
+        public void UnloadDataConditional()
+        {
+            if (!this.Loaded)
+                return;
+            this.UnloadData();
+            this.Loaded = false;
+        }
 
-    public virtual void UpdateBeforeSimulation()
-    {
-    }
+        public virtual void BeforeStart()
+        {
+        }
 
-    public virtual void Simulate()
-    {
-    }
+        public virtual void UpdateBeforeSimulation()
+        {
+        }
 
-    public virtual void UpdateAfterSimulation()
-    {
-    }
+        public virtual void Simulate()
+        {
+        }
 
-    public virtual void UpdatingStopped()
-    {
-    }
+        public virtual void UpdateAfterSimulation()
+        {
+        }
 
-    public virtual void Draw()
-    {
-    }
+        public virtual void UpdatingStopped()
+        {
+        }
 
-    public virtual void HandleInput()
-    {
-    }
+        public virtual void Draw()
+        {
+        }
 
-    public override string ToString()
-    {
-      return this.GetType().Name;
+        public virtual void HandleInput()
+        {
+        }
+
+        public override string ToString()
+        {
+            return this.GetType().Name;
+        }
     }
-  }
 }

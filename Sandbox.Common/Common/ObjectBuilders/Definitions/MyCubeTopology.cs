@@ -6,12 +6,12 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum MyCubeTopology
-  {
-    Box,
-    Slope,
-    Corner,
-    InvCorner,
-    StandaloneBox,
-  }
+    public enum MyCubeTopology
+    {
+        Box,
+        Slope,
+        Corner,
+        InvCorner,
+        StandaloneBox,
+    }
 }

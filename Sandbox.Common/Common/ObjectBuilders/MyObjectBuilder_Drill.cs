@@ -9,27 +9,24 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_Drill : MyObjectBuilder_FunctionalBlock
-  {
-    [DefaultValue(true)]
-    [ProtoMember(2)]
-    public bool UseConveyorSystem = true;
-    [ProtoMember(1)]
-    public MyObjectBuilder_Inventory Inventory;
-
-    public MyObjectBuilder_Drill()
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_Drill : MyObjectBuilder_FunctionalBlock
     {
-      this.Enabled = false;
-    }
+        [DefaultValue(true)] [ProtoMember(2)] public bool UseConveyorSystem = true;
+        [ProtoMember(1)] public MyObjectBuilder_Inventory Inventory;
 
-    public override void SetupForProjector()
-    {
-      base.SetupForProjector();
-      if (this.Inventory == null)
-        return;
-      this.Inventory.Clear();
+        public MyObjectBuilder_Drill()
+        {
+            this.Enabled = false;
+        }
+
+        public override void SetupForProjector()
+        {
+            base.SetupForProjector();
+            if (this.Inventory == null)
+                return;
+            this.Inventory.Clear();
+        }
     }
-  }
 }

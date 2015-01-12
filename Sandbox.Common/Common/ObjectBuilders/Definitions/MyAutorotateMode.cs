@@ -6,10 +6,10 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum MyAutorotateMode
-  {
-    OneDirection,
-    OppositeDirections,
-    FirstDirection,
-  }
+    public enum MyAutorotateMode
+    {
+        OneDirection,
+        OppositeDirections,
+        FirstDirection,
+    }
 }

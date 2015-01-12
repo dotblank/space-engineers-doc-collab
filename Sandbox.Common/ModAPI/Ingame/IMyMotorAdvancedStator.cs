@@ -8,7 +8,8 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyMotorAdvancedStator : IMyMotorStator, IMyMotorBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-  }
+    public interface IMyMotorAdvancedStator : IMyMotorStator, IMyMotorBase, IMyFunctionalBlock, IMyTerminalBlock,
+        IMyCubeBlock, IMyEntity
+    {
+    }
 }

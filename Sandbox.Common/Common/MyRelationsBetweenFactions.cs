@@ -6,9 +6,9 @@
 
 namespace Sandbox.Common
 {
-  public enum MyRelationsBetweenFactions
-  {
-    Neutral,
-    Enemies,
-  }
+    public enum MyRelationsBetweenFactions
+    {
+        Neutral,
+        Enemies,
+    }
 }

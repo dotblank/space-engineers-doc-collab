@@ -9,13 +9,11 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_SimpleAutopilot : MyObjectBuilder_AutopilotBase
-  {
-    [ProtoMember(1)]
-    public Vector3 Destination;
-    [ProtoMember(2)]
-    public Vector3 Direction;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_SimpleAutopilot : MyObjectBuilder_AutopilotBase
+    {
+        [ProtoMember(1)] public Vector3 Destination;
+        [ProtoMember(2)] public Vector3 Direction;
+    }
 }

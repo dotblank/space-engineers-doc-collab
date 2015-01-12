@@ -8,17 +8,16 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_AutomaticRifle : MyObjectBuilder_EntityBase
-  {
-    public int CurrentAmmo;
-    [ProtoMember(1)]
-    public MyObjectBuilder_GunBase GunBase;
-
-    public bool ShouldSerializeCurrentAmmo()
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_AutomaticRifle : MyObjectBuilder_EntityBase
     {
-      return false;
+        public int CurrentAmmo;
+        [ProtoMember(1)] public MyObjectBuilder_GunBase GunBase;
+
+        public bool ShouldSerializeCurrentAmmo()
+        {
+            return false;
+        }
     }
-  }
 }

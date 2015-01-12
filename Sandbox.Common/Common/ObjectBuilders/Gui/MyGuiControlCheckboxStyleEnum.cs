@@ -6,13 +6,13 @@
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  public enum MyGuiControlCheckboxStyleEnum
-  {
-    Default,
-    Debug,
-    SwitchOnOffLeft,
-    SwitchOnOffRight,
-    Repeat,
-    Slave,
-  }
+    public enum MyGuiControlCheckboxStyleEnum
+    {
+        Default,
+        Debug,
+        SwitchOnOffLeft,
+        SwitchOnOffRight,
+        Repeat,
+        Slave,
+    }
 }

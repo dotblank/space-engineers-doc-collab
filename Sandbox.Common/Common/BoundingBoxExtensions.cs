@@ -6,7 +6,7 @@
 
 namespace Sandbox.Common
 {
-  public static class BoundingBoxExtensions
-  {
-  }
+    public static class BoundingBoxExtensions
+    {
+    }
 }

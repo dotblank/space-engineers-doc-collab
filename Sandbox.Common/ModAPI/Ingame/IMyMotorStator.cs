@@ -8,20 +8,20 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyMotorStator : IMyMotorBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool IsAttached { get; }
+    public interface IMyMotorStator : IMyMotorBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool IsAttached { get; }
 
-    float Torque { get; }
+        float Torque { get; }
 
-    float BrakingTorque { get; }
+        float BrakingTorque { get; }
 
-    float Velocity { get; }
+        float Velocity { get; }
 
-    float LowerLimit { get; }
+        float LowerLimit { get; }
 
-    float UpperLimit { get; }
+        float UpperLimit { get; }
 
-    float Displacement { get; }
-  }
+        float Displacement { get; }
+    }
 }

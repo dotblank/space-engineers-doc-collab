@@ -8,27 +8,23 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public abstract class MyObjectBuilder_EntityBase : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public long EntityId;
-    [ProtoMember(2)]
-    public MyPersistentEntityFlags2 PersistentFlags;
-    [ProtoMember(3)]
-    public string Name;
-    [ProtoMember(4)]
-    public MyPositionAndOrientation? PositionAndOrientation;
-
-    public bool ShouldSerializePositionAndOrientation()
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public abstract class MyObjectBuilder_EntityBase : MyObjectBuilder_Base
     {
-      return this.PositionAndOrientation.HasValue;
-    }
+        [ProtoMember(1)] public long EntityId;
+        [ProtoMember(2)] public MyPersistentEntityFlags2 PersistentFlags;
+        [ProtoMember(3)] public string Name;
+        [ProtoMember(4)] public MyPositionAndOrientation? PositionAndOrientation;
 
-    public virtual void Remap(IMyRemapHelper remapHelper)
-    {
-      this.EntityId = remapHelper.RemapEntityId(this.EntityId);
+        public bool ShouldSerializePositionAndOrientation()
+        {
+            return this.PositionAndOrientation.HasValue;
+        }
+
+        public virtual void Remap(IMyRemapHelper remapHelper)
+        {
+            this.EntityId = remapHelper.RemapEntityId(this.EntityId);
+        }
     }
-  }
 }

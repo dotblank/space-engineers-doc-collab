@@ -11,20 +11,14 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_ProductionBlockDefinition : MyObjectBuilder_CubeBlockDefinition
-  {
-    [ProtoMember(1)]
-    public float InventoryMaxVolume;
-    [ProtoMember(2)]
-    public Vector3 InventorySize;
-    [ProtoMember(3)]
-    public float StandbyPowerConsumption;
-    [ProtoMember(4)]
-    public float OperationalPowerConsumption;
-    [XmlArrayItem("Class")]
-    [ProtoMember(5)]
-    public string[] BlueprintClasses;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_ProductionBlockDefinition : MyObjectBuilder_CubeBlockDefinition
+    {
+        [ProtoMember(1)] public float InventoryMaxVolume;
+        [ProtoMember(2)] public Vector3 InventorySize;
+        [ProtoMember(3)] public float StandbyPowerConsumption;
+        [ProtoMember(4)] public float OperationalPowerConsumption;
+        [XmlArrayItem("Class")] [ProtoMember(5)] public string[] BlueprintClasses;
+    }
 }

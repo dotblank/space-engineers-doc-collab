@@ -6,9 +6,9 @@
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  public enum MyGuiControlListStyleEnum
-  {
-    Default,
-    Simple,
-  }
+    public enum MyGuiControlListStyleEnum
+    {
+        Default,
+        Simple,
+    }
 }

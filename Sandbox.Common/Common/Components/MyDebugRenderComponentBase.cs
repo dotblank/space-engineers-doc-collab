@@ -6,14 +6,14 @@
 
 namespace Sandbox.Common.Components
 {
-  public abstract class MyDebugRenderComponentBase
-  {
-    public virtual void PrepareForDraw()
+    public abstract class MyDebugRenderComponentBase
     {
+        public virtual void PrepareForDraw()
+        {
+        }
+
+        public abstract bool DebugDraw();
+
+        public abstract void DebugDrawInvalidTriangles();
     }
-
-    public abstract bool DebugDraw();
-
-    public abstract void DebugDrawInvalidTriangles();
-  }
 }

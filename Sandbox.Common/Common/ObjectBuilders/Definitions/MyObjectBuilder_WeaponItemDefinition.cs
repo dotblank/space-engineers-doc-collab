@@ -10,21 +10,19 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_WeaponItemDefinition : MyObjectBuilder_PhysicalItemDefinition
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_WeaponItemDefinition.PhysicalItemWeaponDefinitionId WeaponDefinitionId;
-
+    [MyObjectBuilderDefinition]
     [ProtoContract]
-    public class PhysicalItemWeaponDefinitionId
+    public class MyObjectBuilder_WeaponItemDefinition : MyObjectBuilder_PhysicalItemDefinition
     {
-      [XmlIgnore]
-      public MyObjectBuilderType Type = (MyObjectBuilderType) typeof (MyObjectBuilder_WeaponDefinition);
-      [XmlAttribute]
-      [ProtoMember(1)]
-      public string Subtype;
+        [ProtoMember(1)] public MyObjectBuilder_WeaponItemDefinition.PhysicalItemWeaponDefinitionId WeaponDefinitionId;
+
+        [ProtoContract]
+        public class PhysicalItemWeaponDefinitionId
+        {
+            [XmlIgnore] public MyObjectBuilderType Type =
+                (MyObjectBuilderType) typeof (MyObjectBuilder_WeaponDefinition);
+
+            [XmlAttribute] [ProtoMember(1)] public string Subtype;
+        }
     }
-  }
 }

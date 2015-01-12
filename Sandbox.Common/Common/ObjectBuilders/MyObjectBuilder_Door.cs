@@ -9,19 +9,13 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_Door : MyObjectBuilder_FunctionalBlock
-  {
-    [DefaultValue(false)]
-    [ProtoMember(1)]
-    public bool State;
-    [DefaultValue(0.0f)]
-    [ProtoMember(3)]
-    public float Opening;
-    [ProtoMember(4)]
-    public string OpenSound;
-    [ProtoMember(5)]
-    public string CloseSound;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_Door : MyObjectBuilder_FunctionalBlock
+    {
+        [DefaultValue(false)] [ProtoMember(1)] public bool State;
+        [DefaultValue(0.0f)] [ProtoMember(3)] public float Opening;
+        [ProtoMember(4)] public string OpenSound;
+        [ProtoMember(5)] public string CloseSound;
+    }
 }

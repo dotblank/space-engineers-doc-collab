@@ -8,10 +8,10 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyOreDetector : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    float Range { get; }
+    public interface IMyOreDetector : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        float Range { get; }
 
-    bool BroadcastUsingAntennas { get; }
-  }
+        bool BroadcastUsingAntennas { get; }
+    }
 }

@@ -11,84 +11,85 @@ using VRageMath;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyCubeGrid : IMyEntity, Sandbox.ModAPI.Ingame.IMyCubeGrid
-  {
-    List<long> BigOwners { get; }
+    public interface IMyCubeGrid : IMyEntity, Sandbox.ModAPI.Ingame.IMyCubeGrid
+    {
+        List<long> BigOwners { get; }
 
-    List<long> SmallOwners { get; }
+        List<long> SmallOwners { get; }
 
-    float GridSize { get; }
+        float GridSize { get; }
 
-    MyCubeSize GridSizeEnum { get; set; }
+        MyCubeSize GridSizeEnum { get; set; }
 
-    bool IsStatic { get; }
+        bool IsStatic { get; }
 
-    Vector3I Max { get; }
+        Vector3I Max { get; }
 
-    Vector3I Min { get; }
+        Vector3I Min { get; }
 
-    event Action<IMySlimBlock> OnBlockAdded;
+        event Action<IMySlimBlock> OnBlockAdded;
 
-    event Action<IMySlimBlock> OnBlockRemoved;
+        event Action<IMySlimBlock> OnBlockRemoved;
 
-    event Action<IMyCubeGrid> OnBlockOwnershipChanged;
+        event Action<IMyCubeGrid> OnBlockOwnershipChanged;
 
-    void ApplyDestructionDeformation(IMySlimBlock block);
+        void ApplyDestructionDeformation(IMySlimBlock block);
 
-    void ChangeGridOwnership(long playerId, MyOwnershipShareModeEnum shareMode);
+        void ChangeGridOwnership(long playerId, MyOwnershipShareModeEnum shareMode);
 
-    void ClearSymmetries();
+        void ClearSymmetries();
 
-    void ColorBlocks(Vector3I min, Vector3I max, Vector3 newHSV);
+        void ColorBlocks(Vector3I min, Vector3I max, Vector3 newHSV);
 
-    void ConvertToDynamic();
+        void ConvertToDynamic();
 
-    bool CubeExists(Vector3I pos);
+        bool CubeExists(Vector3I pos);
 
-    void FixTargetCube(out Vector3I cube, Vector3 fractionalGridPosition);
+        void FixTargetCube(out Vector3I cube, Vector3 fractionalGridPosition);
 
-    Vector3 GetClosestCorner(Vector3I gridPos, Vector3 position);
+        Vector3 GetClosestCorner(Vector3I gridPos, Vector3 position);
 
-    IMySlimBlock GetCubeBlock(Vector3I pos);
+        IMySlimBlock GetCubeBlock(Vector3I pos);
 
-    Vector3D? GetLineIntersectionExactAll(ref LineD line, out double distance, out IMySlimBlock intersectedBlock);
+        Vector3D? GetLineIntersectionExactAll(ref LineD line, out double distance, out IMySlimBlock intersectedBlock);
 
-    bool GetLineIntersectionExactGrid(ref LineD line, ref Vector3I position, ref double distanceSquared);
+        bool GetLineIntersectionExactGrid(ref LineD line, ref Vector3I position, ref double distanceSquared);
 
-    Vector3D GridIntegerToWorld(Vector3I gridCoords);
+        Vector3D GridIntegerToWorld(Vector3I gridCoords);
 
-    bool IsTouchingAnyNeighbor(Vector3I min, Vector3I max);
+        bool IsTouchingAnyNeighbor(Vector3I min, Vector3I max);
 
-    bool IsTrash();
+        bool IsTrash();
 
-    bool CanMergeCubes(IMyCubeGrid gridToMerge, Vector3I gridOffset);
+        bool CanMergeCubes(IMyCubeGrid gridToMerge, Vector3I gridOffset);
 
-    MatrixI CalculateMergeTransform(IMyCubeGrid gridToMerge, Vector3I gridOffset);
+        MatrixI CalculateMergeTransform(IMyCubeGrid gridToMerge, Vector3I gridOffset);
 
-    IMyCubeGrid MergeGrid_CopyPaste(IMyCubeGrid gridToMerge, MatrixI mergeTransform);
+        IMyCubeGrid MergeGrid_CopyPaste(IMyCubeGrid gridToMerge, MatrixI mergeTransform);
 
-    IMyCubeGrid MergeGrid_MergeBlock(IMyCubeGrid gridToMerge, Vector3I gridOffset);
+        IMyCubeGrid MergeGrid_MergeBlock(IMyCubeGrid gridToMerge, Vector3I gridOffset);
 
-    Vector3I? RayCastBlocks(Vector3D worldStart, Vector3D worldEnd);
+        Vector3I? RayCastBlocks(Vector3D worldStart, Vector3D worldEnd);
 
-    void RayCastCells(Vector3D worldStart, Vector3D worldEnd, List<Vector3I> outHitPositions, Vector3I? gridSizeInflate = null, bool havokWorld = false);
+        void RayCastCells(Vector3D worldStart, Vector3D worldEnd, List<Vector3I> outHitPositions,
+            Vector3I? gridSizeInflate = null, bool havokWorld = false);
 
-    void RazeBlock(Vector3I position);
+        void RazeBlock(Vector3I position);
 
-    void RazeBlocks(ref Vector3I pos, ref Vector3UByte size);
+        void RazeBlocks(ref Vector3I pos, ref Vector3UByte size);
 
-    void RazeBlocks(List<Vector3I> locations);
+        void RazeBlocks(List<Vector3I> locations);
 
-    void RemoveBlock(IMySlimBlock block, bool updatePhysics = false);
+        void RemoveBlock(IMySlimBlock block, bool updatePhysics = false);
 
-    void RemoveDestroyedBlock(IMySlimBlock block);
+        void RemoveDestroyedBlock(IMySlimBlock block);
 
-    void UpdateBlockNeighbours(IMySlimBlock block);
+        void UpdateBlockNeighbours(IMySlimBlock block);
 
-    Vector3I WorldToGridInteger(Vector3 coords);
+        Vector3I WorldToGridInteger(Vector3 coords);
 
-    void GetBlocks(List<IMySlimBlock> blocks, Func<IMySlimBlock, bool> collect = null);
+        void GetBlocks(List<IMySlimBlock> blocks, Func<IMySlimBlock, bool> collect = null);
 
-    List<IMySlimBlock> GetBlocksInsideSphere(ref BoundingSphereD sphere);
-  }
+        List<IMySlimBlock> GetBlocksInsideSphere(ref BoundingSphereD sphere);
+    }
 }

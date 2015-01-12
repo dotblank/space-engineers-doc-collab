@@ -8,14 +8,14 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMySoundBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    float Volume { get; }
+    public interface IMySoundBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        float Volume { get; }
 
-    float Range { get; }
+        float Range { get; }
 
-    bool IsSoundSelected { get; }
+        bool IsSoundSelected { get; }
 
-    float LoopPeriod { get; }
-  }
+        float LoopPeriod { get; }
+    }
 }

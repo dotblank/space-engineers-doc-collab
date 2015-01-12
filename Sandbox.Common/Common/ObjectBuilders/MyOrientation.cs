@@ -9,24 +9,18 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  public struct MyOrientation
-  {
-    [ProtoMember(1)]
-    [XmlAttribute]
-    public float Yaw;
-    [XmlAttribute]
-    [ProtoMember(2)]
-    public float Pitch;
-    [ProtoMember(3)]
-    [XmlAttribute]
-    public float Roll;
-
-    public MyOrientation(float yaw, float pitch, float roll)
+    [ProtoContract]
+    public struct MyOrientation
     {
-      this.Yaw = yaw;
-      this.Pitch = pitch;
-      this.Roll = roll;
+        [ProtoMember(1)] [XmlAttribute] public float Yaw;
+        [XmlAttribute] [ProtoMember(2)] public float Pitch;
+        [ProtoMember(3)] [XmlAttribute] public float Roll;
+
+        public MyOrientation(float yaw, float pitch, float roll)
+        {
+            this.Yaw = yaw;
+            this.Pitch = pitch;
+            this.Roll = roll;
+        }
     }
-  }
 }

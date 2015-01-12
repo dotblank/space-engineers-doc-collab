@@ -10,20 +10,17 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_SoundCategoryDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_SoundCategoryDefinition.SoundDesc[] Sounds;
-
+    [MyObjectBuilderDefinition]
     [ProtoContract]
-    public struct SoundDesc
+    public class MyObjectBuilder_SoundCategoryDefinition : MyObjectBuilder_DefinitionBase
     {
-      [XmlAttribute]
-      public string Id;
-      [XmlAttribute]
-      public string SoundName;
+        [ProtoMember(1)] public MyObjectBuilder_SoundCategoryDefinition.SoundDesc[] Sounds;
+
+        [ProtoContract]
+        public struct SoundDesc
+        {
+            [XmlAttribute] public string Id;
+            [XmlAttribute] public string SoundName;
+        }
     }
-  }
 }

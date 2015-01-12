@@ -9,44 +9,45 @@ using System.Collections.Generic;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  public struct MyRuntimeObjectBuilderId
-  {
-    public static readonly MyRuntimeObjectBuilderId.IdComparerType Comparer = new MyRuntimeObjectBuilderId.IdComparerType();
-    [ProtoMember(1)]
-    internal readonly ushort Value;
-
-    public MyRuntimeObjectBuilderId(ushort value)
+    [ProtoContract]
+    public struct MyRuntimeObjectBuilderId
     {
-      this.Value = value;
+        public static readonly MyRuntimeObjectBuilderId.IdComparerType Comparer =
+            new MyRuntimeObjectBuilderId.IdComparerType();
+
+        [ProtoMember(1)] internal readonly ushort Value;
+
+        public MyRuntimeObjectBuilderId(ushort value)
+        {
+            this.Value = value;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("{0}: {1}", (object) this.Value, (object) (MyObjectBuilderType) this);
+        }
+
+        public class IdComparerType : IComparer<MyRuntimeObjectBuilderId>, IEqualityComparer<MyRuntimeObjectBuilderId>
+        {
+            public int Compare(MyRuntimeObjectBuilderId x, MyRuntimeObjectBuilderId y)
+            {
+                return MyRuntimeObjectBuilderId.IdComparerType.CompareInternal(ref x, ref y);
+            }
+
+            public bool Equals(MyRuntimeObjectBuilderId x, MyRuntimeObjectBuilderId y)
+            {
+                return MyRuntimeObjectBuilderId.IdComparerType.CompareInternal(ref x, ref y) == 0;
+            }
+
+            public int GetHashCode(MyRuntimeObjectBuilderId obj)
+            {
+                return obj.Value.GetHashCode();
+            }
+
+            private static int CompareInternal(ref MyRuntimeObjectBuilderId x, ref MyRuntimeObjectBuilderId y)
+            {
+                return (int) x.Value - (int) y.Value;
+            }
+        }
     }
-
-    public override string ToString()
-    {
-      return string.Format("{0}: {1}", (object) this.Value, (object) (MyObjectBuilderType) this);
-    }
-
-    public class IdComparerType : IComparer<MyRuntimeObjectBuilderId>, IEqualityComparer<MyRuntimeObjectBuilderId>
-    {
-      public int Compare(MyRuntimeObjectBuilderId x, MyRuntimeObjectBuilderId y)
-      {
-        return MyRuntimeObjectBuilderId.IdComparerType.CompareInternal(ref x, ref y);
-      }
-
-      public bool Equals(MyRuntimeObjectBuilderId x, MyRuntimeObjectBuilderId y)
-      {
-        return MyRuntimeObjectBuilderId.IdComparerType.CompareInternal(ref x, ref y) == 0;
-      }
-
-      public int GetHashCode(MyRuntimeObjectBuilderId obj)
-      {
-        return obj.Value.GetHashCode();
-      }
-
-      private static int CompareInternal(ref MyRuntimeObjectBuilderId x, ref MyRuntimeObjectBuilderId y)
-      {
-        return (int) x.Value - (int) y.Value;
-      }
-    }
-  }
 }

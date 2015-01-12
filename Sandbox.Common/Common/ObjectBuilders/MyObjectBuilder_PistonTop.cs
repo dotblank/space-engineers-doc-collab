@@ -8,19 +8,18 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_PistonTop : MyObjectBuilder_CubeBlock
-  {
-    [ProtoMember(1)]
-    public long PistonBlockId;
-
-    public override void Remap(IMyRemapHelper remapHelper)
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_PistonTop : MyObjectBuilder_CubeBlock
     {
-      base.Remap(remapHelper);
-      if (this.PistonBlockId == 0L)
-        return;
-      this.PistonBlockId = remapHelper.RemapEntityId(this.PistonBlockId);
+        [ProtoMember(1)] public long PistonBlockId;
+
+        public override void Remap(IMyRemapHelper remapHelper)
+        {
+            base.Remap(remapHelper);
+            if (this.PistonBlockId == 0L)
+                return;
+            this.PistonBlockId = remapHelper.RemapEntityId(this.PistonBlockId);
+        }
     }
-  }
 }

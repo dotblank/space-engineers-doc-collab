@@ -6,15 +6,15 @@
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  public enum MyCharacterModelEnum
-  {
-    Soldier,
-    Astronaut,
-    Astronaut_Black,
-    Astronaut_Blue,
-    Astronaut_Green,
-    Astronaut_Red,
-    Astronaut_White,
-    Astronaut_Yellow,
-  }
+    public enum MyCharacterModelEnum
+    {
+        Soldier,
+        Astronaut,
+        Astronaut_Black,
+        Astronaut_Blue,
+        Astronaut_Green,
+        Astronaut_Red,
+        Astronaut_White,
+        Astronaut_Yellow,
+    }
 }

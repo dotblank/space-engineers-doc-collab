@@ -9,19 +9,16 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ConveyorPacket : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_InventoryItem Item;
-    [DefaultValue(0)]
-    [ProtoMember(2)]
-    public int LinePosition;
-
-    public bool ShouldSerializeLinePosition()
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ConveyorPacket : MyObjectBuilder_Base
     {
-      return this.LinePosition != 0;
+        [ProtoMember(1)] public MyObjectBuilder_InventoryItem Item;
+        [DefaultValue(0)] [ProtoMember(2)] public int LinePosition;
+
+        public bool ShouldSerializeLinePosition()
+        {
+            return this.LinePosition != 0;
+        }
     }
-  }
 }

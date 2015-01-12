@@ -6,15 +6,15 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum MyCustomHitParticlesMethodType
-  {
-    Unknown = -1,
-    Biochem = 0,
-    EMP = 1,
-    Basic = 2,
-    BasicSmall = 3,
-    Piercing = 4,
-    Explosive = 5,
-    HighSpeed = 6,
-  }
+    public enum MyCustomHitParticlesMethodType
+    {
+        Unknown = -1,
+        Biochem = 0,
+        EMP = 1,
+        Basic = 2,
+        BasicSmall = 3,
+        Piercing = 4,
+        Explosive = 5,
+        HighSpeed = 6,
+    }
 }

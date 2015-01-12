@@ -10,22 +10,17 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [XmlType("AddShipPrefab")]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_WorldGeneratorOperation_AddShipPrefab : MyObjectBuilder_WorldGeneratorOperation
-  {
-    [XmlAttribute]
-    [ProtoMember(1)]
-    public string PrefabFile;
-    [ProtoMember(2)]
-    public MyPositionAndOrientation Transform;
-    [XmlAttribute]
-    [ProtoMember(3)]
-    public float RandomRadius;
-
-    public bool ShouldSerializeRandomRadius()
+    [XmlType("AddShipPrefab")]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_WorldGeneratorOperation_AddShipPrefab : MyObjectBuilder_WorldGeneratorOperation
     {
-      return (double) this.RandomRadius != 0.0;
+        [XmlAttribute] [ProtoMember(1)] public string PrefabFile;
+        [ProtoMember(2)] public MyPositionAndOrientation Transform;
+        [XmlAttribute] [ProtoMember(3)] public float RandomRadius;
+
+        public bool ShouldSerializeRandomRadius()
+        {
+            return (double) this.RandomRadius != 0.0;
+        }
     }
-  }
 }

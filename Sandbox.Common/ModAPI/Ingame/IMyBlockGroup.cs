@@ -8,10 +8,10 @@ using System.Collections.Generic;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyBlockGroup
-  {
-    List<IMyTerminalBlock> Blocks { get; }
+    public interface IMyBlockGroup
+    {
+        List<IMyTerminalBlock> Blocks { get; }
 
-    string Name { get; }
-  }
+        string Name { get; }
+    }
 }

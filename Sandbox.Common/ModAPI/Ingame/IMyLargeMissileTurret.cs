@@ -8,7 +8,8 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyLargeMissileTurret : IMyLargeConveyorTurretBase, IMyLargeTurretBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-  }
+    public interface IMyLargeMissileTurret : IMyLargeConveyorTurretBase, IMyLargeTurretBase, IMyFunctionalBlock,
+        IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+    }
 }

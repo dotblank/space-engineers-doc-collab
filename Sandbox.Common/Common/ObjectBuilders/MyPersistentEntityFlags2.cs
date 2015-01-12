@@ -8,12 +8,12 @@ using System;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [Flags]
-  public enum MyPersistentEntityFlags2
-  {
-    None = 0,
-    Enabled = 2,
-    CastShadows = 4,
-    InScene = 16,
-  }
+    [Flags]
+    public enum MyPersistentEntityFlags2
+    {
+        None = 0,
+        Enabled = 2,
+        CastShadows = 4,
+        InScene = 16,
+    }
 }

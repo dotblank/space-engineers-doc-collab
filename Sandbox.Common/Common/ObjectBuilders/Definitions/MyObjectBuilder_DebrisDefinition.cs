@@ -9,14 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_DebrisDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ModdableContentFile("mwm")]
-    [ProtoMember(1)]
-    public string Model;
-    [ProtoMember(2)]
-    public MyDebrisType Type;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_DebrisDefinition : MyObjectBuilder_DefinitionBase
+    {
+        [ModdableContentFile("mwm")] [ProtoMember(1)] public string Model;
+        [ProtoMember(2)] public MyDebrisType Type;
+    }
 }

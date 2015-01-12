@@ -9,9 +9,9 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_GuiControlTextbox : MyObjectBuilder_GuiControlBase
-  {
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_GuiControlTextbox : MyObjectBuilder_GuiControlBase
+    {
+    }
 }

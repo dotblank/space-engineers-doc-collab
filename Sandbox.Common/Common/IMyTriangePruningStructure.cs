@@ -12,26 +12,33 @@ using VRageMath;
 
 namespace Sandbox.Common
 {
-  public interface IMyTriangePruningStructure
-  {
-    int Size { get; }
+    public interface IMyTriangePruningStructure
+    {
+        int Size { get; }
 
-    MyIntersectionResultLineTriangleEx? GetIntersectionWithLine(IMyEntity entity, ref LineD line, IntersectionFlags flags = IntersectionFlags.DIRECT_TRIANGLES);
+        MyIntersectionResultLineTriangleEx? GetIntersectionWithLine(IMyEntity entity, ref LineD line,
+            IntersectionFlags flags = IntersectionFlags.DIRECT_TRIANGLES);
 
-    MyIntersectionResultLineTriangleEx? GetIntersectionWithLine(IMyEntity entity, ref LineD line, ref MatrixD customInvMatrix, IntersectionFlags flags = IntersectionFlags.DIRECT_TRIANGLES);
+        MyIntersectionResultLineTriangleEx? GetIntersectionWithLine(IMyEntity entity, ref LineD line,
+            ref MatrixD customInvMatrix, IntersectionFlags flags = IntersectionFlags.DIRECT_TRIANGLES);
 
-    void GetTrianglesIntersectingLine(IMyEntity entity, ref LineD line, ref MatrixD customInvMatrix, IntersectionFlags flags, List<MyIntersectionResultLineTriangleEx> result);
+        void GetTrianglesIntersectingLine(IMyEntity entity, ref LineD line, ref MatrixD customInvMatrix,
+            IntersectionFlags flags, List<MyIntersectionResultLineTriangleEx> result);
 
-    void GetTrianglesIntersectingLine(IMyEntity entity, ref LineD line, IntersectionFlags flags, List<MyIntersectionResultLineTriangleEx> result);
+        void GetTrianglesIntersectingLine(IMyEntity entity, ref LineD line, IntersectionFlags flags,
+            List<MyIntersectionResultLineTriangleEx> result);
 
-    void GetTrianglesIntersectingSphere(ref BoundingSphereD sphere, Vector3? referenceNormalVector, float? maxAngle, List<MyTriangle_Vertex_Normals> retTriangles, int maxNeighbourTriangles);
+        void GetTrianglesIntersectingSphere(ref BoundingSphereD sphere, Vector3? referenceNormalVector, float? maxAngle,
+            List<MyTriangle_Vertex_Normals> retTriangles, int maxNeighbourTriangles);
 
-    bool GetIntersectionWithSphere(IMyEntity physObject, ref BoundingSphereD sphere);
+        bool GetIntersectionWithSphere(IMyEntity physObject, ref BoundingSphereD sphere);
 
-    void GetTrianglesIntersectingSphere(ref BoundingSphereD sphere, List<MyTriangle_Vertex_Normal> retTriangles, int maxNeighbourTriangles);
+        void GetTrianglesIntersectingSphere(ref BoundingSphereD sphere, List<MyTriangle_Vertex_Normal> retTriangles,
+            int maxNeighbourTriangles);
 
-    void GetTrianglesIntersectingAABB(ref BoundingBoxD sphere, List<MyTriangle_Vertex_Normal> retTriangles, int maxNeighbourTriangles);
+        void GetTrianglesIntersectingAABB(ref BoundingBoxD sphere, List<MyTriangle_Vertex_Normal> retTriangles,
+            int maxNeighbourTriangles);
 
-    void Close();
-  }
+        void Close();
+    }
 }

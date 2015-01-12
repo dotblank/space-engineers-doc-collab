@@ -10,23 +10,20 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_WeaponBlockDefinition : MyObjectBuilder_CubeBlockDefinition
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_WeaponBlockDefinition.WeaponBlockWeaponDefinition WeaponDefinitionId;
-    [ProtoMember(2)]
-    public float InventoryMaxVolume;
-
     [ProtoContract]
-    public class WeaponBlockWeaponDefinition
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_WeaponBlockDefinition : MyObjectBuilder_CubeBlockDefinition
     {
-      [XmlIgnore]
-      public MyObjectBuilderType Type = (MyObjectBuilderType) typeof (MyObjectBuilder_WeaponDefinition);
-      [ProtoMember(1)]
-      [XmlAttribute]
-      public string Subtype;
+        [ProtoMember(1)] public MyObjectBuilder_WeaponBlockDefinition.WeaponBlockWeaponDefinition WeaponDefinitionId;
+        [ProtoMember(2)] public float InventoryMaxVolume;
+
+        [ProtoContract]
+        public class WeaponBlockWeaponDefinition
+        {
+            [XmlIgnore] public MyObjectBuilderType Type =
+                (MyObjectBuilderType) typeof (MyObjectBuilder_WeaponDefinition);
+
+            [ProtoMember(1)] [XmlAttribute] public string Subtype;
+        }
     }
-  }
 }

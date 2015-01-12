@@ -10,11 +10,10 @@ using System.Collections.Generic;
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_GuiControls : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public List<MyObjectBuilder_GuiControlBase> Controls;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_GuiControls : MyObjectBuilder_Base
+    {
+        [ProtoMember(1)] public List<MyObjectBuilder_GuiControlBase> Controls;
+    }
 }

@@ -8,11 +8,11 @@ using Sandbox.Definitions;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  public static class MyObjectBuilderExtensions
-  {
-    public static MyDefinitionId GetId(this MyObjectBuilder_Base self)
+    public static class MyObjectBuilderExtensions
     {
-      return new MyDefinitionId(self.TypeId, self.SubtypeId);
+        public static MyDefinitionId GetId(this MyObjectBuilder_Base self)
+        {
+            return new MyDefinitionId(self.TypeId, self.SubtypeId);
+        }
     }
-  }
 }

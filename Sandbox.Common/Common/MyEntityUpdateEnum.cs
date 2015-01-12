@@ -8,13 +8,13 @@ using System;
 
 namespace Sandbox.Common
 {
-  [Flags]
-  public enum MyEntityUpdateEnum
-  {
-    NONE = 0,
-    EACH_FRAME = 1,
-    EACH_10TH_FRAME = 2,
-    EACH_100TH_FRAME = 4,
-    BEFORE_NEXT_FRAME = 8,
-  }
+    [Flags]
+    public enum MyEntityUpdateEnum
+    {
+        NONE = 0,
+        EACH_FRAME = 1,
+        EACH_10TH_FRAME = 2,
+        EACH_100TH_FRAME = 4,
+        BEFORE_NEXT_FRAME = 8,
+    }
 }

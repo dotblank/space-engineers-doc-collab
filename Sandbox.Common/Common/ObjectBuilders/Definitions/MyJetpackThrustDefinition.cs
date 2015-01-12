@@ -9,20 +9,14 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  public class MyJetpackThrustDefinition
-  {
-    [ProtoMember(2)]
-    public Vector4 ThrustColor = new Vector4(Color.CornflowerBlue.ToVector3() * 0.7f, 0.75f);
-    [ProtoMember(3)]
-    public float ThrustGlareSize = 5.585f;
-    [ProtoMember(4)]
-    public string ThrustMaterial = "EngineThrustMiddle";
-    [ProtoMember(5)]
-    public float SideFlameOffset = 0.12f;
-    [ProtoMember(6)]
-    public float FrontFlameOffset = 0.04f;
-    [ProtoMember(1)]
-    public string ThrustBone;
-  }
+    [ProtoContract]
+    public class MyJetpackThrustDefinition
+    {
+        [ProtoMember(2)] public Vector4 ThrustColor = new Vector4(Color.CornflowerBlue.ToVector3()*0.7f, 0.75f);
+        [ProtoMember(3)] public float ThrustGlareSize = 5.585f;
+        [ProtoMember(4)] public string ThrustMaterial = "EngineThrustMiddle";
+        [ProtoMember(5)] public float SideFlameOffset = 0.12f;
+        [ProtoMember(6)] public float FrontFlameOffset = 0.04f;
+        [ProtoMember(1)] public string ThrustBone;
+    }
 }

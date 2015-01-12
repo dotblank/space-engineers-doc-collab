@@ -6,10 +6,10 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum MyCockpitType
-  {
-    Closed,
-    Open,
-    OpenFP,
-  }
+    public enum MyCockpitType
+    {
+        Closed,
+        Open,
+        OpenFP,
+    }
 }

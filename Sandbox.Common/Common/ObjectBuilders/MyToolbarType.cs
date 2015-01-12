@@ -6,14 +6,14 @@
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  public enum MyToolbarType
-  {
-    Character,
-    SmallCockpit,
-    LargeCockpit,
-    Ship,
-    Seat,
-    ButtonPanel,
-    Spectator,
-  }
+    public enum MyToolbarType
+    {
+        Character,
+        SmallCockpit,
+        LargeCockpit,
+        Ship,
+        Seat,
+        ButtonPanel,
+        Spectator,
+    }
 }

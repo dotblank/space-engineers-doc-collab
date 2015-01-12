@@ -8,23 +8,19 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_BatteryBlock : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(2)]
-    public bool ProducerEnabled = true;
-    [ProtoMember(1)]
-    public float CurrentStoredPower;
-    [ProtoMember(3)]
-    public float MaxStoredPower;
-    [ProtoMember(4)]
-    public bool SemiautoEnabled;
-
-    public override void SetupForProjector()
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_BatteryBlock : MyObjectBuilder_FunctionalBlock
     {
-      base.SetupForProjector();
-      this.CurrentStoredPower = 0.0f;
+        [ProtoMember(2)] public bool ProducerEnabled = true;
+        [ProtoMember(1)] public float CurrentStoredPower;
+        [ProtoMember(3)] public float MaxStoredPower;
+        [ProtoMember(4)] public bool SemiautoEnabled;
+
+        public override void SetupForProjector()
+        {
+            base.SetupForProjector();
+            this.CurrentStoredPower = 0.0f;
+        }
     }
-  }
 }

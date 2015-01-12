@@ -9,13 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_EdgesDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(1)]
-    public MyEdgesModelSet Small;
-    [ProtoMember(2)]
-    public MyEdgesModelSet Large;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_EdgesDefinition : MyObjectBuilder_DefinitionBase
+    {
+        [ProtoMember(1)] public MyEdgesModelSet Small;
+        [ProtoMember(2)] public MyEdgesModelSet Large;
+    }
 }

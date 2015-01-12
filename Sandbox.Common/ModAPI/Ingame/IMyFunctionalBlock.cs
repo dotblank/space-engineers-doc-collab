@@ -8,14 +8,14 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyFunctionalBlock : IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool Enabled { get; }
+    public interface IMyFunctionalBlock : IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool Enabled { get; }
 
-    /// <summary>
-    /// Enables or disables the block
-    /// </summary>
-    /// <param name="enable"></param>
-    void RequestEnable(bool enable);
-  }
+        /// <summary>
+        ///     Enables or disables the block
+        /// </summary>
+        /// <param name="enable"></param>
+        void RequestEnable(bool enable);
+    }
 }

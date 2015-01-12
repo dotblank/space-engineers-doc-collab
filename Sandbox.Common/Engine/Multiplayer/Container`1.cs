@@ -8,10 +8,9 @@ using ProtoBuf;
 
 namespace Sandbox.Engine.Multiplayer
 {
-  [ProtoContract]
-  public class Container<T> where T : struct
-  {
-    [ProtoMember(1)]
-    public T Message;
-  }
+    [ProtoContract]
+    public class Container<T> where T : struct
+    {
+        [ProtoMember(1)] public T Message;
+    }
 }

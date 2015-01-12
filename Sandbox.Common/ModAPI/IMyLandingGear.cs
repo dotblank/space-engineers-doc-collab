@@ -8,8 +8,9 @@ using System;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyLandingGear : Sandbox.ModAPI.Ingame.IMyLandingGear, Sandbox.ModAPI.Ingame.IMyFunctionalBlock, Sandbox.ModAPI.Ingame.IMyTerminalBlock, Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
-  {
-    event Action<bool> StateChanged;
-  }
+    public interface IMyLandingGear : Sandbox.ModAPI.Ingame.IMyLandingGear, Sandbox.ModAPI.Ingame.IMyFunctionalBlock,
+        Sandbox.ModAPI.Ingame.IMyTerminalBlock, Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
+    {
+        event Action<bool> StateChanged;
+    }
 }

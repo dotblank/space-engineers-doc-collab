@@ -10,12 +10,10 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.VRageData
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_TransparentMaterials : MyObjectBuilder_Base
-  {
-    [XmlArrayItem("TransparentMaterial")]
-    [ProtoMember(1)]
-    public MyObjectBuilder_TransparentMaterial[] Materials;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_TransparentMaterials : MyObjectBuilder_Base
+    {
+        [XmlArrayItem("TransparentMaterial")] [ProtoMember(1)] public MyObjectBuilder_TransparentMaterial[] Materials;
+    }
 }

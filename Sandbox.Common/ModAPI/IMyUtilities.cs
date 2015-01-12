@@ -10,56 +10,58 @@ using System.IO;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyUtilities
-  {
-    IMyConfigDedicated ConfigDedicated { get; }
+    public interface IMyUtilities
+    {
+        IMyConfigDedicated ConfigDedicated { get; }
 
-    IMyGamePaths GamePaths { get; }
+        IMyGamePaths GamePaths { get; }
 
-    bool IsDedicated { get; }
+        bool IsDedicated { get; }
 
-    event MessageEnteredDel MessageEntered;
+        event MessageEnteredDel MessageEntered;
 
-    string GetTypeName(Type type);
+        string GetTypeName(Type type);
 
-    void ShowNotification(string message, int disappearTimeMs = 2000, MyFontEnum font = MyFontEnum.White);
+        void ShowNotification(string message, int disappearTimeMs = 2000, MyFontEnum font = MyFontEnum.White);
 
-    void ShowMessage(string sender, string messageText);
+        void ShowMessage(string sender, string messageText);
 
-    void SendMessage(string messageText);
+        void SendMessage(string messageText);
 
-    bool FileExistsInGlobalStorage(string file);
+        bool FileExistsInGlobalStorage(string file);
 
-    bool FileExistsInLocalStorage(string file, Type callingType);
+        bool FileExistsInLocalStorage(string file, Type callingType);
 
-    void DeleteFileInLocalStorage(string file, Type callingType);
+        void DeleteFileInLocalStorage(string file, Type callingType);
 
-    void DeleteFileInGlobalStorage(string file);
+        void DeleteFileInGlobalStorage(string file);
 
-    TextReader ReadFileInGlobalStorage(string file);
+        TextReader ReadFileInGlobalStorage(string file);
 
-    TextReader ReadFileInLocalStorage(string file, Type callingType);
+        TextReader ReadFileInLocalStorage(string file, Type callingType);
 
-    TextWriter WriteFileInGlobalStorage(string file);
+        TextWriter WriteFileInGlobalStorage(string file);
 
-    TextWriter WriteFileInLocalStorage(string file, Type callingType);
+        TextWriter WriteFileInLocalStorage(string file, Type callingType);
 
-    string SerializeToXML<T>(T objToSerialize);
+        string SerializeToXML<T>(T objToSerialize);
 
-    T SerializeFromXML<T>(string buffer);
+        T SerializeFromXML<T>(string buffer);
 
-    void InvokeOnGameThread(Action action);
+        void InvokeOnGameThread(Action action);
 
-    void ShowMissionScreen(string screenTitle = null, string currentObjectivePrefix = null, string currentObjective = null, string screenDescription = null, Action<ResultEnum> callback = null, string okButtonCaption = null);
+        void ShowMissionScreen(string screenTitle = null, string currentObjectivePrefix = null,
+            string currentObjective = null, string screenDescription = null, Action<ResultEnum> callback = null,
+            string okButtonCaption = null);
 
-    IMyHudObjectiveLine GetObjectiveLine();
+        IMyHudObjectiveLine GetObjectiveLine();
 
-    BinaryReader ReadBinaryFileInGlobalStorage(string file);
+        BinaryReader ReadBinaryFileInGlobalStorage(string file);
 
-    BinaryReader ReadBinaryFileInLocalStorage(string file, Type callingType);
+        BinaryReader ReadBinaryFileInLocalStorage(string file, Type callingType);
 
-    BinaryWriter WriteBinaryFileInGlobalStorage(string file);
+        BinaryWriter WriteBinaryFileInGlobalStorage(string file);
 
-    BinaryWriter WriteBinaryFileInLocalStorage(string file, Type callingType);
-  }
+        BinaryWriter WriteBinaryFileInLocalStorage(string file, Type callingType);
+    }
 }

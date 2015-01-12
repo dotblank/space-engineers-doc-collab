@@ -11,14 +11,15 @@ using System.Collections.Generic;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyTerminalActionsHelper
-  {
-    void GetActions(Type blockType, List<ITerminalAction> resultList, Func<ITerminalAction, bool> collect = null);
+    public interface IMyTerminalActionsHelper
+    {
+        void GetActions(Type blockType, List<ITerminalAction> resultList, Func<ITerminalAction, bool> collect = null);
 
-    void SearchActionsOfName(string name, Type blockType, List<ITerminalAction> resultList, Func<ITerminalAction, bool> collect = null);
+        void SearchActionsOfName(string name, Type blockType, List<ITerminalAction> resultList,
+            Func<ITerminalAction, bool> collect = null);
 
-    ITerminalAction GetActionWithName(string nameType, Type blockType);
+        ITerminalAction GetActionWithName(string nameType, Type blockType);
 
-    IMyGridTerminalSystem GetTerminalSystemForGrid(IMyCubeGrid grid);
-  }
+        IMyGridTerminalSystem GetTerminalSystemForGrid(IMyCubeGrid grid);
+    }
 }

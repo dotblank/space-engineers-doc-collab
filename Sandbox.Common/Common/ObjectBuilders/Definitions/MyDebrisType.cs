@@ -6,9 +6,9 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum MyDebrisType
-  {
-    Model,
-    Voxel,
-  }
+    public enum MyDebrisType
+    {
+        Model,
+        Voxel,
+    }
 }

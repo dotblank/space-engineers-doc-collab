@@ -12,76 +12,76 @@ using VRageMath;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyCubeBlock : Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
-  {
-    SerializableDefinitionId BlockDefinition { get; }
+    public interface IMyCubeBlock : Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
+    {
+        SerializableDefinitionId BlockDefinition { get; }
 
-    bool CheckConnectionAllowed { get; set; }
+        bool CheckConnectionAllowed { get; set; }
 
-    IMyCubeGrid CubeGrid { get; }
+        IMyCubeGrid CubeGrid { get; }
 
-    string DefinitionDisplayNameText { get; }
+        string DefinitionDisplayNameText { get; }
 
-    float DisassembleRatio { get; }
+        float DisassembleRatio { get; }
 
-    string DisplayNameText { get; }
+        string DisplayNameText { get; }
 
-    bool IsBeingHacked { get; }
+        bool IsBeingHacked { get; }
 
-    bool IsFunctional { get; }
+        bool IsFunctional { get; }
 
-    bool IsWorking { get; }
+        bool IsWorking { get; }
 
-    Vector3I Max { get; }
+        Vector3I Max { get; }
 
-    Vector3I Min { get; }
+        Vector3I Min { get; }
 
-    int NumberInGrid { get; set; }
+        int NumberInGrid { get; set; }
 
-    MyBlockOrientation Orientation { get; }
+        MyBlockOrientation Orientation { get; }
 
-    long OwnerId { get; }
+        long OwnerId { get; }
 
-    Vector3I Position { get; }
+        Vector3I Position { get; }
 
-    event Action<IMyCubeBlock> IsWorkingChanged;
+        event Action<IMyCubeBlock> IsWorkingChanged;
 
-    void CalcLocalMatrix(out Matrix localMatrix, out string currModel);
+        void CalcLocalMatrix(out Matrix localMatrix, out string currModel);
 
-    string CalculateCurrentModel(out Matrix orientation);
+        string CalculateCurrentModel(out Matrix orientation);
 
-    bool DebugDraw();
+        bool DebugDraw();
 
-    MyObjectBuilder_CubeBlock GetObjectBuilderCubeBlock(bool copy = false);
+        MyObjectBuilder_CubeBlock GetObjectBuilderCubeBlock(bool copy = false);
 
-    string GetOwnerFactionTag();
+        string GetOwnerFactionTag();
 
-    MyRelationsBetweenPlayerAndBlock GetPlayerRelationToOwner();
+        MyRelationsBetweenPlayerAndBlock GetPlayerRelationToOwner();
 
-    MyRelationsBetweenPlayerAndBlock GetUserRelationToOwner(long playerId);
+        MyRelationsBetweenPlayerAndBlock GetUserRelationToOwner(long playerId);
 
-    void Init();
+        void Init();
 
-    void Init(MyObjectBuilder_CubeBlock builder, IMyCubeGrid cubeGrid);
+        void Init(MyObjectBuilder_CubeBlock builder, IMyCubeGrid cubeGrid);
 
-    void OnBuildSuccess(long builtBy);
+        void OnBuildSuccess(long builtBy);
 
-    void OnDestroy();
+        void OnDestroy();
 
-    void OnModelChange();
+        void OnModelChange();
 
-    void OnRegisteredToGridSystems();
+        void OnRegisteredToGridSystems();
 
-    void OnRemovedByCubeBuilder();
+        void OnRemovedByCubeBuilder();
 
-    void OnUnregisteredFromGridSystems();
+        void OnUnregisteredFromGridSystems();
 
-    string RaycastDetectors(Vector3 worldFrom, Vector3 worldTo);
+        string RaycastDetectors(Vector3 worldFrom, Vector3 worldTo);
 
-    void ReloadDetectors(bool refreshNetworks = true);
+        void ReloadDetectors(bool refreshNetworks = true);
 
-    void UpdateIsWorking();
+        void UpdateIsWorking();
 
-    void UpdateVisual();
-  }
+        void UpdateVisual();
+    }
 }

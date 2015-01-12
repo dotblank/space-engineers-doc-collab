@@ -9,44 +9,44 @@ using VRageMath;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMySlimBlock
-  {
-    float AccumulatedDamage { get; }
+    public interface IMySlimBlock
+    {
+        float AccumulatedDamage { get; }
 
-    float BuildIntegrity { get; }
+        float BuildIntegrity { get; }
 
-    float BuildLevelRatio { get; }
+        float BuildLevelRatio { get; }
 
-    float CurrentDamage { get; }
+        float CurrentDamage { get; }
 
-    float DamageRatio { get; }
+        float DamageRatio { get; }
 
-    IMyCubeBlock FatBlock { get; }
+        IMyCubeBlock FatBlock { get; }
 
-    bool HasDeformation { get; }
+        bool HasDeformation { get; }
 
-    bool IsDestroyed { get; }
+        bool IsDestroyed { get; }
 
-    bool IsFullIntegrity { get; }
+        bool IsFullIntegrity { get; }
 
-    bool IsFullyDismounted { get; }
+        bool IsFullyDismounted { get; }
 
-    float MaxDeformation { get; }
+        float MaxDeformation { get; }
 
-    float MaxIntegrity { get; }
+        float MaxIntegrity { get; }
 
-    bool ShowParts { get; }
+        bool ShowParts { get; }
 
-    bool StockpileAllocated { get; }
+        bool StockpileAllocated { get; }
 
-    bool StockpileEmpty { get; }
+        bool StockpileEmpty { get; }
 
-    Vector3I Position { get; }
+        Vector3I Position { get; }
 
-    IMyCubeGrid CubeGrid { get; }
+        IMyCubeGrid CubeGrid { get; }
 
-    void GetMissingComponents(Dictionary<string, int> addToDictionary);
+        void GetMissingComponents(Dictionary<string, int> addToDictionary);
 
-    void UpdateVisual();
-  }
+        void UpdateVisual();
+    }
 }

@@ -6,23 +6,23 @@
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  public enum MyGuiControlButtonStyleEnum
-  {
-    Default,
-    Small,
-    Red,
-    Close,
-    Info,
-    InventoryTrash,
-    Debug,
-    ControlSetting,
-    ClickableText,
-    Increase,
-    Decrease,
-    Rectangular,
-    Tiny,
-    ArrowLeft,
-    ArrowRight,
-    Square,
-  }
+    public enum MyGuiControlButtonStyleEnum
+    {
+        Default,
+        Small,
+        Red,
+        Close,
+        Info,
+        InventoryTrash,
+        Debug,
+        ControlSetting,
+        ClickableText,
+        Increase,
+        Decrease,
+        Rectangular,
+        Tiny,
+        ArrowLeft,
+        ArrowRight,
+        Square,
+    }
 }

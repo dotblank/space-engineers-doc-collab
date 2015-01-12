@@ -10,26 +10,20 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_GuiScreen : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_GuiControls Controls;
-    [ProtoMember(2)]
-    public Vector4? BackgroundColor;
-    [ProtoMember(3)]
-    public string BackgroundTexture;
-    [ProtoMember(4)]
-    public Vector2? Size;
-    [ProtoMember(5)]
-    public bool CloseButtonEnabled;
-    [ProtoMember(7)]
-    public Vector2 CloseButtonOffset;
-
-    public bool ShouldSerializeCloseButtonOffset()
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_GuiScreen : MyObjectBuilder_Base
     {
-      return this.CloseButtonEnabled;
+        [ProtoMember(1)] public MyObjectBuilder_GuiControls Controls;
+        [ProtoMember(2)] public Vector4? BackgroundColor;
+        [ProtoMember(3)] public string BackgroundTexture;
+        [ProtoMember(4)] public Vector2? Size;
+        [ProtoMember(5)] public bool CloseButtonEnabled;
+        [ProtoMember(7)] public Vector2 CloseButtonOffset;
+
+        public bool ShouldSerializeCloseButtonOffset()
+        {
+            return this.CloseButtonEnabled;
+        }
     }
-  }
 }

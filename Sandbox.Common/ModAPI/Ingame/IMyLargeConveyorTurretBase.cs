@@ -8,8 +8,9 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyLargeConveyorTurretBase : IMyLargeTurretBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool UseConveyorSystem { get; }
-  }
+    public interface IMyLargeConveyorTurretBase : IMyLargeTurretBase, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock,
+        IMyEntity
+    {
+        bool UseConveyorSystem { get; }
+    }
 }

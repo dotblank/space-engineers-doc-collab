@@ -9,13 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_BatteryBlockDefinition : MyObjectBuilder_PowerProducerDefinition
-  {
-    [ProtoMember(1)]
-    public float MaxStoredPower;
-    [ProtoMember(2)]
-    public float RequiredPowerInput;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_BatteryBlockDefinition : MyObjectBuilder_PowerProducerDefinition
+    {
+        [ProtoMember(1)] public float MaxStoredPower;
+        [ProtoMember(2)] public float RequiredPowerInput;
+    }
 }

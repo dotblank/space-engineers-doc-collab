@@ -8,8 +8,9 @@ using System;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMySensorBlock : Sandbox.ModAPI.Ingame.IMySensorBlock, Sandbox.ModAPI.Ingame.IMyFunctionalBlock, Sandbox.ModAPI.Ingame.IMyTerminalBlock, Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
-  {
-    event Action<bool> StateChanged;
-  }
+    public interface IMySensorBlock : Sandbox.ModAPI.Ingame.IMySensorBlock, Sandbox.ModAPI.Ingame.IMyFunctionalBlock,
+        Sandbox.ModAPI.Ingame.IMyTerminalBlock, Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
+    {
+        event Action<bool> StateChanged;
+    }
 }

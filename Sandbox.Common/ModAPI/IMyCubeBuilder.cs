@@ -9,42 +9,44 @@ using VRageMath;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyCubeBuilder
-  {
-    bool BlockCreationIsActivated { get; }
+    public interface IMyCubeBuilder
+    {
+        bool BlockCreationIsActivated { get; }
 
-    bool CopyPasteIsActivated { get; }
+        bool CopyPasteIsActivated { get; }
 
-    bool FreezeGizmo { get; set; }
+        bool FreezeGizmo { get; set; }
 
-    bool ShipCreationIsActivated { get; }
+        bool ShipCreationIsActivated { get; }
 
-    bool ShowRemoveGizmo { get; set; }
+        bool ShowRemoveGizmo { get; set; }
 
-    bool UseSymmetry { get; set; }
+        bool UseSymmetry { get; set; }
 
-    bool UseTransparency { get; set; }
+        bool UseTransparency { get; set; }
 
-    bool IsActivated { get; }
+        bool IsActivated { get; }
 
-    void Activate();
+        void Activate();
 
-    void ActivateShipCreationClipboard(MyObjectBuilder_CubeGrid grid, Vector3 centerDeltaDirection, float dragVectorLength);
+        void ActivateShipCreationClipboard(MyObjectBuilder_CubeGrid grid, Vector3 centerDeltaDirection,
+            float dragVectorLength);
 
-    void ActivateShipCreationClipboard(MyObjectBuilder_CubeGrid[] grids, Vector3 centerDeltaDirection, float dragVectorLength);
+        void ActivateShipCreationClipboard(MyObjectBuilder_CubeGrid[] grids, Vector3 centerDeltaDirection,
+            float dragVectorLength);
 
-    bool AddConstruction(IMyEntity buildingEntity);
+        bool AddConstruction(IMyEntity buildingEntity);
 
-    void Deactivate();
+        void Deactivate();
 
-    void DeactivateBlockCreation();
+        void DeactivateBlockCreation();
 
-    void DeactivateCopyPaste();
+        void DeactivateCopyPaste();
 
-    void DeactivateShipCreationClipboard();
+        void DeactivateShipCreationClipboard();
 
-    void StartNewGridPlacement(MyCubeSize cubeSize, bool isStatic);
+        void StartNewGridPlacement(MyCubeSize cubeSize, bool isStatic);
 
-    IMyCubeGrid FindClosestGrid();
-  }
+        IMyCubeGrid FindClosestGrid();
+    }
 }

@@ -11,47 +11,43 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  public struct MyPositionAndOrientation
-  {
-    public static readonly MyPositionAndOrientation Default = new MyPositionAndOrientation((Vector3D) Vector3.Zero, Vector3.Forward, Vector3.Up);
-    [XmlElement("Position")]
-    [ProtoMember(1)]
-    public SerializableVector3D Position;
-    [ProtoMember(2)]
-    [XmlElement("Forward")]
-    public SerializableVector3 Forward;
-    [ProtoMember(3)]
-    [XmlElement("Up")]
-    public SerializableVector3 Up;
-
-    public MyPositionAndOrientation(Vector3D position, Vector3 forward, Vector3 up)
+    [ProtoContract]
+    public struct MyPositionAndOrientation
     {
-      this.Position = (SerializableVector3D) position;
-      this.Forward = (SerializableVector3) forward;
-      this.Up = (SerializableVector3) up;
-    }
+        public static readonly MyPositionAndOrientation Default = new MyPositionAndOrientation((Vector3D) Vector3.Zero,
+            Vector3.Forward, Vector3.Up);
 
-    public MyPositionAndOrientation(ref MatrixD matrix)
-    {
-      this.Position = (SerializableVector3D) matrix.Translation;
-      this.Forward = (SerializableVector3) (Vector3) matrix.Forward;
-      this.Up = (SerializableVector3) (Vector3) matrix.Up;
-    }
+        [XmlElement("Position")] [ProtoMember(1)] public SerializableVector3D Position;
+        [ProtoMember(2)] [XmlElement("Forward")] public SerializableVector3 Forward;
+        [ProtoMember(3)] [XmlElement("Up")] public SerializableVector3 Up;
 
-    public MyPositionAndOrientation(MatrixD matrix)
-    {
-      this = new MyPositionAndOrientation(matrix.Translation, (Vector3) matrix.Forward, (Vector3) matrix.Up);
-    }
+        public MyPositionAndOrientation(Vector3D position, Vector3 forward, Vector3 up)
+        {
+            this.Position = (SerializableVector3D) position;
+            this.Forward = (SerializableVector3) forward;
+            this.Up = (SerializableVector3) up;
+        }
 
-    public MatrixD GetMatrix()
-    {
-      return MatrixD.CreateWorld((Vector3D) this.Position, (Vector3) this.Forward, (Vector3) this.Up);
-    }
+        public MyPositionAndOrientation(ref MatrixD matrix)
+        {
+            this.Position = (SerializableVector3D) matrix.Translation;
+            this.Forward = (SerializableVector3) (Vector3) matrix.Forward;
+            this.Up = (SerializableVector3) (Vector3) matrix.Up;
+        }
 
-    public override string ToString()
-    {
-      return this.Position.ToString() + "; " + this.Forward.ToString() + "; " + this.Up.ToString();
+        public MyPositionAndOrientation(MatrixD matrix)
+        {
+            this = new MyPositionAndOrientation(matrix.Translation, (Vector3) matrix.Forward, (Vector3) matrix.Up);
+        }
+
+        public MatrixD GetMatrix()
+        {
+            return MatrixD.CreateWorld((Vector3D) this.Position, (Vector3) this.Forward, (Vector3) this.Up);
+        }
+
+        public override string ToString()
+        {
+            return this.Position.ToString() + "; " + this.Forward.ToString() + "; " + this.Up.ToString();
+        }
     }
-  }
 }

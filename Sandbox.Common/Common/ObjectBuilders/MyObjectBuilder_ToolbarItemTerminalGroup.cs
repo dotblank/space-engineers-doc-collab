@@ -8,21 +8,19 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ToolbarItemTerminalGroup : MyObjectBuilder_ToolbarItemTerminal
-  {
-    public long GridEntityId;
-    [ProtoMember(1)]
-    public long BlockEntityId;
-    [ProtoMember(2)]
-    public string GroupName;
-
-    public override void Remap(IMyRemapHelper remapHelper)
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ToolbarItemTerminalGroup : MyObjectBuilder_ToolbarItemTerminal
     {
-      if (this.BlockEntityId == 0L)
-        return;
-      this.BlockEntityId = remapHelper.RemapEntityId(this.BlockEntityId);
+        public long GridEntityId;
+        [ProtoMember(1)] public long BlockEntityId;
+        [ProtoMember(2)] public string GroupName;
+
+        public override void Remap(IMyRemapHelper remapHelper)
+        {
+            if (this.BlockEntityId == 0L)
+                return;
+            this.BlockEntityId = remapHelper.RemapEntityId(this.BlockEntityId);
+        }
     }
-  }
 }

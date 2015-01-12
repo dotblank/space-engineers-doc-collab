@@ -6,13 +6,13 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum MyGlobalEventTypeEnum
-  {
-    InvalidEventType,
-    SpawnNeutralShip,
-    MeteorShower,
-    MeteorWave,
-    SpawnCargoShip,
-    April2014,
-  }
+    public enum MyGlobalEventTypeEnum
+    {
+        InvalidEventType,
+        SpawnNeutralShip,
+        MeteorShower,
+        MeteorWave,
+        SpawnCargoShip,
+        April2014,
+    }
 }

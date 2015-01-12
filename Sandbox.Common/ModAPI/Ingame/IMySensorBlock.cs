@@ -8,42 +8,42 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMySensorBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    float LeftExtend { get; }
+    public interface IMySensorBlock : IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        float LeftExtend { get; }
 
-    float RightExtend { get; }
+        float RightExtend { get; }
 
-    float TopExtend { get; }
+        float TopExtend { get; }
 
-    float BottomExtend { get; }
+        float BottomExtend { get; }
 
-    float FrontExtend { get; }
+        float FrontExtend { get; }
 
-    float BackExtend { get; }
+        float BackExtend { get; }
 
-    bool DetectPlayers { get; }
+        bool DetectPlayers { get; }
 
-    bool DetectFloatingObjects { get; }
+        bool DetectFloatingObjects { get; }
 
-    bool DetectSmallShips { get; }
+        bool DetectSmallShips { get; }
 
-    bool DetectLargeShips { get; }
+        bool DetectLargeShips { get; }
 
-    bool DetectStations { get; }
+        bool DetectStations { get; }
 
-    bool DetectAsteroids { get; }
+        bool DetectAsteroids { get; }
 
-    bool DetectOwner { get; }
+        bool DetectOwner { get; }
 
-    bool DetectFriendly { get; }
+        bool DetectFriendly { get; }
 
-    bool DetectNeutral { get; }
+        bool DetectNeutral { get; }
 
-    bool DetectEnemy { get; }
+        bool DetectEnemy { get; }
 
-    bool IsActive { get; }
+        bool IsActive { get; }
 
-    IMyEntity LastDetectedEntity { get; }
-  }
+        IMyEntity LastDetectedEntity { get; }
+    }
 }

@@ -8,15 +8,12 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_Warhead : MyObjectBuilder_TerminalBlock
-  {
-    [ProtoMember(1)]
-    public int CountdownMs = 10000;
-    [ProtoMember(2)]
-    public bool IsArmed;
-    [ProtoMember(3)]
-    public bool IsCountingDown;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_Warhead : MyObjectBuilder_TerminalBlock
+    {
+        [ProtoMember(1)] public int CountdownMs = 10000;
+        [ProtoMember(2)] public bool IsArmed;
+        [ProtoMember(3)] public bool IsCountingDown;
+    }
 }

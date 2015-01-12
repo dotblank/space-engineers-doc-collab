@@ -9,48 +9,46 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  public struct MyEncounterId
-  {
-    [ProtoMember(1)]
-    public BoundingBoxD BoundingBox;
-    [ProtoMember(2)]
-    public int Seed;
-
-    public MyEncounterId(BoundingBoxD box, int seed)
+    [ProtoContract]
+    public struct MyEncounterId
     {
-      this.BoundingBox = box;
-      this.Seed = seed;
-    }
+        [ProtoMember(1)] public BoundingBoxD BoundingBox;
+        [ProtoMember(2)] public int Seed;
 
-    public static bool operator ==(MyEncounterId x, MyEncounterId y)
-    {
-      if (x.BoundingBox == y.BoundingBox)
-        return x.Seed == y.Seed;
-      else
-        return false;
-    }
+        public MyEncounterId(BoundingBoxD box, int seed)
+        {
+            this.BoundingBox = box;
+            this.Seed = seed;
+        }
 
-    public static bool operator !=(MyEncounterId x, MyEncounterId y)
-    {
-      return !(x == y);
-    }
+        public static bool operator ==(MyEncounterId x, MyEncounterId y)
+        {
+            if (x.BoundingBox == y.BoundingBox)
+                return x.Seed == y.Seed;
+            else
+                return false;
+        }
 
-    public override bool Equals(object o)
-    {
-      try
-      {
-        return this == (MyEncounterId) o;
-      }
-      catch
-      {
-        return false;
-      }
-    }
+        public static bool operator !=(MyEncounterId x, MyEncounterId y)
+        {
+            return !(x == y);
+        }
 
-    public override int GetHashCode()
-    {
-      return this.BoundingBox.GetHashCode() << 16 ^ this.Seed;
+        public override bool Equals(object o)
+        {
+            try
+            {
+                return this == (MyEncounterId) o;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public override int GetHashCode()
+        {
+            return this.BoundingBox.GetHashCode() << 16 ^ this.Seed;
+        }
     }
-  }
 }

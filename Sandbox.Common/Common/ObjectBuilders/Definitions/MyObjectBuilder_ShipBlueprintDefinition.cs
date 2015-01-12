@@ -9,13 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ShipBlueprintDefinition : MyObjectBuilder_PrefabDefinition
-  {
-    [ProtoMember(1)]
-    public ulong WorkshopId;
-    [ProtoMember(2)]
-    public ulong OwnerSteamId;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ShipBlueprintDefinition : MyObjectBuilder_PrefabDefinition
+    {
+        [ProtoMember(1)] public ulong WorkshopId;
+        [ProtoMember(2)] public ulong OwnerSteamId;
+    }
 }

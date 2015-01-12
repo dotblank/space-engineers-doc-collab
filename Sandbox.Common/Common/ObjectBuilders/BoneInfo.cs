@@ -9,12 +9,10 @@ using Sandbox.Common.ObjectBuilders.VRageData;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  public struct BoneInfo
-  {
-    [ProtoMember(1)]
-    public SerializableVector3I BonePosition;
-    [ProtoMember(2)]
-    public SerializableVector3UByte BoneOffset;
-  }
+    [ProtoContract]
+    public struct BoneInfo
+    {
+        [ProtoMember(1)] public SerializableVector3I BonePosition;
+        [ProtoMember(2)] public SerializableVector3UByte BoneOffset;
+    }
 }

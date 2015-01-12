@@ -10,42 +10,42 @@ using System.Collections.Generic;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyConfigDedicated
-  {
-    List<string> Administrators { get; set; }
+    public interface IMyConfigDedicated
+    {
+        List<string> Administrators { get; set; }
 
-    int AsteroidAmount { get; set; }
+        int AsteroidAmount { get; set; }
 
-    List<ulong> Banned { get; set; }
+        List<ulong> Banned { get; set; }
 
-    ulong GroupID { get; set; }
+        ulong GroupID { get; set; }
 
-    bool IgnoreLastSession { get; set; }
+        bool IgnoreLastSession { get; set; }
 
-    string IP { get; set; }
+        string IP { get; set; }
 
-    string LoadWorld { get; }
+        string LoadWorld { get; }
 
-    List<ulong> Mods { get; }
+        List<ulong> Mods { get; }
 
-    bool PauseGameWhenEmpty { get; set; }
+        bool PauseGameWhenEmpty { get; set; }
 
-    SerializableDefinitionId Scenario { get; set; }
+        SerializableDefinitionId Scenario { get; set; }
 
-    string ServerName { get; set; }
+        string ServerName { get; set; }
 
-    int ServerPort { get; set; }
+        int ServerPort { get; set; }
 
-    MyObjectBuilder_SessionSettings SessionSettings { get; set; }
+        MyObjectBuilder_SessionSettings SessionSettings { get; set; }
 
-    int SteamPort { get; set; }
+        int SteamPort { get; set; }
 
-    string WorldName { get; set; }
+        string WorldName { get; set; }
 
-    string GetFilePath();
+        string GetFilePath();
 
-    void Load();
+        void Load();
 
-    void Save();
-  }
+        void Save();
+    }
 }

@@ -10,25 +10,19 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_AmmoMagazineDefinition : MyObjectBuilder_PhysicalItemDefinition
-  {
-    [ProtoMember(1)]
-    public int Capacity;
-    [ProtoMember(2)]
-    public MyAmmoCategoryEnum Category;
-    [ProtoMember(3)]
-    public MyObjectBuilder_AmmoMagazineDefinition.AmmoDefinition AmmoDefinitionId;
-
     [ProtoContract]
-    public class AmmoDefinition
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_AmmoMagazineDefinition : MyObjectBuilder_PhysicalItemDefinition
     {
-      [XmlIgnore]
-      public MyObjectBuilderType Type = (MyObjectBuilderType) typeof (MyObjectBuilder_AmmoDefinition);
-      [ProtoMember(1)]
-      [XmlAttribute]
-      public string Subtype;
+        [ProtoMember(1)] public int Capacity;
+        [ProtoMember(2)] public MyAmmoCategoryEnum Category;
+        [ProtoMember(3)] public MyObjectBuilder_AmmoMagazineDefinition.AmmoDefinition AmmoDefinitionId;
+
+        [ProtoContract]
+        public class AmmoDefinition
+        {
+            [XmlIgnore] public MyObjectBuilderType Type = (MyObjectBuilderType) typeof (MyObjectBuilder_AmmoDefinition);
+            [ProtoMember(1)] [XmlAttribute] public string Subtype;
+        }
     }
-  }
 }

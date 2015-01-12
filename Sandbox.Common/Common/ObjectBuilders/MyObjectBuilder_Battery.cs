@@ -9,14 +9,11 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_Battery : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    [DefaultValue(true)]
-    public bool ProducerEnabled = true;
-    [ProtoMember(2)]
-    public float CurrentCapacity;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_Battery : MyObjectBuilder_Base
+    {
+        [ProtoMember(1)] [DefaultValue(true)] public bool ProducerEnabled = true;
+        [ProtoMember(2)] public float CurrentCapacity;
+    }
 }

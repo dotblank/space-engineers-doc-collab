@@ -9,13 +9,11 @@ using System.Collections.Generic;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_PlayerChatHistory : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public List<MyObjectBuilder_ChatItem> Chat;
-    [ProtoMember(2)]
-    public long IdentityId;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_PlayerChatHistory : MyObjectBuilder_Base
+    {
+        [ProtoMember(1)] public List<MyObjectBuilder_ChatItem> Chat;
+        [ProtoMember(2)] public long IdentityId;
+    }
 }

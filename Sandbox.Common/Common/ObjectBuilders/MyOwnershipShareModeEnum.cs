@@ -6,10 +6,10 @@
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  public enum MyOwnershipShareModeEnum
-  {
-    None,
-    Faction,
-    All,
-  }
+    public enum MyOwnershipShareModeEnum
+    {
+        None,
+        Faction,
+        All,
+    }
 }

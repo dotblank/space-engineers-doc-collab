@@ -8,11 +8,10 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public abstract class MyObjectBuilder_ToolbarItemTerminal : MyObjectBuilder_ToolbarItem
-  {
-    [ProtoMember(1)]
-    public string Action;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public abstract class MyObjectBuilder_ToolbarItemTerminal : MyObjectBuilder_ToolbarItem
+    {
+        [ProtoMember(1)] public string Action;
+    }
 }

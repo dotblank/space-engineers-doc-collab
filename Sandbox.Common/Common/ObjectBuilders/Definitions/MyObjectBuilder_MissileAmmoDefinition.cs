@@ -10,32 +10,23 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_MissileAmmoDefinition : MyObjectBuilder_AmmoDefinition
-  {
-    [ProtoMember(1)]
-    [DefaultValue(null)]
-    public MyObjectBuilder_MissileAmmoDefinition.AmmoMissileProperties MissileProperties;
-
+    [MyObjectBuilderDefinition]
     [ProtoContract]
-    public class AmmoMissileProperties
+    public class MyObjectBuilder_MissileAmmoDefinition : MyObjectBuilder_AmmoDefinition
     {
-      [ProtoMember(1)]
-      public float MissileMass;
-      [ProtoMember(2)]
-      public float MissileExplosionRadius;
-      [ProtoMember(3)]
-      [ModdableContentFile("mwm")]
-      public string MissileModelName;
-      [ProtoMember(4)]
-      public float MissileAcceleration;
-      [ProtoMember(5)]
-      public float MissileInitialSpeed;
-      [ProtoMember(6)]
-      public bool MissileSkipAcceleration;
-      [ProtoMember(7)]
-      public float MissileExplosionDamage;
+        [ProtoMember(1)] [DefaultValue(null)] public MyObjectBuilder_MissileAmmoDefinition.AmmoMissileProperties
+            MissileProperties;
+
+        [ProtoContract]
+        public class AmmoMissileProperties
+        {
+            [ProtoMember(1)] public float MissileMass;
+            [ProtoMember(2)] public float MissileExplosionRadius;
+            [ProtoMember(3)] [ModdableContentFile("mwm")] public string MissileModelName;
+            [ProtoMember(4)] public float MissileAcceleration;
+            [ProtoMember(5)] public float MissileInitialSpeed;
+            [ProtoMember(6)] public bool MissileSkipAcceleration;
+            [ProtoMember(7)] public float MissileExplosionDamage;
+        }
     }
-  }
 }

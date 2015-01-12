@@ -12,30 +12,31 @@ using System.Text;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyTerminalBlock : IMyCubeBlock, IMyEntity
-  {
-    string CustomName { get; }
+    public interface IMyTerminalBlock : IMyCubeBlock, IMyEntity
+    {
+        string CustomName { get; }
 
-    string CustomNameWithFaction { get; }
+        string CustomNameWithFaction { get; }
 
-    string DetailedInfo { get; }
+        string DetailedInfo { get; }
 
-    bool ShowOnHUD { get; }
+        bool ShowOnHUD { get; }
 
-    bool HasLocalPlayerAccess();
+        bool HasLocalPlayerAccess();
 
-    bool HasPlayerAccess(long playerId);
+        bool HasPlayerAccess(long playerId);
 
-    void RequestShowOnHUD(bool enable);
+        void RequestShowOnHUD(bool enable);
 
-    void SetCustomName(string text);
+        void SetCustomName(string text);
 
-    void SetCustomName(StringBuilder text);
+        void SetCustomName(StringBuilder text);
 
-    void GetActions(List<ITerminalAction> resultList, Func<ITerminalAction, bool> collect = null);
+        void GetActions(List<ITerminalAction> resultList, Func<ITerminalAction, bool> collect = null);
 
-    void SearchActionsOfName(string name, List<ITerminalAction> resultList, Func<ITerminalAction, bool> collect = null);
+        void SearchActionsOfName(string name, List<ITerminalAction> resultList,
+            Func<ITerminalAction, bool> collect = null);
 
-    ITerminalAction GetActionWithName(string name);
-  }
+        ITerminalAction GetActionWithName(string name);
+    }
 }

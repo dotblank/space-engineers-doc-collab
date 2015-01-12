@@ -6,10 +6,10 @@
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  public enum MyCubeSize : byte
-  {
-    Large,
-    Small,
-    Medium,
-  }
+    public enum MyCubeSize : byte
+    {
+        Large,
+        Small,
+        Medium,
+    }
 }

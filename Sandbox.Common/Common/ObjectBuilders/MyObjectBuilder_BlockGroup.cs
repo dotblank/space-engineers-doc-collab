@@ -10,13 +10,11 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_BlockGroup : MyObjectBuilder_Base
-  {
-    [ProtoMember(2)]
-    public List<Vector3I> Blocks = new List<Vector3I>();
-    [ProtoMember(1)]
-    public string Name;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_BlockGroup : MyObjectBuilder_Base
+    {
+        [ProtoMember(2)] public List<Vector3I> Blocks = new List<Vector3I>();
+        [ProtoMember(1)] public string Name;
+    }
 }

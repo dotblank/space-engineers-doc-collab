@@ -8,11 +8,10 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_CompoundCubeBlock : MyObjectBuilder_CubeBlock
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_CubeBlock[] Blocks;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_CompoundCubeBlock : MyObjectBuilder_CubeBlock
+    {
+        [ProtoMember(1)] public MyObjectBuilder_CubeBlock[] Blocks;
+    }
 }

@@ -10,16 +10,15 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_GuiControlProgressBar : MyObjectBuilder_GuiControlBase
-  {
-    [ProtoMember(1)]
-    public Vector4? ProgressColor;
-
-    public bool ShouldSerializeProgressColor()
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_GuiControlProgressBar : MyObjectBuilder_GuiControlBase
     {
-      return this.ProgressColor.HasValue;
+        [ProtoMember(1)] public Vector4? ProgressColor;
+
+        public bool ShouldSerializeProgressColor()
+        {
+            return this.ProgressColor.HasValue;
+        }
     }
-  }
 }

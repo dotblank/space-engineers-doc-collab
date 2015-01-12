@@ -6,7 +6,7 @@
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyNetworkClient
-  {
-  }
+    public interface IMyNetworkClient
+    {
+    }
 }

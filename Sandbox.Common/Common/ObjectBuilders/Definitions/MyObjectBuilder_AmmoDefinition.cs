@@ -10,28 +10,20 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_AmmoDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_AmmoDefinition.AmmoBasicProperties BasicProperties;
-
+    [MyObjectBuilderDefinition]
     [ProtoContract]
-    public class AmmoBasicProperties
+    public class MyObjectBuilder_AmmoDefinition : MyObjectBuilder_DefinitionBase
     {
-      [ProtoMember(1)]
-      public float DesiredSpeed;
-      [ProtoMember(2)]
-      public float SpeedVariance;
-      [ProtoMember(3)]
-      public float MaxTrajectory;
-      [DefaultValue(false)]
-      [ProtoMember(4)]
-      public bool IsExplosive;
-      [ProtoMember(5)]
-      [DefaultValue(0.0f)]
-      public float BackkickForce;
+        [ProtoMember(1)] public MyObjectBuilder_AmmoDefinition.AmmoBasicProperties BasicProperties;
+
+        [ProtoContract]
+        public class AmmoBasicProperties
+        {
+            [ProtoMember(1)] public float DesiredSpeed;
+            [ProtoMember(2)] public float SpeedVariance;
+            [ProtoMember(3)] public float MaxTrajectory;
+            [DefaultValue(false)] [ProtoMember(4)] public bool IsExplosive;
+            [ProtoMember(5)] [DefaultValue(0.0f)] public float BackkickForce;
+        }
     }
-  }
 }

@@ -8,8 +8,8 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_FracturedBlockDefinition : MyObjectBuilder_CubeBlockDefinition
-  {
-  }
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_FracturedBlockDefinition : MyObjectBuilder_CubeBlockDefinition
+    {
+    }
 }

@@ -9,11 +9,10 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_AssemblerDefinition : MyObjectBuilder_ProductionBlockDefinition
-  {
-    [ProtoMember(1)]
-    public float AssemblySpeed = 1f;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_AssemblerDefinition : MyObjectBuilder_ProductionBlockDefinition
+    {
+        [ProtoMember(1)] public float AssemblySpeed = 1f;
+    }
 }

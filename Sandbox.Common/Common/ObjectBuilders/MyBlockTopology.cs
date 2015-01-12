@@ -6,9 +6,9 @@
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  public enum MyBlockTopology : byte
-  {
-    Cube,
-    TriangleMesh,
-  }
+    public enum MyBlockTopology : byte
+    {
+        Cube,
+        TriangleMesh,
+    }
 }

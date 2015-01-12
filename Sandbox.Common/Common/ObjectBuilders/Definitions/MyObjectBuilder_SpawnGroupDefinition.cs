@@ -12,47 +12,29 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_SpawnGroupDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(1)]
-    [DefaultValue(1f)]
-    public float Frequency = 1f;
-    [XmlArrayItem("Prefab")]
-    [ProtoMember(2)]
-    public MyObjectBuilder_SpawnGroupDefinition.SpawnGroupPrefab[] Prefabs;
-    [XmlArrayItem("Voxel")]
-    [ProtoMember(3)]
-    public MyObjectBuilder_SpawnGroupDefinition.SpawnGroupVoxel[] Voxels;
-    [DefaultValue(false)]
-    [ProtoMember(4)]
-    public bool IsEncounter;
-
+    [MyObjectBuilderDefinition]
     [ProtoContract]
-    public class SpawnGroupPrefab
+    public class MyObjectBuilder_SpawnGroupDefinition : MyObjectBuilder_DefinitionBase
     {
-      [DefaultValue("")]
-      [ProtoMember(3)]
-      public string BeaconText = "";
-      [ProtoMember(4)]
-      [DefaultValue(10f)]
-      public float Speed = 10f;
-      [XmlAttribute]
-      [ProtoMember(1)]
-      public string SubtypeId;
-      [ProtoMember(2)]
-      public Vector3 Position;
-    }
+        [ProtoMember(1)] [DefaultValue(1f)] public float Frequency = 1f;
+        [XmlArrayItem("Prefab")] [ProtoMember(2)] public MyObjectBuilder_SpawnGroupDefinition.SpawnGroupPrefab[] Prefabs;
+        [XmlArrayItem("Voxel")] [ProtoMember(3)] public MyObjectBuilder_SpawnGroupDefinition.SpawnGroupVoxel[] Voxels;
+        [DefaultValue(false)] [ProtoMember(4)] public bool IsEncounter;
 
-    [ProtoContract]
-    public class SpawnGroupVoxel
-    {
-      [ProtoMember(1)]
-      [XmlAttribute]
-      public string StorageName;
-      [ProtoMember(2)]
-      public Vector3 Offset;
+        [ProtoContract]
+        public class SpawnGroupPrefab
+        {
+            [DefaultValue("")] [ProtoMember(3)] public string BeaconText = "";
+            [ProtoMember(4)] [DefaultValue(10f)] public float Speed = 10f;
+            [XmlAttribute] [ProtoMember(1)] public string SubtypeId;
+            [ProtoMember(2)] public Vector3 Position;
+        }
+
+        [ProtoContract]
+        public class SpawnGroupVoxel
+        {
+            [ProtoMember(1)] [XmlAttribute] public string StorageName;
+            [ProtoMember(2)] public Vector3 Offset;
+        }
     }
-  }
 }

@@ -9,11 +9,11 @@ using System;
 
 namespace Sandbox.Definitions
 {
-  public class MyDefinitionTypeAttribute : MyFactoryTagAttribute
-  {
-    public MyDefinitionTypeAttribute(Type objectBuilderType)
-      : base(objectBuilderType)
+    public class MyDefinitionTypeAttribute : MyFactoryTagAttribute
     {
+        public MyDefinitionTypeAttribute(Type objectBuilderType)
+            : base(objectBuilderType)
+        {
+        }
     }
-  }
 }

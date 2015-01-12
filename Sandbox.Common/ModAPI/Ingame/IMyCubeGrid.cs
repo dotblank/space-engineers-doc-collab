@@ -11,44 +11,45 @@ using VRageMath;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyCubeGrid
-  {
-    List<long> BigOwners { get; }
+    public interface IMyCubeGrid
+    {
+        List<long> BigOwners { get; }
 
-    List<long> SmallOwners { get; }
+        List<long> SmallOwners { get; }
 
-    float GridSize { get; }
+        float GridSize { get; }
 
-    MyCubeSize GridSizeEnum { get; }
+        MyCubeSize GridSizeEnum { get; }
 
-    bool IsStatic { get; }
+        bool IsStatic { get; }
 
-    Vector3I Max { get; }
+        Vector3I Max { get; }
 
-    Vector3I Min { get; }
+        Vector3I Min { get; }
 
-    void ConvertToDynamic();
+        void ConvertToDynamic();
 
-    bool CubeExists(Vector3I pos);
+        bool CubeExists(Vector3I pos);
 
-    void FixTargetCube(out Vector3I cube, Vector3 fractionalGridPosition);
+        void FixTargetCube(out Vector3I cube, Vector3 fractionalGridPosition);
 
-    Vector3 GetClosestCorner(Vector3I gridPos, Vector3 position);
+        Vector3 GetClosestCorner(Vector3I gridPos, Vector3 position);
 
-    IMySlimBlock GetCubeBlock(Vector3I pos);
+        IMySlimBlock GetCubeBlock(Vector3I pos);
 
-    Vector3D GridIntegerToWorld(Vector3I gridCoords);
+        Vector3D GridIntegerToWorld(Vector3I gridCoords);
 
-    Vector3I? RayCastBlocks(Vector3D worldStart, Vector3D worldEnd);
+        Vector3I? RayCastBlocks(Vector3D worldStart, Vector3D worldEnd);
 
-    void RayCastCells(Vector3D worldStart, Vector3D worldEnd, List<Vector3I> outHitPositions, Vector3I? gridSizeInflate = null, bool havokWorld = false);
+        void RayCastCells(Vector3D worldStart, Vector3D worldEnd, List<Vector3I> outHitPositions,
+            Vector3I? gridSizeInflate = null, bool havokWorld = false);
 
-    void UpdateOwnership(long ownerId, bool isFunctional);
+        void UpdateOwnership(long ownerId, bool isFunctional);
 
-    Vector3I WorldToGridInteger(Vector3D coords);
+        Vector3I WorldToGridInteger(Vector3D coords);
 
-    void GetBlocks(List<IMySlimBlock> blocks, Func<IMySlimBlock, bool> collect = null);
+        void GetBlocks(List<IMySlimBlock> blocks, Func<IMySlimBlock, bool> collect = null);
 
-    List<IMySlimBlock> GetBlocksInsideSphere(ref BoundingSphereD sphere);
-  }
+        List<IMySlimBlock> GetBlocksInsideSphere(ref BoundingSphereD sphere);
+    }
 }

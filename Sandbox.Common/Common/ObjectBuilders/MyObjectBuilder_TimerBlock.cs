@@ -9,24 +9,19 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_TimerBlock : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(3)]
-    public int Delay = 10000;
-    [ProtoMember(1)]
-    public MyObjectBuilder_Toolbar Toolbar;
-    [DefaultValue(false)]
-    [ProtoMember(2)]
-    public bool JustTriggered;
-    [ProtoMember(4)]
-    public int CurrentTime;
-
-    public override void Remap(IMyRemapHelper remapHelper)
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_TimerBlock : MyObjectBuilder_FunctionalBlock
     {
-      base.Remap(remapHelper);
-      this.Toolbar.Remap(remapHelper);
+        [ProtoMember(3)] public int Delay = 10000;
+        [ProtoMember(1)] public MyObjectBuilder_Toolbar Toolbar;
+        [DefaultValue(false)] [ProtoMember(2)] public bool JustTriggered;
+        [ProtoMember(4)] public int CurrentTime;
+
+        public override void Remap(IMyRemapHelper remapHelper)
+        {
+            base.Remap(remapHelper);
+            this.Toolbar.Remap(remapHelper);
+        }
     }
-  }
 }

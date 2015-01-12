@@ -11,27 +11,25 @@ using VRage.Common.Utils;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_PhysicalGunObject : MyObjectBuilder_PhysicalObject
-  {
-    [XmlElement("GunEntity", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_EntityBase>))]
-    [ProtoMember(3)]
-    public MyObjectBuilder_EntityBase GunEntity;
-
-    public MyObjectBuilder_PhysicalGunObject()
-      : this((MyObjectBuilder_EntityBase) null)
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_PhysicalGunObject : MyObjectBuilder_PhysicalObject
     {
-    }
+        [XmlElement("GunEntity", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_EntityBase>))] [ProtoMember(3)] public MyObjectBuilder_EntityBase GunEntity;
 
-    public MyObjectBuilder_PhysicalGunObject(MyObjectBuilder_EntityBase gunEntity)
-    {
-      this.GunEntity = gunEntity;
-    }
+        public MyObjectBuilder_PhysicalGunObject()
+            : this((MyObjectBuilder_EntityBase) null)
+        {
+        }
 
-    public override bool CanStack(MyObjectBuilderType type, MyStringId subtypeId, MyItemFlags flags)
-    {
-      return false;
+        public MyObjectBuilder_PhysicalGunObject(MyObjectBuilder_EntityBase gunEntity)
+        {
+            this.GunEntity = gunEntity;
+        }
+
+        public override bool CanStack(MyObjectBuilderType type, MyStringId subtypeId, MyItemFlags flags)
+        {
+            return false;
+        }
     }
-  }
 }

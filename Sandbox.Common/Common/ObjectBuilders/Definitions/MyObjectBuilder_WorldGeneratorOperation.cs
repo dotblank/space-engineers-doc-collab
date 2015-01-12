@@ -9,9 +9,9 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [XmlType("Operation")]
-  [MyObjectBuilderDefinition]
-  public abstract class MyObjectBuilder_WorldGeneratorOperation : MyObjectBuilder_Base
-  {
-  }
+    [XmlType("Operation")]
+    [MyObjectBuilderDefinition]
+    public abstract class MyObjectBuilder_WorldGeneratorOperation : MyObjectBuilder_Base
+    {
+    }
 }

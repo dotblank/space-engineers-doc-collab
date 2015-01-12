@@ -11,17 +11,12 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [XmlType("AddAsteroidPrefab")]
-  public class MyObjectBuilder_WorldGeneratorOperation_AddAsteroidPrefab : MyObjectBuilder_WorldGeneratorOperation
-  {
-    [XmlAttribute]
-    [ProtoMember(1)]
-    public string PrefabFile;
-    [ProtoMember(2)]
-    [XmlAttribute]
-    public string Name;
-    [ProtoMember(3)]
-    public SerializableVector3 Position;
-  }
+    [MyObjectBuilderDefinition]
+    [XmlType("AddAsteroidPrefab")]
+    public class MyObjectBuilder_WorldGeneratorOperation_AddAsteroidPrefab : MyObjectBuilder_WorldGeneratorOperation
+    {
+        [XmlAttribute] [ProtoMember(1)] public string PrefabFile;
+        [ProtoMember(2)] [XmlAttribute] public string Name;
+        [ProtoMember(3)] public SerializableVector3 Position;
+    }
 }

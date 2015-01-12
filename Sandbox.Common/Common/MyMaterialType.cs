@@ -6,14 +6,14 @@
 
 namespace Sandbox.Common
 {
-  public enum MyMaterialType
-  {
-    ROCK,
-    METAL,
-    GLASS,
-    SHIP,
-    PLAYERSHIP,
-    AMMO,
-    CHARACTER,
-  }
+    public enum MyMaterialType
+    {
+        ROCK,
+        METAL,
+        GLASS,
+        SHIP,
+        PLAYERSHIP,
+        AMMO,
+        CHARACTER,
+    }
 }

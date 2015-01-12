@@ -8,13 +8,11 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_LastSession : MyObjectBuilder_Base
-  {
-    [ProtoMember(2)]
-    public string Path;
-    [ProtoMember(3)]
-    public bool IsContentWorlds;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_LastSession : MyObjectBuilder_Base
+    {
+        [ProtoMember(2)] public string Path;
+        [ProtoMember(3)] public bool IsContentWorlds;
+    }
 }

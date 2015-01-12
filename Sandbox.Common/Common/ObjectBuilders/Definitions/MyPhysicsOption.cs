@@ -6,10 +6,10 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum MyPhysicsOption
-  {
-    None,
-    Box,
-    Convex,
-  }
+    public enum MyPhysicsOption
+    {
+        None,
+        Box,
+        Convex,
+    }
 }

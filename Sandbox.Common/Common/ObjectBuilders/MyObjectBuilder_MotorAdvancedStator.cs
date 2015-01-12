@@ -8,9 +8,9 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_MotorAdvancedStator : MyObjectBuilder_MotorStator
-  {
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_MotorAdvancedStator : MyObjectBuilder_MotorStator
+    {
+    }
 }

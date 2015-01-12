@@ -8,14 +8,14 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyShipController : IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool ControlWheels { get; }
+    public interface IMyShipController : IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool ControlWheels { get; }
 
-    bool ControlThrusters { get; }
+        bool ControlThrusters { get; }
 
-    bool HandBrake { get; }
+        bool HandBrake { get; }
 
-    bool DampenersOverride { get; }
-  }
+        bool DampenersOverride { get; }
+    }
 }

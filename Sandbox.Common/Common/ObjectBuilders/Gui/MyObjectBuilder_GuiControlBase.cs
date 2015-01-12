@@ -11,38 +11,26 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public abstract class MyObjectBuilder_GuiControlBase : MyObjectBuilder_Base
-  {
-    [ProtoMember(4)]
-    public Vector4 BackgroundColor = Vector4.One;
-    [ProtoMember(1)]
-    public Vector2 Position;
-    [ProtoMember(2)]
-    public Vector2 Size;
-    [ProtoMember(3)]
-    public string Name;
-    [ProtoMember(5)]
-    public string ControlTexture;
-    [ProtoMember(6)]
-    public MyGuiDrawAlignEnum OriginAlign;
-
-    public int ControlAlign
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public abstract class MyObjectBuilder_GuiControlBase : MyObjectBuilder_Base
     {
-      get
-      {
-        return (int) this.OriginAlign;
-      }
-      set
-      {
-        this.OriginAlign = (MyGuiDrawAlignEnum) value;
-      }
-    }
+        [ProtoMember(4)] public Vector4 BackgroundColor = Vector4.One;
+        [ProtoMember(1)] public Vector2 Position;
+        [ProtoMember(2)] public Vector2 Size;
+        [ProtoMember(3)] public string Name;
+        [ProtoMember(5)] public string ControlTexture;
+        [ProtoMember(6)] public MyGuiDrawAlignEnum OriginAlign;
 
-    public bool ShouldSerializeControlAlign()
-    {
-      return false;
+        public int ControlAlign
+        {
+            get { return (int) this.OriginAlign; }
+            set { this.OriginAlign = (MyGuiDrawAlignEnum) value; }
+        }
+
+        public bool ShouldSerializeControlAlign()
+        {
+            return false;
+        }
     }
-  }
 }

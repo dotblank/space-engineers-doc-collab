@@ -9,24 +9,16 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_MotorSuspension : MyObjectBuilder_MotorBase
-  {
-    [DefaultValue(true)]
-    [ProtoMember(2)]
-    public bool Steering = true;
-    [ProtoMember(3)]
-    public float Damping = 0.02f;
-    [ProtoMember(4)]
-    public float Strength = 0.04f;
-    [ProtoMember(5)]
-    public bool Propulsion = true;
-    [ProtoMember(6)]
-    public float Friction = 3.0f / 16.0f;
-    [ProtoMember(7)]
-    public float Power = 1f;
-    [ProtoMember(1)]
-    public float SteerAngle;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_MotorSuspension : MyObjectBuilder_MotorBase
+    {
+        [DefaultValue(true)] [ProtoMember(2)] public bool Steering = true;
+        [ProtoMember(3)] public float Damping = 0.02f;
+        [ProtoMember(4)] public float Strength = 0.04f;
+        [ProtoMember(5)] public bool Propulsion = true;
+        [ProtoMember(6)] public float Friction = 3.0f/16.0f;
+        [ProtoMember(7)] public float Power = 1f;
+        [ProtoMember(1)] public float SteerAngle;
+    }
 }

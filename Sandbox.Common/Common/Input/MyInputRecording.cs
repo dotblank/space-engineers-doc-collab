@@ -13,72 +13,75 @@ using VRageMath;
 
 namespace Sandbox.Common.Input
 {
-  [Obfuscation(Exclude = true, Feature = "cw symbol renaming")]
-  [Serializable]
-  public class MyInputRecording
-  {
-    public string Name;
-    public string Description;
-    public List<MyInputSnapshot> SnapshotSequence;
-    public MyInputRecordingSession Session;
-    public int OriginalWidth;
-    public int OriginalHeight;
-    private int m_currentSnapshotNumber;
-    private int m_startScreenWidth;
-    private int m_startScreenHeight;
-
-    public MyInputRecording()
+    [Obfuscation(Exclude = true, Feature = "cw symbol renaming")]
+    [Serializable]
+    public class MyInputRecording
     {
-      this.m_currentSnapshotNumber = 0;
-      this.SnapshotSequence = new List<MyInputSnapshot>();
-    }
+        public string Name;
+        public string Description;
+        public List<MyInputSnapshot> SnapshotSequence;
+        public MyInputRecordingSession Session;
+        public int OriginalWidth;
+        public int OriginalHeight;
+        private int m_currentSnapshotNumber;
+        private int m_startScreenWidth;
+        private int m_startScreenHeight;
 
-    public bool IsDone()
-    {
-      return this.m_currentSnapshotNumber == this.SnapshotSequence.Count;
-    }
+        public MyInputRecording()
+        {
+            this.m_currentSnapshotNumber = 0;
+            this.SnapshotSequence = new List<MyInputSnapshot>();
+        }
 
-    public void Save(string filename)
-    {
-      using (TextWriter textWriter = (TextWriter) new StreamWriter(filename))
-        new XmlSerializer(typeof (MyInputRecording)).Serialize(textWriter, (object) this);
-    }
+        public bool IsDone()
+        {
+            return this.m_currentSnapshotNumber == this.SnapshotSequence.Count;
+        }
 
-    public void SetStartingScreenDimensions(int width, int height)
-    {
-      this.m_startScreenWidth = width;
-      this.m_startScreenHeight = height;
-    }
+        public void Save(string filename)
+        {
+            using (TextWriter textWriter = (TextWriter) new StreamWriter(filename))
+                new XmlSerializer(typeof (MyInputRecording)).Serialize(textWriter, (object) this);
+        }
 
-    public int GetStartingScreenWidth()
-    {
-      return this.m_startScreenWidth;
-    }
+        public void SetStartingScreenDimensions(int width, int height)
+        {
+            this.m_startScreenWidth = width;
+            this.m_startScreenHeight = height;
+        }
 
-    public int GetStartingScreenHeight()
-    {
-      return this.m_startScreenHeight;
-    }
+        public int GetStartingScreenWidth()
+        {
+            return this.m_startScreenWidth;
+        }
 
-    public Vector2 GetMouseNormalizationFactor()
-    {
-      return new Vector2((float) this.m_startScreenWidth / (float) this.OriginalWidth, (float) this.m_startScreenHeight / (float) this.OriginalHeight);
-    }
+        public int GetStartingScreenHeight()
+        {
+            return this.m_startScreenHeight;
+        }
 
-    public MyInputSnapshot GetNextSnapshot()
-    {
-      return this.SnapshotSequence[this.m_currentSnapshotNumber++];
-    }
+        public Vector2 GetMouseNormalizationFactor()
+        {
+            return new Vector2((float) this.m_startScreenWidth/(float) this.OriginalWidth,
+                (float) this.m_startScreenHeight/(float) this.OriginalHeight);
+        }
 
-    public static MyInputRecording FromFile(string filename)
-    {
-      using (StreamReader streamReader = new StreamReader(filename))
-        return (MyInputRecording) new XmlSerializer(typeof (MyInputRecording)).Deserialize((TextReader) streamReader);
-    }
+        public MyInputSnapshot GetNextSnapshot()
+        {
+            return this.SnapshotSequence[this.m_currentSnapshotNumber++];
+        }
 
-    public void AddSnapshot(MyInputSnapshot snapshot)
-    {
-      this.SnapshotSequence.Add(snapshot);
+        public static MyInputRecording FromFile(string filename)
+        {
+            using (StreamReader streamReader = new StreamReader(filename))
+                return
+                    (MyInputRecording)
+                        new XmlSerializer(typeof (MyInputRecording)).Deserialize((TextReader) streamReader);
+        }
+
+        public void AddSnapshot(MyInputSnapshot snapshot)
+        {
+            this.SnapshotSequence.Add(snapshot);
+        }
     }
-  }
 }

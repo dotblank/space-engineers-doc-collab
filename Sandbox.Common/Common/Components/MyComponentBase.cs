@@ -8,29 +8,29 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.Common.Components
 {
-  public abstract class MyComponentBase
-  {
-    public IMyEntity Entity
+    public abstract class MyComponentBase
     {
-      get
-      {
-        if (this.CurrentContainer == null)
-          return (IMyEntity) null;
-        else
-          return this.CurrentContainer.Entity;
-      }
-    }
+        public IMyEntity Entity
+        {
+            get
+            {
+                if (this.CurrentContainer == null)
+                    return (IMyEntity) null;
+                else
+                    return this.CurrentContainer.Entity;
+            }
+        }
 
-    public MyComponentContainer CurrentContainer { get; private set; }
+        public MyComponentContainer CurrentContainer { get; private set; }
 
-    public virtual void OnAddedToContainer(MyComponentContainer container)
-    {
-      this.CurrentContainer = container;
-    }
+        public virtual void OnAddedToContainer(MyComponentContainer container)
+        {
+            this.CurrentContainer = container;
+        }
 
-    public virtual void OnRemovedFromContainer(MyComponentContainer container)
-    {
-      this.CurrentContainer = (MyComponentContainer) null;
+        public virtual void OnRemovedFromContainer(MyComponentContainer container)
+        {
+            this.CurrentContainer = (MyComponentContainer) null;
+        }
     }
-  }
 }

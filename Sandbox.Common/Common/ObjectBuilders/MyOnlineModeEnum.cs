@@ -6,11 +6,11 @@
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  public enum MyOnlineModeEnum
-  {
-    OFFLINE,
-    PUBLIC,
-    FRIENDS,
-    PRIVATE,
-  }
+    public enum MyOnlineModeEnum
+    {
+        OFFLINE,
+        PUBLIC,
+        FRIENDS,
+        PRIVATE,
+    }
 }

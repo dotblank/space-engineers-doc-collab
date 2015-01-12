@@ -10,15 +10,12 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [XmlType("RespawnShip")]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_WorldGeneratorPlayerStartingState_RespawnShip : MyObjectBuilder_WorldGeneratorPlayerStartingState
-  {
-    [XmlAttribute]
-    [ProtoMember(1)]
-    public bool DampenersEnabled;
-    [ProtoMember(2)]
-    [XmlAttribute]
-    public string RespawnShip;
-  }
+    [XmlType("RespawnShip")]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_WorldGeneratorPlayerStartingState_RespawnShip :
+        MyObjectBuilder_WorldGeneratorPlayerStartingState
+    {
+        [XmlAttribute] [ProtoMember(1)] public bool DampenersEnabled;
+        [ProtoMember(2)] [XmlAttribute] public string RespawnShip;
+    }
 }

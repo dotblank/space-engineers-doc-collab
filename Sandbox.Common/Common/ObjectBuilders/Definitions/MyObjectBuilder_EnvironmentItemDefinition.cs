@@ -9,12 +9,10 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_EnvironmentItemDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(1)]
-    [ModdableContentFile("mwm")]
-    public string Model;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_EnvironmentItemDefinition : MyObjectBuilder_DefinitionBase
+    {
+        [ProtoMember(1)] [ModdableContentFile("mwm")] public string Model;
+    }
 }

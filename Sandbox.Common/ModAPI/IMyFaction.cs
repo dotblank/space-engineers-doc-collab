@@ -9,32 +9,32 @@ using VRage.Collections;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyFaction
-  {
-    long FactionId { get; }
+    public interface IMyFaction
+    {
+        long FactionId { get; }
 
-    string Tag { get; }
+        string Tag { get; }
 
-    string Name { get; }
+        string Name { get; }
 
-    string Description { get; }
+        string Description { get; }
 
-    string PrivateInfo { get; }
+        string PrivateInfo { get; }
 
-    bool AutoAcceptMember { get; }
+        bool AutoAcceptMember { get; }
 
-    bool AutoAcceptPeace { get; }
+        bool AutoAcceptPeace { get; }
 
-    DictionaryReader<long, MyFactionMember> Members { get; }
+        DictionaryReader<long, MyFactionMember> Members { get; }
 
-    DictionaryReader<long, MyFactionMember> JoinRequests { get; }
+        DictionaryReader<long, MyFactionMember> JoinRequests { get; }
 
-    bool IsFounder(long playerId);
+        bool IsFounder(long playerId);
 
-    bool IsLeader(long playerId);
+        bool IsLeader(long playerId);
 
-    bool IsMember(long playerId);
+        bool IsMember(long playerId);
 
-    bool IsNeutral(long playerId);
-  }
+        bool IsNeutral(long playerId);
+    }
 }

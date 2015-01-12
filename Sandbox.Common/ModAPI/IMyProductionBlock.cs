@@ -8,10 +8,12 @@ using System;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyProductionBlock : Sandbox.ModAPI.Ingame.IMyProductionBlock, Sandbox.ModAPI.Ingame.IMyFunctionalBlock, Sandbox.ModAPI.Ingame.IMyTerminalBlock, Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
-  {
-    event Action StartedProducing;
+    public interface IMyProductionBlock : Sandbox.ModAPI.Ingame.IMyProductionBlock,
+        Sandbox.ModAPI.Ingame.IMyFunctionalBlock, Sandbox.ModAPI.Ingame.IMyTerminalBlock,
+        Sandbox.ModAPI.Ingame.IMyCubeBlock, IMyEntity
+    {
+        event Action StartedProducing;
 
-    event Action StoppedProducing;
-  }
+        event Action StoppedProducing;
+    }
 }

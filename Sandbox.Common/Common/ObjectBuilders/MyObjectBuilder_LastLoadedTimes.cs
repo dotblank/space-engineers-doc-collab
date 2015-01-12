@@ -10,11 +10,10 @@ using VRage.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_LastLoadedTimes : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public SerializableDictionary<string, DateTime> LastLoaded;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_LastLoadedTimes : MyObjectBuilder_Base
+    {
+        [ProtoMember(1)] public SerializableDictionary<string, DateTime> LastLoaded;
+    }
 }

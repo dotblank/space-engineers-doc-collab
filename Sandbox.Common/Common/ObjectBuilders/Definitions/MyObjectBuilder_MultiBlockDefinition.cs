@@ -12,24 +12,19 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_MultiBlockDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(1)]
-    [XmlArrayItem("BlockDefinition")]
-    [DefaultValue(null)]
-    public MyObjectBuilder_MultiBlockDefinition.MyOBMultiBlockPartDefinition[] BlockDefinitions;
-
     [ProtoContract]
-    public class MyOBMultiBlockPartDefinition
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_MultiBlockDefinition : MyObjectBuilder_DefinitionBase
     {
-      [ProtoMember(1)]
-      public SerializableDefinitionId Id;
-      [ProtoMember(2)]
-      public SerializableVector3I Position;
-      [ProtoMember(3)]
-      public SerializableBlockOrientation Orientation;
+        [ProtoMember(1)] [XmlArrayItem("BlockDefinition")] [DefaultValue(null)] public
+            MyObjectBuilder_MultiBlockDefinition.MyOBMultiBlockPartDefinition[] BlockDefinitions;
+
+        [ProtoContract]
+        public class MyOBMultiBlockPartDefinition
+        {
+            [ProtoMember(1)] public SerializableDefinitionId Id;
+            [ProtoMember(2)] public SerializableVector3I Position;
+            [ProtoMember(3)] public SerializableBlockOrientation Orientation;
+        }
     }
-  }
 }

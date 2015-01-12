@@ -8,19 +8,18 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_MotorBase : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(1)]
-    public long RotorEntityId;
-
-    public override void Remap(IMyRemapHelper remapHelper)
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_MotorBase : MyObjectBuilder_FunctionalBlock
     {
-      base.Remap(remapHelper);
-      if (this.RotorEntityId == 0L)
-        return;
-      this.RotorEntityId = remapHelper.RemapEntityId(this.RotorEntityId);
+        [ProtoMember(1)] public long RotorEntityId;
+
+        public override void Remap(IMyRemapHelper remapHelper)
+        {
+            base.Remap(remapHelper);
+            if (this.RotorEntityId == 0L)
+                return;
+            this.RotorEntityId = remapHelper.RemapEntityId(this.RotorEntityId);
+        }
     }
-  }
 }

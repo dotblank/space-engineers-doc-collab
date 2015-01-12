@@ -10,24 +10,23 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [XmlRoot("MyConfigDedicated")]
-  public class MyConfigDedicatedData
-  {
-    public MyObjectBuilder_SessionSettings SessionSettings = new MyObjectBuilder_SessionSettings();
-    public string IP = "0.0.0.0";
-    public int SteamPort = 8766;
-    public int ServerPort = 27016;
-    public int AsteroidAmount = 4;
-    [XmlArrayItem("unsignedLong")]
-    public List<string> Administrators = new List<string>();
-    public List<ulong> Banned = new List<ulong>();
-    public List<ulong> Mods = new List<ulong>();
-    public string ServerName = "";
-    public string WorldName = "";
-    public SerializableDefinitionId Scenario;
-    public string LoadWorld;
-    public ulong GroupID;
-    public bool PauseGameWhenEmpty;
-    public bool IgnoreLastSession;
-  }
+    [XmlRoot("MyConfigDedicated")]
+    public class MyConfigDedicatedData
+    {
+        public MyObjectBuilder_SessionSettings SessionSettings = new MyObjectBuilder_SessionSettings();
+        public string IP = "0.0.0.0";
+        public int SteamPort = 8766;
+        public int ServerPort = 27016;
+        public int AsteroidAmount = 4;
+        [XmlArrayItem("unsignedLong")] public List<string> Administrators = new List<string>();
+        public List<ulong> Banned = new List<ulong>();
+        public List<ulong> Mods = new List<ulong>();
+        public string ServerName = "";
+        public string WorldName = "";
+        public SerializableDefinitionId Scenario;
+        public string LoadWorld;
+        public ulong GroupID;
+        public bool PauseGameWhenEmpty;
+        public bool IgnoreLastSession;
+    }
 }

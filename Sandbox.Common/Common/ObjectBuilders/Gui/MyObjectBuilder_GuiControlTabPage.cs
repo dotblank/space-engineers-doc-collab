@@ -10,15 +10,12 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_GuiControlTabPage : MyObjectBuilder_GuiControlParent
-  {
-    [ProtoMember(1)]
-    public int PageKey;
-    [ProtoMember(2)]
-    public MyTextsWrapperEnum TextEnum;
-    [ProtoMember(3)]
-    public float TextScale;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_GuiControlTabPage : MyObjectBuilder_GuiControlParent
+    {
+        [ProtoMember(1)] public int PageKey;
+        [ProtoMember(2)] public MyTextsWrapperEnum TextEnum;
+        [ProtoMember(3)] public float TextScale;
+    }
 }

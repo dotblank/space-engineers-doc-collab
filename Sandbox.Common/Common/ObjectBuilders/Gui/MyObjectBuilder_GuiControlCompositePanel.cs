@@ -9,11 +9,10 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_GuiControlCompositePanel : MyObjectBuilder_GuiControlPanel
-  {
-    [ProtoMember(1)]
-    public float InnerHeight;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_GuiControlCompositePanel : MyObjectBuilder_GuiControlPanel
+    {
+        [ProtoMember(1)] public float InnerHeight;
+    }
 }

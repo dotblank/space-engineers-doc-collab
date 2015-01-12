@@ -9,24 +9,20 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_SmallGatlingGun : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(2)]
-    [DefaultValue(true)]
-    public bool UseConveyorSystem = true;
-    [ProtoMember(1)]
-    public MyObjectBuilder_Inventory Inventory;
-    [ProtoMember(3)]
-    public MyObjectBuilder_GunBase GunBase;
-
-    public override void SetupForProjector()
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_SmallGatlingGun : MyObjectBuilder_FunctionalBlock
     {
-      base.SetupForProjector();
-      if (this.Inventory == null)
-        return;
-      this.Inventory.Clear();
+        [ProtoMember(2)] [DefaultValue(true)] public bool UseConveyorSystem = true;
+        [ProtoMember(1)] public MyObjectBuilder_Inventory Inventory;
+        [ProtoMember(3)] public MyObjectBuilder_GunBase GunBase;
+
+        public override void SetupForProjector()
+        {
+            base.SetupForProjector();
+            if (this.Inventory == null)
+                return;
+            this.Inventory.Clear();
+        }
     }
-  }
 }

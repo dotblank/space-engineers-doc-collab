@@ -8,11 +8,12 @@ using VRageMath;
 
 namespace Sandbox.Common
 {
-  public static class Vector3Extensions
-  {
-    public static Vector3 Project(this Vector3 projectedOntoVector, Vector3 projectedVector)
+    public static class Vector3Extensions
     {
-      return Vector3.Dot(projectedVector, projectedOntoVector) / projectedOntoVector.LengthSquared() * projectedOntoVector;
+        public static Vector3 Project(this Vector3 projectedOntoVector, Vector3 projectedVector)
+        {
+            return Vector3.Dot(projectedVector, projectedOntoVector)/projectedOntoVector.LengthSquared()*
+                   projectedOntoVector;
+        }
     }
-  }
 }

@@ -9,15 +9,12 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Gui
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_GuiControlGrid : MyObjectBuilder_GuiControlBase
-  {
-    [ProtoMember(2)]
-    public int DisplayColumnsCount = 1;
-    [ProtoMember(3)]
-    public int DisplayRowsCount = 1;
-    [ProtoMember(1)]
-    public MyGuiControlGridStyleEnum VisualStyle;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_GuiControlGrid : MyObjectBuilder_GuiControlBase
+    {
+        [ProtoMember(2)] public int DisplayColumnsCount = 1;
+        [ProtoMember(3)] public int DisplayRowsCount = 1;
+        [ProtoMember(1)] public MyGuiControlGridStyleEnum VisualStyle;
+    }
 }

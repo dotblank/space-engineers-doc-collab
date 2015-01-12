@@ -6,17 +6,17 @@
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  public enum MyDamageType
-  {
-    Unknown,
-    Explosion,
-    Rocket,
-    Bullet,
-    Mine,
-    Environment,
-    Drill,
-    Radioactivity,
-    Deformation,
-    Suicide,
-  }
+    public enum MyDamageType
+    {
+        Unknown,
+        Explosion,
+        Rocket,
+        Bullet,
+        Mine,
+        Environment,
+        Drill,
+        Radioactivity,
+        Deformation,
+        Suicide,
+    }
 }

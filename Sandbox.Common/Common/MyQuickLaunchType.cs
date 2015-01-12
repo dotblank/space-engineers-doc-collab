@@ -6,9 +6,9 @@
 
 namespace Sandbox.Common
 {
-  public enum MyQuickLaunchType : byte
-  {
-    NEW_SANDBOX,
-    LAST_SANDBOX,
-  }
+    public enum MyQuickLaunchType : byte
+    {
+        NEW_SANDBOX,
+        LAST_SANDBOX,
+    }
 }

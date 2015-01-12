@@ -6,12 +6,12 @@
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  public enum MyCameraControllerEnum
-  {
-    Spectator,
-    Entity,
-    ThirdPersonSpectator,
-    SpectatorDelta,
-    SpectatorFixed,
-  }
+    public enum MyCameraControllerEnum
+    {
+        Spectator,
+        Entity,
+        ThirdPersonSpectator,
+        SpectatorDelta,
+        SpectatorFixed,
+    }
 }

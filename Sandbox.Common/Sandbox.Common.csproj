@@ -36,15 +36,17 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
-    <Reference Include="VRage.Library">
-      <HintPath>lib\VRage.Library.dll</HintPath>
-    </Reference>
-    <Reference Include="VRage.Math">
-      <HintPath>lib\VRage.Math.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="VRage.Common">
       <HintPath>lib\VRage.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VRage.Library\bin\Release\VRage.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Math, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VRage.Math\bin\Release\VRage.Math.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

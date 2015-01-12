@@ -8,15 +8,12 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_SpaceBall : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(1)]
-    public float VirtualMass = 2000f;
-    [ProtoMember(2)]
-    public float Friction = 0.5f;
-    [ProtoMember(3)]
-    public float Restitution = 0.5f;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_SpaceBall : MyObjectBuilder_FunctionalBlock
+    {
+        [ProtoMember(1)] public float VirtualMass = 2000f;
+        [ProtoMember(2)] public float Friction = 0.5f;
+        [ProtoMember(3)] public float Restitution = 0.5f;
+    }
 }

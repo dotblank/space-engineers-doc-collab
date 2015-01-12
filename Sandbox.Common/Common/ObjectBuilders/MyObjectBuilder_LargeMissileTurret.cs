@@ -8,9 +8,9 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_LargeMissileTurret : MyObjectBuilder_ConveyorTurretBase
-  {
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_LargeMissileTurret : MyObjectBuilder_ConveyorTurretBase
+    {
+    }
 }

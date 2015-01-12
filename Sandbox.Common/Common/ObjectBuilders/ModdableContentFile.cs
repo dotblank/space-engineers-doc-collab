@@ -8,14 +8,14 @@ using System;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
-  public class ModdableContentFile : Attribute
-  {
-    public string FileExtension;
-
-    public ModdableContentFile(string fileExtension)
+    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
+    public class ModdableContentFile : Attribute
     {
-      this.FileExtension = fileExtension;
+        public string FileExtension;
+
+        public ModdableContentFile(string fileExtension)
+        {
+            this.FileExtension = fileExtension;
+        }
     }
-  }
 }

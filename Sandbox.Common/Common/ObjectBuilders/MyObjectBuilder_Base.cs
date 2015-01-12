@@ -12,53 +12,44 @@ using VRage.Common.Utils;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  public abstract class MyObjectBuilder_Base
-  {
-    private MyStringId m_subtypeId;
-    private string m_subtypeName;
-
-    [DefaultValue(0)]
-    public MyStringId SubtypeId
+    [ProtoContract]
+    public abstract class MyObjectBuilder_Base
     {
-      get
-      {
-        return this.m_subtypeId;
-      }
-    }
+        private MyStringId m_subtypeId;
+        private string m_subtypeName;
 
-    [ProtoMember(2)]
-    [DefaultValue(null)]
-    public string SubtypeName
-    {
-      get
-      {
-        return this.m_subtypeName;
-      }
-      set
-      {
-        this.m_subtypeName = value;
-        this.m_subtypeId = MyStringId.GetOrCompute(value);
-      }
-    }
+        [DefaultValue(0)]
+        public MyStringId SubtypeId
+        {
+            get { return this.m_subtypeId; }
+        }
 
-    [XmlIgnore]
-    public MyObjectBuilderType TypeId
-    {
-      get
-      {
-        return (MyObjectBuilderType) this.GetType();
-      }
-    }
+        [ProtoMember(2)]
+        [DefaultValue(null)]
+        public string SubtypeName
+        {
+            get { return this.m_subtypeName; }
+            set
+            {
+                this.m_subtypeName = value;
+                this.m_subtypeId = MyStringId.GetOrCompute(value);
+            }
+        }
 
-    public bool ShouldSerializeSubtypeId()
-    {
-      return false;
-    }
+        [XmlIgnore]
+        public MyObjectBuilderType TypeId
+        {
+            get { return (MyObjectBuilderType) this.GetType(); }
+        }
 
-    public MyObjectBuilder_Base Clone()
-    {
-      return MyObjectBuilderSerializer.Clone(this);
+        public bool ShouldSerializeSubtypeId()
+        {
+            return false;
+        }
+
+        public MyObjectBuilder_Base Clone()
+        {
+            return MyObjectBuilderSerializer.Clone(this);
+        }
     }
-  }
 }

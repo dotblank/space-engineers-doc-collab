@@ -8,7 +8,7 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyCargoContainer : IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-  }
+    public interface IMyCargoContainer : IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+    }
 }

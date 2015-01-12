@@ -6,10 +6,10 @@
 
 namespace Sandbox.Engine.Physics
 {
-  public enum MyPhysicsForceType : byte
-  {
-    APPLY_WORLD_IMPULSE_AND_WORLD_ANGULAR_IMPULSE,
-    ADD_BODY_FORCE_AND_BODY_TORQUE,
-    APPLY_WORLD_FORCE,
-  }
+    public enum MyPhysicsForceType : byte
+    {
+        APPLY_WORLD_IMPULSE_AND_WORLD_ANGULAR_IMPULSE,
+        ADD_BODY_FORCE_AND_BODY_TORQUE,
+        APPLY_WORLD_FORCE,
+    }
 }

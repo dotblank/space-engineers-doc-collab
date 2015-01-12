@@ -6,9 +6,9 @@
 
 namespace Sandbox.ModAPI
 {
-  public enum ResultEnum
-  {
-    OK,
-    CANCEL,
-  }
+    public enum ResultEnum
+    {
+        OK,
+        CANCEL,
+    }
 }

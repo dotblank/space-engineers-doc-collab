@@ -14,174 +14,175 @@ using VRageMath;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyEntity
-  {
-    EntityFlags Flags { get; set; }
+    public interface IMyEntity
+    {
+        EntityFlags Flags { get; set; }
 
-    long EntityId { get; set; }
+        long EntityId { get; set; }
 
-    string Name { get; set; }
+        string Name { get; set; }
 
-    string DisplayName { get; set; }
+        string DisplayName { get; set; }
 
-    bool MarkedForClose { get; }
+        bool MarkedForClose { get; }
 
-    bool Closed { get; }
+        bool Closed { get; }
 
-    MyEntityUpdateEnum NeedsUpdate { get; set; }
+        MyEntityUpdateEnum NeedsUpdate { get; set; }
 
-    IMyEntity Parent { get; }
+        IMyEntity Parent { get; }
 
-    bool NearFlag { get; set; }
+        bool NearFlag { get; set; }
 
-    bool CastShadows { get; set; }
+        bool CastShadows { get; set; }
 
-    bool FastCastShadowResolve { get; set; }
+        bool FastCastShadowResolve { get; set; }
 
-    bool NeedsResolveCastShadow { get; set; }
+        bool NeedsResolveCastShadow { get; set; }
 
-    float MaxGlassDistSq { get; }
+        float MaxGlassDistSq { get; }
 
-    bool NeedsDraw { get; set; }
+        bool NeedsDraw { get; set; }
 
-    bool NeedsDrawFromParent { get; set; }
+        bool NeedsDrawFromParent { get; set; }
 
-    bool Transparent { get; set; }
+        bool Transparent { get; set; }
 
-    bool ShadowBoxLod { get; set; }
+        bool ShadowBoxLod { get; set; }
 
-    bool SkipIfTooSmall { get; set; }
+        bool SkipIfTooSmall { get; set; }
 
-    bool Visible { get; set; }
+        bool Visible { get; set; }
 
-    bool Save { get; set; }
+        bool Save { get; set; }
 
-    MyPersistentEntityFlags2 PersistentFlags { get; set; }
+        MyPersistentEntityFlags2 PersistentFlags { get; set; }
 
-    bool InScene { get; set; }
+        bool InScene { get; set; }
 
-    bool InvalidateOnMove { get; }
+        bool InvalidateOnMove { get; }
 
-    bool IsCCDForProjectiles { get; }
+        bool IsCCDForProjectiles { get; }
 
-    bool IsVolumetric { get; }
+        bool IsVolumetric { get; }
 
-    BoundingBox LocalAABB { get; set; }
+        BoundingBox LocalAABB { get; set; }
 
-    BoundingBox LocalAABBHr { get; }
+        BoundingBox LocalAABBHr { get; }
 
-    Matrix LocalMatrix { get; set; }
+        Matrix LocalMatrix { get; set; }
 
-    BoundingSphere LocalVolume { get; set; }
+        BoundingSphere LocalVolume { get; set; }
 
-    Vector3 LocalVolumeOffset { get; set; }
+        Vector3 LocalVolumeOffset { get; set; }
 
-    Vector3 LocationForHudMarker { get; }
+        Vector3 LocationForHudMarker { get; }
 
-    BoundingBoxD WorldAABB { get; }
+        BoundingBoxD WorldAABB { get; }
 
-    BoundingBoxD WorldAABBHr { get; }
+        BoundingBoxD WorldAABBHr { get; }
 
-    MatrixD WorldMatrix { get; set; }
+        MatrixD WorldMatrix { get; set; }
 
-    MatrixD WorldMatrixInvScaled { get; }
+        MatrixD WorldMatrixInvScaled { get; }
 
-    MatrixD WorldMatrixNormalizedInv { get; }
+        MatrixD WorldMatrixNormalizedInv { get; }
 
-    BoundingSphereD WorldVolume { get; }
+        BoundingSphereD WorldVolume { get; }
 
-    BoundingSphereD WorldVolumeHr { get; }
+        BoundingSphereD WorldVolumeHr { get; }
 
-    MyComponentContainer Components { get; }
+        MyComponentContainer Components { get; }
 
-    MyPhysicsComponentBase Physics { get; set; }
+        MyPhysicsComponentBase Physics { get; set; }
 
-    MyPositionComponentBase PositionComp { get; set; }
+        MyPositionComponentBase PositionComp { get; set; }
 
-    MyRenderComponentBase Render { get; set; }
+        MyRenderComponentBase Render { get; set; }
 
-    MyGameLogicComponent GameLogic { get; set; }
+        MyGameLogicComponent GameLogic { get; set; }
 
-    MyHierarchyComponentBase Hierarchy { get; set; }
+        MyHierarchyComponentBase Hierarchy { get; set; }
 
-    MySyncComponentBase SyncObject { get; }
+        MySyncComponentBase SyncObject { get; }
 
-    event Action<IMyEntity> OnClose;
+        event Action<IMyEntity> OnClose;
 
-    event Action<IMyEntity> OnClosing;
+        event Action<IMyEntity> OnClosing;
 
-    event Action<IMyEntity> OnMarkForClose;
+        event Action<IMyEntity> OnMarkForClose;
 
-    event Action<IMyEntity> OnPhysicsChanged;
+        event Action<IMyEntity> OnPhysicsChanged;
 
-    string GetFriendlyName();
+        string GetFriendlyName();
 
-    void Close();
+        void Close();
 
-    void Delete();
+        void Delete();
 
-    IMyEntity GetTopMostParent(Type type = null);
+        IMyEntity GetTopMostParent(Type type = null);
 
-    Vector3 GetDiffuseColor();
+        Vector3 GetDiffuseColor();
 
-    float GetDistanceBetweenCameraAndBoundingSphere();
+        float GetDistanceBetweenCameraAndBoundingSphere();
 
-    float GetDistanceBetweenCameraAndPosition();
+        float GetDistanceBetweenCameraAndPosition();
 
-    float GetLargestDistanceBetweenCameraAndBoundingSphere();
+        float GetLargestDistanceBetweenCameraAndBoundingSphere();
 
-    float GetSmallestDistanceBetweenCameraAndBoundingSphere();
+        float GetSmallestDistanceBetweenCameraAndBoundingSphere();
 
-    Vector3? GetIntersectionWithLineAndBoundingSphere(ref LineD line, float boundingSphereRadiusMultiplier);
+        Vector3? GetIntersectionWithLineAndBoundingSphere(ref LineD line, float boundingSphereRadiusMultiplier);
 
-    bool GetIntersectionWithSphere(ref BoundingSphereD sphere);
+        bool GetIntersectionWithSphere(ref BoundingSphereD sphere);
 
-    void GetTrianglesIntersectingSphere(ref BoundingSphereD sphere, Vector3? referenceNormalVector, float? maxAngle, List<MyTriangle_Vertex_Normals> retTriangles, int maxNeighbourTriangles);
+        void GetTrianglesIntersectingSphere(ref BoundingSphereD sphere, Vector3? referenceNormalVector, float? maxAngle,
+            List<MyTriangle_Vertex_Normals> retTriangles, int maxNeighbourTriangles);
 
-    bool DoOverlapSphereTest(float sphereRadius, Vector3D spherePos);
+        bool DoOverlapSphereTest(float sphereRadius, Vector3D spherePos);
 
-    MyObjectBuilder_EntityBase GetObjectBuilder(bool copy = false);
+        MyObjectBuilder_EntityBase GetObjectBuilder(bool copy = false);
 
-    bool IsSelectable();
+        bool IsSelectable();
 
-    bool IsSelectableAsChild();
+        bool IsSelectableAsChild();
 
-    bool IsSelectableParentOnly();
+        bool IsSelectableParentOnly();
 
-    bool IsVisible();
+        bool IsVisible();
 
-    MatrixD GetViewMatrix();
+        MatrixD GetViewMatrix();
 
-    MatrixD GetWorldMatrixNormalizedInv();
+        MatrixD GetWorldMatrixNormalizedInv();
 
-    void SetLocalMatrix(Matrix localMatrix, object source = null);
+        void SetLocalMatrix(Matrix localMatrix, object source = null);
 
-    void SetWorldMatrix(MatrixD worldMatrix, object source = null);
-    
-    Vector3D GetPosition();
+        void SetWorldMatrix(MatrixD worldMatrix, object source = null);
 
-    void SetPosition(Vector3D pos);
+        Vector3D GetPosition();
 
-    void GetChildren(List<IMyEntity> children, Func<IMyEntity, bool> collect = null);
+        void SetPosition(Vector3D pos);
 
-    void OnRemovedFromScene(object source);
+        void GetChildren(List<IMyEntity> children, Func<IMyEntity, bool> collect = null);
 
-    void OnAddedToScene(object source);
+        void OnRemovedFromScene(object source);
 
-    void BeforeSave();
+        void OnAddedToScene(object source);
 
-    void AddToGamePruningStructure();
+        void BeforeSave();
 
-    void RemoveFromGamePruningStructure();
+        void AddToGamePruningStructure();
 
-    void UpdateGamePruningStructure();
+        void RemoveFromGamePruningStructure();
 
-    void DebugDraw();
+        void UpdateGamePruningStructure();
 
-    void DebugDrawInvalidTriangles();
+        void DebugDraw();
 
-    void EnableColorMaskForSubparts(bool enable);
+        void DebugDrawInvalidTriangles();
 
-    void SetColorMaskForSubparts(Vector3 colorMaskHsv);
-  }
+        void EnableColorMaskForSubparts(bool enable);
+
+        void SetColorMaskForSubparts(Vector3 colorMaskHsv);
+    }
 }

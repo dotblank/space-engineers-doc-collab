@@ -11,41 +11,30 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Audio
 {
-  public class MyAudioHelpers
-  {
-    public enum CurveType
+    public class MyAudioHelpers
     {
-      Linear,
-      Quadratic,
-      Poly2,
-      Custom_1,
-    }
+        public enum CurveType
+        {
+            Linear,
+            Quadratic,
+            Poly2,
+            Custom_1,
+        }
 
-    public enum Dimensions
-    {
-      D2,
-      D3,
-    }
+        public enum Dimensions
+        {
+            D2,
+            D3,
+        }
 
-    [XmlType("Wave")]
-    [ProtoContract]
-    public class Wave
-    {
-      [XmlAttribute]
-      [ProtoMember(1)]
-      public MyAudioHelpers.Dimensions Type;
-      [DefaultValue("")]
-      [ProtoMember(2)]
-      [ModdableContentFile("xwm")]
-      public string Start;
-      [DefaultValue("")]
-      [ModdableContentFile("xwm")]
-      [ProtoMember(3)]
-      public string Loop;
-      [ProtoMember(4)]
-      [DefaultValue("")]
-      [ModdableContentFile("xwm")]
-      public string End;
+        [XmlType("Wave")]
+        [ProtoContract]
+        public class Wave
+        {
+            [XmlAttribute] [ProtoMember(1)] public MyAudioHelpers.Dimensions Type;
+            [DefaultValue("")] [ProtoMember(2)] [ModdableContentFile("xwm")] public string Start;
+            [DefaultValue("")] [ModdableContentFile("xwm")] [ProtoMember(3)] public string Loop;
+            [ProtoMember(4)] [DefaultValue("")] [ModdableContentFile("xwm")] public string End;
+        }
     }
-  }
 }

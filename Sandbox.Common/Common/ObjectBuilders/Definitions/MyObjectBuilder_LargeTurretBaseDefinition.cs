@@ -9,13 +9,11 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_LargeTurretBaseDefinition : MyObjectBuilder_WeaponBlockDefinition
-  {
-    [ProtoMember(2)]
-    public bool AiEnabled = true;
-    [ProtoMember(1)]
-    public string OverlayTexture;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_LargeTurretBaseDefinition : MyObjectBuilder_WeaponBlockDefinition
+    {
+        [ProtoMember(2)] public bool AiEnabled = true;
+        [ProtoMember(1)] public string OverlayTexture;
+    }
 }

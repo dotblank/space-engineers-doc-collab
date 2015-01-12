@@ -12,58 +12,41 @@ using VRage;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public abstract class MyObjectBuilder_ProductionBlock : MyObjectBuilder_FunctionalBlock
-  {
-    [DefaultValue(true)]
-    [ProtoMember(4)]
-    public bool UseConveyorSystem = true;
-    [ProtoMember(1)]
-    public MyObjectBuilder_Inventory InputInventory;
-    [ProtoMember(2)]
-    public MyObjectBuilder_Inventory OutputInventory;
-    [XmlArrayItem("Item")]
-    [ProtoMember(3)]
-    public MyObjectBuilder_ProductionBlock.QueueItem[] Queue;
-    [ProtoMember(5)]
-    [DefaultValue(0)]
-    public uint NextItemId;
-
-    public MyObjectBuilder_Inventory Inventory
-    {
-      get
-      {
-        return this.InputInventory;
-      }
-      set
-      {
-        this.InputInventory = value;
-      }
-    }
-
-    public bool ShouldSerializeInventory()
-    {
-      return false;
-    }
-
-    public override void SetupForProjector()
-    {
-      base.SetupForProjector();
-      if (this.Inventory == null)
-        return;
-      this.Inventory.Clear();
-    }
-
     [ProtoContract]
-    public struct QueueItem
+    [MyObjectBuilderDefinition]
+    public abstract class MyObjectBuilder_ProductionBlock : MyObjectBuilder_FunctionalBlock
     {
-      [ProtoMember(1)]
-      public SerializableDefinitionId Id;
-      [ProtoMember(2)]
-      public MyFixedPoint Amount;
-      [ProtoMember(3)]
-      public uint? ItemId;
+        [DefaultValue(true)] [ProtoMember(4)] public bool UseConveyorSystem = true;
+        [ProtoMember(1)] public MyObjectBuilder_Inventory InputInventory;
+        [ProtoMember(2)] public MyObjectBuilder_Inventory OutputInventory;
+        [XmlArrayItem("Item")] [ProtoMember(3)] public MyObjectBuilder_ProductionBlock.QueueItem[] Queue;
+        [ProtoMember(5)] [DefaultValue(0)] public uint NextItemId;
+
+        public MyObjectBuilder_Inventory Inventory
+        {
+            get { return this.InputInventory; }
+            set { this.InputInventory = value; }
+        }
+
+        public bool ShouldSerializeInventory()
+        {
+            return false;
+        }
+
+        public override void SetupForProjector()
+        {
+            base.SetupForProjector();
+            if (this.Inventory == null)
+                return;
+            this.Inventory.Clear();
+        }
+
+        [ProtoContract]
+        public struct QueueItem
+        {
+            [ProtoMember(1)] public SerializableDefinitionId Id;
+            [ProtoMember(2)] public MyFixedPoint Amount;
+            [ProtoMember(3)] public uint? ItemId;
+        }
     }
-  }
 }

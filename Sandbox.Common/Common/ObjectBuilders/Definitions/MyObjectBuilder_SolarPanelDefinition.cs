@@ -10,15 +10,12 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_SolarPanelDefinition : MyObjectBuilder_PowerProducerDefinition
-  {
-    [ProtoMember(1)]
-    public Vector3 PanelOrientation = new Vector3(0.0f, 0.0f, 0.0f);
-    [ProtoMember(2)]
-    public bool TwoSidedPanel = true;
-    [ProtoMember(3)]
-    public float PanelOffset = 1f;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_SolarPanelDefinition : MyObjectBuilder_PowerProducerDefinition
+    {
+        [ProtoMember(1)] public Vector3 PanelOrientation = new Vector3(0.0f, 0.0f, 0.0f);
+        [ProtoMember(2)] public bool TwoSidedPanel = true;
+        [ProtoMember(3)] public float PanelOffset = 1f;
+    }
 }

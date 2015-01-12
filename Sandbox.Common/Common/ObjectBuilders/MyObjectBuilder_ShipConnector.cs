@@ -9,49 +9,40 @@ using System.ComponentModel;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_ShipConnector : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(1)]
-    public MyObjectBuilder_Inventory Inventory;
-    [DefaultValue(false)]
-    [ProtoMember(2)]
-    public bool ThrowOut;
-    [DefaultValue(false)]
-    [ProtoMember(3)]
-    public bool CollectAll;
-    [DefaultValue(false)]
-    [ProtoMember(4)]
-    public bool Connected;
-    [ProtoMember(5)]
-    [DefaultValue(0)]
-    public long ConnectedEntityId;
-
-    public MyObjectBuilder_ShipConnector()
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_ShipConnector : MyObjectBuilder_FunctionalBlock
     {
-      this.DeformationRatio = 0.5f;
-    }
+        [ProtoMember(1)] public MyObjectBuilder_Inventory Inventory;
+        [DefaultValue(false)] [ProtoMember(2)] public bool ThrowOut;
+        [DefaultValue(false)] [ProtoMember(3)] public bool CollectAll;
+        [DefaultValue(false)] [ProtoMember(4)] public bool Connected;
+        [ProtoMember(5)] [DefaultValue(0)] public long ConnectedEntityId;
 
-    public bool ShouldSerializeConnectedEntityId()
-    {
-      return this.ConnectedEntityId != 0L;
-    }
+        public MyObjectBuilder_ShipConnector()
+        {
+            this.DeformationRatio = 0.5f;
+        }
 
-    public override void Remap(IMyRemapHelper remapHelper)
-    {
-      base.Remap(remapHelper);
-      if (this.ConnectedEntityId == 0L)
-        return;
-      this.ConnectedEntityId = remapHelper.RemapEntityId(this.ConnectedEntityId);
-    }
+        public bool ShouldSerializeConnectedEntityId()
+        {
+            return this.ConnectedEntityId != 0L;
+        }
 
-    public override void SetupForProjector()
-    {
-      base.SetupForProjector();
-      if (this.Inventory == null)
-        return;
-      this.Inventory.Clear();
+        public override void Remap(IMyRemapHelper remapHelper)
+        {
+            base.Remap(remapHelper);
+            if (this.ConnectedEntityId == 0L)
+                return;
+            this.ConnectedEntityId = remapHelper.RemapEntityId(this.ConnectedEntityId);
+        }
+
+        public override void SetupForProjector()
+        {
+            base.SetupForProjector();
+            if (this.Inventory == null)
+                return;
+            this.Inventory.Clear();
+        }
     }
-  }
 }

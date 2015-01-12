@@ -11,18 +11,18 @@ using VRageMath;
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyVoxelMaps
-  {
-    void Clear();
+    public interface IMyVoxelMaps
+    {
+        void Clear();
 
-    bool Exist(IMyVoxelMap voxelMap);
+        bool Exist(IMyVoxelMap voxelMap);
 
-    IMyVoxelMap GetOverlappingWithSphere(ref BoundingSphereD sphere);
+        IMyVoxelMap GetOverlappingWithSphere(ref BoundingSphereD sphere);
 
-    IMyVoxelMap GetVoxelMapWhoseBoundingBoxIntersectsBox(ref BoundingBoxD boundingBox, IMyVoxelMap ignoreVoxelMap);
+        IMyVoxelMap GetVoxelMapWhoseBoundingBoxIntersectsBox(ref BoundingBoxD boundingBox, IMyVoxelMap ignoreVoxelMap);
 
-    void GetInstances(List<IMyVoxelMap> outInstances, Func<IMyVoxelMap, bool> collect = null);
+        void GetInstances(List<IMyVoxelMap> outInstances, Func<IMyVoxelMap, bool> collect = null);
 
-    IMyStorage CreateStorage(Vector3I size);
-  }
+        IMyStorage CreateStorage(Vector3I size);
+    }
 }

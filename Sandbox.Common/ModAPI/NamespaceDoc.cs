@@ -6,10 +6,10 @@ using System.Text;
 namespace Sandbox.ModAPI
 {
     /// <summary>
-    /// Inaccessible
+    ///     Inaccessible
     /// </summary>
     [System.Runtime.CompilerServices.CompilerGenerated]
-    class NamespaceDoc
+    internal class NamespaceDoc
     {
     }
 }

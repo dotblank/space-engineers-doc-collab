@@ -8,15 +8,12 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_Client : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public ulong SteamId;
-    [ProtoMember(2)]
-    public string Name;
-    [ProtoMember(3)]
-    public bool IsAdmin;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_Client : MyObjectBuilder_Base
+    {
+        [ProtoMember(1)] public ulong SteamId;
+        [ProtoMember(2)] public string Name;
+        [ProtoMember(3)] public bool IsAdmin;
+    }
 }

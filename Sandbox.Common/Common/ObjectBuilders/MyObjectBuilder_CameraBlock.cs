@@ -8,11 +8,10 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_CameraBlock : MyObjectBuilder_FunctionalBlock
-  {
-    [ProtoMember(1)]
-    public bool IsActive;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_CameraBlock : MyObjectBuilder_FunctionalBlock
+    {
+        [ProtoMember(1)] public bool IsActive;
+    }
 }

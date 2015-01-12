@@ -9,14 +9,16 @@ using VRageMath;
 
 namespace Sandbox.ModAPI.Interfaces
 {
-  public interface IMyStorage
-  {
-    Vector3I Size { get; }
+    public interface IMyStorage
+    {
+        Vector3I Size { get; }
 
-    void OverwriteAllMaterials(byte materialIndex);
+        void OverwriteAllMaterials(byte materialIndex);
 
-    void ReadRange(MyStorageDataCache target, MyStorageDataTypeFlags dataToRead, int lodIndex, Vector3I lodVoxelRangeMin, Vector3I lodVoxelRangeMax);
+        void ReadRange(MyStorageDataCache target, MyStorageDataTypeFlags dataToRead, int lodIndex,
+            Vector3I lodVoxelRangeMin, Vector3I lodVoxelRangeMax);
 
-    void WriteRange(MyStorageDataCache source, MyStorageDataTypeFlags dataToWrite, Vector3I voxelRangeMin, Vector3I voxelRangeMax);
-  }
+        void WriteRange(MyStorageDataCache source, MyStorageDataTypeFlags dataToWrite, Vector3I voxelRangeMin,
+            Vector3I voxelRangeMax);
+    }
 }

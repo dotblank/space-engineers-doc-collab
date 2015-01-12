@@ -8,14 +8,11 @@ using ProtoBuf;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [ProtoContract]
-  public struct MyObjectBuilder_FactionMember
-  {
-    [ProtoMember(1)]
-    public long PlayerId;
-    [ProtoMember(2)]
-    public bool IsLeader;
-    [ProtoMember(3)]
-    public bool IsFounder;
-  }
+    [ProtoContract]
+    public struct MyObjectBuilder_FactionMember
+    {
+        [ProtoMember(1)] public long PlayerId;
+        [ProtoMember(2)] public bool IsLeader;
+        [ProtoMember(3)] public bool IsFounder;
+    }
 }

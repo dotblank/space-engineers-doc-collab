@@ -9,23 +9,16 @@ using Sandbox.Common.ObjectBuilders;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_GuiBlockCategoryDefinition : MyObjectBuilder_DefinitionBase
-  {
-    [ProtoMember(4)]
-    public bool IsBlockCategory = true;
-    [ProtoMember(5)]
-    public bool SearchBlocks = true;
-    [ProtoMember(7)]
-    public new bool Public = true;
-    [ProtoMember(1)]
-    public string Name;
-    [ProtoMember(2)]
-    public string[] ItemIds;
-    [ProtoMember(3)]
-    public bool IsShipCategory;
-    [ProtoMember(6)]
-    public bool ShowAnimations;
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_GuiBlockCategoryDefinition : MyObjectBuilder_DefinitionBase
+    {
+        [ProtoMember(4)] public bool IsBlockCategory = true;
+        [ProtoMember(5)] public bool SearchBlocks = true;
+        [ProtoMember(7)] public new bool Public = true;
+        [ProtoMember(1)] public string Name;
+        [ProtoMember(2)] public string[] ItemIds;
+        [ProtoMember(3)] public bool IsShipCategory;
+        [ProtoMember(6)] public bool ShowAnimations;
+    }
 }

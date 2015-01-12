@@ -6,14 +6,14 @@
 
 namespace Sandbox.ModAPI
 {
-  public interface IMyGamePaths
-  {
-    string ContentPath { get; }
+    public interface IMyGamePaths
+    {
+        string ContentPath { get; }
 
-    string ModsPath { get; }
+        string ModsPath { get; }
 
-    string UserDataPath { get; }
+        string UserDataPath { get; }
 
-    string SavesPath { get; }
-  }
+        string SavesPath { get; }
+    }
 }

@@ -10,13 +10,13 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_ReactorDefinition : MyObjectBuilder_PowerProducerDefinition
-  {
-    [ProtoMember(1)]
-    public Vector3 InventorySize = new Vector3(10f, 10f, 10f);
-    [ProtoMember(2)]
-    public SerializableDefinitionId FuelId = new SerializableDefinitionId((MyObjectBuilderType) typeof (MyObjectBuilder_Ingot), "Uranium");
-  }
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_ReactorDefinition : MyObjectBuilder_PowerProducerDefinition
+    {
+        [ProtoMember(1)] public Vector3 InventorySize = new Vector3(10f, 10f, 10f);
+
+        [ProtoMember(2)] public SerializableDefinitionId FuelId =
+            new SerializableDefinitionId((MyObjectBuilderType) typeof (MyObjectBuilder_Ingot), "Uranium");
+    }
 }

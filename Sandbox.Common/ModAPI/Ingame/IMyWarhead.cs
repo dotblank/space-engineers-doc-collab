@@ -8,10 +8,10 @@ using Sandbox.ModAPI;
 
 namespace Sandbox.ModAPI.Ingame
 {
-  public interface IMyWarhead : IMyTerminalBlock, IMyCubeBlock, IMyEntity
-  {
-    bool IsCountingDown { get; }
+    public interface IMyWarhead : IMyTerminalBlock, IMyCubeBlock, IMyEntity
+    {
+        bool IsCountingDown { get; }
 
-    float DetonationTime { get; }
-  }
+        float DetonationTime { get; }
+    }
 }

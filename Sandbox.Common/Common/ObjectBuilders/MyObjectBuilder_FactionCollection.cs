@@ -11,17 +11,13 @@ using VRage.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [ProtoContract]
-  [MyObjectBuilderDefinition]
-  public class MyObjectBuilder_FactionCollection : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public List<MyObjectBuilder_Faction> Factions;
-    [ProtoMember(2)]
-    public SerializableDictionary<long, long> Players;
-    [ProtoMember(3)]
-    public List<MyObjectBuilder_FactionRelation> Relations;
-    [ProtoMember(4)]
-    public List<MyObjectBuilder_FactionRequests> Requests;
-  }
+    [ProtoContract]
+    [MyObjectBuilderDefinition]
+    public class MyObjectBuilder_FactionCollection : MyObjectBuilder_Base
+    {
+        [ProtoMember(1)] public List<MyObjectBuilder_Faction> Factions;
+        [ProtoMember(2)] public SerializableDictionary<long, long> Players;
+        [ProtoMember(3)] public List<MyObjectBuilder_FactionRelation> Relations;
+        [ProtoMember(4)] public List<MyObjectBuilder_FactionRequests> Requests;
+    }
 }

@@ -9,22 +9,18 @@ using Sandbox.Common.ObjectBuilders.Definitions;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
-  [ProtoContract]
-  public class MyObjectBuilder_GlobalEventBase : MyObjectBuilder_Base
-  {
-    [ProtoMember(1)]
-    public SerializableDefinitionId DefinitionId;
-    [ProtoMember(3)]
-    public bool Enabled;
-    [ProtoMember(4)]
-    public long ActivationTimeMs;
-    [ProtoMember(5)]
-    public MyGlobalEventTypeEnum EventType;
-
-    public bool ShouldSerializeEventType()
+    [MyObjectBuilderDefinition]
+    [ProtoContract]
+    public class MyObjectBuilder_GlobalEventBase : MyObjectBuilder_Base
     {
-      return false;
+        [ProtoMember(1)] public SerializableDefinitionId DefinitionId;
+        [ProtoMember(3)] public bool Enabled;
+        [ProtoMember(4)] public long ActivationTimeMs;
+        [ProtoMember(5)] public MyGlobalEventTypeEnum EventType;
+
+        public bool ShouldSerializeEventType()
+        {
+            return false;
+        }
     }
-  }
 }
