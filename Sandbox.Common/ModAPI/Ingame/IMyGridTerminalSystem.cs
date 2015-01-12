@@ -9,6 +9,7 @@ using System.Collections.Generic;
 
 namespace Sandbox.ModAPI.Ingame
 {
+    /// <seealso cref="IMyCubeGrid"/>
     public interface IMyGridTerminalSystem
     {
         /// <summary>
@@ -27,7 +28,7 @@ namespace Sandbox.ModAPI.Ingame
         /// </summary>
         /// <remarks>
         ///     <paramref name="collect"/> can be used to further filter the results. LINQ and anonymous methods are currently unsupported by the in-game compiler, which is why a named method must be used.
-        ///     When filtering the results, the parameter of type <see cref="IMyTerminalBlock"/> represents the block being filtered and the return value of type <see cref="bool"/>
+        ///     When filtering the results, the parameter of type <see cref="IMyTerminalBlock"/> represents the block being filtered and the returned <see cref="bool"/> depicts whether the block passed the filter or not.
         /// </remarks>
         /// <example>
         ///     The following example demonstrates how to use the <paramref name="collect"/> parameter to only get disabled blocks:
@@ -35,7 +36,7 @@ namespace Sandbox.ModAPI.Ingame
         /// </example>
         /// <typeparam name="T"></typeparam>
         /// <param name="blocks"><see langword="null"/> if no blocks of specified type <typeparamref name="T"/> were found, otherwise a list containing all terminal blocks which are of the specified type</param>
-        /// <param name="collect">A Func&lt;IMyTerminalBlock, bool&gt; delegate used for filtering the returned blocks</param>
+        /// <param name="collect">A delegate used for filtering the returned blocks</param>
         void GetBlocksOfType<T>(List<IMyTerminalBlock> blocks, Func<IMyTerminalBlock, bool> collect = null);
         /// <summary>
         ///     Gets all blocks whose names contain the string provided by the <paramref name="name"/> parameter and adds them to the list <paramref name="blocks"/>.
