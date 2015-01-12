@@ -1,6 +1,6 @@
 # space-engineers-doc-collab
 This is a collaborative Space Engineers in-game API documentation project.
-Our goal is to accurately document the in-game API's features to make development easier for everyone.
+Our goal is to accurately document the in-game API's features to make development easier for everyone - online documentation is generated with Sandcastle Help File Builder.
 This repository contains a decompiled, edited copy of the Sandbox.Common.dll.
 
 # Contributing to the project
