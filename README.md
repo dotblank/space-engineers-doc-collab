@@ -4,7 +4,7 @@ This is a collaborative Space Engineers in-game API documentation project.
 Our goal is to accurately document the in-game API's features to make development easier for everyone - online documentation is generated with Sandcastle Help File Builder.
 
 # Contributing to the project
-First of all, you'll need to fork or download this repository.
+First of all, you'll need to fork, clone or download this repository.
 You can help by adding XML summaries above fields, properties, methods, interfaces, etc. which explain usage.
 Example summary:
 ```c#
