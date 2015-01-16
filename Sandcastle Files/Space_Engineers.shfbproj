@@ -32,12 +32,13 @@
     <PresentationStyle>VS2013</PresentationStyle>
     <Preliminary>False</Preliminary>
     <NamingMethod>MemberName</NamingMethod>
-    <HelpTitle>Search Engineers in-game API</HelpTitle>
+    <HelpTitle>Space Engineers in-game API</HelpTitle>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\Sandbox.Common\Sandbox.Common.csproj" />
-<DocumentationSource sourceFile="..\VRage.Library\VRage.Library.csproj" />
-<DocumentationSource sourceFile="..\VRage.Math\VRage.Math.csproj" /></DocumentationSources>
+      <DocumentationSource sourceFile="..\VRage.Library\VRage.Library.csproj" />
+      <DocumentationSource sourceFile="..\VRage.Math\VRage.Math.csproj" />
+    </DocumentationSources>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="Sandbox.Common" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Common.Components" isDocumented="False" />
@@ -58,7 +59,7 @@
 <NamespaceSummaryItem name="Sandbox.Game.Entities" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Game.Weapons" isDocumented="False" />
 <NamespaceSummaryItem name="(global)" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.ModAPI" isDocumented="True">Only specific members of this namespace are accessible from the programmable block.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Sandbox.ModAPI" isDocumented="True" />
 <NamespaceSummaryItem name="VRageMath.PackedVector" isDocumented="False" />
 <NamespaceSummaryItem name="VRageMath.Spatial" isDocumented="False" />
 <NamespaceSummaryItem name="KeenSoftwareHouse.Library.Extensions" isDocumented="False" />
@@ -96,7 +97,8 @@
 <NamespaceSummaryItem name="VRage.Stats" isDocumented="False" />
 <NamespaceSummaryItem name="VRage.Trace" isDocumented="False" />
 <NamespaceSummaryItem name="VRage.Utils" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Win32" isDocumented="False" /></NamespaceSummaries>
+<NamespaceSummaryItem name="VRage.Win32" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.AI" isDocumented="False" /></NamespaceSummaries>
     <MissingTags>AutoDocumentCtors, AutoDocumentDispose</MissingTags>
     <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
     <FeedbackEMailLinkText>
