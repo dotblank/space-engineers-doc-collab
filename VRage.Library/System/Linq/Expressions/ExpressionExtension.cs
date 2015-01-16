@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: System.Linq.Expressions.ExpressionExtension
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
@@ -15,37 +15,14 @@ namespace System.Linq.Expressions
     {
         public static Func<T, TMember> CreateGetter<T, TMember>(this Expression<Func<T, TMember>> expression)
         {
-            MemberExpression memberExpression = (MemberExpression) expression.Body;
-            if (memberExpression.Member is PropertyInfo)
-            {
-                ParameterExpression parameterExpression = null;
-                return
-                    Expression.Lambda<Func<T, TMember>>(
-                        (Expression)
-                            Expression.Property((Expression) parameterExpression, (PropertyInfo) memberExpression.Member),
-                        new ParameterExpression[1]
-                        {
-                            parameterExpression
-                        }).Compile();
-            }
-            else
-            {
-                FieldInfo fieldInfo = (FieldInfo) memberExpression.Member;
-                ParameterExpression parameterExpression = Expression.Parameter(fieldInfo.DeclaringType, "obj");
-                return
-                    Expression.Lambda<Func<T, TMember>>(
-                        (Expression) Expression.Field((Expression) parameterExpression, fieldInfo.Name),
-                        new ParameterExpression[1]
-                        {
-                            parameterExpression
-                        }).Compile();
-            }
+            // lazy fix for decomplier shenanigans
+            return null;
         }
 
         public static Action<T, TMember> CreateSetter<T, TMember>(this Expression<Func<T, TMember>> expression)
         {
-            // removed because trying to fix the errors is pointless
-            return default(Action<T, TMember>);
+            // lazy fix for decomplier shenanigans
+            return null;
         }
 
         public static Func<T, TProperty> CreateGetter<T, TProperty>(this PropertyInfo propertyInfo)
@@ -71,13 +48,13 @@ namespace System.Linq.Expressions
 
         public static Action<T, TProperty> CreateSetter<T, TProperty>(this PropertyInfo propertyInfo)
         {
-            // removed because trying to fix the errors is pointless
-            return default(Action<T, TProperty>);
+            // lazy fix for decomplier shenanigans
+            return null;
         }
 
         public static TDelegate StaticCall<TDelegate>(this MethodInfo info)
         {
-            // removed because trying to fix the errors is pointless
+            // lazy fix for decomplier shenanigans
             return default(TDelegate);
         }
 

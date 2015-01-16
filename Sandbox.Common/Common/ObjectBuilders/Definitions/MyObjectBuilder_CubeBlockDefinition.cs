@@ -1,11 +1,12 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CubeBlockDefinition
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: AEA4A40D-6023-45C7-A56E-9FAD0E8F073F
+// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
 using Sandbox.Common.ObjectBuilders;
+using Sandbox.Common.ObjectBuilders.AI;
 using Sandbox.Common.ObjectBuilders.VRageData;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,23 +18,23 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
     [MyObjectBuilderDefinition]
     public class MyObjectBuilder_CubeBlockDefinition : MyObjectBuilder_DefinitionBase
     {
-        [ProtoMember(11)] [DefaultValue(MyPhysicsOption.Box)] public MyPhysicsOption PhysicsOption = MyPhysicsOption.Box;
+        [DefaultValue(MyPhysicsOption.Box)] [ProtoMember(11)] public MyPhysicsOption PhysicsOption = MyPhysicsOption.Box;
         [DefaultValue(1f)] [ProtoMember(21)] public float DeformationRatio = 1f;
-        [ProtoMember(23)] [DefaultValue(10f)] public float BuildTimeSeconds = 10f;
+        [DefaultValue(10f)] [ProtoMember(23)] public float BuildTimeSeconds = 10f;
         [ProtoMember(24)] [DefaultValue(1f)] public float DisassembleRatio = 1f;
         [ProtoMember(30)] public string BuildType = "Unknown";
         [ProtoMember(35)] [DefaultValue(null)] public MyFractureMaterial? FractureType = new MyFractureMaterial?();
-        [DefaultValue(true)] [ProtoMember(36)] public bool GuiVisible = true;
+        [ProtoMember(37)] [DefaultValue(true)] public bool GuiVisible = true;
 
-        [DefaultValue(MyBlockDirection.Both)] [ProtoMember(38)] public MyBlockDirection Direction =
+        [ProtoMember(39)] [DefaultValue(MyBlockDirection.Both)] public MyBlockDirection Direction =
             MyBlockDirection.Both;
 
-        [ProtoMember(39)] [DefaultValue(MyBlockRotation.Both)] public MyBlockRotation Rotation = MyBlockRotation.Both;
+        [DefaultValue(MyBlockRotation.Both)] [ProtoMember(40)] public MyBlockRotation Rotation = MyBlockRotation.Both;
         [ProtoMember(1)] public MyCubeSize CubeSize;
         [ProtoMember(2)] public MyBlockTopology BlockTopology;
         [ProtoMember(3)] public SerializableVector3I Size;
         [ProtoMember(4)] public SerializableVector3 ModelOffset;
-        [ModdableContentFile("mwm")] [ProtoMember(5)] public string Model;
+        [ProtoMember(5)] [ModdableContentFile("mwm")] public string Model;
         [ProtoMember(6)] public MyObjectBuilder_CubeBlockDefinition.PatternDefinition CubeDefinition;
 
         [ProtoMember(7)] [XmlArrayItem("Component")] public MyObjectBuilder_CubeBlockDefinition.CubeBlockComponent[]
@@ -43,14 +44,14 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
         [ProtoMember(9)] public MyObjectBuilder_CubeBlockDefinition.MountPoint[] MountPoints;
         [ProtoMember(10)] public MyObjectBuilder_CubeBlockDefinition.Variant[] Variants;
 
-        [XmlArrayItem("Model")] [ProtoMember(12)] [DefaultValue(null)] public
+        [ProtoMember(12)] [XmlArrayItem("Model")] [DefaultValue(null)] public
             List<MyObjectBuilder_CubeBlockDefinition.BuildProgressModel> BuildProgressModels;
 
         [ProtoMember(15)] public string BlockPairName;
         [ProtoMember(17)] public SerializableVector3I? Center;
-        [DefaultValue(MySymmetryAxisEnum.None)] [ProtoMember(18)] public MySymmetryAxisEnum MirroringX;
+        [ProtoMember(18)] [DefaultValue(MySymmetryAxisEnum.None)] public MySymmetryAxisEnum MirroringX;
         [ProtoMember(19)] [DefaultValue(MySymmetryAxisEnum.None)] public MySymmetryAxisEnum MirroringY;
-        [ProtoMember(20)] [DefaultValue(MySymmetryAxisEnum.None)] public MySymmetryAxisEnum MirroringZ;
+        [DefaultValue(MySymmetryAxisEnum.None)] [ProtoMember(20)] public MySymmetryAxisEnum MirroringZ;
         [ProtoMember(22)] public string EdgeType;
         [ProtoMember(25)] public MyAutorotateMode AutorotateMode;
         [ProtoMember(26)] public string MirroringBlock;
@@ -60,15 +61,22 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
         [ProtoMember(31)] [DefaultValue(null)] [XmlArrayItem("Model")] public
             MyObjectBuilder_CubeBlockDefinition.MyAdditionalModelDefinition[] AdditionalModels;
 
-        [ProtoMember(32)] [DefaultValue(null)] [XmlArrayItem("Template")] public string[] CompoundTemplates;
+        [DefaultValue(null)] [ProtoMember(32)] [XmlArrayItem("Template")] public string[] CompoundTemplates;
 
-        [DefaultValue(null)] [XmlArrayItem("Definition")] [ProtoMember(33)] public
+        [XmlArrayItem("Definition")] [ProtoMember(33)] [DefaultValue(null)] public
             MyObjectBuilder_CubeBlockDefinition.MySubBlockDefinition[] SubBlockDefinitions;
 
-        [ProtoMember(34)] [DefaultValue(null)] public string MultiBlock;
+        [DefaultValue(null)] [ProtoMember(34)] public string MultiBlock;
+        [ProtoMember(36)] [DefaultValue(null)] public MyObjectBuilder_BlockNavigationInfo NavigationInfo;
 
-        [XmlArrayItem("BlockStage")] [DefaultValue(null)] [ProtoMember(37)] public SerializableDefinitionId[]
+        [DefaultValue(null)] [XmlArrayItem("BlockStage")] [ProtoMember(38)] public SerializableDefinitionId[]
             BlockStages;
+
+        [ProtoMember(41)] [XmlArrayItem("GeneratedBlock")] [DefaultValue(null)] public SerializableDefinitionId[]
+            GeneratedBlocks;
+
+        [ProtoMember(42)] [DefaultValue(null)] public string GeneratedBlockType;
+        [DefaultValue(false)] [ProtoMember(43)] public bool Mirrored;
 
         public bool ShouldSerializeCenter()
         {
@@ -78,11 +86,11 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
         [ProtoContract]
         public class MountPoint
         {
-            [XmlAttribute] [ProtoMember(1)] public BlockSideEnum Side;
+            [ProtoMember(1)] [XmlAttribute] public BlockSideEnum Side;
             [XmlIgnore] [ProtoMember(2)] public SerializableVector2 Start;
             [XmlIgnore] [ProtoMember(3)] public SerializableVector2 End;
-            [DefaultValue(0)] [XmlAttribute] [ProtoMember(4)] public byte ExclusionMask;
-            [XmlAttribute] [DefaultValue(0)] [ProtoMember(5)] public byte PropertiesMask;
+            [XmlAttribute] [DefaultValue(0)] [ProtoMember(4)] public byte ExclusionMask;
+            [ProtoMember(5)] [XmlAttribute] [DefaultValue(0)] public byte PropertiesMask;
 
             [XmlAttribute]
             public float StartX
@@ -125,7 +133,7 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
         public class CriticalPart
         {
             [XmlIgnore] public MyObjectBuilderType Type = (MyObjectBuilderType) typeof (MyObjectBuilder_Component);
-            [XmlAttribute] [ProtoMember(1)] public string Subtype;
+            [ProtoMember(1)] [XmlAttribute] public string Subtype;
             [ProtoMember(2)] [XmlAttribute] public int Index;
         }
 
@@ -133,7 +141,7 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
         public class Variant
         {
             [XmlAttribute] [ProtoMember(1)] public string Color;
-            [XmlAttribute] [ProtoMember(2)] public string Suffix;
+            [ProtoMember(2)] [XmlAttribute] public string Suffix;
         }
 
         [ProtoContract]
@@ -147,8 +155,8 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
         [ProtoContract]
         public class Side
         {
-            [ProtoMember(1)] [XmlAttribute] [ModdableContentFile("mwm")] public string Model;
-            [ProtoMember(2)] [XmlIgnore] public SerializableVector2I PatternSize;
+            [ProtoMember(1)] [ModdableContentFile("mwm")] [XmlAttribute] public string Model;
+            [XmlIgnore] [ProtoMember(2)] public SerializableVector2I PatternSize;
 
             [XmlAttribute]
             public int PatternWidth
@@ -168,17 +176,24 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
         [ProtoContract]
         public class BuildProgressModel
         {
-            [XmlAttribute] [ProtoMember(1)] public float BuildPercentUpperBound;
-            [XmlAttribute] [ModdableContentFile("mwm")] [ProtoMember(2)] public string File;
-            [ProtoMember(3)] [DefaultValue(false)] [XmlAttribute] public bool RandomOrientation;
+            [ProtoMember(1)] [XmlAttribute] public float BuildPercentUpperBound;
+            [ProtoMember(2)] [ModdableContentFile("mwm")] [XmlAttribute] public string File;
+            [XmlAttribute] [DefaultValue(false)] [ProtoMember(3)] public bool RandomOrientation;
         }
 
         [ProtoContract]
         public class MyAdditionalModelDefinition
         {
-            [XmlAttribute] [ProtoMember(1)] public string Type;
-            [ProtoMember(2)] [ModdableContentFile("mwm")] [XmlAttribute] public string File;
-            [XmlAttribute] [ProtoMember(3)] [DefaultValue(false)] public bool EnablePhysics;
+            [ProtoMember(1)] [XmlAttribute] public string Type;
+            [XmlAttribute] [ProtoMember(2)] [ModdableContentFile("mwm")] public string File;
+            [DefaultValue(false)] [ProtoMember(3)] [XmlAttribute] public bool EnablePhysics;
+        }
+
+        [ProtoContract]
+        public class MyGeneratedBlockDefinition
+        {
+            [ProtoMember(1)] [XmlAttribute] public string Type;
+            [ProtoMember(2)] public SerializableDefinitionId Id;
         }
 
         [ProtoContract]

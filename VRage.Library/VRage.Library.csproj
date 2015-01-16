@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DE55C035-1A3B-491B-8B4A-267BCC1F3696}</ProjectGuid>
+    <ProjectGuid>{FE56161C-49BD-49BC-B3A1-C740337E2A02}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>VRage.Library</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -59,17 +59,17 @@
     <Compile Include="System\Runtime\CompilerServices\CallerMemberNameAttribute.cs" />
     <Compile Include="System\Runtime\CompilerServices\CallerFilePathAttribute.cs" />
     <Compile Include="System\Runtime\CompilerServices\CallerLineNumberAttribute.cs" />
-    <Compile Include="System\Text\StringBuilderExtensions.cs" />
-    <Compile Include="System\IO\IOExceptionExtensions.cs" />
-    <Compile Include="System\Reflection\AssemblyExtensions.cs" />
-    <Compile Include="System\Reflection\Obfuscator.cs" />
     <Compile Include="System\Collections\Generic\DictionaryExtensions.cs" />
     <Compile Include="System\Collections\Generic\HashsetExtensions.cs" />
     <Compile Include="System\Collections\Generic\ListExtensions.cs" />
     <Compile Include="System\Collections\Generic\QueueExtensions.cs" />
+    <Compile Include="System\Reflection\AssemblyExtensions.cs" />
+    <Compile Include="System\Reflection\Obfuscator.cs" />
+    <Compile Include="System\IO\IOExceptionExtensions.cs" />
     <Compile Include="System\Net\IPAddressExtensions.cs" />
     <Compile Include="System\Linq\LinqExtensions.cs" />
     <Compile Include="System\Linq\Expressions\ExpressionExtension.cs" />
+    <Compile Include="System\Text\StringBuilderExtensions.cs" />
     <Compile Include="VRage\Partition.cs" />
     <Compile Include="VRage\InstanceComparer`1.cs" />
     <Compile Include="VRage\IMyCompressionLoad.cs" />

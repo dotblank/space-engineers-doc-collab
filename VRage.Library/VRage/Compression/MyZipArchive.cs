@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.Compression.MyZipArchive
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
@@ -111,8 +111,23 @@ namespace VRage.Compression
             ((IDisposable) this.m_zip).Dispose();
         }
 
+        public static bool IsHidden(FileInfo f, DirectoryInfo relativeTo)
+        {
+            if ((f.Attributes & FileAttributes.Hidden) != (FileAttributes) 0)
+                return true;
+            for (DirectoryInfo directoryInfo = f.Directory;
+                !directoryInfo.FullName.Equals(relativeTo.FullName, StringComparison.InvariantCultureIgnoreCase);
+                directoryInfo = directoryInfo.Parent)
+            {
+                if ((directoryInfo.Attributes & FileAttributes.Hidden) != (FileAttributes) 0)
+                    return true;
+            }
+            return false;
+        }
+
         public static void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName,
-            DeflateOptionEnum compressionLevel, bool includeBaseDirectory, string[] ignoredExtensions = null)
+            DeflateOptionEnum compressionLevel, bool includeBaseDirectory, string[] ignoredExtensions = null,
+            bool includeHidden = true)
         {
             if (File.Exists(destinationArchiveFileName))
                 File.Delete(destinationArchiveFileName);
@@ -121,19 +136,28 @@ namespace VRage.Compression
                 MyZipArchive myZipArchive = MyZipArchive.OpenOnFile(destinationArchiveFileName, FileMode.Create,
                     FileAccess.ReadWrite, FileShare.None, false))
             {
-                foreach (string path in Directory.GetFiles(sourceDirectoryName, "*", SearchOption.AllDirectories))
+                DirectoryInfo relativeTo = new DirectoryInfo(sourceDirectoryName);
+                foreach (FileInfo f in relativeTo.GetFiles("*", SearchOption.AllDirectories))
                 {
-                    if (ignoredExtensions == null ||
-                        !Enumerable.Contains<string>((IEnumerable<string>) ignoredExtensions,
-                            Path.GetExtension(path).ToLower()))
+                    if (includeHidden || !MyZipArchive.IsHidden(f, relativeTo))
                     {
-                        using (FileStream fileStream = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read))
+                        string fullName = f.FullName;
+                        if (ignoredExtensions == null ||
+                            !Enumerable.Contains<string>((IEnumerable<string>) ignoredExtensions,
+                                Path.GetExtension(fullName),
+                                (IEqualityComparer<string>) StringComparer.InvariantCultureIgnoreCase))
                         {
                             using (
-                                Stream stream =
-                                    myZipArchive.AddFile(path.Substring(startIndex), CompressionMethodEnum.Deflated,
-                                        compressionLevel).GetStream(FileMode.Open, FileAccess.Write))
-                                fileStream.CopyTo(stream, 4096);
+                                FileStream fileStream = File.Open(fullName, FileMode.Open, FileAccess.Read,
+                                    FileShare.Read))
+                            {
+                                using (
+                                    Stream stream =
+                                        myZipArchive.AddFile(fullName.Substring(startIndex),
+                                            CompressionMethodEnum.Deflated, compressionLevel)
+                                            .GetStream(FileMode.Open, FileAccess.Write))
+                                    fileStream.CopyTo(stream, 4096);
+                            }
                         }
                     }
                 }

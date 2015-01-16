@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_EnvironmentDefinition
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: AEA4A40D-6023-45C7-A56E-9FAD0E8F073F
+// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -37,6 +37,8 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
         [ProtoMember(20)] public float SunSizeMultiplier = 200f;
         [ProtoMember(21)] public float SmallShipMaxSpeed = 100f;
         [ProtoMember(22)] public float LargeShipMaxSpeed = 100f;
+        [ProtoMember(23)] public float SmallShipMaxAngularSpeed = 36000f;
+        [ProtoMember(24)] public float LargeShipMaxAngularSpeed = 18000f;
         [ProtoMember(1)] public SerializableVector3 SunDirection;
         [ModdableContentFile("dds")] [ProtoMember(2)] public string EnvironmentTexture;
         [ProtoMember(3)] public MyOrientation EnvironmentOrientation;

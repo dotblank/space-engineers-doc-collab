@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_CubeBlock
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: AEA4A40D-6023-45C7-A56E-9FAD0E8F073F
+// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -21,16 +21,16 @@ namespace Sandbox.Common.ObjectBuilders
         [DefaultValue(1f)] [ProtoMember(5)] public float IntegrityPercent = 1f;
         [ProtoMember(6)] [DefaultValue(1f)] public float BuildPercent = 1f;
         [ProtoMember(9)] public SerializableVector3 ColorMaskHSV = new SerializableVector3(0.0f, -1f, 0.0f);
-        [DefaultValue(0)] [ProtoMember(1)] public long EntityId;
+        [ProtoMember(1)] [DefaultValue(0)] public long EntityId;
         [ProtoMember(2)] public SerializableVector3I Min;
         private SerializableQuaternion m_orientation;
         [ProtoMember(7)] public SerializableBlockOrientation BlockOrientation;
         [DefaultValue(null)] [ProtoMember(8)] public MyObjectBuilder_Inventory ConstructionInventory;
-        [ProtoMember(10)] [DefaultValue(null)] public MyObjectBuilder_ConstructionStockpile ConstructionStockpile;
+        [DefaultValue(null)] [ProtoMember(10)] public MyObjectBuilder_ConstructionStockpile ConstructionStockpile;
         [ProtoMember(11)] [DefaultValue(0)] public long Owner;
         [ProtoMember(14)] public MyOwnershipShareModeEnum ShareMode;
         [ProtoMember(15)] public float DeformationRatio;
-        [ProtoMember(16)] [XmlArrayItem("SubBlock")] public MyObjectBuilder_CubeBlock.MySubBlockId[] SubBlocks;
+        [XmlArrayItem("SubBlock")] [ProtoMember(16)] public MyObjectBuilder_CubeBlock.MySubBlockId[] SubBlocks;
 
         public SerializableQuaternion Orientation
         {

@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.Algorithms.MyPath`1
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System.Collections;
@@ -13,6 +13,17 @@ namespace VRage.Algorithms
         where V : class, IMyPathVertex<V>, IEnumerable<IMyPathEdge<V>>
     {
         private List<MyPath<V>.PathNode> m_vertices;
+
+        public int Count
+        {
+            get { return this.m_vertices.Count; }
+        }
+
+        public MyPath<V>.PathNode this[int position]
+        {
+            get { return this.m_vertices[position]; }
+            set { this.m_vertices[position] = value; }
+        }
 
         internal MyPath(int size)
         {

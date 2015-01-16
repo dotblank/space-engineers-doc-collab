@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.Security.Md5
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
@@ -117,24 +117,18 @@ namespace VRage.Security
 
         private static unsafe void TransF(ref uint a, uint b, uint c, uint d, uint k, ushort s, uint i, uint* X)
         {
-            a = b +
-                Md5.RotateLeft(a + (uint) ((int) b & (int) c | ~(int) b & (int) d) + X[k] + Md5.T[(i - 1U)], s);
         }
 
         private static unsafe void TransG(ref uint a, uint b, uint c, uint d, uint k, ushort s, uint i, uint* X)
         {
-            a = b +
-                Md5.RotateLeft(a + (uint) ((int) b & (int) d | (int) c & ~(int) d) + X[k] + Md5.T[(i - 1U)], s);
         }
 
         private static unsafe void TransH(ref uint a, uint b, uint c, uint d, uint k, ushort s, uint i, uint* X)
         {
-            a = b + Md5.RotateLeft(a + (b ^ c ^ d) + X[k] + Md5.T[(i - 1U)], s);
         }
 
         private static unsafe void TransI(ref uint a, uint b, uint c, uint d, uint k, ushort s, uint i, uint* X)
         {
-            a = b + Md5.RotateLeft(a + (c ^ (b | ~d)) + X[k] + Md5.T[(i - 1U)], s);
         }
 
         private static unsafe void PerformTransformation(ref uint A, ref uint B, ref uint C, ref uint D, uint* X)
@@ -215,22 +209,10 @@ namespace VRage.Security
 
         private static unsafe void CopyBlock(byte[] bMsg, uint block, uint* X)
         {
-            block <<= 6;
-            uint num = 0U;
-            while (num < 61U)
-            {
-                X[num >> 2] =
-                    (uint)
-                        ((int) bMsg[ (block + (num + 3U))] << 24 |
-                         (int) bMsg[ (block + (num + 2U))] << 16 |
-                         (int) bMsg[ (block + (num + 1U))] << 8) | (uint) bMsg[ (block + num)];
-                num += 4U;
-            }
         }
 
         private static unsafe void CopyLastBlock(byte[] bMsg, uint* X)
         {
-            
         }
 
         public class Hash

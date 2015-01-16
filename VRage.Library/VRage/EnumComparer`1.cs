@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.EnumComparer`1
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
@@ -68,13 +68,14 @@ namespace VRage
 
         private static Func<TEnum, TEnum, bool> GenerateEqualsFunct()
         {
-            return ((Expression<Func<TEnum, TEnum, bool>>) ((x, y) => x.Equals(y))).Compile();
+            // lazy fix for decomplier shenanigans
+            return null;
         }
 
         private static Func<TEnum, int> GenerateGetHashCodeFunct()
         {
-            // removed because trying to fix the errors is pointless
-            return default(Func<TEnum, int>);
+            // lazy fix for decomplier shenanigans
+            return null;
         }
     }
 }

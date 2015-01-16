@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4423AA4C-A6E4-444E-858B-5CC64BED5C12}</ProjectGuid>
+    <ProjectGuid>{9D9B2297-3232-42DD-9A1F-CDFA68B648D4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>VRage.Math</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -33,15 +33,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\VRage.Math.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.XML" />
-    <Reference Include="VRage.Library">
-      <HintPath>lib\VRage.Library.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
+    <Reference Include="VRage.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VRage.Library\bin\Release\VRage.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base27Directions.cs" />
@@ -53,6 +56,7 @@
     <Compile Include="BoundingSphereD.cs" />
     <Compile Include="BoundingFrustumD.cs" />
     <Compile Include="CapsuleD.cs" />
+    <Compile Include="CompressedPositionOrientation.cs" />
     <Compile Include="QuaternionD.cs" />
     <Compile Include="Vector4D.cs" />
     <Compile Include="MyOrientedBoundingBoxD.cs" />

@@ -6,7 +6,7 @@ using System.Text;
 namespace Sandbox.ModAPI
 {
     /// <summary>
-    ///     Inaccessible
+    ///     Only specific members of this namespace are accessible from the programmable block.
     /// </summary>
     [System.Runtime.CompilerServices.CompilerGenerated]
     internal class NamespaceDoc

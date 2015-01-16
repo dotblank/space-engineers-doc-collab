@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.FastResourceLock
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
@@ -177,26 +177,6 @@ namespace VRage
 
         public void ReleaseExclusive()
         {
-            int comparand;
-            int ReleaseCount = 0;
-            do
-            {
-                comparand = this._value;
-                if ((comparand >> 22 & 1023) != 0)
-                {
-                    if (Interlocked.CompareExchange(ref this._value, comparand - 1 + 2 - 4194304, comparand) ==
-                        comparand)
-                    {
-                        NativeMethods.ReleaseSemaphore(this._exclusiveWakeEvent, 1, IntPtr.Zero);
-                        return;
-                    }
-                }
-                else
-                    ReleaseCount = comparand >> 12 & 1023;
-            } while (Interlocked.CompareExchange(ref this._value, comparand & -4190210, comparand) != comparand);
-            if (ReleaseCount == 0)
-                return;
-            NativeMethods.ReleaseSemaphore(this._sharedWakeEvent, ReleaseCount, IntPtr.Zero);
         }
 
         public void ReleaseShared()

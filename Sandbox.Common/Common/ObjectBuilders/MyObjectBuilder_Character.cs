@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_Character
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: AEA4A40D-6023-45C7-A56E-9FAD0E8F073F
+// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -13,8 +13,8 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-    [ProtoContract]
     [MyObjectBuilderDefinition]
+    [ProtoContract]
     public class MyObjectBuilder_Character : MyObjectBuilder_EntityBase
     {
         public static Dictionary<string, SerializableVector3> CharacterModels = new Dictionary
@@ -54,12 +54,12 @@ namespace Sandbox.Common.ObjectBuilders
             }
         };
 
-        [ProtoMember(6)] [DefaultValue(true)] public bool DampenersEnabled = true;
+        [DefaultValue(true)] [ProtoMember(6)] public bool DampenersEnabled = true;
         [ProtoMember(17)] public bool IsInFirstPersonView = true;
         [ProtoMember(18)] public bool EnableBroadcasting = true;
         [ProtoMember(1)] public string CharacterModel;
         [ProtoMember(2)] public MyObjectBuilder_Inventory Inventory;
-        [XmlElement("HandWeapon", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_EntityBase>))] [ProtoMember(3)] public MyObjectBuilder_EntityBase HandWeapon;
+        [ProtoMember(3)] [XmlElement("HandWeapon", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_EntityBase>))] public MyObjectBuilder_EntityBase HandWeapon;
         [ProtoMember(4)] public MyObjectBuilder_Battery Battery;
         [ProtoMember(5)] public bool LightEnabled;
         [ProtoMember(7)] public long? UsingLadder;

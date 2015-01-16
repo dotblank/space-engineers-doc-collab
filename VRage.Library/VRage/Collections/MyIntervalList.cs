@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.Collections.MyIntervalList
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System.Collections.Generic;
@@ -11,6 +11,11 @@ namespace VRage.Collections
     public class MyIntervalList
     {
         private List<int> m_list;
+
+        public int IntervalCount
+        {
+            get { return this.m_list.Count/2; }
+        }
 
         public MyIntervalList()
         {
@@ -97,6 +102,11 @@ namespace VRage.Collections
             }
         }
 
+        public void Clear()
+        {
+            this.m_list.Clear();
+        }
+
         public bool Contains(int value)
         {
             int index = 0;
@@ -107,6 +117,11 @@ namespace VRage.Collections
                 index += 2;
             }
             return false;
+        }
+
+        public MyIntervalList.Enumerator GetEnumerator()
+        {
+            return new MyIntervalList.Enumerator(this);
         }
 
         private void InsertInterval(int listPosition, int min, int max)
@@ -160,6 +175,48 @@ namespace VRage.Collections
                 this.m_list[index] = this.m_list[index + 2];
             this.m_list.RemoveAt(this.m_list.Count - 1);
             this.m_list.RemoveAt(this.m_list.Count - 1);
+        }
+
+        public struct Enumerator
+        {
+            private int m_interval;
+            private int m_dist;
+            private int m_lowerBound;
+            private int m_upperBound;
+            private MyIntervalList m_parent;
+
+            public int Current
+            {
+                get { return this.m_lowerBound + this.m_dist; }
+            }
+
+            public Enumerator(MyIntervalList parent)
+            {
+                this.m_interval = -1;
+                this.m_dist = 0;
+                this.m_lowerBound = 0;
+                this.m_upperBound = 0;
+                this.m_parent = parent;
+            }
+
+            public bool MoveNext()
+            {
+                if (this.m_interval == -1 || this.m_lowerBound + this.m_dist >= this.m_upperBound)
+                    return this.MoveNextInterval();
+                ++this.m_dist;
+                return true;
+            }
+
+            private bool MoveNextInterval()
+            {
+                ++this.m_interval;
+                if (this.m_interval >= this.m_parent.IntervalCount)
+                    return false;
+                this.m_dist = 0;
+                this.m_lowerBound = this.m_parent.m_list[this.m_interval*2];
+                this.m_upperBound = this.m_parent.m_list[this.m_interval*2 + 1];
+                return true;
+            }
         }
     }
 }

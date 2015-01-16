@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.Profiler.MyProfiler
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
@@ -172,11 +172,11 @@ namespace VRage.Profiler
                     myProfilerBlock.ProcessMemory[index] = myProfilerBlock.ProcessDeltaMB;
                 myProfilerBlock.NumCallsArray[index] = myProfilerBlock.NumCalls;
                 myProfilerBlock.CustomValues[index] = myProfilerBlock.CustomValue;
-                myProfilerBlock.Miliseconds[index] = (float) myProfilerBlock.Elapsed.TotalMilliseconds;
+                myProfilerBlock.Miliseconds[index] = (float) myProfilerBlock.Elapsed.Miliseconds;
                 myProfilerBlock.averageMiliseconds =
                     (float)
                         (0.899999976158142*(double) myProfilerBlock.averageMiliseconds +
-                         0.100000001490116*myProfilerBlock.Elapsed.TotalMilliseconds);
+                         0.100000001490116*myProfilerBlock.Elapsed.Miliseconds);
                 myProfilerBlock.Clear();
             }
             this.TotalCalls[index] = num;
@@ -194,7 +194,7 @@ namespace VRage.Profiler
         {
             this.StartBlock(name, "InitMemoryHack", 0, string.Empty);
             MyProfiler.MyProfilerBlock myProfilerBlock = this.m_currentProfilingStack.Peek();
-            this.EndBlock("InitMemoryHack", 0, string.Empty, new TimeSpan?(), 0.0f, (string) null, (string) null);
+            this.EndBlock("InitMemoryHack", 0, string.Empty, new MyTimeSpan?(), 0.0f, (string) null, (string) null);
             myProfilerBlock.StartManagedMB = 0L;
             myProfilerBlock.EndManagedMB = GC.GetTotalMemory(true);
             if (!this.MemoryProfiling)
@@ -242,8 +242,8 @@ namespace VRage.Profiler
             }
         }
 
-        public void EndBlock(string member, int line, string file, TimeSpan? customTime = null, float customValue = 0.0f,
-            string timeFormat = null, string valueFormat = null)
+        public void EndBlock(string member, int line, string file, MyTimeSpan? customTime = null,
+            float customValue = 0.0f, string timeFormat = null, string valueFormat = null)
         {
             if (this.m_levelSkipCount > 0)
             {
@@ -263,7 +263,7 @@ namespace VRage.Profiler
         }
 
         public void ProfileCustomValue(string name, string member, int line, string file, float value,
-            TimeSpan? customTime, string timeFormat, string valueFormat)
+            MyTimeSpan? customTime, string timeFormat, string valueFormat)
         {
             this.StartBlock(name, member, line, file);
             this.EndBlock(member, line, file, customTime, value, timeFormat, valueFormat);
@@ -292,7 +292,6 @@ namespace VRage.Profiler
 
         public class MyProfilerBlock
         {
-            private Stopwatch Stopwatch = new Stopwatch();
             public float[] ProcessMemory = new float[MyProfiler.MAX_FRAMES];
             public float[] ManagedMemory = new float[MyProfiler.MAX_FRAMES];
             public float[] Miliseconds = new float[MyProfiler.MAX_FRAMES];
@@ -301,7 +300,8 @@ namespace VRage.Profiler
             public List<MyProfiler.MyProfilerBlock> Children = new List<MyProfiler.MyProfilerBlock>();
             public readonly int Id;
             public readonly MyProfiler.MyProfilerBlockKey Key;
-            public TimeSpan Elapsed;
+            public MyTimeSpan MeasureStart;
+            public MyTimeSpan Elapsed;
             public long StartManagedMB;
             public long EndManagedMB;
             public float DeltaManagedB;
@@ -341,8 +341,8 @@ namespace VRage.Profiler
 
             public void Reset()
             {
-                this.Stopwatch.Reset();
-                this.Elapsed = TimeSpan.Zero;
+                this.MeasureStart = new MyTimeSpan(Stopwatch.GetTimestamp());
+                this.Elapsed = MyTimeSpan.Zero;
             }
 
             public void Clear()
@@ -366,13 +366,12 @@ namespace VRage.Profiler
                     this.StartManagedMB = GC.GetTotalMemory(false);
                     this.StartProcessMB = Environment.WorkingSet;
                 }
-                this.Stopwatch.Start();
+                this.MeasureStart = new MyTimeSpan(Stopwatch.GetTimestamp());
             }
 
-            public void End(bool memoryProfiling, TimeSpan? customTime = null)
+            public void End(bool memoryProfiling, MyTimeSpan? customTime = null)
             {
-                this.Stopwatch.Stop();
-                this.Elapsed = !customTime.HasValue ? this.Stopwatch.Elapsed : customTime.Value;
+                this.Elapsed += customTime ?? new MyTimeSpan(Stopwatch.GetTimestamp()) - this.MeasureStart;
                 if (memoryProfiling)
                 {
                     this.EndManagedMB = GC.GetTotalMemory(false);

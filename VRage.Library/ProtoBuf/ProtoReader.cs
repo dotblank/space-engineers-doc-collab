@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: ProtoBuf.ProtoReader
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using ProtoBuf.Meta;
@@ -104,7 +104,7 @@ namespace ProtoBuf
 
         internal int TryReadUInt32VariantWithoutMoving(bool trimNegative, out uint value)
         {
-            // removed because trying to fix the errors is pointless
+            // lazy fix for decomplier shenanigans
             value = 0;
             return 0;
         }
@@ -265,9 +265,9 @@ namespace ProtoBuf
 
         private int TryReadUInt64VariantWithoutMoving(out ulong value)
         {
-            // removed because trying to fix the errors is pointless
-            value = 0;
-            return 0;
+            // lazy fix for decomplier shenanigans
+            value = 1;
+            return 1;
         }
 
         private ulong ReadUInt64Variant()
@@ -347,7 +347,6 @@ namespace ProtoBuf
 
         public unsafe double ReadDouble()
         {
-            // removed because trying to fix the errors is pointless
             return 0;
         }
 
@@ -563,7 +562,6 @@ namespace ProtoBuf
 
         public unsafe float ReadSingle()
         {
-            // removed because trying to fix the errors is pointless
             return 0;
         }
 

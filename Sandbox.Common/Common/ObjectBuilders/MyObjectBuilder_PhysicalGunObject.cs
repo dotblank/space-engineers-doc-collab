@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_PhysicalGunObject
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: AEA4A40D-6023-45C7-A56E-9FAD0E8F073F
+// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -11,8 +11,8 @@ using VRage.Common.Utils;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-    [MyObjectBuilderDefinition]
     [ProtoContract]
+    [MyObjectBuilderDefinition]
     public class MyObjectBuilder_PhysicalGunObject : MyObjectBuilder_PhysicalObject
     {
         [XmlElement("GunEntity", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_EntityBase>))] [ProtoMember(3)] public MyObjectBuilder_EntityBase GunEntity;

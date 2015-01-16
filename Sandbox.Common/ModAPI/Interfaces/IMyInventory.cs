@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.ModAPI.Interfaces.IMyInventory
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: AEA4A40D-6023-45C7-A56E-9FAD0E8F073F
+// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using Sandbox.Common.ObjectBuilders;
@@ -15,34 +15,41 @@ namespace Sandbox.ModAPI.Interfaces
     public interface IMyInventory
     {
         /// <summary>
-        /// Gets a boolean value depicting whether the inventory has reached its maximum volume or not.
+        ///     Gets a boolean value depicting whether the inventory has reached its maximum volume or not.
         /// </summary>
         bool IsFull { get; }
+
         /// <summary>
-        /// Gets the inventory's physical dimensions.
+        ///     Gets the inventory's physical dimensions.
         /// </summary>
         Vector3 Size { get; }
+
         /// <summary>
-        /// Gets the inventory items' total mass in kilograms.
+        ///     Gets the inventory items' total mass in kilograms.
         /// </summary>
         MyFixedPoint CurrentMass { get; }
+
         /// <summary>
-        /// Gets the inventory's maximum volume in liters.
+        ///     Gets the inventory's maximum volume in liters.
         /// </summary>
         MyFixedPoint MaxVolume { get; }
+
         /// <summary>
-        /// Gets the inventory items' total volume in liters.
+        ///     Gets the inventory items' total volume in liters.
         /// </summary>
         MyFixedPoint CurrentVolume { get; }
+
         /// <summary>
-        /// Gets the inventory's owner.
+        ///     Gets the inventory's owner.
         /// </summary>
         IMyInventoryOwner Owner { get; }
+
         /// <summary>
-        /// Returns a boolean value depicting whether an inventory item resides at the specified index in the list of all inventory items.
+        ///     Returns a boolean value depicting whether an inventory item resides at the specified index in the list of all
+        ///     inventory items.
         /// </summary>
         /// <param name="position">A zero-based index</param>
-        /// <returns><see langword="true"/> if an item is found at the specified index, <see langword="false"/> if not. </returns>
+        /// <returns><see langword="true" /> if an item is found at the specified index, <see langword="false" /> if not. </returns>
         bool IsItemAt(int position);
 
         bool CanItemsBeAdded(MyFixedPoint amount, SerializableDefinitionId contentId);
@@ -117,5 +124,7 @@ namespace Sandbox.ModAPI.Interfaces
         IMyInventoryItem GetItemByID(uint id);
 
         IMyInventoryItem FindItem(SerializableDefinitionId contentId);
+
+        bool IsConnectedTo(IMyInventory dst);
     }
 }

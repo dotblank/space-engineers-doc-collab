@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: ProtoBuf.Meta.ValueMember
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using ProtoBuf;
@@ -204,74 +204,8 @@ namespace ProtoBuf.Meta
 
         private static object ParseDefaultValue(Type type, object value)
         {
-            Type underlyingType = Helpers.GetUnderlyingType(type);
-            if (underlyingType != (Type) null)
-                type = underlyingType;
-            if (value is string)
-            {
-                string str = (string) value;
-                if (Helpers.IsEnum(type))
-                    return Helpers.ParseEnum(type, str);
-                switch (Helpers.GetTypeCode(type))
-                {
-                    case ProtoTypeCode.Boolean:
-                        return (object) (bool.Parse(str) ? 1 : 0);
-                    case ProtoTypeCode.Char:
-                        if (str.Length == 1)
-                            return (object) str[0];
-                        else
-                            throw new FormatException("Single character expected: \"" + str + "\"");
-                    case ProtoTypeCode.SByte:
-                        return
-                            (object)
-                                sbyte.Parse(str, NumberStyles.Integer, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.Byte:
-                        return
-                            (object)
-                                byte.Parse(str, NumberStyles.Integer, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.Int16:
-                        return
-                            (object) short.Parse(str, NumberStyles.Any, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.UInt16:
-                        return
-                            (object) ushort.Parse(str, NumberStyles.Any, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.Int32:
-                        return (object) int.Parse(str, NumberStyles.Any, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.UInt32:
-                        return
-                            (object) uint.Parse(str, NumberStyles.Any, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.Int64:
-                        return
-                            (object) long.Parse(str, NumberStyles.Any, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.UInt64:
-                        return
-                            (object) ulong.Parse(str, NumberStyles.Any, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.Single:
-                        return
-                            (object) float.Parse(str, NumberStyles.Any, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.Double:
-                        return
-                            (object) double.Parse(str, NumberStyles.Any, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.Decimal:
-                        return
-                            (object)
-                                Decimal.Parse(str, NumberStyles.Any, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.DateTime:
-                        return (object) DateTime.Parse(str, (IFormatProvider) CultureInfo.InvariantCulture);
-                    case ProtoTypeCode.String:
-                        return (object) str;
-                    case ProtoTypeCode.TimeSpan:
-                        return (object) TimeSpan.Parse(str);
-                    case ProtoTypeCode.Guid:
-                        return (object) new Guid(str);
-                    case ProtoTypeCode.Uri:
-                        return (object) str;
-                }
-            }
-            if (Helpers.IsEnum(type))
-                return Enum.ToObject(type, value);
-            else
-                return Convert.ChangeType(value, type, (IFormatProvider) CultureInfo.InvariantCulture);
+            // lazy fix for decomplier shenanigans
+            return null;
         }
 
         public void SetSpecified(MethodInfo getSpecified, MethodInfo setSpecified)

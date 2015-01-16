@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.Resources.MyTexts
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: AEA4A40D-6023-45C7-A56E-9FAD0E8F073F
+// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using System.CodeDom.Compiler;
@@ -13,9 +13,9 @@ using System.Runtime.CompilerServices;
 
 namespace Sandbox.Common.Resources
 {
+    [DebuggerNonUserCode]
     [CompilerGenerated]
     [GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
-    [DebuggerNonUserCode]
     internal class MyTexts
     {
         private static ResourceManager resourceMan;
@@ -93,56 +93,6 @@ namespace Sandbox.Common.Resources
         internal static string ApplyingPleaseWait
         {
             get { return MyTexts.ResourceManager.GetString("ApplyingPleaseWait", MyTexts.resourceCulture); }
-        }
-
-        internal static string AspectRatio_Dual_16_10
-        {
-            get { return MyTexts.ResourceManager.GetString("AspectRatio_Dual_16_10", MyTexts.resourceCulture); }
-        }
-
-        internal static string AspectRatio_Dual_16_9
-        {
-            get { return MyTexts.ResourceManager.GetString("AspectRatio_Dual_16_9", MyTexts.resourceCulture); }
-        }
-
-        internal static string AspectRatio_Dual_4_3
-        {
-            get { return MyTexts.ResourceManager.GetString("AspectRatio_Dual_4_3", MyTexts.resourceCulture); }
-        }
-
-        internal static string AspectRatio_Normal_16_10
-        {
-            get { return MyTexts.ResourceManager.GetString("AspectRatio_Normal_16_10", MyTexts.resourceCulture); }
-        }
-
-        internal static string AspectRatio_Normal_16_9
-        {
-            get { return MyTexts.ResourceManager.GetString("AspectRatio_Normal_16_9", MyTexts.resourceCulture); }
-        }
-
-        internal static string AspectRatio_Normal_4_3
-        {
-            get { return MyTexts.ResourceManager.GetString("AspectRatio_Normal_4_3", MyTexts.resourceCulture); }
-        }
-
-        internal static string AspectRatio_Triple_16_10
-        {
-            get { return MyTexts.ResourceManager.GetString("AspectRatio_Triple_16_10", MyTexts.resourceCulture); }
-        }
-
-        internal static string AspectRatio_Triple_16_9
-        {
-            get { return MyTexts.ResourceManager.GetString("AspectRatio_Triple_16_9", MyTexts.resourceCulture); }
-        }
-
-        internal static string AspectRatio_Triple_4_3
-        {
-            get { return MyTexts.ResourceManager.GetString("AspectRatio_Triple_4_3", MyTexts.resourceCulture); }
-        }
-
-        internal static string AspectRatio_Unsupported_5_4
-        {
-            get { return MyTexts.ResourceManager.GetString("AspectRatio_Unsupported_5_4", MyTexts.resourceCulture); }
         }
 
         internal static string Assembler_SlaveMode
@@ -816,20 +766,29 @@ namespace Sandbox.Common.Resources
             }
         }
 
-        internal static string BlockPropertyDescription_SphereFriction
+        internal static string BlockPropertyDescription_SpaceBallFriction
         {
             get
             {
-                return MyTexts.ResourceManager.GetString("BlockPropertyDescription_SphereFriction",
+                return MyTexts.ResourceManager.GetString("BlockPropertyDescription_SpaceBallFriction",
                     MyTexts.resourceCulture);
             }
         }
 
-        internal static string BlockPropertyDescription_SphereVirtualMass
+        internal static string BlockPropertyDescription_SpaceBallRestitution
         {
             get
             {
-                return MyTexts.ResourceManager.GetString("BlockPropertyDescription_SphereVirtualMass",
+                return MyTexts.ResourceManager.GetString("BlockPropertyDescription_SpaceBallRestitution",
+                    MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string BlockPropertyDescription_SpaceBallVirtualMass
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("BlockPropertyDescription_SpaceBallVirtualMass",
                     MyTexts.resourceCulture);
             }
         }
@@ -2133,16 +2092,6 @@ namespace Sandbox.Common.Resources
             {
                 return MyTexts.ResourceManager.GetString("Description_Scenario_TwoPlatforms", MyTexts.resourceCulture);
             }
-        }
-
-        internal static string Description_Torch_hold
-        {
-            get { return MyTexts.ResourceManager.GetString("Description_Torch_hold", MyTexts.resourceCulture); }
-        }
-
-        internal static string Description_Torch_hold_stop
-        {
-            get { return MyTexts.ResourceManager.GetString("Description_Torch_hold_stop", MyTexts.resourceCulture); }
         }
 
         internal static string DialogAmount_AddAmountCaption
@@ -3699,16 +3648,6 @@ namespace Sandbox.Common.Resources
             }
         }
 
-        internal static string DisplayName_Torch_hold
-        {
-            get { return MyTexts.ResourceManager.GetString("DisplayName_Torch_hold", MyTexts.resourceCulture); }
-        }
-
-        internal static string DisplayName_Torch_hold_stop
-        {
-            get { return MyTexts.ResourceManager.GetString("DisplayName_Torch_hold_stop", MyTexts.resourceCulture); }
-        }
-
         internal static string DisplayName_VoxelHand_AutoLevel
         {
             get
@@ -4298,6 +4237,15 @@ namespace Sandbox.Common.Resources
             get
             {
                 return MyTexts.ResourceManager.GetString("JoinGame_GameTypeToolTip_MultipliersFormat",
+                    MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string JoinGame_GameTypeToolTip_ViewDistance
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("JoinGame_GameTypeToolTip_ViewDistance",
                     MyTexts.resourceCulture);
             }
         }
@@ -7661,6 +7609,14 @@ namespace Sandbox.Common.Resources
             get { return MyTexts.ResourceManager.GetString("ScreenDebugSpawnMenu_Caption", MyTexts.resourceCulture); }
         }
 
+        internal static string ScreenDebugSpawnMenu_GenerateSeed
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("ScreenDebugSpawnMenu_GenerateSeed", MyTexts.resourceCulture);
+            }
+        }
+
         internal static string ScreenDebugSpawnMenu_InvalidAmount
         {
             get
@@ -8254,31 +8210,6 @@ namespace Sandbox.Common.Resources
             }
         }
 
-        internal static string ScreenToolbarConfig_CreateStaticCheckbox
-        {
-            get
-            {
-                return MyTexts.ResourceManager.GetString("ScreenToolbarConfig_CreateStaticCheckbox",
-                    MyTexts.resourceCulture);
-            }
-        }
-
-        internal static string ScreenToolbarConfig_LargeGridButton
-        {
-            get
-            {
-                return MyTexts.ResourceManager.GetString("ScreenToolbarConfig_LargeGridButton", MyTexts.resourceCulture);
-            }
-        }
-
-        internal static string ScreenToolbarConfig_SmallGridButton
-        {
-            get
-            {
-                return MyTexts.ResourceManager.GetString("ScreenToolbarConfig_SmallGridButton", MyTexts.resourceCulture);
-            }
-        }
-
         internal static string SelectBlueprint
         {
             get { return MyTexts.ResourceManager.GetString("SelectBlueprint", MyTexts.resourceCulture); }
@@ -8733,6 +8664,21 @@ namespace Sandbox.Common.Resources
         internal static string TerminalTab_Chat_GlobalChat
         {
             get { return MyTexts.ResourceManager.GetString("TerminalTab_Chat_GlobalChat", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_Chat_NoFaction
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_Chat_NoFaction", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_Chat_Offline
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_Chat_Offline", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_Chat_Pending
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_Chat_Pending", MyTexts.resourceCulture); }
         }
 
         internal static string TerminalTab_Factions
@@ -9273,6 +9219,85 @@ namespace Sandbox.Common.Resources
             get { return MyTexts.ResourceManager.GetString("ToolTipSaveShip", MyTexts.resourceCulture); }
         }
 
+        internal static string TooltipScreenMods_Category_All
+        {
+            get { return MyTexts.ResourceManager.GetString("TooltipScreenMods_Category_All", MyTexts.resourceCulture); }
+        }
+
+        internal static string TooltipScreenMods_Category_Animation
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TooltipScreenMods_Category_Animation", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TooltipScreenMods_Category_Block
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TooltipScreenMods_Category_Block", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TooltipScreenMods_Category_Character
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TooltipScreenMods_Category_Character", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TooltipScreenMods_Category_Modpack
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TooltipScreenMods_Category_Modpack", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TooltipScreenMods_Category_Other
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TooltipScreenMods_Category_Other", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TooltipScreenMods_Category_Production
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TooltipScreenMods_Category_Production",
+                    MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TooltipScreenMods_Category_RespawnShip
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TooltipScreenMods_Category_RespawnShip",
+                    MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TooltipScreenMods_Category_Script
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TooltipScreenMods_Category_Script", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TooltipScreenMods_Category_Skybox
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TooltipScreenMods_Category_Skybox", MyTexts.resourceCulture);
+            }
+        }
+
         internal static string ToolTipScreenMods_MoveBottom
         {
             get { return MyTexts.ResourceManager.GetString("ToolTipScreenMods_MoveBottom", MyTexts.resourceCulture); }
@@ -9311,6 +9336,14 @@ namespace Sandbox.Common.Resources
         internal static string ToolTipScreenMods_MoveUp
         {
             get { return MyTexts.ResourceManager.GetString("ToolTipScreenMods_MoveUp", MyTexts.resourceCulture); }
+        }
+
+        internal static string TooltipScreenMods_SelectCategories
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TooltipScreenMods_SelectCategories", MyTexts.resourceCulture);
+            }
         }
 
         internal static string ToolTipTerminalInventory_FilterAll

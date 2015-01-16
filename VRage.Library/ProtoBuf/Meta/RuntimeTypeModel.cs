@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: ProtoBuf.Meta.RuntimeTypeModel
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using ProtoBuf;
@@ -41,18 +41,7 @@ namespace ProtoBuf.Meta
             set { this.SetOption((byte) 1, value); }
         }
 
-        public bool AutoAddProtoContractTypesOnly
-        {
-            get
-            {
-                // removed because trying to fix the errors is pointless
-                return true;
-            }
-            set
-            {
-                // removed because trying to fix the errors is pointless
-            }
-        }
+        public bool AutoAddProtoContractTypesOnly { get; set; } // lazy fix for decomplier shenanigans
 
         public bool UseImplicitZeroDefaults
         {
@@ -128,7 +117,7 @@ namespace ProtoBuf.Meta
 
         private void SetOption(byte option, bool value)
         {
-            // removed because trying to fix the errors is pointless
+            // lazy fix for decomplier shenanigans
         }
 
         public IEnumerable GetTypes()

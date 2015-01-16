@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_Checkpoint
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: AEA4A40D-6023-45C7-A56E-9FAD0E8F073F
+// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -18,8 +18,8 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-    [MyObjectBuilderDefinition]
     [ProtoContract]
+    [MyObjectBuilderDefinition]
     public class MyObjectBuilder_Checkpoint : MyObjectBuilder_Base
     {
         private static SerializableDefinitionId DEFAULT_SCENARIO =
@@ -29,11 +29,10 @@ namespace Sandbox.Common.ObjectBuilders
             new MyPositionAndOrientation((MatrixD) Matrix.Identity);
 
         [ProtoMember(9)] [DefaultValue(-1)] public long ControlledObject = -1L;
-        [DefaultValue(null)] [ProtoMember(32)] public ulong? WorkshopId = new ulong?();
+        [ProtoMember(32)] [DefaultValue(null)] public ulong? WorkshopId = new ulong?();
 
-        [ProtoMember(51)] [XmlElement("Settings", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_SessionSettings>))] public
-            MyObjectBuilder_SessionSettings Settings =
-                MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_SessionSettings>();
+        [XmlElement("Settings", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_SessionSettings>))] [ProtoMember(51)] public MyObjectBuilder_SessionSettings Settings =
+            MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_SessionSettings>();
 
         [ProtoMember(56)] public SerializableDefinitionId Scenario = MyObjectBuilder_Checkpoint.DEFAULT_SCENARIO;
 
@@ -41,9 +40,9 @@ namespace Sandbox.Common.ObjectBuilders
             new MyEnvironmentHostilityEnum?();
 
         [ProtoMember(1)] public SerializableVector3I CurrentSector;
-        [ProtoMember(2)] public DateTime GameTime;
+        [ProtoMember(3)] public long ElapsedGameTime;
         [ProtoMember(4)] public string SessionName;
-        [ProtoMember(7)] [DefaultValue(MyCameraControllerEnum.Spectator)] public MyCameraControllerEnum CameraController;
+        [DefaultValue(MyCameraControllerEnum.Spectator)] [ProtoMember(7)] public MyCameraControllerEnum CameraController;
         [ProtoMember(8)] public long CameraEntity;
         [ProtoMember(15)] public string Password;
         [ProtoMember(20)] public string Description;
@@ -73,6 +72,14 @@ namespace Sandbox.Common.ObjectBuilders
             AllPlayersData;
 
         [ProtoMember(64)] public List<MyObjectBuilder_ChatHistory> ChatHistory;
+        [ProtoMember(65)] public List<MyObjectBuilder_FactionChatHistory> FactionChatHistory;
+        [ProtoMember(66)] public List<long> NonPlayerIdentities;
+
+        public DateTime GameTime
+        {
+            get { return new DateTime(2081, 1, 1, 0, 0, 0, DateTimeKind.Utc) + new TimeSpan(this.ElapsedGameTime); }
+            set { this.ElapsedGameTime = (value - new DateTime(2081, 1, 1)).Ticks; }
+        }
 
         public MyOnlineModeEnum OnlineMode
         {
@@ -207,6 +214,11 @@ namespace Sandbox.Common.ObjectBuilders
         {
             get { return this.Settings.CargoShipsEnabled; }
             set { this.Settings.CargoShipsEnabled = value; }
+        }
+
+        public bool ShouldSerializeGameTime()
+        {
+            return false;
         }
 
         public bool ShouldSerializeOnlineMode()
@@ -348,7 +360,7 @@ namespace Sandbox.Common.ObjectBuilders
         public struct ModItem
         {
             [ProtoMember(1)] public string Name;
-            [DefaultValue(0)] [ProtoMember(2)] public ulong PublishedFileId;
+            [ProtoMember(2)] [DefaultValue(0)] public ulong PublishedFileId;
             [XmlIgnore] public string FriendlyName;
 
             public ModItem(ulong publishedFileId)

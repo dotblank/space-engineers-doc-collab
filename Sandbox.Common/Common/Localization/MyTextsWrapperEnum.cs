@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.Localization.MyTextsWrapperEnum
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: AEA4A40D-6023-45C7-A56E-9FAD0E8F073F
+// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using System.CodeDom.Compiler;
@@ -14,15 +14,6 @@ namespace Sandbox.Common.Localization
         INVALID,
         Afterburner,
         MessageBoxTextAreYouSureYouWantToExit,
-        AspectRatio_Dual_16_10,
-        AspectRatio_Dual_16_9,
-        AspectRatio_Dual_4_3,
-        AspectRatio_Normal_16_10,
-        AspectRatio_Normal_16_9,
-        AspectRatio_Normal_4_3,
-        AspectRatio_Triple_16_10,
-        AspectRatio_Triple_16_9,
-        AspectRatio_Triple_4_3,
         AssignControlJoystick,
         AssignControlJoystickAxis,
         AssignControlKeyboard,
@@ -825,7 +816,6 @@ namespace Sandbox.Common.Localization
         BlockPropertyTitle_GravityFieldWidth,
         NotificationHintPressToOpenTerminal,
         NotificationHintPressToRechargeInMedicalRoom,
-        AspectRatio_Unsupported_5_4,
         UnsupportedAspectRatio,
         OnlyFriendsCanJoinThisGame,
         ToolTipWorldSettingsDescription,
@@ -1582,8 +1572,8 @@ namespace Sandbox.Common.Localization
         RemoveProjectionButton,
         DisplayName_Block_SpaceBall,
         DisplayName_Category_VoxelHands,
-        BlockPropertyDescription_SphereFriction,
-        BlockPropertyDescription_SphereVirtualMass,
+        BlockPropertyDescription_SpaceBallFriction,
+        BlockPropertyDescription_SpaceBallVirtualMass,
         BlockPropertyDescription_SoundBlockRange,
         BlockPropertyDescription_SoundBlockVolume,
         BlockPropertyTitle_SoundBlockRange,
@@ -1638,13 +1628,6 @@ namespace Sandbox.Common.Localization
         WorldSettings_AsteroidAmountProceduralHigh,
         WorldSettings_AsteroidAmountProceduralLow,
         WorldSettings_AsteroidAmountProceduralNormal,
-        ScreenToolbarConfig_CreateStaticCheckbox,
-        ScreenToolbarConfig_LargeGridButton,
-        ScreenToolbarConfig_SmallGridButton,
-        Description_Torch_hold,
-        Description_Torch_hold_stop,
-        DisplayName_Torch_hold,
-        DisplayName_Torch_hold_stop,
         ToolTipWorldSettingsDestructibleBlocks,
         WorldSettings_DestructibleBlocks,
         WorkshopTag_Exploration,
@@ -1714,5 +1697,22 @@ namespace Sandbox.Common.Localization
         WorldSettings_ViewDistance_7_Km,
         WorldSettings_ViewDistance_Custom,
         ToolTipWorldSettingsViewDistance,
+        BlockPropertyDescription_SpaceBallRestitution,
+        TooltipScreenMods_Category_All,
+        TooltipScreenMods_Category_Animation,
+        TooltipScreenMods_Category_Block,
+        TooltipScreenMods_Category_Character,
+        TooltipScreenMods_Category_Modpack,
+        TooltipScreenMods_Category_Other,
+        TooltipScreenMods_Category_Production,
+        TooltipScreenMods_Category_RespawnShip,
+        TooltipScreenMods_Category_Script,
+        TooltipScreenMods_Category_Skybox,
+        TooltipScreenMods_SelectCategories,
+        ScreenDebugSpawnMenu_GenerateSeed,
+        JoinGame_GameTypeToolTip_ViewDistance,
+        TerminalTab_Chat_NoFaction,
+        TerminalTab_Chat_Offline,
+        TerminalTab_Chat_Pending,
     }
 }

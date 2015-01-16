@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: ProtoBuf.ServiceModel.ProtoBehaviorAttribute
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
@@ -22,13 +22,13 @@ namespace ProtoBuf.ServiceModel
         void IOperationBehavior.ApplyClientBehavior(OperationDescription operationDescription,
             ClientOperation clientOperation)
         {
-            // removed because trying to fix the errors is pointless
+            // lazy fix for decomplier shenanigans
         }
 
         void IOperationBehavior.ApplyDispatchBehavior(OperationDescription operationDescription,
             DispatchOperation dispatchOperation)
         {
-            // removed because trying to fix the errors is pointless
+            // lazy fix for decomplier shenanigans
         }
 
         void IOperationBehavior.Validate(OperationDescription operationDescription)

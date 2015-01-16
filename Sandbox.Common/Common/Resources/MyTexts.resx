@@ -243,6 +243,9 @@
   <data name="Terminal_ShowOnHUDToolTip" xml:space="preserve">
     <value>You must have active antenna connected.</value>
   </data>
+  <data name="BlockPropertyDescription_SpaceBallFriction" xml:space="preserve">
+    <value>Friction</value>
+  </data>
   <data name="KeysRightControl" xml:space="preserve">
     <value>RCtrl</value>
   </data>
@@ -358,9 +361,6 @@ World size: {1}</value>
   <data name="DisplayName_BlueprintClass_LargeBlocks" xml:space="preserve">
     <value>Large Blocks</value>
   </data>
-  <data name="AspectRatio_Triple_16_10" xml:space="preserve">
-    <value>Triple 16:10</value>
-  </data>
   <data name="RespawnShip" xml:space="preserve">
     <value>Respawn Ship</value>
   </data>
@@ -409,9 +409,6 @@ World size: {1}</value>
   <data name="KeysPageDown" xml:space="preserve">
     <value>PgDown</value>
   </data>
-  <data name="ScreenToolbarConfig_SmallGridButton" xml:space="preserve">
-    <value>Small grid</value>
-  </data>
   <data name="BlockPropertiesText_MotorCurrentAngle" xml:space="preserve">
     <value>Current angle: </value>
   </data>
@@ -451,14 +448,14 @@ World size: {1}</value>
   <data name="Quote37Author" xml:space="preserve">
     <value>Wikipedia, 2077</value>
   </data>
+  <data name="TooltipScreenMods_Category_RespawnShip" xml:space="preserve">
+    <value>Respawn Ship</value>
+  </data>
   <data name="VoxelHandSettingScreen_ShapeSettings" xml:space="preserve">
     <value>Shape Settings</value>
   </data>
   <data name="Accept" xml:space="preserve">
     <value>Accept</value>
-  </data>
-  <data name="ScreenToolbarConfig_LargeGridButton" xml:space="preserve">
-    <value>Large grid</value>
   </data>
   <data name="DisplayName_Item_IronIngot" xml:space="preserve">
     <value>Iron Ingot</value>
@@ -588,6 +585,9 @@ World size: {1}</value>
   </data>
   <data name="BlockPropertyTitle_MotorUsesWheelCommands" xml:space="preserve">
     <value>Uses wheel commands</value>
+  </data>
+  <data name="TooltipScreenMods_Category_Modpack" xml:space="preserve">
+    <value>Modpack</value>
   </data>
   <data name="NotificationNewPlayerChatMessage" xml:space="preserve">
     <value>New message from {0}</value>
@@ -925,6 +925,9 @@ Hint: Try setting the TypeId to any block that is in the terminal - the simplest
   <data name="ExportingToObj" xml:space="preserve">
     <value>Exporting model. Please wait.</value>
   </data>
+  <data name="TooltipScreenMods_Category_Skybox" xml:space="preserve">
+    <value>Skybox</value>
+  </data>
   <data name="Loaded" xml:space="preserve">
     <value>Loaded</value>
   </data>
@@ -942,6 +945,9 @@ Hint: Try setting the TypeId to any block that is in the terminal - the simplest
   </data>
   <data name="INVALID" xml:space="preserve">
     <value>INVALID TEXT WRAPPER ENUM</value>
+  </data>
+  <data name="TooltipScreenMods_Category_Script" xml:space="preserve">
+    <value>Script</value>
   </data>
   <data name="TerminalTab_Factions_CreateFactionTagToolTip" xml:space="preserve">
     <value>Faction tag (3 letters must be inserted)</value>
@@ -1345,9 +1351,6 @@ Reinstalling the game is not enough, because Steam does not delete unknown files
   <data name="ScreenOptionsVideo_WindowMode_FullscreenWindow" xml:space="preserve">
     <value>Fullscreen window</value>
   </data>
-  <data name="AspectRatio_Normal_4_3" xml:space="preserve">
-    <value>4:3</value>
-  </data>
   <data name="BlockPropertyDescription_SensorFieldBottom" xml:space="preserve">
     <value>How far the sensing field extends below the sensor's position</value>
   </data>
@@ -1377,6 +1380,9 @@ Reinstalling the game is not enough, because Steam does not delete unknown files
   </data>
   <data name="ShowControlsHints" xml:space="preserve">
     <value>Show controls hints</value>
+  </data>
+  <data name="JoinGame_GameTypeToolTip_ViewDistance" xml:space="preserve">
+    <value>View distance: {0}m</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
@@ -1410,6 +1416,9 @@ Reinstalling the game is not enough, because Steam does not delete unknown files
   </data>
   <data name="BlockAction_Switch" xml:space="preserve">
     <value>Switch</value>
+  </data>
+  <data name="TooltipScreenMods_SelectCategories" xml:space="preserve">
+    <value>Select categories</value>
   </data>
   <data name="DisplayName_VoxelHand_AutoLevel" xml:space="preserve">
     <value>Terrain auto level</value>
@@ -1680,9 +1689,6 @@ Note that by submitting this item, you agree to the workshop terms of service (s
   <data name="ScreenCaptionWorkshop" xml:space="preserve">
     <value>Workshop</value>
   </data>
-  <data name="Description_Torch_hold" xml:space="preserve">
-    <value>Torch hold</value>
-  </data>
   <data name="BlockPropertyTitle_Motor_Power" xml:space="preserve">
     <value>Power</value>
   </data>
@@ -1735,9 +1741,6 @@ Note that by submitting this item, you agree to the workshop terms of service (s
   <data name="Default_Astronaut" xml:space="preserve">
     <value>Astronaut</value>
   </data>
-  <data name="AspectRatio_Triple_16_9" xml:space="preserve">
-    <value>Triple 16:9</value>
-  </data>
   <data name="BlockPropertyTitle_ShowShipName" xml:space="preserve">
     <value>Show ship name</value>
   </data>
@@ -1767,6 +1770,9 @@ Note that by submitting this item, you agree to the workshop terms of service (s
   </data>
   <data name="MessageBoxTextAreYouSureYouWantToReconnect" xml:space="preserve">
     <value>Are you sure you want to reconnect to the current multiplayer game?</value>
+  </data>
+  <data name="TooltipScreenMods_Category_All" xml:space="preserve">
+    <value>All</value>
   </data>
   <data name="Quote47Author" xml:space="preserve">
     <value>Neil Armstrong</value>
@@ -1960,6 +1966,9 @@ Public: Any Steam player can join</value>
   <data name="MultiplayerErrorVACCheckTimedOut" xml:space="preserve">
     <value>VAC check timed out</value>
   </data>
+  <data name="TooltipScreenMods_Category_Character" xml:space="preserve">
+    <value>Character</value>
+  </data>
   <data name="WorldSettings_RemoveTrash" xml:space="preserve">
     <value>Trash auto-removal</value>
   </data>
@@ -2115,9 +2124,6 @@ Volume: {2} L</value>
   <data name="MessageBoxConfirmFactionsPromote" xml:space="preserve">
     <value>Are you sure that you want promote '{0}' to leader?</value>
   </data>
-  <data name="DisplayName_Torch_hold" xml:space="preserve">
-    <value>Torch hold</value>
-  </data>
   <data name="ToolTipItemFilter_GenericProductionBlockOutput" xml:space="preserve">
     <value>Any item produced by {0}</value>
   </data>
@@ -2147,6 +2153,9 @@ Volume: {2} L</value>
   </data>
   <data name="ControlDescSingleAllMode" xml:space="preserve">
     <value>Single / All weapon mode (cockpit)</value>
+  </data>
+  <data name="TerminalTab_Chat_Pending" xml:space="preserve">
+    <value>PENDING</value>
   </data>
   <data name="WorldSettings_EnableWeapons" xml:space="preserve">
     <value>Weapons enabled</value>
@@ -2201,9 +2210,6 @@ Volume: {2} L</value>
   </data>
   <data name="Quote22Author" xml:space="preserve">
     <value>Walter Bagehot</value>
-  </data>
-  <data name="ScreenToolbarConfig_CreateStaticCheckbox" xml:space="preserve">
-    <value>Create static</value>
   </data>
   <data name="Quote12Author" xml:space="preserve">
     <value>Leonardo da Vinci</value>
@@ -2286,9 +2292,6 @@ Volume: {2} L</value>
   <data name="KeysLeft" xml:space="preserve">
     <value>Left</value>
   </data>
-  <data name="BlockPropertyDescription_SphereVirtualMass" xml:space="preserve">
-    <value>Virtual mass</value>
-  </data>
   <data name="KeysPipe" xml:space="preserve">
     <value>Pipe</value>
   </data>
@@ -2360,6 +2363,9 @@ Volume: {2} L</value>
   </data>
   <data name="BlockPropertyDescription_SensorFieldRight" xml:space="preserve">
     <value>How far the sensing field extends to the right from the sensor's position</value>
+  </data>
+  <data name="BlockPropertyDescription_SpaceBallVirtualMass" xml:space="preserve">
+    <value>Virtual mass</value>
   </data>
   <data name="DisplayName_Category_ArmorBlocks" xml:space="preserve">
     <value>Armor Blocks</value>
@@ -2461,7 +2467,7 @@ Volume: {2} L</value>
     <value>Current Input: </value>
   </data>
   <data name="TerminalTab_Chat_GlobalChat" xml:space="preserve">
-    <value>-Global Chat-</value>
+    <value>-Broadcast-</value>
   </data>
   <data name="ToolTipWorldSettings_Refinery_x3" xml:space="preserve">
     <value>Refinery is 3x faster</value>
@@ -2709,9 +2715,6 @@ Auto-Save: ON</value>
   <data name="ExportToObjModded" xml:space="preserve">
     <value>Model contains modded blocks.Only models with default block can be exported.</value>
   </data>
-  <data name="AspectRatio_Normal_16_10" xml:space="preserve">
-    <value>16:10</value>
-  </data>
   <data name="DisplayName_Item_NATO_5p56x45mm" xml:space="preserve">
     <value>5.56x45mm NATO magazine</value>
   </data>
@@ -2787,6 +2790,9 @@ Auto-Save: ON</value>
   <data name="Quote65Text" xml:space="preserve">
     <value>SCIENTIFIC METHOD: principles and procedures for the systematic pursuit of knowledge involving the recognition and formulation of a problem, the collection of data through observation and experiment, and the formulation and testing of hypotheses.</value>
   </data>
+  <data name="TooltipScreenMods_Category_Production" xml:space="preserve">
+    <value>Production</value>
+  </data>
   <data name="TerminalControlPanel_Cockpit_Handbrake" xml:space="preserve">
     <value>Handbrake</value>
   </data>
@@ -2810,9 +2816,6 @@ Auto-Save: ON</value>
   </data>
   <data name="DisplayName_Item_PlatinumIngot" xml:space="preserve">
     <value>Platinum Ingot</value>
-  </data>
-  <data name="AspectRatio_Dual_4_3" xml:space="preserve">
-    <value>Dual 4:3</value>
   </data>
   <data name="NotificationArgStation" xml:space="preserve">
     <value>station</value>
@@ -2942,9 +2945,6 @@ Auto-Save: ON</value>
   </data>
   <data name="DisplayName_Block_Antenna" xml:space="preserve">
     <value>Antenna</value>
-  </data>
-  <data name="DisplayName_Torch_hold_stop" xml:space="preserve">
-    <value>Torch hold stop</value>
   </data>
   <data name="NotificationMemoryOverload" xml:space="preserve">
     <value>Not enough memory to add new objects</value>
@@ -3303,9 +3303,6 @@ Auto-Save: ON</value>
   <data name="BlockPropertyTitle_MotorBrakingTorque" xml:space="preserve">
     <value>Braking tor.</value>
   </data>
-  <data name="Description_Torch_hold_stop" xml:space="preserve">
-    <value>Torch hold stop</value>
-  </data>
   <data name="BlockPropertyTitle_MaximalDistance" xml:space="preserve">
     <value>Maximal distance</value>
   </data>
@@ -3316,7 +3313,7 @@ Auto-Save: ON</value>
     <value>Info</value>
   </data>
   <data name="TerminalTab_Chat" xml:space="preserve">
-    <value>Chat</value>
+    <value>Comms</value>
   </data>
   <data name="HudEnergyGroupUtility" xml:space="preserve">
     <value>Utility</value>
@@ -3446,6 +3443,9 @@ Auto-Save: ON</value>
   </data>
   <data name="ProgrammableBlock_PublishScriptDialogText" xml:space="preserve">
     <value>Do you want to publish this script?</value>
+  </data>
+  <data name="BlockPropertyDescription_SpaceBallRestitution" xml:space="preserve">
+    <value>Restitution</value>
   </data>
   <data name="DisplayName_Block_GravityGeneratorSphere" xml:space="preserve">
     <value>Spherical Gravity Generator</value>
@@ -3595,7 +3595,7 @@ Auto-Save: ON</value>
     <value>Energy is low.</value>
   </data>
   <data name="ProgrammableBlock_Exception_AllreadyRunning" xml:space="preserve">
-    <value>Program is allready running.</value>
+    <value>Program is already running.</value>
   </data>
   <data name="TerminalTab_Factions_Friend" xml:space="preserve">
     <value>Propose peace</value>
@@ -3611,9 +3611,6 @@ Auto-Save: ON</value>
   </data>
   <data name="DisplayName_Block_Gyroscope" xml:space="preserve">
     <value>Gyroscope</value>
-  </data>
-  <data name="AspectRatio_Normal_16_9" xml:space="preserve">
-    <value>16:9</value>
   </data>
   <data name="WorldSettings_GameSurvivalTimes1" xml:space="preserve">
     <value>Realistic</value>
@@ -3748,9 +3745,6 @@ Extreme: 16 large asteroids, 80 small asteroids, 64-bit only</value>
   <data name="ControlName_CubeRotateHorizontalPos" xml:space="preserve">
     <value>Rotate block horizontal +</value>
   </data>
-  <data name="AspectRatio_Triple_4_3" xml:space="preserve">
-    <value>Triple 4:3</value>
-  </data>
   <data name="TerminalTab_Factions_FriendToolTip" xml:space="preserve">
     <value>Propose peace treaty to selected faction</value>
   </data>
@@ -3865,9 +3859,6 @@ Higher numbers affect performance.</value>
   </data>
   <data name="HudInfoNameFuelTime" xml:space="preserve">
     <value>Fuel Time:</value>
-  </data>
-  <data name="BlockPropertyDescription_SphereFriction" xml:space="preserve">
-    <value>Friction</value>
   </data>
   <data name="TerminalTab_Factions" xml:space="preserve">
     <value>Factions</value>
@@ -4163,6 +4154,9 @@ Remove the original control?</value>
   <data name="ControlTypeToolsOrWeapons" xml:space="preserve">
     <value>Tools / Weapons</value>
   </data>
+  <data name="TerminalTab_Chat_NoFaction" xml:space="preserve">
+    <value>Only faction members can use faction-to-faction communications</value>
+  </data>
   <data name="ToolTipWorkshopCopyAndLoad" xml:space="preserve">
     <value>Download selected world to your computer and load</value>
   </data>
@@ -4222,6 +4216,9 @@ Remove the original control?</value>
   </data>
   <data name="HudInfoOn" xml:space="preserve">
     <value>On</value>
+  </data>
+  <data name="TerminalTab_Chat_Offline" xml:space="preserve">
+    <value>offline</value>
   </data>
   <data name="DisplayName_Block_ShipGrinder" xml:space="preserve">
     <value>Grinder</value>
@@ -4362,9 +4359,6 @@ Survival x10: same as "Survival", but 10x larger inventory capacity</value>
   <data name="MessageBoxCaptionRespawn" xml:space="preserve">
     <value>You will lose all ownership and spawn as new player!
 Respawn?</value>
-  </data>
-  <data name="AspectRatio_Dual_16_10" xml:space="preserve">
-    <value>Dual 16:10</value>
   </data>
   <data name="Respawn" xml:space="preserve">
     <value>Respawn</value>
@@ -4530,9 +4524,6 @@ uncontrolled, without a medbay and far enough from all players so that they can 
   <data name="BlockPropertyTitle_GravityAcceleration" xml:space="preserve">
     <value>Acceleration</value>
   </data>
-  <data name="AspectRatio_Dual_16_9" xml:space="preserve">
-    <value>Dual 16:9</value>
-  </data>
   <data name="AssemblerState_Disabled" xml:space="preserve">
     <value>Disabled</value>
   </data>
@@ -4595,6 +4586,9 @@ uncontrolled, without a medbay and far enough from all players so that they can 
   </data>
   <data name="DisplayName_Block_Window1x2FlatInv" xml:space="preserve">
     <value>Window 1x2 Flat Inv.</value>
+  </data>
+  <data name="TooltipScreenMods_Category_Animation" xml:space="preserve">
+    <value>Animation</value>
   </data>
   <data name="DisplayName_BlueprintClass_Electronics" xml:space="preserve">
     <value>Electronics</value>
@@ -4839,6 +4833,9 @@ If the game doesn't run smoothly, decrease it.</value>
   <data name="ToolTipGameOptionsShowCrosshair" xml:space="preserve">
     <value>Whether the weapon crosshair should be visible</value>
   </data>
+  <data name="TooltipScreenMods_Category_Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
   <data name="HudInfoNameMass" xml:space="preserve">
     <value>Mass:</value>
   </data>
@@ -4847,6 +4844,9 @@ If the game doesn't run smoothly, decrease it.</value>
   </data>
   <data name="DisplayName_Block_RemoteControl" xml:space="preserve">
     <value>Remote Control</value>
+  </data>
+  <data name="TooltipScreenMods_Category_Block" xml:space="preserve">
+    <value>Block</value>
   </data>
   <data name="ToolTipSaveShip" xml:space="preserve">
     <value>Save ships from clipboard to file</value>
@@ -4967,6 +4967,9 @@ If the game doesn't run smoothly, decrease it.</value>
   </data>
   <data name="ControlName_Slot1" xml:space="preserve">
     <value>Equip item from slot 1</value>
+  </data>
+  <data name="ScreenDebugSpawnMenu_GenerateSeed" xml:space="preserve">
+    <value>Generate seed</value>
   </data>
   <data name="NotificationJetpackOn" xml:space="preserve">
     <value>Jetpack On</value>
@@ -5215,9 +5218,6 @@ If the game doesn't run smoothly, decrease your screen resolution.</value>
   </data>
   <data name="Factions_YourBlock" xml:space="preserve">
     <value>Your block (no faction)</value>
-  </data>
-  <data name="AspectRatio_Unsupported_5_4" xml:space="preserve">
-    <value>5:4</value>
   </data>
   <data name="Quote38Author" xml:space="preserve">
     <value>Anonym</value>

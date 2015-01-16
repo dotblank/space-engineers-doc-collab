@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Game.Entities.MyEntityIdentifier
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: AEA4A40D-6023-45C7-A56E-9FAD0E8F073F
+// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using Sandbox.ModAPI;
@@ -16,6 +16,7 @@ namespace Sandbox.Game.Entities
     {
         private static Dictionary<long, IMyEntity> m_entityList = new Dictionary<long, IMyEntity>(32768);
         private static bool m_allocationSuspended = false;
+        private static long[] m_lastGeneratedIds = (long[]) null;
         private const int DEFAULT_DICTIONARY_SIZE = 32768;
 
         public static bool AllocationSuspended
@@ -24,15 +25,50 @@ namespace Sandbox.Game.Entities
             set { MyEntityIdentifier.m_allocationSuspended = value; }
         }
 
+        static MyEntityIdentifier()
+        {
+            MyEntityIdentifier.m_lastGeneratedIds =
+                new long[(int) (MyEnum<MyEntityIdentifier.ID_OBJECT_TYPE>.MaxValue.Value + (byte) 1)];
+        }
+
+        public static void Reset()
+        {
+            for (int index = 0;
+                (MyEntityIdentifier.ID_OBJECT_TYPE) index <
+                MyEnum<MyEntityIdentifier.ID_OBJECT_TYPE>.MaxValue.Value + (byte) 1;
+                ++index)
+                MyEntityIdentifier.m_lastGeneratedIds[index] = 0L;
+        }
+
+        public static void MarkIdUsed(long id)
+        {
+            long idUniqueNumber = MyEntityIdentifier.GetIdUniqueNumber(id);
+            MyEntityIdentifier.ID_OBJECT_TYPE idObjectType = MyEntityIdentifier.GetIdObjectType(id);
+            if (MyEntityIdentifier.m_lastGeneratedIds[(int) idObjectType] >= idUniqueNumber)
+                return;
+            MyEntityIdentifier.m_lastGeneratedIds[(int) idObjectType] = idUniqueNumber;
+        }
+
         public static void AddEntityWithId(IMyEntity entity)
         {
             MyEntityIdentifier.m_entityList.Add(entity.EntityId, entity);
         }
 
         public static long AllocateId(
-            MyEntityIdentifier.ID_OBJECT_TYPE objectType = MyEntityIdentifier.ID_OBJECT_TYPE.ENTITY)
+            MyEntityIdentifier.ID_OBJECT_TYPE objectType = MyEntityIdentifier.ID_OBJECT_TYPE.ENTITY,
+            MyEntityIdentifier.ID_ALLOCATION_METHOD generationMethod = MyEntityIdentifier.ID_ALLOCATION_METHOD.RANDOM)
         {
-            return MyRandom.Instance.NextLong() & 72057594037927935L | (long) objectType << 56;
+            long uniqueNumber;
+            if (generationMethod == MyEntityIdentifier.ID_ALLOCATION_METHOD.RANDOM)
+            {
+                uniqueNumber = MyRandom.Instance.NextLong() & 72057594037927935L;
+            }
+            else
+            {
+                uniqueNumber = MyEntityIdentifier.m_lastGeneratedIds[(int) objectType] + 1L;
+                MyEntityIdentifier.m_lastGeneratedIds[(int) objectType] = uniqueNumber;
+            }
+            return MyEntityIdentifier.ConstructId(objectType, uniqueNumber);
         }
 
         public static MyEntityIdentifier.ID_OBJECT_TYPE GetIdObjectType(long id)
@@ -40,13 +76,23 @@ namespace Sandbox.Game.Entities
             return (MyEntityIdentifier.ID_OBJECT_TYPE) (id >> 56);
         }
 
-        public static bool IsIdentityObjectType(MyEntityIdentifier.ID_OBJECT_TYPE identityType)
+        public static long GetIdUniqueNumber(long id)
         {
-            if (identityType != MyEntityIdentifier.ID_OBJECT_TYPE.PLAYER &&
-                identityType != MyEntityIdentifier.ID_OBJECT_TYPE.NPC)
-                return identityType == MyEntityIdentifier.ID_OBJECT_TYPE.SPAWN_GROUP;
-            else
-                return true;
+            return id & 72057594037927935L;
+        }
+
+        public static long ConstructId(MyEntityIdentifier.ID_OBJECT_TYPE type, long uniqueNumber)
+        {
+            return uniqueNumber & 72057594037927935L | 144115188075855872L;
+        }
+
+        public static long FixObsoleteIdentityType(long id)
+        {
+            if (MyEntityIdentifier.GetIdObjectType(id) == MyEntityIdentifier.ID_OBJECT_TYPE.NPC ||
+                MyEntityIdentifier.GetIdObjectType(id) == MyEntityIdentifier.ID_OBJECT_TYPE.SPAWN_GROUP)
+                id = MyEntityIdentifier.ConstructId(MyEntityIdentifier.ID_OBJECT_TYPE.IDENTITY,
+                    MyEntityIdentifier.GetIdUniqueNumber(id));
+            return id;
         }
 
         public static void RemoveEntity(long entityId)
@@ -95,11 +141,17 @@ namespace Sandbox.Game.Entities
         {
             UNKNOWN,
             ENTITY,
-            PLAYER,
+            IDENTITY,
             FACTION,
             NPC,
             SPAWN_GROUP,
             ASTEROID,
+        }
+
+        public enum ID_ALLOCATION_METHOD : byte
+        {
+            RANDOM,
+            SERIAL_START_WITH_1,
         }
     }
 }

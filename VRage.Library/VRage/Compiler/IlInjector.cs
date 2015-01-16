@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.Compiler.IlInjector
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
@@ -95,8 +95,8 @@ namespace VRage.Compiler
         {
             foreach (
                 FieldInfo fieldInfo in
-                    sourceType.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic |
-                                         BindingFlags.GetField | BindingFlags.SetField))
+                    sourceType.GetFields(BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public |
+                                         BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.SetField))
                 createdFields.Add(newType.DefineField(fieldInfo.Name, fieldInfo.FieldType, fieldInfo.Attributes));
         }
 

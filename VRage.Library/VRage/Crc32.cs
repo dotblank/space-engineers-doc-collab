@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.Crc32
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: FD5D66CE-92BD-4D2D-A5F6-2A600D10290D
+// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
@@ -297,12 +297,7 @@ namespace VRage
 
         protected override void HashCore(byte[] buffer, int start, int length)
         {
-            this.crcValue ^= uint.MaxValue;
-            while (--length >= 0)
-                this.crcValue =
-                    Crc32.CrcTable[ (uint) (((int) this.crcValue ^ (int) buffer[start++]) & (int) byte.MaxValue)
-                        ] ^ this.crcValue >> 8;
-            this.crcValue ^= uint.MaxValue;
+            // lazy fix for decomplier shenanigans
         }
 
         protected override byte[] HashFinal()

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{86A11E5D-9832-43CE-98DE-D256DC53DD4F}</ProjectGuid>
+    <ProjectGuid>{2092CD0D-690C-4F90-A330-6A468983A62D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Sandbox.Common</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -36,20 +36,22 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
+    <Reference Include="VRage.Library">
+      <HintPath>..\VRage.Library\bin\Release\VRage.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="VRage.Common">
       <HintPath>lib\VRage.Common.dll</HintPath>
     </Reference>
-    <Reference Include="VRage.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\VRage.Library\bin\Release\VRage.Library.dll</HintPath>
-    </Reference>
     <Reference Include="VRage.Math, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\VRage.Math\bin\Release\VRage.Math.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModAPI\IMyCharacter.cs" />
     <Compile Include="ModAPI\IMyConfigDedicated.cs" />
     <Compile Include="ModAPI\IMyEntity.cs" />
     <Compile Include="ModAPI\IMyDoor.cs" />
@@ -90,7 +92,7 @@
     <Compile Include="ModAPI\IMyVoxelMap.cs" />
     <Compile Include="ModAPI\IMyVoxelMaps.cs" />
     <Compile Include="ModAPI\MyAPIGateway.cs" />
-    <Compile Include="ModAPI\Ingame\IMyBatteryBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMyShipGrinder.cs" />
     <Compile Include="ModAPI\Ingame\IMyCubeBlock.cs" />
     <Compile Include="ModAPI\Ingame\IMyTerminalBlock.cs" />
     <Compile Include="ModAPI\Ingame\IMyFunctionalBlock.cs" />
@@ -104,6 +106,7 @@
     <Compile Include="ModAPI\Ingame\IMySensorBlock.cs" />
     <Compile Include="ModAPI\Ingame\IMyRadioAntenna.cs" />
     <Compile Include="ModAPI\Ingame\IMyAssembler.cs" />
+    <Compile Include="ModAPI\Ingame\IMyBatteryBlock.cs" />
     <Compile Include="ModAPI\Ingame\IMyBeacon.cs" />
     <Compile Include="ModAPI\Ingame\IMyBlockGroup.cs" />
     <Compile Include="ModAPI\Ingame\IMyCameraBlock.cs" />
@@ -136,7 +139,6 @@
     <Compile Include="ModAPI\Ingame\IMyShipConnector.cs" />
     <Compile Include="ModAPI\Ingame\IMyShipDrill.cs" />
     <Compile Include="ModAPI\Ingame\IMyShipToolBase.cs" />
-    <Compile Include="ModAPI\Ingame\IMyShipGrinder.cs" />
     <Compile Include="ModAPI\Ingame\IMyShipWelder.cs" />
     <Compile Include="ModAPI\Ingame\IMySmallGatlingGun.cs" />
     <Compile Include="ModAPI\Ingame\IMySmallMissileLauncher.cs" />
@@ -158,6 +160,8 @@
     <Compile Include="ModAPI\Interfaces\IMyCameraController.cs" />
     <Compile Include="ModAPI\Interfaces\IMyInventoryItem.cs" />
     <Compile Include="ModAPI\Interfaces\IMyStorage.cs" />
+    <Compile Include="ModAPI\Interfaces\ITerminalProperty.cs" />
+    <Compile Include="ModAPI\Interfaces\TerminalPropertyExtensions.cs" />
     <Compile Include="ModAPI\Interfaces\ITerminalAction.cs" />
     <Compile Include="Common\IMyNamedComponent.cs" />
     <Compile Include="Common\IMyUserInputComponent.cs" />
@@ -219,7 +223,9 @@
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_PlayerChatHistory.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_FactionChatHistory.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_GlobalChatHistory.cs" />
-    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_ChatItem.cs" />
+    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_PlayerChatItem.cs" />
+    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_FactionChatItem.cs" />
+    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_GlobalChatItem.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_EntityBase.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_FracturedPiece.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_CubeBlock.cs" />
@@ -374,6 +380,7 @@
     <Compile Include="Common\ObjectBuilders\MyPersistentEntityFlags2.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilderDefinitionAttribute.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_Ore.cs" />
+    <Compile Include="Common\ObjectBuilders\AI\MyObjectBuilder_BlockNavigationInfo.cs" />
     <Compile Include="Common\ObjectBuilders\Audio\MyAudioHelpers.cs" />
     <Compile Include="Common\ObjectBuilders\Audio\MyObjectBuilder_AudioDefinition.cs" />
     <Compile Include="Common\ObjectBuilders\Definitions\MyObjectBuilder_DefinitionBase.cs" />
