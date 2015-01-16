@@ -1,4 +1,5 @@
 # space-engineers-doc-collab
+### Current version: 01.065 16.1.2015
 This is a collaborative Space Engineers in-game API documentation project.
 Our goal is to accurately document the in-game API's features to make development easier for everyone - online documentation is generated with Sandcastle Help File Builder.
 
