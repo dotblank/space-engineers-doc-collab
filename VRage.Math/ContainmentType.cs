@@ -1,15 +1,15 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRageMath.ContainmentType
 // Assembly: VRage.Math, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: E0D0468A-72EF-4E34-8D6D-888CDEEC91D0
+// MVID: 35FD5618-DF34-49B8-BA9B-FE095A7EFE3B
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Math.dll
 
 namespace VRageMath
 {
-    public enum ContainmentType
-    {
-        Disjoint,
-        Contains,
-        Intersects,
-    }
+  public enum ContainmentType
+  {
+    Disjoint,
+    Contains,
+    Intersects,
+  }
 }

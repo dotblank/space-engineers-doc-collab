@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Definitions.MyDefinitionErrors
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using System;
@@ -99,16 +99,16 @@ namespace Sandbox.Definitions
                     string str = this.ErrorId;
                     switch (this.Severity)
                     {
-                        case Definitions.ErrorSeverity.Notice:
+                        case Sandbox.Definitions.ErrorSeverity.Notice:
                             str = str + "notice";
                             break;
-                        case Definitions.ErrorSeverity.Warning:
+                        case Sandbox.Definitions.ErrorSeverity.Warning:
                             str = str + "warning";
                             break;
-                        case Definitions.ErrorSeverity.Error:
+                        case Sandbox.Definitions.ErrorSeverity.Error:
                             str = (str + "error").ToUpperInvariant();
                             break;
-                        case Definitions.ErrorSeverity.Critical:
+                        case Sandbox.Definitions.ErrorSeverity.Critical:
                             str = (str + "critical_error").ToUpperInvariant();
                             break;
                     }

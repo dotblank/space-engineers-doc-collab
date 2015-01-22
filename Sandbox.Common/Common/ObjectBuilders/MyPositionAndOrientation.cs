@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyPositionAndOrientation
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -19,7 +19,7 @@ namespace Sandbox.Common.ObjectBuilders
 
         [ProtoMember(1)] [XmlElement("Position")] public SerializableVector3D Position;
         [ProtoMember(2)] [XmlElement("Forward")] public SerializableVector3 Forward;
-        [ProtoMember(3)] [XmlElement("Up")] public SerializableVector3 Up;
+        [XmlElement("Up")] [ProtoMember(3)] public SerializableVector3 Up;
 
         public MyPositionAndOrientation(Vector3D position, Vector3 forward, Vector3 up)
         {

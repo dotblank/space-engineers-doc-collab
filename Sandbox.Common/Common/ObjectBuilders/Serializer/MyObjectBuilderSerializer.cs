@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.Serializer.MyObjectBuilderSerializer
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf.Meta;
@@ -22,6 +22,9 @@ using VRage.Common.Utils;
 
 namespace Sandbox.Common.ObjectBuilders.Serializer
 {
+    /// <summary>
+    /// Only methods accessible in this class are specific overloads of CreateNewObject.
+    /// </summary>
     public class MyObjectBuilderSerializer
     {
         private static readonly List<Type> m_serializationTypes = new List<Type>();
@@ -267,24 +270,32 @@ namespace Sandbox.Common.ObjectBuilders.Serializer
                             MyObjectBuilderSerializer.m_objectFactory.GetProducedType(type));
             }
         }
-
+        /// <summary>
+        /// Accessible
+        /// </summary>
         public static MyObjectBuilder_Base CreateNewObject(SerializableDefinitionId id)
         {
             return MyObjectBuilderSerializer.CreateNewObject(id.TypeId, id.SubtypeId);
         }
-
+        /// <summary>
+        /// Accessible
+        /// </summary>
         public static MyObjectBuilder_Base CreateNewObject(MyObjectBuilderType type, string subtypeName)
         {
             MyObjectBuilder_Base newObject = MyObjectBuilderSerializer.CreateNewObject(type);
             newObject.SubtypeName = subtypeName;
             return newObject;
         }
-
+        /// <summary>
+        /// Accessible
+        /// </summary>
         public static MyObjectBuilder_Base CreateNewObject(MyObjectBuilderType type)
         {
             return MyObjectBuilderSerializer.m_objectFactory.CreateInstance(type);
         }
-
+        /// <summary>
+        /// Accessible
+        /// </summary>
         public static T CreateNewObject<T>(string subtypeName) where T : MyObjectBuilder_Base, new()
         {
             T newObject = MyObjectBuilderSerializer.CreateNewObject<T>();

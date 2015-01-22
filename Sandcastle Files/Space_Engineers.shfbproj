@@ -50,7 +50,7 @@
 <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Conveyors" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Definitions" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Gui" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Serializer" isDocumented="False" />
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Serializer" isDocumented="True">The only accessible members of this namespace are some constructor methods of the MyObjectBuilderSerializer class.</NamespaceSummaryItem>
 <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Voxels" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.VRageData" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Definitions" isDocumented="False" />
@@ -59,7 +59,7 @@
 <NamespaceSummaryItem name="Sandbox.Game.Entities" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Game.Weapons" isDocumented="False" />
 <NamespaceSummaryItem name="(global)" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.ModAPI" isDocumented="True" />
+<NamespaceSummaryItem name="Sandbox.ModAPI" isDocumented="True">This namespace is mostly inaccessible</NamespaceSummaryItem>
 <NamespaceSummaryItem name="VRageMath.PackedVector" isDocumented="False" />
 <NamespaceSummaryItem name="VRageMath.Spatial" isDocumented="False" />
 <NamespaceSummaryItem name="KeenSoftwareHouse.Library.Extensions" isDocumented="False" />
@@ -78,7 +78,7 @@
 <NamespaceSummaryItem name="System.Reflection" isDocumented="False" />
 <NamespaceSummaryItem name="System.Runtime.CompilerServices" isDocumented="False" />
 <NamespaceSummaryItem name="System.Text" isDocumented="False" />
-<NamespaceSummaryItem name="VRage" isDocumented="True" />
+<NamespaceSummaryItem name="VRage" isDocumented="True">Some of this namespace's members may be inaccessible.</NamespaceSummaryItem>
 <NamespaceSummaryItem name="VRage.Algorithms" isDocumented="False" />
 <NamespaceSummaryItem name="VRage.Collections" isDocumented="False" />
 <NamespaceSummaryItem name="VRage.Common.Utils" isDocumented="False" />
@@ -98,7 +98,10 @@
 <NamespaceSummaryItem name="VRage.Trace" isDocumented="False" />
 <NamespaceSummaryItem name="VRage.Utils" isDocumented="False" />
 <NamespaceSummaryItem name="VRage.Win32" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.AI" isDocumented="False" /></NamespaceSummaries>
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.AI" isDocumented="False" />
+<NamespaceSummaryItem name="DShowNET" isDocumented="False" />
+<NamespaceSummaryItem name="DShowNET.Device" isDocumented="False" />
+<NamespaceSummaryItem name="DShowNET.Dvd" isDocumented="False" /></NamespaceSummaries>
     <MissingTags>AutoDocumentCtors, AutoDocumentDispose</MissingTags>
     <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
     <FeedbackEMailLinkText>

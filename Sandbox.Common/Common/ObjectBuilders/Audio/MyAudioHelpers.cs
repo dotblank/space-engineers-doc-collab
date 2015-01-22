@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.Audio.MyAudioHelpers
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -31,10 +31,10 @@ namespace Sandbox.Common.ObjectBuilders.Audio
         [XmlType("Wave")]
         public class Wave
         {
-            [ProtoMember(1)] [XmlAttribute] public MyAudioHelpers.Dimensions Type;
-            [DefaultValue("")] [ProtoMember(2)] [ModdableContentFile("xwm")] public string Start;
+            [XmlAttribute] [ProtoMember(1)] public MyAudioHelpers.Dimensions Type;
+            [ProtoMember(2)] [DefaultValue("")] [ModdableContentFile("xwm")] public string Start;
             [ModdableContentFile("xwm")] [DefaultValue("")] [ProtoMember(3)] public string Loop;
-            [ProtoMember(4)] [DefaultValue("")] [ModdableContentFile("xwm")] public string End;
+            [DefaultValue("")] [ProtoMember(4)] [ModdableContentFile("xwm")] public string End;
         }
     }
 }

@@ -1,23 +1,23 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: ProtoBuf.IExtension
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
+// MVID: 3595035D-D240-4390-9773-1FE64718FDDB
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System.IO;
 
 namespace ProtoBuf
 {
-    public interface IExtension
-    {
-        Stream BeginAppend();
+  public interface IExtension
+  {
+    Stream BeginAppend();
 
-        void EndAppend(Stream stream, bool commit);
+    void EndAppend(Stream stream, bool commit);
 
-        Stream BeginQuery();
+    Stream BeginQuery();
 
-        void EndQuery(Stream stream);
+    void EndQuery(Stream stream);
 
-        int GetLength();
-    }
+    int GetLength();
+  }
 }

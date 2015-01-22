@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.VRageData.SerializableQuaternion
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -18,8 +18,8 @@ namespace Sandbox.Common.ObjectBuilders.VRageData
         public float Z;
         public float W;
 
-        [XmlAttribute]
         [ProtoMember(1)]
+        [XmlAttribute]
         public float x
         {
             get { return this.X; }
@@ -42,8 +42,8 @@ namespace Sandbox.Common.ObjectBuilders.VRageData
             set { this.Z = value; }
         }
 
-        [ProtoMember(4)]
         [XmlAttribute]
+        [ProtoMember(4)]
         public float w
         {
             get { return this.W; }

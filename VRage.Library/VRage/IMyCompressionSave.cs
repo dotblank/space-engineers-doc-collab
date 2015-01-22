@@ -1,23 +1,23 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.IMyCompressionSave
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
+// MVID: 3595035D-D240-4390-9773-1FE64718FDDB
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
 
 namespace VRage
 {
-    public interface IMyCompressionSave : IDisposable
-    {
-        void Add(byte[] value);
+  public interface IMyCompressionSave : IDisposable
+  {
+    void Add(byte[] value);
 
-        void Add(byte[] value, int count);
+    void Add(byte[] value, int count);
 
-        void Add(float value);
+    void Add(float value);
 
-        void Add(int value);
+    void Add(int value);
 
-        void Add(byte value);
-    }
+    void Add(byte value);
+  }
 }

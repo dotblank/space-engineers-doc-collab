@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CharacterDefinition
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -31,9 +31,9 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
         [ProtoMember(20)] public string Camera3rdBone = "HeadDummy";
         [ProtoMember(21)] public string LeftHandItemBone = "l_hand";
         [ProtoMember(1)] public string Name;
-        [ModdableContentFile("mwm")] [ProtoMember(2)] public string Model;
+        [ProtoMember(2)] [ModdableContentFile("mwm")] public string Model;
         [ProtoMember(8)] public bool JetpackAvailable;
-        [ProtoMember(10)] [XmlArrayItem("Thrust")] public MyJetpackThrustDefinition[] Thrusts;
+        [XmlArrayItem("Thrust")] [ProtoMember(10)] public MyJetpackThrustDefinition[] Thrusts;
         [ProtoMember(11)] [XmlArrayItem("BoneSet")] public MyBoneSetDefinition[] BoneSets;
     }
 }

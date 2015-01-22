@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.Collections.MyConcurrentPool`1
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
+// MVID: 3595035D-D240-4390-9773-1FE64718FDDB
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System.Collections.Generic;
@@ -9,71 +9,74 @@ using System.Threading;
 
 namespace VRage.Collections
 {
-    public class MyConcurrentPool<T> where T : new()
+  public class MyConcurrentPool<T> where T : new()
+  {
+    private Stack<T> m_instances;
+    private ParallelTasks.SpinLock m_lock;
+    private int m_instancesCreated;
+
+    public int Count
     {
-        private Stack<T> m_instances;
-        private ParallelTasks.SpinLock m_lock;
-        private int m_instancesCreated;
-
-        public int Count
+      get
+      {
+        this.m_lock.Enter();
+        try
         {
-            get
-            {
-                this.m_lock.Enter();
-                try
-                {
-                    return this.m_instances.Count;
-                }
-                finally
-                {
-                    this.m_lock.Exit();
-                }
-            }
+          return this.m_instances.Count;
         }
-
-        public int InstancesCreated
+        finally
         {
-            get { return this.m_instancesCreated; }
+          this.m_lock.Exit();
         }
-
-        public MyConcurrentPool(int defaultCapacity = 0, bool preallocate = false)
-        {
-            this.m_lock = new ParallelTasks.SpinLock();
-            this.m_instances = new Stack<T>(defaultCapacity);
-            if (!preallocate)
-                return;
-            this.m_instancesCreated = defaultCapacity;
-            for (int index = 0; index < defaultCapacity; ++index)
-                this.m_instances.Push(new T());
-        }
-
-        public T Get()
-        {
-            this.m_lock.Enter();
-            try
-            {
-                if (this.m_instances.Count > 0)
-                    return this.m_instances.Pop();
-            }
-            finally
-            {
-                this.m_lock.Exit();
-            }
-            Interlocked.Increment(ref this.m_instancesCreated);
-            return new T();
-        }
-
-        public void Return(T instance)
-        {
-            this.m_lock.Enter();
-            try
-            {
-                this.m_instances.Push(instance);
-            }
-            finally
-            {
-                this.m_lock.Exit();
-            }
-        }
+      }
     }
+
+    public int InstancesCreated
+    {
+      get
+      {
+        return this.m_instancesCreated;
+      }
+    }
+
+    public MyConcurrentPool(int defaultCapacity = 0, bool preallocate = false)
+    {
+      this.m_lock = new ParallelTasks.SpinLock();
+      this.m_instances = new Stack<T>(defaultCapacity);
+      if (!preallocate)
+        return;
+      this.m_instancesCreated = defaultCapacity;
+      for (int index = 0; index < defaultCapacity; ++index)
+        this.m_instances.Push(new T());
+    }
+
+    public T Get()
+    {
+      this.m_lock.Enter();
+      try
+      {
+        if (this.m_instances.Count > 0)
+          return this.m_instances.Pop();
+      }
+      finally
+      {
+        this.m_lock.Exit();
+      }
+      Interlocked.Increment(ref this.m_instancesCreated);
+      return new T();
+    }
+
+    public void Return(T instance)
+    {
+      this.m_lock.Enter();
+      try
+      {
+        this.m_instances.Push(instance);
+      }
+      finally
+      {
+        this.m_lock.Exit();
+      }
+    }
+  }
 }

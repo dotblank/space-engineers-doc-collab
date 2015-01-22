@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Definitions.MyAudioDefinition
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using Sandbox.Common.ObjectBuilders.Audio;
@@ -25,8 +25,7 @@ namespace Sandbox.Definitions
         public string Alternative2D;
         public bool UseOcclusion;
         public List<MyAudioHelpers.Wave> Waves;
-        public MyStringId TransitionCategory;
-        public MyStringId MusicCategory;
+        public MyMusicTrack MusicTrack;
 
         public bool IsHudCue
         {
@@ -50,8 +49,8 @@ namespace Sandbox.Definitions
             if (string.IsNullOrEmpty(builderAudioDefinition.TransitionCategory) ||
                 string.IsNullOrEmpty(builderAudioDefinition.MusicCategory))
                 return;
-            this.TransitionCategory = MyStringId.GetOrCompute(builderAudioDefinition.TransitionCategory);
-            this.MusicCategory = MyStringId.GetOrCompute(builderAudioDefinition.MusicCategory);
+            this.MusicTrack.TransitionCategory = MyStringId.GetOrCompute(builderAudioDefinition.TransitionCategory);
+            this.MusicTrack.MusicCategory = MyStringId.GetOrCompute(builderAudioDefinition.MusicCategory);
         }
 
         public override MyObjectBuilder_DefinitionBase GetObjectBuilder()
@@ -68,10 +67,10 @@ namespace Sandbox.Definitions
             builderAudioDefinition.Alternative2D = this.Alternative2D;
             builderAudioDefinition.UseOcclusion = this.UseOcclusion;
             builderAudioDefinition.Waves = this.Waves;
-            if (this.TransitionCategory != MyStringId.NullOrEmpty)
+            if (this.MusicTrack.TransitionCategory != MyStringId.NullOrEmpty)
             {
-                builderAudioDefinition.TransitionCategory = this.TransitionCategory.ToString();
-                builderAudioDefinition.MusicCategory = this.MusicCategory.ToString();
+                builderAudioDefinition.TransitionCategory = this.MusicTrack.TransitionCategory.ToString();
+                builderAudioDefinition.MusicCategory = this.MusicTrack.MusicCategory.ToString();
             }
             return (MyObjectBuilder_DefinitionBase) builderAudioDefinition;
         }

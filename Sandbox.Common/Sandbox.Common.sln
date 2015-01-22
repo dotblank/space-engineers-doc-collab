@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Common", "Sandbox.Common.csproj", "{2092CD0D-690C-4F90-A330-6A468983A62D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Common", "Sandbox.Common.csproj", "{9C3770E1-819C-4C8A-B130-A07CA9EFF6E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2092CD0D-690C-4F90-A330-6A468983A62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2092CD0D-690C-4F90-A330-6A468983A62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2092CD0D-690C-4F90-A330-6A468983A62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2092CD0D-690C-4F90-A330-6A468983A62D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C3770E1-819C-4C8A-B130-A07CA9EFF6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C3770E1-819C-4C8A-B130-A07CA9EFF6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C3770E1-819C-4C8A-B130-A07CA9EFF6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C3770E1-819C-4C8A-B130-A07CA9EFF6E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

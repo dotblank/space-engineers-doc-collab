@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_ConveyorLine
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -14,8 +14,8 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-    [MyObjectBuilderDefinition]
     [ProtoContract]
+    [MyObjectBuilderDefinition]
     public class MyObjectBuilder_ConveyorLine : MyObjectBuilder_Base
     {
         [ProtoMember(5)] public List<MyObjectBuilder_ConveyorPacket> PacketsForward =
@@ -29,7 +29,7 @@ namespace Sandbox.Common.ObjectBuilders
         [ProtoMember(3)] public SerializableVector3I EndPosition;
         [ProtoMember(4)] public Base6Directions.Direction EndDirection;
 
-        [DefaultValue(null)] [XmlArrayItem("Section")] [ProtoMember(7)] public List<SerializableLineSectionInformation>
+        [ProtoMember(7)] [XmlArrayItem("Section")] [DefaultValue(null)] public List<SerializableLineSectionInformation>
             Sections;
 
         [DefaultValue(MyObjectBuilder_ConveyorLine.LineType.DEFAULT_LINE)] [ProtoMember(8)] public

@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: System.MethodInfoExtensions
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 98EC8A66-D3FB-4994-A617-48E1C71F8818
+// MVID: 3595035D-D240-4390-9773-1FE64718FDDB
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System.Collections.Generic;
@@ -11,73 +11,44 @@ using System.Reflection;
 
 namespace System
 {
-    public static class MethodInfoExtensions
+  public static class MethodInfoExtensions
+  {
+    public static TDelegate CreateDelegate<TDelegate>(this MethodInfo method, object instance) where TDelegate : class
     {
-        public static TDelegate CreateDelegate<TDelegate>(this MethodInfo method, object instance)
-            where TDelegate : class
-        {
-            // lazy fix for decomplier shenanigans
-            return null;
-        }
-
-        public static TDelegate CreateDelegate<TDelegate>(this MethodInfo method) where TDelegate : class
-        {
-            return MethodInfoExtensions.CreateDelegate<TDelegate>((MethodBase) method,
-                (Func<Type[], ParameterExpression[], MethodCallExpression>)
-                    ((typeArguments, parameterExpressions) =>
-                        Expression.Call(method,
-                            MethodInfoExtensions.ProvideStrongArgumentsFor(method, parameterExpressions))));
-        }
-
-        private static TDelegate CreateDelegate<TDelegate>(MethodBase method,
-            Func<Type[], ParameterExpression[], MethodCallExpression> getCallExpression)
-        {
-            ParameterExpression[] parameterExpressionsFrom =
-                MethodInfoExtensions.ExtractParameterExpressionsFrom<TDelegate>();
-            MethodInfoExtensions.CheckParameterCountsAreEqual(
-                (IEnumerable<ParameterExpression>) parameterExpressionsFrom,
-                (IEnumerable<ParameterInfo>) method.GetParameters());
-            return
-                Expression.Lambda<TDelegate>(
-                    (Expression)
-                        getCallExpression(MethodInfoExtensions.GetTypeArgumentsFor(method), parameterExpressionsFrom),
-                    parameterExpressionsFrom).Compile();
-        }
-
-        private static ParameterExpression[] ExtractParameterExpressionsFrom<TDelegate>()
-        {
-            return
-                Enumerable.ToArray<ParameterExpression>(
-                    Enumerable.Select<ParameterInfo, ParameterExpression>(
-                        (IEnumerable<ParameterInfo>) typeof (TDelegate).GetMethod("Invoke").GetParameters(),
-                        (Func<ParameterInfo, ParameterExpression>) (s => Expression.Parameter(s.ParameterType))));
-        }
-
-        private static void CheckParameterCountsAreEqual(IEnumerable<ParameterExpression> delegateParameters,
-            IEnumerable<ParameterInfo> methodParameters)
-        {
-            if (Enumerable.Count<ParameterExpression>(delegateParameters) !=
-                Enumerable.Count<ParameterInfo>(methodParameters))
-                throw new InvalidOperationException(
-                    "The number of parameters of the requested delegate does not match the number parameters of the specified method.");
-        }
-
-        private static Type[] GetTypeArgumentsFor(MethodBase method)
-        {
-            return (Type[]) null;
-        }
-
-        private static Expression[] ProvideStrongArgumentsFor(MethodInfo method,
-            ParameterExpression[] parameterExpressions)
-        {
-            return
-                (Expression[])
-                    Enumerable.ToArray<UnaryExpression>(
-                        Enumerable.Select<ParameterInfo, UnaryExpression>(
-                            (IEnumerable<ParameterInfo>) method.GetParameters(),
-                            (Func<ParameterInfo, int, UnaryExpression>)
-                                ((parameter, index) =>
-                                    Expression.Convert((Expression) parameterExpressions[index], parameter.ParameterType))));
-        }
+        return default(TDelegate);
     }
+
+    public static TDelegate CreateDelegate<TDelegate>(this MethodInfo method) where TDelegate : class
+    {
+      return MethodInfoExtensions.CreateDelegate<TDelegate>((MethodBase) method, (Func<Type[], ParameterExpression[], MethodCallExpression>) ((typeArguments, parameterExpressions) => Expression.Call(method, MethodInfoExtensions.ProvideStrongArgumentsFor(method, parameterExpressions))));
+    }
+
+    private static TDelegate CreateDelegate<TDelegate>(MethodBase method, Func<Type[], ParameterExpression[], MethodCallExpression> getCallExpression)
+    {
+      ParameterExpression[] parameterExpressionsFrom = MethodInfoExtensions.ExtractParameterExpressionsFrom<TDelegate>();
+      MethodInfoExtensions.CheckParameterCountsAreEqual((IEnumerable<ParameterExpression>) parameterExpressionsFrom, (IEnumerable<ParameterInfo>) method.GetParameters());
+      return Expression.Lambda<TDelegate>((Expression) getCallExpression(MethodInfoExtensions.GetTypeArgumentsFor(method), parameterExpressionsFrom), parameterExpressionsFrom).Compile();
+    }
+
+    private static ParameterExpression[] ExtractParameterExpressionsFrom<TDelegate>()
+    {
+      return Enumerable.ToArray<ParameterExpression>(Enumerable.Select<ParameterInfo, ParameterExpression>((IEnumerable<ParameterInfo>) typeof (TDelegate).GetMethod("Invoke").GetParameters(), (Func<ParameterInfo, ParameterExpression>) (s => Expression.Parameter(s.ParameterType))));
+    }
+
+    private static void CheckParameterCountsAreEqual(IEnumerable<ParameterExpression> delegateParameters, IEnumerable<ParameterInfo> methodParameters)
+    {
+      if (Enumerable.Count<ParameterExpression>(delegateParameters) != Enumerable.Count<ParameterInfo>(methodParameters))
+        throw new InvalidOperationException("The number of parameters of the requested delegate does not match the number parameters of the specified method.");
+    }
+
+    private static Type[] GetTypeArgumentsFor(MethodBase method)
+    {
+      return (Type[]) null;
+    }
+
+    private static Expression[] ProvideStrongArgumentsFor(MethodInfo method, ParameterExpression[] parameterExpressions)
+    {
+      return (Expression[]) Enumerable.ToArray<UnaryExpression>(Enumerable.Select<ParameterInfo, UnaryExpression>((IEnumerable<ParameterInfo>) method.GetParameters(), (Func<ParameterInfo, int, UnaryExpression>) ((parameter, index) => Expression.Convert((Expression) parameterExpressions[index], parameter.ParameterType))));
+    }
+  }
 }

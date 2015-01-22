@@ -303,6 +303,9 @@
   <data name="ScreenDebugSpawnMenu_SpawnObject" xml:space="preserve">
     <value>Spawn Object</value>
   </data>
+  <data name="Terminal_Shoot" xml:space="preserve">
+    <value>Shoot</value>
+  </data>
   <data name="WorldFileIsCorruptedAndCouldNotBeLoaded" xml:space="preserve">
     <value>World file is corrupted and could not be loaded.</value>
   </data>
@@ -406,6 +409,9 @@ World size: {1}</value>
   <data name="Multiplayer_LastMsg" xml:space="preserve">
     <value>No message recieved from server for {0} seconds.</value>
   </data>
+  <data name="BlockPropertyTitle_TextPanelAccessType" xml:space="preserve">
+    <value>Access type</value>
+  </data>
   <data name="KeysPageDown" xml:space="preserve">
     <value>PgDown</value>
   </data>
@@ -423,6 +429,9 @@ World size: {1}</value>
   </data>
   <data name="ToolTipWorldSettings_Grinder_x1" xml:space="preserve">
     <value>Default grinding speed</value>
+  </data>
+  <data name="TerminalTab_GPS_NewFromBroadcast" xml:space="preserve">
+    <value>New from broadcast</value>
   </data>
   <data name="ControlName_InertialDampeners" xml:space="preserve">
     <value>Inertia dampeners</value>
@@ -468,6 +477,9 @@ World size: {1}</value>
   </data>
   <data name="PlayerCharacterColorWhite" xml:space="preserve">
     <value>White</value>
+  </data>
+  <data name="ControlDescPreviousVoxelMaterial" xml:space="preserve">
+    <value>Previous voxel material</value>
   </data>
   <data name="MultiplayerErrorTicketCanceled" xml:space="preserve">
     <value>Ticket cancelled</value>
@@ -576,6 +588,9 @@ World size: {1}</value>
   </data>
   <data name="ToolTipScreenMods_MoveBottom" xml:space="preserve">
     <value>Move mod to bottom</value>
+  </data>
+  <data name="TerminalTab_GPS_Name" xml:space="preserve">
+    <value>Name</value>
   </data>
   <data name="NotificationClientConnected" xml:space="preserve">
     <value>Player connected: {0}</value>
@@ -816,6 +831,9 @@ Hint: Try setting the TypeId to any block that is in the terminal - the simplest
   <data name="BlockPropertyDescription_GyroYawOverride" xml:space="preserve">
     <value>Yaw component of the constant torque that is applied by this gyro if the cockpit controls are overridden</value>
   </data>
+  <data name="ControlDescOpenVoxelHandSettings" xml:space="preserve">
+    <value>Open voxel hand settings</value>
+  </data>
   <data name="HudEnergyGroupCharging" xml:space="preserve">
     <value>Charging</value>
   </data>
@@ -861,6 +879,9 @@ Hint: Try setting the TypeId to any block that is in the terminal - the simplest
   <data name="HudEnergyGroupDoors" xml:space="preserve">
     <value>Doors</value>
   </data>
+  <data name="NotificationTextPanelReadOnly" xml:space="preserve">
+    <value>Text panel is read-only</value>
+  </data>
   <data name="ToolTipItemFilter_UraniumIngot" xml:space="preserve">
     <value>Uranium ingot</value>
   </data>
@@ -875,6 +896,9 @@ Hint: Try setting the TypeId to any block that is in the terminal - the simplest
   </data>
   <data name="ControlName_StrafeRight" xml:space="preserve">
     <value>Strafe right</value>
+  </data>
+  <data name="BlockPropertyTitle_TextPanelShowTextPanel" xml:space="preserve">
+    <value>Show text panel</value>
   </data>
   <data name="WorkshopTag_Production" xml:space="preserve">
     <value>Production</value>
@@ -1153,6 +1177,9 @@ Reinstalling the game is not enough, because Steam does not delete unknown files
   <data name="ScreenOptionsButtonVideo" xml:space="preserve">
     <value>Video</value>
   </data>
+  <data name="Terminal_ShootOnce" xml:space="preserve">
+    <value>Shoot once</value>
+  </data>
   <data name="TerminalTab_Factions_AutoAcceptToolTip" xml:space="preserve">
     <value>Automatically accept member requests</value>
   </data>
@@ -1191,6 +1218,9 @@ Reinstalling the game is not enough, because Steam does not delete unknown files
   </data>
   <data name="ScreenTerminal_ShipList" xml:space="preserve">
     <value>Accessible ships</value>
+  </data>
+  <data name="BlockComboBoxValue_TextPanelAccessReadFaction" xml:space="preserve">
+    <value>Faction read-only</value>
   </data>
   <data name="BlockPropertyText_AnyoneCanUse" xml:space="preserve">
     <value>Anyone Can Use</value>
@@ -1563,6 +1593,9 @@ Note that by submitting this item, you agree to the workshop terms of service (s
   <data name="TerminalTab_Info_ShowMassCenter" xml:space="preserve">
     <value>Show center of mass</value>
   </data>
+  <data name="ControlDescNextVoxelMaterial" xml:space="preserve">
+    <value>Next voxel material</value>
+  </data>
   <data name="ScreenCubeBuilderNewSmallShip" xml:space="preserve">
     <value>New Small Ship</value>
   </data>
@@ -1826,6 +1859,9 @@ Note that by submitting this item, you agree to the workshop terms of service (s
     <value>Please press a button
 on the joystick/gamepad</value>
   </data>
+  <data name="BlockComboBoxValue_TextPanelAccessReadAll" xml:space="preserve">
+    <value>Everyone read-only</value>
+  </data>
   <data name="LoadingPleaseWait" xml:space="preserve">
     <value>Loading ... please wait</value>
   </data>
@@ -1864,6 +1900,9 @@ on the joystick/gamepad</value>
   </data>
   <data name="HideEmpty" xml:space="preserve">
     <value>Hide empty</value>
+  </data>
+  <data name="TerminalTab_GPS_ShowOnHud" xml:space="preserve">
+    <value>Show on  HUD</value>
   </data>
   <data name="DisplayName_Block_PassengerSeat" xml:space="preserve">
     <value>Passenger Seat</value>
@@ -1990,6 +2029,9 @@ Public: Any Steam player can join</value>
   <data name="BlockPropertyDescription_SensorFieldTop" xml:space="preserve">
     <value>How far the sensing field extends above the sensor's position</value>
   </data>
+  <data name="TerminalTab_GPS_SaveWarning" xml:space="preserve">
+    <value>Warning: illegal data. Modifications will not be saved.</value>
+  </data>
   <data name="AssemblerState_NotEnoughPower" xml:space="preserve">
     <value>Not enough power</value>
   </data>
@@ -2070,6 +2112,12 @@ Volume: {2} L</value>
   <data name="TitleFailedToStartInternetBrowser" xml:space="preserve">
     <value>Failed to start the browser.</value>
   </data>
+  <data name="TerminalTab_GPS_NewCoord_Desc" xml:space="preserve">
+    <value>New coordinates</value>
+  </data>
+  <data name="TerminalTab_GPS_NewCoord_Name" xml:space="preserve">
+    <value>New</value>
+  </data>
   <data name="DisplayName_VoxelHand_Ramp" xml:space="preserve">
     <value>Ramp</value>
   </data>
@@ -2084,6 +2132,9 @@ Volume: {2} L</value>
   </data>
   <data name="BlockPropertyTitle_LargeTurretTargetMoving" xml:space="preserve">
     <value>Target moving objects</value>
+  </data>
+  <data name="VoxelHandSettingScreen_HandProjectToVoxel" xml:space="preserve">
+    <value>Project to voxel</value>
   </data>
   <data name="VoxelHandProperty_AutoLevel_AxisZ" xml:space="preserve">
     <value>Z axis</value>
@@ -2268,6 +2319,9 @@ Volume: {2} L</value>
   <data name="LoadScreenButtonSaveAs" xml:space="preserve">
     <value>Save As</value>
   </data>
+  <data name="TerminalTab_GPS_NewFromFactionComms" xml:space="preserve">
+    <value>New from faction comms</value>
+  </data>
   <data name="DisplayName_Item_StoneOre" xml:space="preserve">
     <value>Stone</value>
   </data>
@@ -2312,6 +2366,9 @@ Volume: {2} L</value>
   </data>
   <data name="DisplayName_Block_GatlingTurret" xml:space="preserve">
     <value>Gatling Turret</value>
+  </data>
+  <data name="TerminalTab_GPS_FromChatDescPrefix" xml:space="preserve">
+    <value>By: </value>
   </data>
   <data name="ScreenshotSaved" xml:space="preserve">
     <value>Screenshot {0} saved</value>
@@ -2727,6 +2784,9 @@ Auto-Save: ON</value>
   <data name="MP_YouHaveBeenKilled" xml:space="preserve">
     <value>You have been killed</value>
   </data>
+  <data name="DisplayName_Block_TextPanel" xml:space="preserve">
+    <value>Text panel</value>
+  </data>
   <data name="TerminalTab_Info_Triangles" xml:space="preserve">
     <value>Triangles: </value>
   </data>
@@ -2738,6 +2798,9 @@ Auto-Save: ON</value>
   </data>
   <data name="ControlDescCopyPasteMove" xml:space="preserve">
     <value>Move pasted object</value>
+  </data>
+  <data name="TerminalTab_GPS_NewFromClipboard" xml:space="preserve">
+    <value>New from clipboard</value>
   </data>
   <data name="SessionDeleteFailed" xml:space="preserve">
     <value>Session delete failed</value>
@@ -2753,6 +2816,9 @@ Auto-Save: ON</value>
   </data>
   <data name="Quote68Text" xml:space="preserve">
     <value>Scientific laws are strongly supported by empirical evidence - they are scientific knowledge that experiments have repeatedly verified (and never falsified).</value>
+  </data>
+  <data name="TerminalTab_GPS" xml:space="preserve">
+    <value>GPS</value>
   </data>
   <data name="JoystickSensitivity" xml:space="preserve">
     <value>Joystick sensitivity</value>
@@ -2951,6 +3017,9 @@ Auto-Save: ON</value>
   </data>
   <data name="Quote59Text" xml:space="preserve">
     <value>The flow of heat is a form of energy transfer. In other words, a quantity of heat that flows from a hot body to a cold one can be expressed as an amount of energy being transferred from the hot body to the cold one.</value>
+  </data>
+  <data name="NotificationHintPressToShowScreen" xml:space="preserve">
+    <value>Press {0} to show screen</value>
   </data>
   <data name="Quote58Text" xml:space="preserve">
     <value>The law of conservation of energy states that energy can be neither created nor destroyed. However, energy can change forms, and energy can flow from one place to another. The total energy of an isolated system remains the same.</value>
@@ -3309,6 +3378,12 @@ Auto-Save: ON</value>
   <data name="Asteroid_Amount" xml:space="preserve">
     <value>Asteroid amount</value>
   </data>
+  <data name="TerminalTab_GPS_NewFromCurrent_Name" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="TerminalTab_GPS_NewFromCurrent_Desc" xml:space="preserve">
+    <value>Current position</value>
+  </data>
   <data name="TerminalTab_Info" xml:space="preserve">
     <value>Info</value>
   </data>
@@ -3320,6 +3395,9 @@ Auto-Save: ON</value>
   </data>
   <data name="DisplayName_Block_SmallRocketLauncherReload" xml:space="preserve">
     <value>Reloadable Rocket Launcher</value>
+  </data>
+  <data name="MessageBoxTextTooLongText" xml:space="preserve">
+    <value>Text is too long. Do you want to truncate it?</value>
   </data>
   <data name="ScreenLoadSubscribedWorldOpenInWorkshop" xml:space="preserve">
     <value>Open in Workshop</value>
@@ -3467,6 +3545,9 @@ Auto-Save: ON</value>
   </data>
   <data name="Quote07Author" xml:space="preserve">
     <value>Max Planck</value>
+  </data>
+  <data name="TerminalTab_GPS_CopyToClipboard" xml:space="preserve">
+    <value>Copy to clipboard</value>
   </data>
   <data name="Quote51Author" xml:space="preserve">
     <value>Ralph W. Emerson</value>
@@ -3694,6 +3775,9 @@ Extreme: 16 large asteroids, 80 small asteroids, 64-bit only</value>
   <data name="ScreenDebugOfficial_ModelDummies" xml:space="preserve">
     <value>Model dummies</value>
   </data>
+  <data name="BlueprintsMessageBoxTitle_Replace" xml:space="preserve">
+    <value>Replace</value>
+  </data>
   <data name="ToolbarAction_Reset" xml:space="preserve">
     <value>Reset</value>
   </data>
@@ -3711,6 +3795,9 @@ Extreme: 16 large asteroids, 80 small asteroids, 64-bit only</value>
   </data>
   <data name="ScreenMods_SearchLabel" xml:space="preserve">
     <value>Search</value>
+  </data>
+  <data name="BlockComboBoxValue_TextPanelAccessReadWriteAll" xml:space="preserve">
+    <value>Everyone read/write</value>
   </data>
   <data name="BlockPropertyTitle_LightBlinkLenght" xml:space="preserve">
     <value>Blink Length</value>
@@ -3817,6 +3904,9 @@ See log for details.</value>
 Assembler efficiency {1}x
 Refinery speed {2}x</value>
   </data>
+  <data name="BlockPropertyTitle_TextPanelTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
   <data name="ItemDamagedDescription" xml:space="preserve">
     <value> (Damaged)</value>
   </data>
@@ -3917,6 +4007,9 @@ Higher numbers affect performance.</value>
   <data name="NotificationRespawn" xml:space="preserve">
     <value>You died. Respawn in {0} seconds</value>
   </data>
+  <data name="TerminalTab_GPS_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
   <data name="Quote54Author" xml:space="preserve">
     <value>Robert H. Goddard</value>
   </data>
@@ -3971,6 +4064,9 @@ Higher numbers affect performance.</value>
   <data name="DisplayName_Category_Production" xml:space="preserve">
     <value>Production Blocks</value>
   </data>
+  <data name="BlockComboBoxValue_TextPanelAccessOnlyOwner" xml:space="preserve">
+    <value>Only owner</value>
+  </data>
   <data name="DialogAmount_AddAmountCaption" xml:space="preserve">
     <value>Amount to add</value>
   </data>
@@ -4024,6 +4120,9 @@ Higher numbers affect performance.</value>
   </data>
   <data name="GpuUnderMinimumNotification" xml:space="preserve">
     <value>We have detected that your graphics card is under the minimum requirements and this can cause performance issues or crashes. Thank you for your understanding.</value>
+  </data>
+  <data name="TerminalTab_GPS_Add" xml:space="preserve">
+    <value>New</value>
   </data>
   <data name="RenderQualityNormal" xml:space="preserve">
     <value>Normal</value>
@@ -4154,6 +4253,9 @@ Remove the original control?</value>
   <data name="ControlTypeToolsOrWeapons" xml:space="preserve">
     <value>Tools / Weapons</value>
   </data>
+  <data name="TerminalTab_GPS_NewFromPrivateComms" xml:space="preserve">
+    <value>New from private comms</value>
+  </data>
   <data name="TerminalTab_Chat_NoFaction" xml:space="preserve">
     <value>Only faction members can use faction-to-faction communications</value>
   </data>
@@ -4234,6 +4336,9 @@ Remove the original control?</value>
   </data>
   <data name="Quote48Author" xml:space="preserve">
     <value>Yuri Gagarin</value>
+  </data>
+  <data name="TerminalTab_GPS_NewFromClipboard_Desc" xml:space="preserve">
+    <value>Pasted from clipboard</value>
   </data>
   <data name="NotificationHintPressToUseWardrobe" xml:space="preserve">
     <value>Press {0} to change your appearance</value>
@@ -4458,6 +4563,9 @@ Respawn?</value>
   </data>
   <data name="Chat_screen" xml:space="preserve">
     <value>Chat screen</value>
+  </data>
+  <data name="TerminalTab_GPS_NewFromCurrent" xml:space="preserve">
+    <value>New from current pos.</value>
   </data>
   <data name="ToolTipVideoOptionsHardwareCursor" xml:space="preserve">
     <value>HW mouse cursor is independent of game framerate. We recommend to turn it on.</value>
@@ -4690,6 +4798,15 @@ Warning - values higher than 64 can significantly affect performance!</value>
   <data name="ScreenCaptionFriendWorlds" xml:space="preserve">
     <value>Friend worlds</value>
   </data>
+  <data name="TerminalTab_GPS_Z" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="TerminalTab_GPS_X" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="TerminalTab_GPS_Y" xml:space="preserve">
+    <value>Y</value>
+  </data>
   <data name="ControlName_FirstOrThirdPerson" xml:space="preserve">
     <value>First-person / Third-person</value>
   </data>
@@ -4771,6 +4888,9 @@ Warning - values higher than 64 can significantly affect performance!</value>
   <data name="AdvancedControls" xml:space="preserve">
     <value>Advanced Controls</value>
   </data>
+  <data name="BlueprintsMessageBoxDesc_Replace" xml:space="preserve">
+    <value>Are you sure you want to replace this blueprint with clipboard?</value>
+  </data>
   <data name="Factions_NeutralFaction" xml:space="preserve">
     <value>Neutral faction</value>
   </data>
@@ -4847,6 +4967,9 @@ If the game doesn't run smoothly, decrease it.</value>
   </data>
   <data name="TooltipScreenMods_Category_Block" xml:space="preserve">
     <value>Block</value>
+  </data>
+  <data name="BlockComboBoxValue_TextPanelAccessReadWriteFaction" xml:space="preserve">
+    <value>Faction read/write</value>
   </data>
   <data name="ToolTipSaveShip" xml:space="preserve">
     <value>Save ships from clipboard to file</value>
@@ -5027,6 +5150,9 @@ If the game doesn't run smoothly, decrease it.</value>
   </data>
   <data name="NotificationArgMissile" xml:space="preserve">
     <value>Missile</value>
+  </data>
+  <data name="TerminalTab_GPS_Description" xml:space="preserve">
+    <value>Description</value>
   </data>
   <data name="DialogAmount_SetValueCaption" xml:space="preserve">
     <value>Value to set</value>

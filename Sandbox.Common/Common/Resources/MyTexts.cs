@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.Resources.MyTexts
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using System.CodeDom.Compiler;
@@ -13,9 +13,9 @@ using System.Runtime.CompilerServices;
 
 namespace Sandbox.Common.Resources
 {
-    [DebuggerNonUserCode]
     [CompilerGenerated]
     [GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [DebuggerNonUserCode]
     internal class MyTexts
     {
         private static ResourceManager resourceMan;
@@ -241,6 +241,51 @@ namespace Sandbox.Common.Resources
         internal static string BlockActionTitle_View
         {
             get { return MyTexts.ResourceManager.GetString("BlockActionTitle_View", MyTexts.resourceCulture); }
+        }
+
+        internal static string BlockComboBoxValue_TextPanelAccessOnlyOwner
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("BlockComboBoxValue_TextPanelAccessOnlyOwner",
+                    MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string BlockComboBoxValue_TextPanelAccessReadAll
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("BlockComboBoxValue_TextPanelAccessReadAll",
+                    MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string BlockComboBoxValue_TextPanelAccessReadFaction
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("BlockComboBoxValue_TextPanelAccessReadFaction",
+                    MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string BlockComboBoxValue_TextPanelAccessReadWriteAll
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("BlockComboBoxValue_TextPanelAccessReadWriteAll",
+                    MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string BlockComboBoxValue_TextPanelAccessReadWriteFaction
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("BlockComboBoxValue_TextPanelAccessReadWriteFaction",
+                    MyTexts.resourceCulture);
+            }
         }
 
         internal static string BlockOwner_Me
@@ -1428,6 +1473,32 @@ namespace Sandbox.Common.Resources
             }
         }
 
+        internal static string BlockPropertyTitle_TextPanelAccessType
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("BlockPropertyTitle_TextPanelAccessType",
+                    MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string BlockPropertyTitle_TextPanelShowTextPanel
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("BlockPropertyTitle_TextPanelShowTextPanel",
+                    MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string BlockPropertyTitle_TextPanelTitle
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("BlockPropertyTitle_TextPanelTitle", MyTexts.resourceCulture);
+            }
+        }
+
         internal static string BlockPropertyTitle_ThrustOverride
         {
             get
@@ -1507,6 +1578,22 @@ namespace Sandbox.Common.Resources
         internal static string Blueprints
         {
             get { return MyTexts.ResourceManager.GetString("Blueprints", MyTexts.resourceCulture); }
+        }
+
+        internal static string BlueprintsMessageBoxDesc_Replace
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("BlueprintsMessageBoxDesc_Replace", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string BlueprintsMessageBoxTitle_Replace
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("BlueprintsMessageBoxTitle_Replace", MyTexts.resourceCulture);
+            }
         }
 
         internal static string BroadcastStatus_Connected
@@ -1604,6 +1691,19 @@ namespace Sandbox.Common.Resources
             get { return MyTexts.ResourceManager.GetString("ControlDescMediumBrush", MyTexts.resourceCulture); }
         }
 
+        internal static string ControlDescNextVoxelMaterial
+        {
+            get { return MyTexts.ResourceManager.GetString("ControlDescNextVoxelMaterial", MyTexts.resourceCulture); }
+        }
+
+        internal static string ControlDescOpenVoxelHandSettings
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("ControlDescOpenVoxelHandSettings", MyTexts.resourceCulture);
+            }
+        }
+
         internal static string ControlDescPauseGame
         {
             get { return MyTexts.ResourceManager.GetString("ControlDescPauseGame", MyTexts.resourceCulture); }
@@ -1612,6 +1712,14 @@ namespace Sandbox.Common.Resources
         internal static string ControlDescPlayersList
         {
             get { return MyTexts.ResourceManager.GetString("ControlDescPlayersList", MyTexts.resourceCulture); }
+        }
+
+        internal static string ControlDescPreviousVoxelMaterial
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("ControlDescPreviousVoxelMaterial", MyTexts.resourceCulture);
+            }
         }
 
         internal static string ControlDescQuickLoad
@@ -2846,6 +2954,11 @@ namespace Sandbox.Common.Resources
             {
                 return MyTexts.ResourceManager.GetString("DisplayName_Block_Suspension5x5", MyTexts.resourceCulture);
             }
+        }
+
+        internal static string DisplayName_Block_TextPanel
+        {
+            get { return MyTexts.ResourceManager.GetString("DisplayName_Block_TextPanel", MyTexts.resourceCulture); }
         }
 
         internal static string DisplayName_Block_TimerBlock
@@ -5191,6 +5304,11 @@ namespace Sandbox.Common.Resources
             get { return MyTexts.ResourceManager.GetString("MessageBoxTextSuicide", MyTexts.resourceCulture); }
         }
 
+        internal static string MessageBoxTextTooLongText
+        {
+            get { return MyTexts.ResourceManager.GetString("MessageBoxTextTooLongText", MyTexts.resourceCulture); }
+        }
+
         internal static string MessageBoxTextTutorialQuestion
         {
             get { return MyTexts.ResourceManager.GetString("MessageBoxTextTutorialQuestion", MyTexts.resourceCulture); }
@@ -5816,6 +5934,14 @@ namespace Sandbox.Common.Resources
             }
         }
 
+        internal static string NotificationHintPressToShowScreen
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("NotificationHintPressToShowScreen", MyTexts.resourceCulture);
+            }
+        }
+
         internal static string NotificationHintPressToUse
         {
             get { return MyTexts.ResourceManager.GetString("NotificationHintPressToUse", MyTexts.resourceCulture); }
@@ -6038,6 +6164,11 @@ namespace Sandbox.Common.Resources
             {
                 return MyTexts.ResourceManager.GetString("NotificationSwitchedToWeaponType", MyTexts.resourceCulture);
             }
+        }
+
+        internal static string NotificationTextPanelReadOnly
+        {
+            get { return MyTexts.ResourceManager.GetString("NotificationTextPanelReadOnly", MyTexts.resourceCulture); }
         }
 
         internal static string NotificationToolDisabled
@@ -8498,6 +8629,16 @@ namespace Sandbox.Common.Resources
             get { return MyTexts.ResourceManager.GetString("Terminal_GroupTitle", MyTexts.resourceCulture); }
         }
 
+        internal static string Terminal_Shoot
+        {
+            get { return MyTexts.ResourceManager.GetString("Terminal_Shoot", MyTexts.resourceCulture); }
+        }
+
+        internal static string Terminal_ShootOnce
+        {
+            get { return MyTexts.ResourceManager.GetString("Terminal_ShootOnce", MyTexts.resourceCulture); }
+        }
+
         internal static string Terminal_ShowOnHUD
         {
             get { return MyTexts.ResourceManager.GetString("Terminal_ShowOnHUD", MyTexts.resourceCulture); }
@@ -8904,6 +9045,144 @@ namespace Sandbox.Common.Resources
         internal static string TerminalTab_Factions_SentPeace
         {
             get { return MyTexts.ResourceManager.GetString("TerminalTab_Factions_SentPeace", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_Add
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_Add", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_CopyToClipboard
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TerminalTab_GPS_CopyToClipboard", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TerminalTab_GPS_Delete
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_Delete", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_Description
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_Description", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_FromChatDescPrefix
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TerminalTab_GPS_FromChatDescPrefix", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TerminalTab_GPS_Name
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_Name", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_NewCoord_Desc
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_NewCoord_Desc", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_NewCoord_Name
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_NewCoord_Name", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_NewFromBroadcast
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TerminalTab_GPS_NewFromBroadcast", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TerminalTab_GPS_NewFromClipboard
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TerminalTab_GPS_NewFromClipboard", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TerminalTab_GPS_NewFromClipboard_Desc
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TerminalTab_GPS_NewFromClipboard_Desc",
+                    MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TerminalTab_GPS_NewFromCurrent
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_NewFromCurrent", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_NewFromCurrent_Desc
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TerminalTab_GPS_NewFromCurrent_Desc", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TerminalTab_GPS_NewFromCurrent_Name
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TerminalTab_GPS_NewFromCurrent_Name", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TerminalTab_GPS_NewFromFactionComms
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TerminalTab_GPS_NewFromFactionComms", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TerminalTab_GPS_NewFromPrivateComms
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("TerminalTab_GPS_NewFromPrivateComms", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string TerminalTab_GPS_SaveWarning
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_SaveWarning", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_ShowOnHud
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_ShowOnHud", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_X
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_X", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_Y
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_Y", MyTexts.resourceCulture); }
+        }
+
+        internal static string TerminalTab_GPS_Z
+        {
+            get { return MyTexts.ResourceManager.GetString("TerminalTab_GPS_Z", MyTexts.resourceCulture); }
         }
 
         internal static string TerminalTab_Info
@@ -10033,6 +10312,15 @@ namespace Sandbox.Common.Resources
             get
             {
                 return MyTexts.ResourceManager.GetString("VoxelHandSettingScreen_HandMaterial", MyTexts.resourceCulture);
+            }
+        }
+
+        internal static string VoxelHandSettingScreen_HandProjectToVoxel
+        {
+            get
+            {
+                return MyTexts.ResourceManager.GetString("VoxelHandSettingScreen_HandProjectToVoxel",
+                    MyTexts.resourceCulture);
             }
         }
 

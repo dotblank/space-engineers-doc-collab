@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.Localization.MyTextsWrapperEnum
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using System.CodeDom.Compiler;
@@ -1709,10 +1709,52 @@ namespace Sandbox.Common.Localization
         TooltipScreenMods_Category_Script,
         TooltipScreenMods_Category_Skybox,
         TooltipScreenMods_SelectCategories,
+        TerminalTab_GPS_Description,
+        TerminalTab_GPS_Name,
+        TerminalTab_GPS_ShowOnHud,
+        TerminalTab_GPS_X,
+        TerminalTab_GPS_Y,
+        TerminalTab_GPS_Z,
+        TerminalTab_GPS,
+        TerminalTab_GPS_Add,
+        TerminalTab_GPS_CopyToClipboard,
+        TerminalTab_GPS_Delete,
+        TerminalTab_GPS_NewFromClipboard,
+        TerminalTab_GPS_NewFromCurrent,
         ScreenDebugSpawnMenu_GenerateSeed,
+        TerminalTab_GPS_SaveWarning,
         JoinGame_GameTypeToolTip_ViewDistance,
         TerminalTab_Chat_NoFaction,
         TerminalTab_Chat_Offline,
         TerminalTab_Chat_Pending,
+        TerminalTab_GPS_FromChatDescPrefix,
+        TerminalTab_GPS_NewCoord_Desc,
+        TerminalTab_GPS_NewCoord_Name,
+        TerminalTab_GPS_NewFromClipboard_Desc,
+        TerminalTab_GPS_NewFromCurrent_Desc,
+        TerminalTab_GPS_NewFromCurrent_Name,
+        VoxelHandSettingScreen_HandProjectToVoxel,
+        BlockPropertyTitle_TextPanelShowTextPanel,
+        BlockPropertyTitle_TextPanelTitle,
+        DisplayName_Block_TextPanel,
+        NotificationHintPressToShowScreen,
+        Terminal_Shoot,
+        Terminal_ShootOnce,
+        ControlDescNextVoxelMaterial,
+        ControlDescOpenVoxelHandSettings,
+        ControlDescPreviousVoxelMaterial,
+        BlockComboBoxValue_TextPanelAccessOnlyOwner,
+        BlockComboBoxValue_TextPanelAccessReadAll,
+        BlockComboBoxValue_TextPanelAccessReadFaction,
+        BlockComboBoxValue_TextPanelAccessReadWriteAll,
+        BlockComboBoxValue_TextPanelAccessReadWriteFaction,
+        BlockPropertyTitle_TextPanelAccessType,
+        BlueprintsMessageBoxDesc_Replace,
+        BlueprintsMessageBoxTitle_Replace,
+        NotificationTextPanelReadOnly,
+        TerminalTab_GPS_NewFromBroadcast,
+        TerminalTab_GPS_NewFromFactionComms,
+        TerminalTab_GPS_NewFromPrivateComms,
+        MessageBoxTextTooLongText,
     }
 }

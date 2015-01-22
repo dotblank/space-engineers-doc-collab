@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.Localization.MyTextsWrapper
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using Sandbox.Common.Resources;
@@ -2576,13 +2576,83 @@ namespace Sandbox.Common.Localization
                 (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TooltipScreenMods_Category_Skybox);
             MyTextsWrapper.m_sb[1697] =
                 (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TooltipScreenMods_SelectCategories);
-            MyTextsWrapper.m_sb[1698] =
+            MyTextsWrapper.m_sb[1698] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_Description);
+            MyTextsWrapper.m_sb[1699] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_Name);
+            MyTextsWrapper.m_sb[1700] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_ShowOnHud);
+            MyTextsWrapper.m_sb[1701] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_X);
+            MyTextsWrapper.m_sb[1702] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_Y);
+            MyTextsWrapper.m_sb[1703] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_Z);
+            MyTextsWrapper.m_sb[1704] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS);
+            MyTextsWrapper.m_sb[1705] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_Add);
+            MyTextsWrapper.m_sb[1706] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_CopyToClipboard);
+            MyTextsWrapper.m_sb[1707] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_Delete);
+            MyTextsWrapper.m_sb[1708] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_NewFromClipboard);
+            MyTextsWrapper.m_sb[1709] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_NewFromCurrent);
+            MyTextsWrapper.m_sb[1710] =
                 (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.ScreenDebugSpawnMenu_GenerateSeed);
-            MyTextsWrapper.m_sb[1699] =
+            MyTextsWrapper.m_sb[1711] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_SaveWarning);
+            MyTextsWrapper.m_sb[1712] =
                 (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.JoinGame_GameTypeToolTip_ViewDistance);
-            MyTextsWrapper.m_sb[1700] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_Chat_NoFaction);
-            MyTextsWrapper.m_sb[1701] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_Chat_Offline);
-            MyTextsWrapper.m_sb[1702] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_Chat_Pending);
+            MyTextsWrapper.m_sb[1713] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_Chat_NoFaction);
+            MyTextsWrapper.m_sb[1714] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_Chat_Offline);
+            MyTextsWrapper.m_sb[1715] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_Chat_Pending);
+            MyTextsWrapper.m_sb[1716] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_FromChatDescPrefix);
+            MyTextsWrapper.m_sb[1717] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_NewCoord_Desc);
+            MyTextsWrapper.m_sb[1718] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_NewCoord_Name);
+            MyTextsWrapper.m_sb[1719] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_NewFromClipboard_Desc);
+            MyTextsWrapper.m_sb[1720] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_NewFromCurrent_Desc);
+            MyTextsWrapper.m_sb[1721] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_NewFromCurrent_Name);
+            MyTextsWrapper.m_sb[1722] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.VoxelHandSettingScreen_HandProjectToVoxel);
+            MyTextsWrapper.m_sb[1723] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.BlockPropertyTitle_TextPanelShowTextPanel);
+            MyTextsWrapper.m_sb[1724] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.BlockPropertyTitle_TextPanelTitle);
+            MyTextsWrapper.m_sb[1725] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.DisplayName_Block_TextPanel);
+            MyTextsWrapper.m_sb[1726] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.NotificationHintPressToShowScreen);
+            MyTextsWrapper.m_sb[1727] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.Terminal_Shoot);
+            MyTextsWrapper.m_sb[1728] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.Terminal_ShootOnce);
+            MyTextsWrapper.m_sb[1729] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.ControlDescNextVoxelMaterial);
+            MyTextsWrapper.m_sb[1730] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.ControlDescOpenVoxelHandSettings);
+            MyTextsWrapper.m_sb[1731] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.ControlDescPreviousVoxelMaterial);
+            MyTextsWrapper.m_sb[1732] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.BlockComboBoxValue_TextPanelAccessOnlyOwner);
+            MyTextsWrapper.m_sb[1733] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.BlockComboBoxValue_TextPanelAccessReadAll);
+            MyTextsWrapper.m_sb[1734] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.BlockComboBoxValue_TextPanelAccessReadFaction);
+            MyTextsWrapper.m_sb[1735] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.BlockComboBoxValue_TextPanelAccessReadWriteAll);
+            MyTextsWrapper.m_sb[1736] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.BlockComboBoxValue_TextPanelAccessReadWriteFaction);
+            MyTextsWrapper.m_sb[1737] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.BlockPropertyTitle_TextPanelAccessType);
+            MyTextsWrapper.m_sb[1738] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.BlueprintsMessageBoxDesc_Replace);
+            MyTextsWrapper.m_sb[1739] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.BlueprintsMessageBoxTitle_Replace);
+            MyTextsWrapper.m_sb[1740] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.NotificationTextPanelReadOnly);
+            MyTextsWrapper.m_sb[1741] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_NewFromBroadcast);
+            MyTextsWrapper.m_sb[1742] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_NewFromFactionComms);
+            MyTextsWrapper.m_sb[1743] =
+                (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.TerminalTab_GPS_NewFromPrivateComms);
+            MyTextsWrapper.m_sb[1744] = (MyTextsWrapper.TextInfo) new StringBuilder(MyTexts.MessageBoxTextTooLongText);
         }
 
         private struct TextInfo

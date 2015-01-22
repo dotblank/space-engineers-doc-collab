@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D9B2297-3232-42DD-9A1F-CDFA68B648D4}</ProjectGuid>
+    <ProjectGuid>{B8B8A6E6-4B5B-49EF-8A07-6EEF8A58C14D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>VRage.Math</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -36,6 +36,8 @@
     <DocumentationFile>bin\Release\VRage.Math.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
     <Reference Include="System" />
@@ -43,7 +45,6 @@
     <Reference Include="VRage.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\VRage.Library\bin\Release\VRage.Library.dll</HintPath>
-      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>

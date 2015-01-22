@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.VRageData.SerializableBlockOrientation
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -17,7 +17,7 @@ namespace Sandbox.Common.ObjectBuilders.VRageData
             new SerializableBlockOrientation(Base6Directions.Direction.Forward, Base6Directions.Direction.Up);
 
         [XmlAttribute] [ProtoMember(1)] public Base6Directions.Direction Forward;
-        [ProtoMember(2)] [XmlAttribute] public Base6Directions.Direction Up;
+        [XmlAttribute] [ProtoMember(2)] public Base6Directions.Direction Up;
 
         public SerializableBlockOrientation(Base6Directions.Direction forward, Base6Directions.Direction up)
         {

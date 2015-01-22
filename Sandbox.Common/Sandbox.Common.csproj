@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2092CD0D-690C-4F90-A330-6A468983A62D}</ProjectGuid>
+    <ProjectGuid>{9C3770E1-819C-4C8A-B130-A07CA9EFF6E8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Sandbox.Common</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -36,133 +36,20 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
-    <Reference Include="VRage.Library">
-      <HintPath>..\VRage.Library\bin\Release\VRage.Library.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="VRage.Common">
       <HintPath>lib\VRage.Common.dll</HintPath>
     </Reference>
+    <Reference Include="VRage.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VRage.Library\bin\Release\VRage.Library.dll</HintPath>
+    </Reference>
     <Reference Include="VRage.Math, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\VRage.Math\bin\Release\VRage.Math.dll</HintPath>
-      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModAPI\IMyCharacter.cs" />
-    <Compile Include="ModAPI\IMyConfigDedicated.cs" />
-    <Compile Include="ModAPI\IMyEntity.cs" />
-    <Compile Include="ModAPI\IMyDoor.cs" />
-    <Compile Include="ModAPI\IMyEntityController.cs" />
-    <Compile Include="ModAPI\IMyControllerInfo.cs" />
-    <Compile Include="ModAPI\IMyCubeBlock.cs" />
-    <Compile Include="ModAPI\IMyCubeBuilder.cs" />
-    <Compile Include="ModAPI\IMyCubeGrid.cs" />
-    <Compile Include="ModAPI\IMyEntities.cs" />
-    <Compile Include="ModAPI\EntityFlags.cs" />
-    <Compile Include="ModAPI\IMyFaction.cs" />
-    <Compile Include="ModAPI\IMyFactionCollection.cs" />
-    <Compile Include="ModAPI\IMyFunctionalBlock.cs" />
-    <Compile Include="ModAPI\IMyHudObjectiveLine.cs" />
-    <Compile Include="ModAPI\IMyInventory.cs" />
-    <Compile Include="ModAPI\IMyLandingGear.cs" />
-    <Compile Include="ModAPI\IMyMotorStator.cs" />
-    <Compile Include="ModAPI\IMyParallelTask.cs" />
-    <Compile Include="ModAPI\IMyPistonBase.cs" />
-    <Compile Include="ModAPI\IMyPlayer.cs" />
-    <Compile Include="ModAPI\IMyGamePaths.cs" />
-    <Compile Include="ModAPI\IMyProductionBlock.cs" />
-    <Compile Include="ModAPI\IMySensorBlock.cs" />
-    <Compile Include="ModAPI\IMyTerminalBlock.cs" />
-    <Compile Include="ModAPI\IMyButtonPanel.cs" />
-    <Compile Include="ModAPI\IMyShipMergeBlock.cs" />
-    <Compile Include="ModAPI\IMyIdentity.cs" />
-    <Compile Include="ModAPI\IMyMultiplayer.cs" />
-    <Compile Include="ModAPI\IMyNetworkClient.cs" />
-    <Compile Include="ModAPI\IMyPlayerCollection.cs" />
-    <Compile Include="ModAPI\IMySession.cs" />
-    <Compile Include="ModAPI\IMySlimBlock.cs" />
-    <Compile Include="ModAPI\IMyTerminalActionsHelper.cs" />
-    <Compile Include="ModAPI\MessageEnteredDel.cs" />
-    <Compile Include="ModAPI\NamespaceDoc.cs" />
-    <Compile Include="ModAPI\ResultEnum.cs" />
-    <Compile Include="ModAPI\IMyUtilities.cs" />
-    <Compile Include="ModAPI\IMyVoxelMap.cs" />
-    <Compile Include="ModAPI\IMyVoxelMaps.cs" />
-    <Compile Include="ModAPI\MyAPIGateway.cs" />
-    <Compile Include="ModAPI\Ingame\IMyShipGrinder.cs" />
-    <Compile Include="ModAPI\Ingame\IMyCubeBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMyTerminalBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMyFunctionalBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMyDoor.cs" />
-    <Compile Include="ModAPI\Ingame\IMyCubeGrid.cs" />
-    <Compile Include="ModAPI\Ingame\IMyLandingGear.cs" />
-    <Compile Include="ModAPI\Ingame\IMyMotorBase.cs" />
-    <Compile Include="ModAPI\Ingame\IMyMotorStator.cs" />
-    <Compile Include="ModAPI\Ingame\IMyPistonBase.cs" />
-    <Compile Include="ModAPI\Ingame\IMyProductionBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMySensorBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMyRadioAntenna.cs" />
-    <Compile Include="ModAPI\Ingame\IMyAssembler.cs" />
-    <Compile Include="ModAPI\Ingame\IMyBatteryBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMyBeacon.cs" />
-    <Compile Include="ModAPI\Ingame\IMyBlockGroup.cs" />
-    <Compile Include="ModAPI\Ingame\IMyCameraBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMyCargoContainer.cs" />
-    <Compile Include="ModAPI\Ingame\IMyShipController.cs" />
-    <Compile Include="ModAPI\Ingame\IMyCockpit.cs" />
-    <Compile Include="ModAPI\Ingame\IMyCollector.cs" />
-    <Compile Include="ModAPI\Ingame\IMyGravityGeneratorBase.cs" />
-    <Compile Include="ModAPI\Ingame\IMyGravityGenerator.cs" />
-    <Compile Include="ModAPI\Ingame\IMyGravityGeneratorSphere.cs" />
-    <Compile Include="ModAPI\Ingame\IMyGridTerminalSystem.cs" />
-    <Compile Include="ModAPI\Ingame\IMyGyro.cs" />
-    <Compile Include="ModAPI\Ingame\IMyLightingBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMyInteriorLight.cs" />
-    <Compile Include="ModAPI\Ingame\IMyLargeTurretBase.cs" />
-    <Compile Include="ModAPI\Ingame\IMyLargeConveyorTurretBase.cs" />
-    <Compile Include="ModAPI\Ingame\IMyLargeGatlingTurret.cs" />
-    <Compile Include="ModAPI\Ingame\IMyLargeInteriorTurret.cs" />
-    <Compile Include="ModAPI\Ingame\IMyLargeMissileTurret.cs" />
-    <Compile Include="ModAPI\Ingame\IMyMedicalRoom.cs" />
-    <Compile Include="ModAPI\Ingame\IMyMotorAdvancedStator.cs" />
-    <Compile Include="ModAPI\Ingame\IMyMotorSuspension.cs" />
-    <Compile Include="ModAPI\Ingame\IMyOreDetector.cs" />
-    <Compile Include="ModAPI\Ingame\IMyProgrammableBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMyProjector.cs" />
-    <Compile Include="ModAPI\Ingame\IMyReactor.cs" />
-    <Compile Include="ModAPI\Ingame\IMyRefinery.cs" />
-    <Compile Include="ModAPI\Ingame\IMyReflectorLight.cs" />
-    <Compile Include="ModAPI\Ingame\IMyRemoteControl.cs" />
-    <Compile Include="ModAPI\Ingame\IMyShipConnector.cs" />
-    <Compile Include="ModAPI\Ingame\IMyShipDrill.cs" />
-    <Compile Include="ModAPI\Ingame\IMyShipToolBase.cs" />
-    <Compile Include="ModAPI\Ingame\IMyShipWelder.cs" />
-    <Compile Include="ModAPI\Ingame\IMySmallGatlingGun.cs" />
-    <Compile Include="ModAPI\Ingame\IMySmallMissileLauncher.cs" />
-    <Compile Include="ModAPI\Ingame\IMySmallMissileLauncherReload.cs" />
-    <Compile Include="ModAPI\Ingame\IMySolarPanel.cs" />
-    <Compile Include="ModAPI\Ingame\IMySoundBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMyThrust.cs" />
-    <Compile Include="ModAPI\Ingame\IMyTimerBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMyVirtualMass.cs" />
-    <Compile Include="ModAPI\Ingame\IMyControlPanel.cs" />
-    <Compile Include="ModAPI\Ingame\IMyWarhead.cs" />
-    <Compile Include="ModAPI\Ingame\IMyButtonPanel.cs" />
-    <Compile Include="ModAPI\Ingame\IMyShipMergeBlock.cs" />
-    <Compile Include="ModAPI\Ingame\IMySlimBlock.cs" />
-    <Compile Include="ModAPI\Interfaces\IMyInventory.cs" />
-    <Compile Include="ModAPI\Interfaces\IMyDestroyableObject.cs" />
-    <Compile Include="ModAPI\Interfaces\IMyInventoryOwner.cs" />
-    <Compile Include="ModAPI\Interfaces\IMyControllableEntity.cs" />
-    <Compile Include="ModAPI\Interfaces\IMyCameraController.cs" />
-    <Compile Include="ModAPI\Interfaces\IMyInventoryItem.cs" />
-    <Compile Include="ModAPI\Interfaces\IMyStorage.cs" />
-    <Compile Include="ModAPI\Interfaces\ITerminalProperty.cs" />
-    <Compile Include="ModAPI\Interfaces\TerminalPropertyExtensions.cs" />
-    <Compile Include="ModAPI\Interfaces\ITerminalAction.cs" />
     <Compile Include="Common\IMyNamedComponent.cs" />
     <Compile Include="Common\IMyUserInputComponent.cs" />
     <Compile Include="Common\MyUpdateOrder.cs" />
@@ -195,7 +82,6 @@
     <Compile Include="Common\MyCuboid.cs" />
     <Compile Include="Common\MyControllerData.cs" />
     <Compile Include="Common\MyFactionMember.cs" />
-    <Compile Include="Common\MyUtils2.cs" />
     <Compile Include="Common\Components\MyComponentContainer.cs" />
     <Compile Include="Common\Components\MyEntityComponentDescriptor.cs" />
     <Compile Include="Common\Components\MyComponentBase.cs" />
@@ -228,6 +114,7 @@
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_GlobalChatItem.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_EntityBase.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_FracturedPiece.cs" />
+    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_Gps.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_CubeBlock.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_TerminalBlock.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_FunctionalBlock.cs" />
@@ -262,6 +149,8 @@
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_SensorBlock.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_SmallMissileLauncher.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_SmallMissileLauncherReload.cs" />
+    <Compile Include="Common\ObjectBuilders\TextPanelAccessFlag.cs" />
+    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_TextPanel.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_TimerBlock.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_ToolbarItem.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_ToolbarItemDefinition.cs" />
@@ -537,9 +426,126 @@
     <Compile Include="Common\ObjectBuilders\VRageData\SerializableVector3UByte.cs" />
     <Compile Include="Common\ObjectBuilders\Voxels\MyObjectBuilder_VoxelMap.cs" />
     <Compile Include="Common\Resources\MyTexts.cs" />
+    <Compile Include="ModAPI\IMyMeteor.cs" />
+    <Compile Include="ModAPI\IMyCharacter.cs" />
+    <Compile Include="ModAPI\IMyConfigDedicated.cs" />
+    <Compile Include="ModAPI\IMyEntity.cs" />
+    <Compile Include="ModAPI\IMyDoor.cs" />
+    <Compile Include="ModAPI\IMyEntityController.cs" />
+    <Compile Include="ModAPI\IMyControllerInfo.cs" />
+    <Compile Include="ModAPI\IMyCubeBlock.cs" />
+    <Compile Include="ModAPI\IMyCubeBuilder.cs" />
+    <Compile Include="ModAPI\IMyCubeGrid.cs" />
+    <Compile Include="ModAPI\IMyEntities.cs" />
+    <Compile Include="ModAPI\EntityFlags.cs" />
+    <Compile Include="ModAPI\IMyFaction.cs" />
+    <Compile Include="ModAPI\IMyFactionCollection.cs" />
+    <Compile Include="ModAPI\IMyFloatingObject.cs" />
+    <Compile Include="ModAPI\IMyFunctionalBlock.cs" />
+    <Compile Include="ModAPI\IMyHudObjectiveLine.cs" />
+    <Compile Include="ModAPI\IMyInventory.cs" />
+    <Compile Include="ModAPI\IMyLandingGear.cs" />
+    <Compile Include="ModAPI\IMyMotorStator.cs" />
+    <Compile Include="ModAPI\IMyParallelTask.cs" />
+    <Compile Include="ModAPI\IMyPistonBase.cs" />
+    <Compile Include="ModAPI\IMyPlayer.cs" />
+    <Compile Include="ModAPI\IMyGamePaths.cs" />
+    <Compile Include="ModAPI\IMyProductionBlock.cs" />
+    <Compile Include="ModAPI\IMySensorBlock.cs" />
+    <Compile Include="ModAPI\IMyTerminalBlock.cs" />
+    <Compile Include="ModAPI\IMyButtonPanel.cs" />
+    <Compile Include="ModAPI\IMyShipMergeBlock.cs" />
+    <Compile Include="ModAPI\IMyIdentity.cs" />
+    <Compile Include="ModAPI\IMyMultiplayer.cs" />
+    <Compile Include="ModAPI\IMyNetworkClient.cs" />
+    <Compile Include="ModAPI\IMyPlayerCollection.cs" />
+    <Compile Include="ModAPI\IMySession.cs" />
+    <Compile Include="ModAPI\IMySlimBlock.cs" />
+    <Compile Include="ModAPI\IMyTerminalActionsHelper.cs" />
+    <Compile Include="ModAPI\MessageEnteredDel.cs" />
+    <Compile Include="ModAPI\ResultEnum.cs" />
+    <Compile Include="ModAPI\IMyUtilities.cs" />
+    <Compile Include="ModAPI\IMyVoxelMap.cs" />
+    <Compile Include="ModAPI\IMyVoxelMaps.cs" />
+    <Compile Include="ModAPI\MyAPIGateway.cs" />
+    <Compile Include="ModAPI\Ingame\IMyCubeBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMyTerminalBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMyFunctionalBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMyDoor.cs" />
+    <Compile Include="ModAPI\Ingame\IMyCubeGrid.cs" />
+    <Compile Include="ModAPI\Ingame\IMyLandingGear.cs" />
+    <Compile Include="ModAPI\Ingame\IMyMotorBase.cs" />
+    <Compile Include="ModAPI\Ingame\IMyMotorStator.cs" />
+    <Compile Include="ModAPI\Ingame\IMyPistonBase.cs" />
+    <Compile Include="ModAPI\Ingame\IMyProductionBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMySensorBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMyRadioAntenna.cs" />
+    <Compile Include="ModAPI\Ingame\IMyAssembler.cs" />
+    <Compile Include="ModAPI\Ingame\IMyBatteryBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMyBeacon.cs" />
+    <Compile Include="ModAPI\Ingame\IMyBlockGroup.cs" />
+    <Compile Include="ModAPI\Ingame\IMyCameraBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMyCargoContainer.cs" />
+    <Compile Include="ModAPI\Ingame\IMyShipController.cs" />
+    <Compile Include="ModAPI\Ingame\IMyCockpit.cs" />
+    <Compile Include="ModAPI\Ingame\IMyCollector.cs" />
+    <Compile Include="ModAPI\Ingame\IMyGravityGeneratorBase.cs" />
+    <Compile Include="ModAPI\Ingame\IMyGravityGenerator.cs" />
+    <Compile Include="ModAPI\Ingame\IMyGravityGeneratorSphere.cs" />
+    <Compile Include="ModAPI\Ingame\IMyGridTerminalSystem.cs" />
+    <Compile Include="ModAPI\Ingame\IMyGyro.cs" />
+    <Compile Include="ModAPI\Ingame\IMyLightingBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMyInteriorLight.cs" />
+    <Compile Include="ModAPI\Ingame\IMyLargeTurretBase.cs" />
+    <Compile Include="ModAPI\Ingame\IMyLargeConveyorTurretBase.cs" />
+    <Compile Include="ModAPI\Ingame\IMyLargeGatlingTurret.cs" />
+    <Compile Include="ModAPI\Ingame\IMyLargeInteriorTurret.cs" />
+    <Compile Include="ModAPI\Ingame\IMyLargeMissileTurret.cs" />
+    <Compile Include="ModAPI\Ingame\IMyMedicalRoom.cs" />
+    <Compile Include="ModAPI\Ingame\IMyMotorAdvancedStator.cs" />
+    <Compile Include="ModAPI\Ingame\IMyMotorSuspension.cs" />
+    <Compile Include="ModAPI\Ingame\IMyOreDetector.cs" />
+    <Compile Include="ModAPI\Ingame\IMyProgrammableBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMyProjector.cs" />
+    <Compile Include="ModAPI\Ingame\IMyReactor.cs" />
+    <Compile Include="ModAPI\Ingame\IMyRefinery.cs" />
+    <Compile Include="ModAPI\Ingame\IMyReflectorLight.cs" />
+    <Compile Include="ModAPI\Ingame\IMyRemoteControl.cs" />
+    <Compile Include="ModAPI\Ingame\IMyShipConnector.cs" />
+    <Compile Include="ModAPI\Ingame\IMyShipDrill.cs" />
+    <Compile Include="ModAPI\Ingame\IMyShipToolBase.cs" />
+    <Compile Include="ModAPI\Ingame\IMyShipGrinder.cs" />
+    <Compile Include="ModAPI\Ingame\IMyShipWelder.cs" />
+    <Compile Include="ModAPI\Ingame\IMySmallGatlingGun.cs" />
+    <Compile Include="ModAPI\Ingame\IMySmallMissileLauncher.cs" />
+    <Compile Include="ModAPI\Ingame\IMySmallMissileLauncherReload.cs" />
+    <Compile Include="ModAPI\Ingame\IMySolarPanel.cs" />
+    <Compile Include="ModAPI\Ingame\IMySoundBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMyTextPanel.cs" />
+    <Compile Include="ModAPI\Ingame\IMyThrust.cs" />
+    <Compile Include="ModAPI\Ingame\IMyTimerBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMyVirtualMass.cs" />
+    <Compile Include="ModAPI\Ingame\IMyControlPanel.cs" />
+    <Compile Include="ModAPI\Ingame\IMyWarhead.cs" />
+    <Compile Include="ModAPI\Ingame\IMyButtonPanel.cs" />
+    <Compile Include="ModAPI\Ingame\IMyShipMergeBlock.cs" />
+    <Compile Include="ModAPI\Ingame\IMySlimBlock.cs" />
+    <Compile Include="ModAPI\Ingame\TerminalBlockExtentions.cs" />
+    <Compile Include="ModAPI\Interfaces\IMyInventory.cs" />
+    <Compile Include="ModAPI\Interfaces\IMyDestroyableObject.cs" />
+    <Compile Include="ModAPI\Interfaces\IMyInventoryOwner.cs" />
+    <Compile Include="ModAPI\Interfaces\IMyControllableEntity.cs" />
+    <Compile Include="ModAPI\Interfaces\IMyCameraController.cs" />
+    <Compile Include="ModAPI\Interfaces\IMyInventoryItem.cs" />
+    <Compile Include="ModAPI\Interfaces\IMyStorage.cs" />
+    <Compile Include="ModAPI\Interfaces\ITerminalProperty.cs" />
+    <Compile Include="ModAPI\Interfaces\ITerminalProperty`1.cs" />
+    <Compile Include="ModAPI\Interfaces\TerminalPropertyExtensions.cs" />
+    <Compile Include="ModAPI\Interfaces\ITerminalAction.cs" />
     <Compile Include="Definitions\ErrorSeverity.cs" />
     <Compile Include="Definitions\MyDefinitionErrors.cs" />
     <Compile Include="Definitions\MyModContext.cs" />
+    <Compile Include="Definitions\MyMusicTrack.cs" />
     <Compile Include="Definitions\MyDefinitionBase.cs" />
     <Compile Include="Definitions\MyAudioDefinition.cs" />
     <Compile Include="Definitions\MyDefinitionId.cs" />

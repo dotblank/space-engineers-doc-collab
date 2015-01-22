@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_Configuration
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -22,18 +22,18 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
         public struct CubeSizeSettings
         {
             [XmlAttribute] [ProtoMember(1)] public float Large;
-            [XmlAttribute] [ProtoMember(2)] public float Small;
-            [ProtoMember(3)] [XmlAttribute] public float Medium;
+            [ProtoMember(2)] [XmlAttribute] public float Small;
+            [XmlAttribute] [ProtoMember(3)] public float Medium;
         }
 
         [ProtoContract]
         public struct BaseBlockSettings
         {
-            [XmlAttribute] [ProtoMember(1)] public string SmallStatic;
-            [ProtoMember(2)] [XmlAttribute] public string LargeStatic;
+            [ProtoMember(1)] [XmlAttribute] public string SmallStatic;
+            [XmlAttribute] [ProtoMember(2)] public string LargeStatic;
             [ProtoMember(3)] [XmlAttribute] public string SmallDynamic;
-            [ProtoMember(4)] [XmlAttribute] public string LargeDynamic;
-            [XmlAttribute] [ProtoMember(5)] public string MediumStatic;
+            [XmlAttribute] [ProtoMember(4)] public string LargeDynamic;
+            [ProtoMember(5)] [XmlAttribute] public string MediumStatic;
             [ProtoMember(6)] [XmlAttribute] public string MediumDynamic;
         }
     }

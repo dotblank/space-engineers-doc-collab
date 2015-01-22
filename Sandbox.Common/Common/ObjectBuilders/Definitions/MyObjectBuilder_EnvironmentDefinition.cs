@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_EnvironmentDefinition
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -10,8 +10,8 @@ using Sandbox.Common.ObjectBuilders.VRageData;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-    [ProtoContract]
     [MyObjectBuilderDefinition]
+    [ProtoContract]
     public class MyObjectBuilder_EnvironmentDefinition : MyObjectBuilder_DefinitionBase
     {
         [ProtoMember(10)] public SerializableVector3 SunDiffuse = new SerializableVector3(0.7843137f, 0.7843137f,
@@ -40,7 +40,7 @@ namespace Sandbox.Common.ObjectBuilders.Definitions
         [ProtoMember(23)] public float SmallShipMaxAngularSpeed = 36000f;
         [ProtoMember(24)] public float LargeShipMaxAngularSpeed = 18000f;
         [ProtoMember(1)] public SerializableVector3 SunDirection;
-        [ModdableContentFile("dds")] [ProtoMember(2)] public string EnvironmentTexture;
+        [ProtoMember(2)] [ModdableContentFile("dds")] public string EnvironmentTexture;
         [ProtoMember(3)] public MyOrientation EnvironmentOrientation;
         [ProtoMember(4)] public bool EnableFog;
         [ProtoMember(5)] public float FogNear;

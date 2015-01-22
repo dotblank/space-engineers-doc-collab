@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_CubeGrid
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4C37CB42-F216-4F7D-B6D1-CA0779A47F38
+// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -19,7 +19,7 @@ namespace Sandbox.Common.ObjectBuilders
     public class MyObjectBuilder_CubeGrid : MyObjectBuilder_EntityBase
     {
         [XmlArrayItem("MyObjectBuilder_CubeBlock", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_CubeBlock>))] [ProtoMember(46)] public List<MyObjectBuilder_CubeBlock> CubeBlocks = new List<MyObjectBuilder_CubeBlock>();
-        [DefaultValue(true)] [ProtoMember(57)] public bool DampenersEnabled = true;
+        [ProtoMember(57)] [DefaultValue(true)] public bool DampenersEnabled = true;
 
         [ProtoMember(58)] public List<MyObjectBuilder_ConveyorLine> ConveyorLines =
             new List<MyObjectBuilder_ConveyorLine>();
@@ -36,7 +36,7 @@ namespace Sandbox.Common.ObjectBuilders
         [ProtoMember(53)] public SerializableVector3I? ZMirroxPlane;
         [DefaultValue(false)] [ProtoMember(54)] public bool XMirroxOdd;
         [ProtoMember(55)] [DefaultValue(false)] public bool YMirroxOdd;
-        [ProtoMember(56)] [DefaultValue(false)] public bool ZMirroxOdd;
+        [DefaultValue(false)] [ProtoMember(56)] public bool ZMirroxOdd;
         [ProtoMember(60)] public bool Handbrake;
         [ProtoMember(61)] public string DisplayName;
 
