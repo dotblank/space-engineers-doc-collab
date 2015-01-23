@@ -11,60 +11,60 @@ namespace ParallelTasks
     /// <summary>
     /// Accessible
     /// </summary>
-  public struct Task
-  {
-    public bool valid;
-
-    internal WorkItem Item { get; private set; }
-
-    internal int ID { get; private set; }
-
-    public bool IsComplete
+    public struct Task
     {
-      get
-      {
-        if (this.valid)
-          return this.Item.RunCount != this.ID;
-        else
-          return true;
-      }
-    }
+        public bool valid;
 
-    public Exception[] Exceptions
-    {
-      get
-      {
-        if (!this.valid || !this.IsComplete)
-          return (Exception[]) null;
-        Exception[] data;
-        this.Item.Exceptions.TryGet(this.ID, out data);
-        return data;
-      }
-    }
+        internal WorkItem Item { get; private set; }
 
-    internal Task(WorkItem item)
-    {
-      this = new Task();
-      this.ID = item.RunCount;
-      this.Item = item;
-      this.valid = true;
-    }
+        internal int ID { get; private set; }
 
-    public void Wait()
-    {
-      if (!this.valid)
-        return;
-      Task? currentTask = WorkItem.CurrentTask;
-      if (currentTask.HasValue && currentTask.Value.Item == this.Item && currentTask.Value.ID == this.ID)
-        throw new InvalidOperationException("A task cannot wait on itself.");
-      this.Item.Wait(this.ID);
-    }
+        public bool IsComplete
+        {
+            get
+            {
+                if (this.valid)
+                    return this.Item.RunCount != this.ID;
+                else
+                    return true;
+            }
+        }
 
-    internal void DoWork()
-    {
-      if (!this.valid)
-        return;
-      this.Item.DoWork(this.ID);
+        public Exception[] Exceptions
+        {
+            get
+            {
+                if (!this.valid || !this.IsComplete)
+                    return (Exception[])null;
+                Exception[] data;
+                this.Item.Exceptions.TryGet(this.ID, out data);
+                return data;
+            }
+        }
+
+        internal Task(WorkItem item)
+        {
+            this = new Task();
+            this.ID = item.RunCount;
+            this.Item = item;
+            this.valid = true;
+        }
+
+        public void Wait()
+        {
+            if (!this.valid)
+                return;
+            Task? currentTask = WorkItem.CurrentTask;
+            if (currentTask.HasValue && currentTask.Value.Item == this.Item && currentTask.Value.ID == this.ID)
+                throw new InvalidOperationException("A task cannot wait on itself.");
+            this.Item.Wait(this.ID);
+        }
+
+        internal void DoWork()
+        {
+            if (!this.valid)
+                return;
+            this.Item.DoWork(this.ID);
+        }
     }
-  }
 }

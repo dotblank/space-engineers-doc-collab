@@ -59,7 +59,7 @@
 <NamespaceSummaryItem name="Sandbox.Game.Entities" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Game.Weapons" isDocumented="False" />
 <NamespaceSummaryItem name="(global)" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.ModAPI" isDocumented="True">This namespace is mostly inaccessible</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Sandbox.ModAPI" isDocumented="True">Limited access</NamespaceSummaryItem>
 <NamespaceSummaryItem name="VRageMath.PackedVector" isDocumented="False" />
 <NamespaceSummaryItem name="VRageMath.Spatial" isDocumented="False" />
 <NamespaceSummaryItem name="KeenSoftwareHouse.Library.Extensions" isDocumented="False" />
@@ -78,7 +78,7 @@
 <NamespaceSummaryItem name="System.Reflection" isDocumented="False" />
 <NamespaceSummaryItem name="System.Runtime.CompilerServices" isDocumented="False" />
 <NamespaceSummaryItem name="System.Text" isDocumented="False" />
-<NamespaceSummaryItem name="VRage" isDocumented="True">Some of this namespace's members may be inaccessible.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="VRage" isDocumented="True">Available: MyFixedPoint</NamespaceSummaryItem>
 <NamespaceSummaryItem name="VRage.Algorithms" isDocumented="False" />
 <NamespaceSummaryItem name="VRage.Collections" isDocumented="False" />
 <NamespaceSummaryItem name="VRage.Common.Utils" isDocumented="False" />

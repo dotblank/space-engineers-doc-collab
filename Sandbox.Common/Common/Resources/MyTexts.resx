@@ -2127,6 +2127,9 @@ Volume: {2} L</value>
   <data name="DisplayName_Item_RadioCommunicationComponents" xml:space="preserve">
     <value>Radio-communication Components</value>
   </data>
+  <data name="ControlDescExportModel" xml:space="preserve">
+    <value>Export model</value>
+  </data>
   <data name="BlockPropertyDescription_Motor_Steering" xml:space="preserve">
     <value>Control steering of this suspension from cockpit.</value>
   </data>
