@@ -30,6 +30,7 @@
   <HelpKINode Title="AcqShrd field" Url="html/F_VRage_FastResourceLock_Statistics_AcqShrd.htm" />
   <HelpKINode Title="AcqShrdCont field" Url="html/F_VRage_FastResourceLock_Statistics_AcqShrdCont.htm" />
   <HelpKINode Title="AcqShrdSlp field" Url="html/F_VRage_FastResourceLock_Statistics_AcqShrdSlp.htm" />
+  <HelpKINode Title="Acquire method" Url="html/M_ParallelTasks_SpinLockRef_Acquire.htm" />
   <HelpKINode Title="AcquireExclusive method">
     <HelpKINode Title="FastResourceLock.AcquireExclusive Method " Url="html/M_VRage_FastResourceLock_AcquireExclusive.htm" />
     <HelpKINode Title="IResourceLock.AcquireExclusive Method " Url="html/M_VRage_IResourceLock_AcquireExclusive.htm" />
@@ -40,12 +41,28 @@
     <HelpKINode Title="IResourceLock.AcquireShared Method " Url="html/M_VRage_IResourceLock_AcquireShared.htm" />
   </HelpKINode>
   <HelpKINode Title="AcquireSharedUsing method" Url="html/M_VRage_FastResourceLockExtensions_AcquireSharedUsing.htm" />
-  <HelpKINode Title="Action field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ToolbarItemTerminal_Action.htm" />
+  <HelpKINode Title="Action field">
+    <HelpKINode Title="ActionWork.Action Field" Url="html/F_ParallelTasks_ActionWork_Action.htm" />
+    <HelpKINode Title="MyObjectBuilder_ToolbarItemTerminal.Action Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ToolbarItemTerminal_Action.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ActionWork class">
+    <HelpKINode Title="ActionWork Class" Url="html/T_ParallelTasks_ActionWork.htm" />
+    <HelpKINode Title="about ActionWork class" Url="html/T_ParallelTasks_ActionWork.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_ParallelTasks_ActionWork__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_ParallelTasks_ActionWork.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_ActionWork.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_ActionWork.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ActionWork.Action field" Url="html/F_ParallelTasks_ActionWork_Action.htm" />
+  <HelpKINode Title="ActionWork.ActionWork constructor" Url="html/Overload_ParallelTasks_ActionWork__ctor.htm" />
+  <HelpKINode Title="ActionWork.DoWork method" Url="html/M_ParallelTasks_ActionWork_DoWork.htm" />
+  <HelpKINode Title="ActionWork.Options property" Url="html/P_ParallelTasks_ActionWork_Options.htm" />
   <HelpKINode Title="Activate method" Url="html/M_Sandbox_ModAPI_IMyCubeBuilder_Activate.htm" />
   <HelpKINode Title="ActivateShipCreationClipboard method" Url="html/Overload_Sandbox_ModAPI_IMyCubeBuilder_ActivateShipCreationClipboard.htm" />
   <HelpKINode Title="ActivationTimeMs field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_GlobalEventBase_ActivationTimeMs.htm" />
   <HelpKINode Title="Add method">
     <HelpKINode Title="CurveKeyCollection.Add Method " Url="html/M_VRageMath_CurveKeyCollection_Add.htm" />
+    <HelpKINode Title="Hashtable(Key, Data).Add Method " Url="html/M_ParallelTasks_Hashtable_2_Add.htm" />
     <HelpKINode Title="IMyCompressionSave.Add Method " Url="html/Overload_VRage_IMyCompressionSave_Add.htm" />
     <HelpKINode Title="Matrix.Add Method " Url="html/Overload_VRageMath_Matrix_Add.htm" />
     <HelpKINode Title="MatrixD.Add Method " Url="html/Overload_VRageMath_MatrixD_Add.htm" />
@@ -531,8 +548,8 @@
     <HelpKINode Title="IMySlimBlock.BuildIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_BuildIntegrity.htm" />
   </HelpKINode>
   <HelpKINode Title="BuildLevelRatio property">
-    <HelpKINode Title="IMySlimBlock.BuildLevelRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_BuildLevelRatio.htm" />
     <HelpKINode Title="IMySlimBlock.BuildLevelRatio Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_BuildLevelRatio.htm" />
+    <HelpKINode Title="IMySlimBlock.BuildLevelRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_BuildLevelRatio.htm" />
   </HelpKINode>
   <HelpKINode Title="BuildPercent field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_CubeBlock_BuildPercent.htm" />
   <HelpKINode Title="BurlyWood property" Url="html/P_VRageMath_Color_BurlyWood.htm" />
@@ -704,6 +721,10 @@
     <HelpKINode Title="Vector3D.ClampToSphere Method " Url="html/Overload_VRageMath_Vector3D_ClampToSphere.htm" />
   </HelpKINode>
   <HelpKINode Title="ClampVoxelCoord method" Url="html/M_Sandbox_ModAPI_IMyVoxelMap_ClampVoxelCoord.htm" />
+  <HelpKINode Title="Clean method">
+    <HelpKINode Title="Parallel.Clean Method " Url="html/M_ParallelTasks_Parallel_Clean.htm" />
+    <HelpKINode Title="Pool(T).Clean Method " Url="html/M_ParallelTasks_Pool_1_Clean.htm" />
+  </HelpKINode>
   <HelpKINode Title="Clear method">
     <HelpKINode Title="CurveKeyCollection.Clear Method " Url="html/M_VRageMath_CurveKeyCollection_Clear.htm" />
     <HelpKINode Title="IMyInventory.Clear Method " Url="html/M_Sandbox_ModAPI_IMyInventory_Clear.htm" />
@@ -948,8 +969,8 @@
   </HelpKINode>
   <HelpKINode Title="ComparerType class">
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_Common_ObjectBuilders_MyObjectBuilderType_ComparerType.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_VRageMath_BoundingBoxD_ComparerType.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_VRageMath_BoundingBox_ComparerType.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_VRageMath_BoundingBoxD_ComparerType.htm" />
   </HelpKINode>
   <HelpKINode Title="CompareTo method">
     <HelpKINode Title="CurveKey.CompareTo Method " Url="html/M_VRageMath_CurveKey_CompareTo.htm" />
@@ -1261,10 +1282,10 @@
   <HelpKINode Title="CubeBuilder field" Url="html/F_Sandbox_ModAPI_MyAPIGateway_CubeBuilder.htm" />
   <HelpKINode Title="CubeExists method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_CubeExists.htm" />
   <HelpKINode Title="CubeGrid property">
-    <HelpKINode Title="IMyCubeBlock.CubeGrid Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_CubeGrid.htm" />
     <HelpKINode Title="IMyCubeBlock.CubeGrid Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_CubeGrid.htm" />
-    <HelpKINode Title="IMySlimBlock.CubeGrid Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_CubeGrid.htm" />
+    <HelpKINode Title="IMyCubeBlock.CubeGrid Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_CubeGrid.htm" />
     <HelpKINode Title="IMySlimBlock.CubeGrid Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_CubeGrid.htm" />
+    <HelpKINode Title="IMySlimBlock.CubeGrid Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_CubeGrid.htm" />
   </HelpKINode>
   <HelpKINode Title="CubicInterp method" Url="html/M_VRageMath_MathHelper_CubicInterp.htm" />
   <HelpKINode Title="CueId field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SoundBlock_CueId.htm" />
@@ -1358,8 +1379,8 @@
   </HelpKINode>
   <HelpKINode Title="Damaged enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyItemFlags.htm" />
   <HelpKINode Title="DamageRatio property">
-    <HelpKINode Title="IMySlimBlock.DamageRatio Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_DamageRatio.htm" />
     <HelpKINode Title="IMySlimBlock.DamageRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_DamageRatio.htm" />
+    <HelpKINode Title="IMySlimBlock.DamageRatio Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_DamageRatio.htm" />
   </HelpKINode>
   <HelpKINode Title="DampenersEnabled field">
     <HelpKINode Title="MyObjectBuilder_Character.DampenersEnabled Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Character_DampenersEnabled.htm" />
@@ -1414,6 +1435,7 @@
     <HelpKINode Title="MyBounds.Default Field" Url="html/F_VRageMath_MyBounds_Default.htm" />
     <HelpKINode Title="MyPositionAndOrientation.Default Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyPositionAndOrientation_Default.htm" />
   </HelpKINode>
+  <HelpKINode Title="DefaultOptions field" Url="html/F_ParallelTasks_Parallel_DefaultOptions.htm" />
   <HelpKINode Title="DefaultSeed field" Url="html/F_VRage_Crc32_DefaultSeed.htm" />
   <HelpKINode Title="DEFAULT_AUTOSAVE_IN_MINUTES field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SessionSettings_DEFAULT_AUTOSAVE_IN_MINUTES.htm" />
   <HelpKINode Title="DEFAULT_LINE enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ConveyorLine_LineType.htm" />
@@ -1424,8 +1446,8 @@
     <HelpKINode Title="MyObjectBuilder_ToolbarItemWeapon.defId Property " Url="html/P_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ToolbarItemWeapon_defId.htm" />
   </HelpKINode>
   <HelpKINode Title="DefinitionDisplayNameText property">
-    <HelpKINode Title="IMyCubeBlock.DefinitionDisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DefinitionDisplayNameText.htm" />
     <HelpKINode Title="IMyCubeBlock.DefinitionDisplayNameText Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_DefinitionDisplayNameText.htm" />
+    <HelpKINode Title="IMyCubeBlock.DefinitionDisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DefinitionDisplayNameText.htm" />
   </HelpKINode>
   <HelpKINode Title="DefinitionId field">
     <HelpKINode Title="MyObjectBuilder_GlobalEventBase.DefinitionId Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_GlobalEventBase_DefinitionId.htm" />
@@ -1438,11 +1460,11 @@
   <HelpKINode Title="DeleteFileInLocalStorage method" Url="html/M_Sandbox_ModAPI_IMyUtilities_DeleteFileInLocalStorage.htm" />
   <HelpKINode Title="DemoteMember method" Url="html/M_Sandbox_ModAPI_IMyFactionCollection_DemoteMember.htm" />
   <HelpKINode Title="Denormalize method" Url="html/M_VRageMath_Vector3UByte_Denormalize.htm" />
-  <HelpKINode Title="description field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Gps_Entry_description.htm" />
   <HelpKINode Title="Description field">
     <HelpKINode Title="MyObjectBuilder_Checkpoint.Description Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_Description.htm" />
     <HelpKINode Title="MyObjectBuilder_TextPanel.Description Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_TextPanel_Description.htm" />
   </HelpKINode>
+  <HelpKINode Title="description field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Gps_Entry_description.htm" />
   <HelpKINode Title="Description property">
     <HelpKINode Title="IMyFaction.Description Property " Url="html/P_Sandbox_ModAPI_IMyFaction_Description.htm" />
     <HelpKINode Title="IMySession.Description Property " Url="html/P_Sandbox_ModAPI_IMySession_Description.htm" />
@@ -1454,6 +1476,7 @@
   <HelpKINode Title="DeserializeXML method" Url="html/Overload_Sandbox_Common_ObjectBuilders_Serializer_MyObjectBuilderSerializer_DeserializeXML.htm" />
   <HelpKINode Title="Destination field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SimpleAutopilot_Destination.htm" />
   <HelpKINode Title="DestructibleBlocks field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SessionSettings_DestructibleBlocks.htm" />
+  <HelpKINode Title="DetachFromParent property" Url="html/P_ParallelTasks_WorkOptions_DetachFromParent.htm" />
   <HelpKINode Title="DetailedInfo property" Url="html/P_Sandbox_ModAPI_Ingame_IMyTerminalBlock_DetailedInfo.htm" />
   <HelpKINode Title="DetectAsteroids field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SensorBlock_DetectAsteroids.htm" />
   <HelpKINode Title="DetectAsteroids property" Url="html/P_Sandbox_ModAPI_Ingame_IMySensorBlock_DetectAsteroids.htm" />
@@ -1504,8 +1527,8 @@
   <HelpKINode Title="DirectoryExtensions.EnsureDirectoryExists method" Url="html/M_VRage_DirectoryExtensions_EnsureDirectoryExists.htm" />
   <HelpKINode Title="DisassembleEnabled field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Assembler_DisassembleEnabled.htm" />
   <HelpKINode Title="DisassembleRatio property">
-    <HelpKINode Title="IMyCubeBlock.DisassembleRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_DisassembleRatio.htm" />
     <HelpKINode Title="IMyCubeBlock.DisassembleRatio Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DisassembleRatio.htm" />
+    <HelpKINode Title="IMyCubeBlock.DisassembleRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_DisassembleRatio.htm" />
   </HelpKINode>
   <HelpKINode Title="DisconnectedPlayers field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_DisconnectedPlayers.htm" />
   <HelpKINode Title="Disjoint enumeration member" Url="html/T_VRageMath_ContainmentType.htm" />
@@ -1522,8 +1545,8 @@
     <HelpKINode Title="IMyPlayer.DisplayName Property " Url="html/P_Sandbox_ModAPI_IMyPlayer_DisplayName.htm" />
   </HelpKINode>
   <HelpKINode Title="DisplayNameText property">
-    <HelpKINode Title="IMyCubeBlock.DisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DisplayNameText.htm" />
     <HelpKINode Title="IMyCubeBlock.DisplayNameText Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_DisplayNameText.htm" />
+    <HelpKINode Title="IMyCubeBlock.DisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DisplayNameText.htm" />
   </HelpKINode>
   <HelpKINode Title="Dispose method">
     <HelpKINode Title="FastResourceLock.Dispose Method " Url="html/M_VRage_FastResourceLock_Dispose.htm" />
@@ -1533,6 +1556,7 @@
     <HelpKINode Title="MyCompressionFileSave.Dispose Method " Url="html/M_VRage_MyCompressionFileSave_Dispose.htm" />
     <HelpKINode Title="MyCompressionStreamSave.Dispose Method " Url="html/M_VRage_MyCompressionStreamSave_Dispose.htm" />
     <HelpKINode Title="MyRandom.StateToken.Dispose Method " Url="html/M_VRage_MyRandom_StateToken_Dispose.htm" />
+    <HelpKINode Title="SpinLockRef.Token.Dispose Method " Url="html/M_ParallelTasks_SpinLockRef_Token_Dispose.htm" />
   </HelpKINode>
   <HelpKINode Title="Distance field">
     <HelpKINode Title="MyLineSegmentOverlapResult(T).Distance Field" Url="html/F_VRageMath_MyLineSegmentOverlapResult_1_Distance.htm" />
@@ -1582,7 +1606,10 @@
     <HelpKINode Title="Vector4.Division Operator " Url="html/Overload_VRageMath_Vector4_op_Division.htm" />
     <HelpKINode Title="Vector4D.Division Operator " Url="html/Overload_VRageMath_Vector4D_op_Division.htm" />
   </HelpKINode>
-  <HelpKINode Title="Do method" Url="html/Overload_Sandbox_ModAPI_IMyParallelTask_Do.htm" />
+  <HelpKINode Title="Do method">
+    <HelpKINode Title="IMyParallelTask.Do Method " Url="html/Overload_Sandbox_ModAPI_IMyParallelTask_Do.htm" />
+    <HelpKINode Title="Parallel.Do Method " Url="html/Overload_ParallelTasks_Parallel_Do.htm" />
+  </HelpKINode>
   <HelpKINode Title="DoDamage method" Url="html/M_Sandbox_ModAPI_Interfaces_IMyDestroyableObject_DoDamage.htm" />
   <HelpKINode Title="DodgerBlue property" Url="html/P_VRageMath_Color_DodgerBlue.htm" />
   <HelpKINode Title="DominantAxisProjection method">
@@ -1638,6 +1665,10 @@
     <HelpKINode Title="MatrixI.Down Property " Url="html/P_VRageMath_MatrixI_Down.htm" />
   </HelpKINode>
   <HelpKINode Title="DownVector property" Url="html/P_VRageMath_MatrixI_DownVector.htm" />
+  <HelpKINode Title="DoWork method">
+    <HelpKINode Title="ActionWork.DoWork Method " Url="html/M_ParallelTasks_ActionWork_DoWork.htm" />
+    <HelpKINode Title="IWork.DoWork Method " Url="html/M_ParallelTasks_IWork_DoWork.htm" />
+  </HelpKINode>
   <HelpKINode Title="Draw method" Url="html/M_Sandbox_ModAPI_IMySession_Draw.htm" />
   <HelpKINode Title="DrawHud method" Url="html/M_Sandbox_ModAPI_Interfaces_IMyControllableEntity_DrawHud.htm" />
   <HelpKINode Title="DummyDisplacement field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_MotorStator_DummyDisplacement.htm" />
@@ -1699,6 +1730,7 @@
   </HelpKINode>
   <HelpKINode Title="EnsureCapacity method" Url="html/M_VRage_ByteStream_EnsureCapacity.htm" />
   <HelpKINode Title="EnsureDirectoryExists method" Url="html/M_VRage_DirectoryExtensions_EnsureDirectoryExists.htm" />
+  <HelpKINode Title="Enter method" Url="html/M_ParallelTasks_SpinLock_Enter.htm" />
   <HelpKINode Title="Entities field" Url="html/F_Sandbox_ModAPI_MyAPIGateway_Entities.htm" />
   <HelpKINode Title="Entity enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyCameraControllerEnum.htm" />
   <HelpKINode Title="Entity property" Url="html/P_Sandbox_ModAPI_Interfaces_IMyControllableEntity_Entity.htm" />
@@ -1835,6 +1867,10 @@
     <HelpKINode Title="about Exceptions class" Url="html/T_VRage_Exceptions.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_VRage_Exceptions.htm" />
   </HelpKINode>
+  <HelpKINode Title="Exceptions property">
+    <HelpKINode Title="Future(T).Exceptions Property " Url="html/P_ParallelTasks_Future_1_Exceptions.htm" />
+    <HelpKINode Title="Task.Exceptions Property " Url="html/P_ParallelTasks_Task_Exceptions.htm" />
+  </HelpKINode>
   <HelpKINode Title="Exceptions.ThrowAll(Of TException) method" Url="html/M_VRage_Exceptions_ThrowAll__1.htm" />
   <HelpKINode Title="Exceptions.ThrowAll&lt;TException&gt; method" Url="html/M_VRage_Exceptions_ThrowAll__1.htm" />
   <HelpKINode Title="Exceptions.ThrowAny(Of TException) method" Url="html/M_VRage_Exceptions_ThrowAny__1.htm" />
@@ -1846,6 +1882,7 @@
     <HelpKINode Title="IMyVoxelMaps.Exist Method " Url="html/M_Sandbox_ModAPI_IMyVoxelMaps_Exist.htm" />
   </HelpKINode>
   <HelpKINode Title="ExistsById method" Url="html/M_Sandbox_ModAPI_IMyEntities_ExistsById.htm" />
+  <HelpKINode Title="Exit method" Url="html/M_ParallelTasks_SpinLock_Exit.htm" />
   <HelpKINode Title="Expandable field" Url="html/F_VRage_ByteStream_Expandable.htm" />
   <HelpKINode Title="ExtendControl method" Url="html/M_Sandbox_ModAPI_IMyPlayerCollection_ExtendControl.htm" />
   <HelpKINode Title="Faction enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyOwnershipShareModeEnum.htm" />
@@ -1967,6 +2004,17 @@
   <HelpKINode Title="Firebrick property" Url="html/P_VRageMath_Color_Firebrick.htm" />
   <HelpKINode Title="Fit method" Url="html/M_VRageMath_Vector3B_Fit.htm" />
   <HelpKINode Title="FixBones method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_FixBones.htm" />
+  <HelpKINode Title="FixedPriorityScheduler class">
+    <HelpKINode Title="FixedPriorityScheduler Class" Url="html/T_ParallelTasks_FixedPriorityScheduler.htm" />
+    <HelpKINode Title="about FixedPriorityScheduler class" Url="html/T_ParallelTasks_FixedPriorityScheduler.htm" />
+    <HelpKINode Title="constructor" Url="html/M_ParallelTasks_FixedPriorityScheduler__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_FixedPriorityScheduler.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_FixedPriorityScheduler.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FixedPriorityScheduler.FixedPriorityScheduler constructor" Url="html/M_ParallelTasks_FixedPriorityScheduler__ctor.htm" />
+  <HelpKINode Title="FixedPriorityScheduler.Schedule method" Url="html/M_ParallelTasks_FixedPriorityScheduler_Schedule.htm" />
+  <HelpKINode Title="FixedPriorityScheduler.ThreadCount property" Url="html/P_ParallelTasks_FixedPriorityScheduler_ThreadCount.htm" />
+  <HelpKINode Title="FixedPriorityScheduler.WaitForTasksToFinish method" Url="html/M_ParallelTasks_FixedPriorityScheduler_WaitForTasksToFinish.htm" />
   <HelpKINode Title="FixTargetCube method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_FixTargetCube.htm" />
   <HelpKINode Title="Flags field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_PhysicalObject_Flags.htm" />
   <HelpKINode Title="Flags property" Url="html/P_Sandbox_ModAPI_IMyEntity_Flags.htm" />
@@ -1990,14 +2038,23 @@
     <HelpKINode Title="ByteStream.Flush Method " Url="html/M_VRage_ByteStream_Flush.htm" />
     <HelpKINode Title="ResetableMemoryStream.Flush Method " Url="html/M_VRage_ResetableMemoryStream_Flush.htm" />
   </HelpKINode>
-  <HelpKINode Title="For method" Url="html/Overload_Sandbox_ModAPI_IMyParallelTask_For.htm" />
+  <HelpKINode Title="For method">
+    <HelpKINode Title="IMyParallelTask.For Method " Url="html/Overload_Sandbox_ModAPI_IMyParallelTask_For.htm" />
+    <HelpKINode Title="Parallel.For Method " Url="html/Overload_ParallelTasks_Parallel_For.htm" />
+  </HelpKINode>
   <HelpKINode Title="Force field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_MotorStator_Force.htm" />
   <HelpKINode Title="ForceFirstPersonCamera property">
     <HelpKINode Title="IMyCameraController.ForceFirstPersonCamera Property " Url="html/P_Sandbox_ModAPI_Interfaces_IMyCameraController_ForceFirstPersonCamera.htm" />
     <HelpKINode Title="IMyControllableEntity.ForceFirstPersonCamera Property " Url="html/P_Sandbox_ModAPI_Interfaces_IMyControllableEntity_ForceFirstPersonCamera.htm" />
   </HelpKINode>
-  <HelpKINode Title="ForEach(Of T) method" Url="html/M_Sandbox_ModAPI_IMyParallelTask_ForEach__1.htm" />
-  <HelpKINode Title="ForEach&lt;T&gt; method" Url="html/M_Sandbox_ModAPI_IMyParallelTask_ForEach__1.htm" />
+  <HelpKINode Title="ForEach(Of T) method">
+    <HelpKINode Title="IMyParallelTask.ForEach(T) Method " Url="html/M_Sandbox_ModAPI_IMyParallelTask_ForEach__1.htm" />
+    <HelpKINode Title="Parallel.ForEach(T) Method " Url="html/M_ParallelTasks_Parallel_ForEach__1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ForEach&lt;T&gt; method">
+    <HelpKINode Title="IMyParallelTask.ForEach(T) Method " Url="html/M_Sandbox_ModAPI_IMyParallelTask_ForEach__1.htm" />
+    <HelpKINode Title="Parallel.ForEach(T) Method " Url="html/M_ParallelTasks_Parallel_ForEach__1.htm" />
+  </HelpKINode>
   <HelpKINode Title="ForestGreen property" Url="html/P_VRageMath_Color_ForestGreen.htm" />
   <HelpKINode Title="Forward enumeration member">
     <HelpKINode Title="Base27Directions.Direction Enumeration" Url="html/T_VRageMath_Base27Directions_Direction.htm" />
@@ -2043,6 +2100,24 @@
   <HelpKINode Title="Front enumeration member" Url="html/T_VRageMath_PlaneIntersectionType.htm" />
   <HelpKINode Title="FrontExtend property" Url="html/P_Sandbox_ModAPI_Ingame_IMySensorBlock_FrontExtend.htm" />
   <HelpKINode Title="Fuchsia property" Url="html/P_VRageMath_Color_Fuchsia.htm" />
+  <HelpKINode Title="Future(Of T) structure">
+    <HelpKINode Title="Future(T) Structure" Url="html/T_ParallelTasks_Future_1.htm" />
+    <HelpKINode Title="about Future(Of T) structure" Url="html/T_ParallelTasks_Future_1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_Future_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_Future_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Future(Of T).Exceptions property" Url="html/P_ParallelTasks_Future_1_Exceptions.htm" />
+  <HelpKINode Title="Future(Of T).GetResult method" Url="html/M_ParallelTasks_Future_1_GetResult.htm" />
+  <HelpKINode Title="Future(Of T).IsComplete property" Url="html/P_ParallelTasks_Future_1_IsComplete.htm" />
+  <HelpKINode Title="Future&lt;T&gt; structure">
+    <HelpKINode Title="Future(T) Structure" Url="html/T_ParallelTasks_Future_1.htm" />
+    <HelpKINode Title="about Future&lt;T&gt; structure" Url="html/T_ParallelTasks_Future_1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_Future_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_Future_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Future&lt;T&gt;.Exceptions property" Url="html/P_ParallelTasks_Future_1_Exceptions.htm" />
+  <HelpKINode Title="Future&lt;T&gt;.GetResult method" Url="html/M_ParallelTasks_Future_1_GetResult.htm" />
+  <HelpKINode Title="Future&lt;T&gt;.IsComplete property" Url="html/P_ParallelTasks_Future_1_IsComplete.htm" />
   <HelpKINode Title="G property" Url="html/P_VRageMath_Color_G.htm" />
   <HelpKINode Title="Gainsboro property" Url="html/P_VRageMath_Color_Gainsboro.htm" />
   <HelpKINode Title="GameDateTime property" Url="html/P_Sandbox_ModAPI_IMySession_GameDateTime.htm" />
@@ -2053,13 +2128,14 @@
   <HelpKINode Title="GamePaths property" Url="html/P_Sandbox_ModAPI_IMyUtilities_GamePaths.htm" />
   <HelpKINode Title="GameTime property" Url="html/P_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_GameTime.htm" />
   <HelpKINode Title="GameType property" Url="html/P_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_GameType.htm" />
+  <HelpKINode Title="Get method" Url="html/M_ParallelTasks_Pool_1_Get.htm" />
   <HelpKINode Title="GetAABB method">
     <HelpKINode Title="MyOrientedBoundingBox.GetAABB Method " Url="html/M_VRageMath_MyOrientedBoundingBox_GetAABB.htm" />
     <HelpKINode Title="MyOrientedBoundingBoxD.GetAABB Method " Url="html/M_VRageMath_MyOrientedBoundingBoxD_GetAABB.htm" />
   </HelpKINode>
   <HelpKINode Title="GetAabb method">
-    <HelpKINode Title="MyDynamicAABBTreeD.GetAabb Method " Url="html/M_VRageMath_MyDynamicAABBTreeD_GetAabb.htm" />
     <HelpKINode Title="MyDynamicAABBTree.GetAabb Method " Url="html/M_VRageMath_MyDynamicAABBTree_GetAabb.htm" />
+    <HelpKINode Title="MyDynamicAABBTreeD.GetAabb Method " Url="html/M_VRageMath_MyDynamicAABBTreeD_GetAabb.htm" />
   </HelpKINode>
   <HelpKINode Title="GetActions method">
     <HelpKINode Title="IMyTerminalActionsHelper.GetActions Method " Url="html/M_Sandbox_ModAPI_IMyTerminalActionsHelper_GetActions.htm" />
@@ -2163,7 +2239,10 @@
   <HelpKINode Title="GetEntity method" Url="html/M_Sandbox_ModAPI_IMyEntities_GetEntity.htm" />
   <HelpKINode Title="GetEntityById method" Url="html/M_Sandbox_ModAPI_IMyEntities_GetEntityById.htm" />
   <HelpKINode Title="GetEntityByName method" Url="html/M_Sandbox_ModAPI_IMyEntities_GetEntityByName.htm" />
-  <HelpKINode Title="GetEnumerator method" Url="html/M_VRageMath_CurveKeyCollection_GetEnumerator.htm" />
+  <HelpKINode Title="GetEnumerator method">
+    <HelpKINode Title="CurveKeyCollection.GetEnumerator Method " Url="html/M_VRageMath_CurveKeyCollection_GetEnumerator.htm" />
+    <HelpKINode Title="Hashtable(Key, Data).GetEnumerator Method " Url="html/M_ParallelTasks_Hashtable_2_GetEnumerator.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetEulerAnglesXYZ method">
     <HelpKINode Title="Matrix.GetEulerAnglesXYZ Method " Url="html/M_VRageMath_Matrix_GetEulerAnglesXYZ.htm" />
     <HelpKINode Title="MatrixD.GetEulerAnglesXYZ Method " Url="html/M_VRageMath_MatrixD_GetEulerAnglesXYZ.htm" />
@@ -2285,8 +2364,8 @@
   <HelpKINode Title="GetMininum(Of T) method" Url="html/M_Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_GetMininum__1.htm" />
   <HelpKINode Title="GetMininum&lt;T&gt; method" Url="html/M_Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_GetMininum__1.htm" />
   <HelpKINode Title="GetMissingComponents method">
-    <HelpKINode Title="IMySlimBlock.GetMissingComponents Method " Url="html/M_Sandbox_ModAPI_Ingame_IMySlimBlock_GetMissingComponents.htm" />
     <HelpKINode Title="IMySlimBlock.GetMissingComponents Method " Url="html/M_Sandbox_ModAPI_IMySlimBlock_GetMissingComponents.htm" />
+    <HelpKINode Title="IMySlimBlock.GetMissingComponents Method " Url="html/M_Sandbox_ModAPI_Ingame_IMySlimBlock_GetMissingComponents.htm" />
   </HelpKINode>
   <HelpKINode Title="GetName method" Url="html/M_VRage_MyEnum_1_GetName.htm" />
   <HelpKINode Title="GetNearestBiggerPowerOfTwo method" Url="html/Overload_VRageMath_MathHelper_GetNearestBiggerPowerOfTwo.htm" />
@@ -2314,8 +2393,8 @@
   </HelpKINode>
   <HelpKINode Title="GetOverlappingWithSphere method" Url="html/M_Sandbox_ModAPI_IMyVoxelMaps_GetOverlappingWithSphere.htm" />
   <HelpKINode Title="GetOwnerFactionTag method">
-    <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetOwnerFactionTag.htm" />
     <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetOwnerFactionTag.htm" />
+    <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetOwnerFactionTag.htm" />
   </HelpKINode>
   <HelpKINode Title="GetPerpendicular method" Url="html/M_VRageMath_Base6Directions_GetPerpendicular.htm" />
   <HelpKINode Title="GetPlayerControllingEntity method" Url="html/M_Sandbox_ModAPI_IMyPlayerCollection_GetPlayerControllingEntity.htm" />
@@ -2339,6 +2418,7 @@
   <HelpKINode Title="GetQuaternion method" Url="html/M_VRageMath_MyBlockOrientation_GetQuaternion.htm" />
   <HelpKINode Title="GetRelationBetweenFactions method" Url="html/M_Sandbox_ModAPI_IMyFactionCollection_GetRelationBetweenFactions.htm" />
   <HelpKINode Title="GetRelationTo method" Url="html/M_Sandbox_ModAPI_IMyPlayer_GetRelationTo.htm" />
+  <HelpKINode Title="GetResult method" Url="html/M_ParallelTasks_Future_1_GetResult.htm" />
   <HelpKINode Title="GetRoot method">
     <HelpKINode Title="MyDynamicAABBTree.GetRoot Method " Url="html/M_VRageMath_MyDynamicAABBTree_GetRoot.htm" />
     <HelpKINode Title="MyDynamicAABBTreeD.GetRoot Method " Url="html/M_VRageMath_MyDynamicAABBTreeD_GetRoot.htm" />
@@ -2377,8 +2457,8 @@
     <HelpKINode Title="MyDynamicAABBTreeD.GetUserData(T) Method " Url="html/M_VRageMath_MyDynamicAABBTreeD_GetUserData__1.htm" />
   </HelpKINode>
   <HelpKINode Title="GetUserRelationToOwner method">
-    <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetUserRelationToOwner.htm" />
     <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetUserRelationToOwner.htm" />
+    <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetUserRelationToOwner.htm" />
   </HelpKINode>
   <HelpKINode Title="GetValue method" Url="html/M_Sandbox_ModAPI_Interfaces_ITerminalProperty_1_GetValue.htm" />
   <HelpKINode Title="GetValue(Of T) method" Url="html/M_Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_GetValue__1.htm" />
@@ -2427,13 +2507,13 @@
   <HelpKINode Title="GridIntegerToWorld method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GridIntegerToWorld.htm" />
   <HelpKINode Title="Grids property" Url="html/P_Sandbox_ModAPI_IMyPlayer_Grids.htm" />
   <HelpKINode Title="GridSize property">
-    <HelpKINode Title="IMyCubeGrid.GridSize Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_GridSize.htm" />
     <HelpKINode Title="IMyCubeGrid.GridSize Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_GridSize.htm" />
+    <HelpKINode Title="IMyCubeGrid.GridSize Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_GridSize.htm" />
   </HelpKINode>
   <HelpKINode Title="GridSizeEnum field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_CubeGrid_GridSizeEnum.htm" />
   <HelpKINode Title="GridSizeEnum property">
-    <HelpKINode Title="IMyCubeGrid.GridSizeEnum Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_GridSizeEnum.htm" />
     <HelpKINode Title="IMyCubeGrid.GridSizeEnum Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_GridSizeEnum.htm" />
+    <HelpKINode Title="IMyCubeGrid.GridSizeEnum Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_GridSizeEnum.htm" />
   </HelpKINode>
   <HelpKINode Title="GrinderSpeedMultiplier field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SessionSettings_GrinderSpeedMultiplier.htm" />
   <HelpKINode Title="GrinderSpeedMultiplier property" Url="html/P_Sandbox_ModAPI_IMySession_GrinderSpeedMultiplier.htm" />
@@ -2474,13 +2554,37 @@
   <HelpKINode Title="HasAction method" Url="html/M_Sandbox_ModAPI_Ingame_TerminalBlockExtentions_HasAction.htm" />
   <HelpKINode Title="HasCapacityRemaining property" Url="html/P_Sandbox_ModAPI_Ingame_IMyBatteryBlock_HasCapacityRemaining.htm" />
   <HelpKINode Title="HasDeformation property">
-    <HelpKINode Title="IMySlimBlock.HasDeformation Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_HasDeformation.htm" />
     <HelpKINode Title="IMySlimBlock.HasDeformation Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_HasDeformation.htm" />
+    <HelpKINode Title="IMySlimBlock.HasDeformation Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_HasDeformation.htm" />
   </HelpKINode>
   <HelpKINode Title="HasExtendedControl method" Url="html/M_Sandbox_ModAPI_IMyPlayerCollection_HasExtendedControl.htm" />
   <HelpKINode Title="HashCore method" Url="html/M_VRage_Crc32_HashCore.htm" />
   <HelpKINode Title="HashFinal method" Url="html/M_VRage_Crc32_HashFinal.htm" />
   <HelpKINode Title="HashSize property" Url="html/P_VRage_Crc32_HashSize.htm" />
+  <HelpKINode Title="Hashtable(Of Key, Data) class">
+    <HelpKINode Title="Hashtable(Key, Data) Class" Url="html/T_ParallelTasks_Hashtable_2.htm" />
+    <HelpKINode Title="about Hashtable(Of Key, Data) class" Url="html/T_ParallelTasks_Hashtable_2.htm" />
+    <HelpKINode Title="constructor" Url="html/M_ParallelTasks_Hashtable_2__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_Hashtable_2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Hashtable(Of Key, Data).Add method" Url="html/M_ParallelTasks_Hashtable_2_Add.htm" />
+  <HelpKINode Title="Hashtable(Of Key, Data).GetEnumerator method" Url="html/M_ParallelTasks_Hashtable_2_GetEnumerator.htm" />
+  <HelpKINode Title="Hashtable(Of Key, Data).Hashtable constructor" Url="html/M_ParallelTasks_Hashtable_2__ctor.htm" />
+  <HelpKINode Title="Hashtable(Of Key, Data).Remove method" Url="html/M_ParallelTasks_Hashtable_2_Remove.htm" />
+  <HelpKINode Title="Hashtable(Of Key, Data).TryGet method" Url="html/M_ParallelTasks_Hashtable_2_TryGet.htm" />
+  <HelpKINode Title="Hashtable(Of Key, Data).UnsafeSet method" Url="html/M_ParallelTasks_Hashtable_2_UnsafeSet.htm" />
+  <HelpKINode Title="Hashtable&lt;Key, Data&gt; class">
+    <HelpKINode Title="Hashtable(Key, Data) Class" Url="html/T_ParallelTasks_Hashtable_2.htm" />
+    <HelpKINode Title="about Hashtable&lt;Key, Data&gt; class" Url="html/T_ParallelTasks_Hashtable_2.htm" />
+    <HelpKINode Title="constructor" Url="html/M_ParallelTasks_Hashtable_2__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_Hashtable_2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Hashtable&lt;Key, Data&gt;.Add method" Url="html/M_ParallelTasks_Hashtable_2_Add.htm" />
+  <HelpKINode Title="Hashtable&lt;Key, Data&gt;.GetEnumerator method" Url="html/M_ParallelTasks_Hashtable_2_GetEnumerator.htm" />
+  <HelpKINode Title="Hashtable&lt;Key, Data&gt;.Hashtable constructor" Url="html/M_ParallelTasks_Hashtable_2__ctor.htm" />
+  <HelpKINode Title="Hashtable&lt;Key, Data&gt;.Remove method" Url="html/M_ParallelTasks_Hashtable_2_Remove.htm" />
+  <HelpKINode Title="Hashtable&lt;Key, Data&gt;.TryGet method" Url="html/M_ParallelTasks_Hashtable_2_TryGet.htm" />
+  <HelpKINode Title="Hashtable&lt;Key, Data&gt;.UnsafeSet method" Url="html/M_ParallelTasks_Hashtable_2_UnsafeSet.htm" />
   <HelpKINode Title="HasInventory method" Url="html/M_Sandbox_ModAPI_Ingame_TerminalBlockExtentions_HasInventory.htm" />
   <HelpKINode Title="HasLocalPlayerAccess method" Url="html/M_Sandbox_ModAPI_Ingame_IMyTerminalBlock_HasLocalPlayerAccess.htm" />
   <HelpKINode Title="HasNoTranslationOrPerspective method">
@@ -2505,6 +2609,7 @@
   </HelpKINode>
   <HelpKINode Title="Hide method" Url="html/M_Sandbox_ModAPI_IMyHudObjectiveLine_Hide.htm" />
   <HelpKINode Title="Hierarchy property" Url="html/P_Sandbox_ModAPI_IMyEntity_Hierarchy.htm" />
+  <HelpKINode Title="High enumeration member" Url="html/T_ParallelTasks_WorkPriority.htm" />
   <HelpKINode Title="Honeydew property" Url="html/P_VRageMath_Color_Honeydew.htm" />
   <HelpKINode Title="HotPink property" Url="html/P_VRageMath_Color_HotPink.htm" />
   <HelpKINode Title="HSVtoColor method" Url="html/M_VRageMath_ColorExtensions_HSVtoColor.htm" />
@@ -2572,14 +2677,14 @@
   <HelpKINode Title="IMyButtonPanel interface">
     <HelpKINode Title="IMyButtonPanel Interface" Url="html/T_Sandbox_ModAPI_IMyButtonPanel.htm" />
     <HelpKINode Title="IMyButtonPanel Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
-    <HelpKINode Title="about IMyButtonPanel interface" Url="html/T_Sandbox_ModAPI_IMyButtonPanel.htm" />
     <HelpKINode Title="about IMyButtonPanel interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
+    <HelpKINode Title="about IMyButtonPanel interface" Url="html/T_Sandbox_ModAPI_IMyButtonPanel.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyButtonPanel.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyButtonPanel.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyButtonPanel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyButtonPanel.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyButtonPanel.AnyoneCanUse property" Url="html/P_Sandbox_ModAPI_Ingame_IMyButtonPanel_AnyoneCanUse.htm" />
   <HelpKINode Title="IMyButtonPanel.ButtonPressed event" Url="html/E_Sandbox_ModAPI_IMyButtonPanel_ButtonPressed.htm" />
@@ -2709,16 +2814,16 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyControlPanel.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock interface">
-    <HelpKINode Title="IMyCubeBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyCubeBlock.htm" />
     <HelpKINode Title="IMyCubeBlock Interface" Url="html/T_Sandbox_ModAPI_IMyCubeBlock.htm" />
-    <HelpKINode Title="about IMyCubeBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyCubeBlock.htm" />
+    <HelpKINode Title="IMyCubeBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyCubeBlock.htm" />
     <HelpKINode Title="about IMyCubeBlock interface" Url="html/T_Sandbox_ModAPI_IMyCubeBlock.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyCubeBlock.htm" />
+    <HelpKINode Title="about IMyCubeBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyCubeBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyCubeBlock.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyCubeBlock.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyCubeBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyCubeBlock.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyCubeBlock.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyCubeBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyCubeBlock.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyCubeBlock.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.BlockDefinition property">
     <HelpKINode Title="IMyCubeBlock.BlockDefinition Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_BlockDefinition.htm" />
@@ -2727,8 +2832,8 @@
   <HelpKINode Title="IMyCubeBlock.CalcLocalMatrix method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_CalcLocalMatrix.htm" />
   <HelpKINode Title="IMyCubeBlock.CalculateCurrentModel method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_CalculateCurrentModel.htm" />
   <HelpKINode Title="IMyCubeBlock.CheckConnectionAllowed property">
-    <HelpKINode Title="IMyCubeBlock.CheckConnectionAllowed Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_CheckConnectionAllowed.htm" />
     <HelpKINode Title="IMyCubeBlock.CheckConnectionAllowed Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_CheckConnectionAllowed.htm" />
+    <HelpKINode Title="IMyCubeBlock.CheckConnectionAllowed Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_CheckConnectionAllowed.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.CubeGrid property">
     <HelpKINode Title="IMyCubeBlock.CubeGrid Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_CubeGrid.htm" />
@@ -2740,34 +2845,34 @@
     <HelpKINode Title="IMyCubeBlock.DefinitionDisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DefinitionDisplayNameText.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.DisassembleRatio property">
-    <HelpKINode Title="IMyCubeBlock.DisassembleRatio Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DisassembleRatio.htm" />
     <HelpKINode Title="IMyCubeBlock.DisassembleRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_DisassembleRatio.htm" />
+    <HelpKINode Title="IMyCubeBlock.DisassembleRatio Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DisassembleRatio.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.DisplayNameText property">
-    <HelpKINode Title="IMyCubeBlock.DisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DisplayNameText.htm" />
     <HelpKINode Title="IMyCubeBlock.DisplayNameText Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_DisplayNameText.htm" />
+    <HelpKINode Title="IMyCubeBlock.DisplayNameText Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_DisplayNameText.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.GetObjectBuilderCubeBlock method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetObjectBuilderCubeBlock.htm" />
   <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag method">
-    <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetOwnerFactionTag.htm" />
     <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetOwnerFactionTag.htm" />
+    <HelpKINode Title="IMyCubeBlock.GetOwnerFactionTag Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetOwnerFactionTag.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.GetPlayerRelationToOwner method">
     <HelpKINode Title="IMyCubeBlock.GetPlayerRelationToOwner Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetPlayerRelationToOwner.htm" />
     <HelpKINode Title="IMyCubeBlock.GetPlayerRelationToOwner Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetPlayerRelationToOwner.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner method">
-    <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetUserRelationToOwner.htm" />
     <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_GetUserRelationToOwner.htm" />
+    <HelpKINode Title="IMyCubeBlock.GetUserRelationToOwner Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_GetUserRelationToOwner.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.Init method" Url="html/Overload_Sandbox_ModAPI_IMyCubeBlock_Init.htm" />
   <HelpKINode Title="IMyCubeBlock.IsBeingHacked property">
-    <HelpKINode Title="IMyCubeBlock.IsBeingHacked Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsBeingHacked.htm" />
     <HelpKINode Title="IMyCubeBlock.IsBeingHacked Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_IsBeingHacked.htm" />
+    <HelpKINode Title="IMyCubeBlock.IsBeingHacked Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsBeingHacked.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.IsFunctional property">
-    <HelpKINode Title="IMyCubeBlock.IsFunctional Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsFunctional.htm" />
     <HelpKINode Title="IMyCubeBlock.IsFunctional Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_IsFunctional.htm" />
+    <HelpKINode Title="IMyCubeBlock.IsFunctional Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsFunctional.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.IsWorking property">
     <HelpKINode Title="IMyCubeBlock.IsWorking Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_IsWorking.htm" />
@@ -2775,16 +2880,16 @@
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.IsWorkingChanged event" Url="html/E_Sandbox_ModAPI_IMyCubeBlock_IsWorkingChanged.htm" />
   <HelpKINode Title="IMyCubeBlock.Max property">
-    <HelpKINode Title="IMyCubeBlock.Max Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_Max.htm" />
     <HelpKINode Title="IMyCubeBlock.Max Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_Max.htm" />
+    <HelpKINode Title="IMyCubeBlock.Max Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_Max.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.Min property">
-    <HelpKINode Title="IMyCubeBlock.Min Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_Min.htm" />
     <HelpKINode Title="IMyCubeBlock.Min Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_Min.htm" />
+    <HelpKINode Title="IMyCubeBlock.Min Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_Min.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.NumberInGrid property">
-    <HelpKINode Title="IMyCubeBlock.NumberInGrid Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_NumberInGrid.htm" />
     <HelpKINode Title="IMyCubeBlock.NumberInGrid Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_NumberInGrid.htm" />
+    <HelpKINode Title="IMyCubeBlock.NumberInGrid Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_NumberInGrid.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.OnBuildSuccess method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_OnBuildSuccess.htm" />
   <HelpKINode Title="IMyCubeBlock.OnDestroy method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_OnDestroy.htm" />
@@ -2801,8 +2906,8 @@
     <HelpKINode Title="IMyCubeBlock.OwnerId Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_OwnerId.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.Position property">
-    <HelpKINode Title="IMyCubeBlock.Position Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_Position.htm" />
     <HelpKINode Title="IMyCubeBlock.Position Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_Position.htm" />
+    <HelpKINode Title="IMyCubeBlock.Position Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_Position.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeBlock.RaycastDetectors method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_RaycastDetectors.htm" />
   <HelpKINode Title="IMyCubeBlock.ReloadDetectors method" Url="html/M_Sandbox_ModAPI_IMyCubeBlock_ReloadDetectors.htm" />
@@ -2838,13 +2943,13 @@
   <HelpKINode Title="IMyCubeBuilder.UseSymmetry property" Url="html/P_Sandbox_ModAPI_IMyCubeBuilder_UseSymmetry.htm" />
   <HelpKINode Title="IMyCubeBuilder.UseTransparency property" Url="html/P_Sandbox_ModAPI_IMyCubeBuilder_UseTransparency.htm" />
   <HelpKINode Title="IMyCubeGrid interface">
-    <HelpKINode Title="IMyCubeGrid Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyCubeGrid.htm" />
     <HelpKINode Title="IMyCubeGrid Interface" Url="html/T_Sandbox_ModAPI_IMyCubeGrid.htm" />
+    <HelpKINode Title="IMyCubeGrid Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyCubeGrid.htm" />
     <HelpKINode Title="about IMyCubeGrid interface" Url="html/T_Sandbox_ModAPI_IMyCubeGrid.htm" />
     <HelpKINode Title="about IMyCubeGrid interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyCubeGrid.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyCubeGrid.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyCubeGrid.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyCubeGrid.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyCubeGrid.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyCubeGrid.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyCubeGrid.htm" />
   </HelpKINode>
@@ -2862,15 +2967,15 @@
   <HelpKINode Title="IMyCubeGrid.GetBlocksInsideSphere method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GetBlocksInsideSphere.htm" />
   <HelpKINode Title="IMyCubeGrid.GetClosestCorner method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GetClosestCorner.htm" />
   <HelpKINode Title="IMyCubeGrid.GetCubeBlock method">
-    <HelpKINode Title="IMyCubeGrid.GetCubeBlock Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_GetCubeBlock.htm" />
     <HelpKINode Title="IMyCubeGrid.GetCubeBlock Method " Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GetCubeBlock.htm" />
+    <HelpKINode Title="IMyCubeGrid.GetCubeBlock Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeGrid_GetCubeBlock.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.GetLineIntersectionExactAll method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GetLineIntersectionExactAll.htm" />
   <HelpKINode Title="IMyCubeGrid.GetLineIntersectionExactGrid method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GetLineIntersectionExactGrid.htm" />
   <HelpKINode Title="IMyCubeGrid.GridIntegerToWorld method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_GridIntegerToWorld.htm" />
   <HelpKINode Title="IMyCubeGrid.GridSize property">
-    <HelpKINode Title="IMyCubeGrid.GridSize Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_GridSize.htm" />
     <HelpKINode Title="IMyCubeGrid.GridSize Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_GridSize.htm" />
+    <HelpKINode Title="IMyCubeGrid.GridSize Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_GridSize.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyCubeGrid.GridSizeEnum property">
     <HelpKINode Title="IMyCubeGrid.GridSizeEnum Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_GridSizeEnum.htm" />
@@ -2915,14 +3020,14 @@
   <HelpKINode Title="IMyDestroyableObject.Integrity property" Url="html/P_Sandbox_ModAPI_Interfaces_IMyDestroyableObject_Integrity.htm" />
   <HelpKINode Title="IMyDestroyableObject.OnDestroy method" Url="html/M_Sandbox_ModAPI_Interfaces_IMyDestroyableObject_OnDestroy.htm" />
   <HelpKINode Title="IMyDoor interface">
-    <HelpKINode Title="IMyDoor Interface" Url="html/T_Sandbox_ModAPI_IMyDoor.htm" />
     <HelpKINode Title="IMyDoor Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyDoor.htm" />
-    <HelpKINode Title="about IMyDoor interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyDoor.htm" />
+    <HelpKINode Title="IMyDoor Interface" Url="html/T_Sandbox_ModAPI_IMyDoor.htm" />
     <HelpKINode Title="about IMyDoor interface" Url="html/T_Sandbox_ModAPI_IMyDoor.htm" />
+    <HelpKINode Title="about IMyDoor interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyDoor.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyDoor.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyDoor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyDoor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyDoor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyDoor.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyDoor.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyDoor.htm" />
   </HelpKINode>
@@ -3144,10 +3249,10 @@
     <HelpKINode Title="about IMyFloatingObject interface" Url="html/T_Sandbox_ModAPI_IMyFloatingObject.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyFunctionalBlock interface">
-    <HelpKINode Title="IMyFunctionalBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyFunctionalBlock.htm" />
     <HelpKINode Title="IMyFunctionalBlock Interface" Url="html/T_Sandbox_ModAPI_IMyFunctionalBlock.htm" />
-    <HelpKINode Title="about IMyFunctionalBlock interface" Url="html/T_Sandbox_ModAPI_IMyFunctionalBlock.htm" />
+    <HelpKINode Title="IMyFunctionalBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyFunctionalBlock.htm" />
     <HelpKINode Title="about IMyFunctionalBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyFunctionalBlock.htm" />
+    <HelpKINode Title="about IMyFunctionalBlock interface" Url="html/T_Sandbox_ModAPI_IMyFunctionalBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyFunctionalBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyFunctionalBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyFunctionalBlock.htm" />
@@ -3249,14 +3354,14 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyInteriorLight.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyInventory interface">
-    <HelpKINode Title="IMyInventory Interface" Url="html/T_Sandbox_ModAPI_IMyInventory.htm" />
     <HelpKINode Title="IMyInventory Interface" Url="html/T_Sandbox_ModAPI_Interfaces_IMyInventory.htm" />
+    <HelpKINode Title="IMyInventory Interface" Url="html/T_Sandbox_ModAPI_IMyInventory.htm" />
     <HelpKINode Title="about IMyInventory interface" Url="html/T_Sandbox_ModAPI_Interfaces_IMyInventory.htm" />
     <HelpKINode Title="about IMyInventory interface" Url="html/T_Sandbox_ModAPI_IMyInventory.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyInventory.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Interfaces_IMyInventory.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Interfaces_IMyInventory.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyInventory.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Interfaces_IMyInventory.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyInventory.AddItems method" Url="html/M_Sandbox_ModAPI_IMyInventory_AddItems.htm" />
   <HelpKINode Title="IMyInventory.CanItemsBeAdded method" Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_CanItemsBeAdded.htm" />
@@ -3279,12 +3384,12 @@
   <HelpKINode Title="IMyInventory.RemoveItemsOfType method" Url="html/Overload_Sandbox_ModAPI_IMyInventory_RemoveItemsOfType.htm" />
   <HelpKINode Title="IMyInventory.Size property" Url="html/P_Sandbox_ModAPI_Interfaces_IMyInventory_Size.htm" />
   <HelpKINode Title="IMyInventory.TransferItemFrom method">
-    <HelpKINode Title="IMyInventory.TransferItemFrom Method " Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_TransferItemFrom.htm" />
     <HelpKINode Title="IMyInventory.TransferItemFrom Method " Url="html/Overload_Sandbox_ModAPI_IMyInventory_TransferItemFrom.htm" />
+    <HelpKINode Title="IMyInventory.TransferItemFrom Method " Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_TransferItemFrom.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyInventory.TransferItemTo method">
-    <HelpKINode Title="IMyInventory.TransferItemTo Method " Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_TransferItemTo.htm" />
     <HelpKINode Title="IMyInventory.TransferItemTo Method " Url="html/Overload_Sandbox_ModAPI_IMyInventory_TransferItemTo.htm" />
+    <HelpKINode Title="IMyInventory.TransferItemTo Method " Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_TransferItemTo.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyInventoryItem interface">
     <HelpKINode Title="IMyInventoryItem Interface" Url="html/T_Sandbox_ModAPI_Interfaces_IMyInventoryItem.htm" />
@@ -3311,10 +3416,10 @@
     <HelpKINode Title="about IMyLandingGear interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyLandingGear.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyLandingGear.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyLandingGear.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyLandingGear.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyLandingGear.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyLandingGear.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyLandingGear.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyLandingGear.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyLandingGear.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyLandingGear.BreakForce property" Url="html/P_Sandbox_ModAPI_Ingame_IMyLandingGear_BreakForce.htm" />
   <HelpKINode Title="IMyLandingGear.StateChanged event" Url="html/E_Sandbox_ModAPI_IMyLandingGear_StateChanged.htm" />
@@ -3394,16 +3499,16 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyMotorBase.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyMotorStator interface">
-    <HelpKINode Title="IMyMotorStator Interface" Url="html/T_Sandbox_ModAPI_IMyMotorStator.htm" />
     <HelpKINode Title="IMyMotorStator Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
-    <HelpKINode Title="about IMyMotorStator interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
+    <HelpKINode Title="IMyMotorStator Interface" Url="html/T_Sandbox_ModAPI_IMyMotorStator.htm" />
     <HelpKINode Title="about IMyMotorStator interface" Url="html/T_Sandbox_ModAPI_IMyMotorStator.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
+    <HelpKINode Title="about IMyMotorStator interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyMotorStator.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyMotorStator.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyMotorStator.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyMotorStator.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyMotorStator.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyMotorStator.BrakingTorque property" Url="html/P_Sandbox_ModAPI_Ingame_IMyMotorStator_BrakingTorque.htm" />
   <HelpKINode Title="IMyMotorStator.Displacement property" Url="html/P_Sandbox_ModAPI_Ingame_IMyMotorStator_Displacement.htm" />
@@ -3469,10 +3574,10 @@
     <HelpKINode Title="IMyPistonBase Interface" Url="html/T_Sandbox_ModAPI_IMyPistonBase.htm" />
     <HelpKINode Title="about IMyPistonBase interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyPistonBase.htm" />
     <HelpKINode Title="about IMyPistonBase interface" Url="html/T_Sandbox_ModAPI_IMyPistonBase.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyPistonBase.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyPistonBase.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyPistonBase.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyPistonBase.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyPistonBase.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyPistonBase.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyPistonBase.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyPistonBase.htm" />
   </HelpKINode>
@@ -3514,16 +3619,16 @@
   <HelpKINode Title="IMyPlayerCollection.TryExtendControl method" Url="html/M_Sandbox_ModAPI_IMyPlayerCollection_TryExtendControl.htm" />
   <HelpKINode Title="IMyPlayerCollection.TryReduceControl method" Url="html/M_Sandbox_ModAPI_IMyPlayerCollection_TryReduceControl.htm" />
   <HelpKINode Title="IMyProductionBlock interface">
-    <HelpKINode Title="IMyProductionBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
     <HelpKINode Title="IMyProductionBlock Interface" Url="html/T_Sandbox_ModAPI_IMyProductionBlock.htm" />
-    <HelpKINode Title="about IMyProductionBlock interface" Url="html/T_Sandbox_ModAPI_IMyProductionBlock.htm" />
+    <HelpKINode Title="IMyProductionBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
     <HelpKINode Title="about IMyProductionBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
+    <HelpKINode Title="about IMyProductionBlock interface" Url="html/T_Sandbox_ModAPI_IMyProductionBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyProductionBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyProductionBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyProductionBlock.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyProductionBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyProductionBlock.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyProductionBlock.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyProductionBlock.IsProducing property" Url="html/P_Sandbox_ModAPI_Ingame_IMyProductionBlock_IsProducing.htm" />
   <HelpKINode Title="IMyProductionBlock.IsQueueEmpty property" Url="html/P_Sandbox_ModAPI_Ingame_IMyProductionBlock_IsQueueEmpty.htm" />
@@ -3597,16 +3702,16 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyRemoteControl.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySensorBlock interface">
-    <HelpKINode Title="IMySensorBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
     <HelpKINode Title="IMySensorBlock Interface" Url="html/T_Sandbox_ModAPI_IMySensorBlock.htm" />
-    <HelpKINode Title="about IMySensorBlock interface" Url="html/T_Sandbox_ModAPI_IMySensorBlock.htm" />
+    <HelpKINode Title="IMySensorBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
     <HelpKINode Title="about IMySensorBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
+    <HelpKINode Title="about IMySensorBlock interface" Url="html/T_Sandbox_ModAPI_IMySensorBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMySensorBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMySensorBlock.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMySensorBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMySensorBlock.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMySensorBlock.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySensorBlock.BackExtend property" Url="html/P_Sandbox_ModAPI_Ingame_IMySensorBlock_BackExtend.htm" />
   <HelpKINode Title="IMySensorBlock.BottomExtend property" Url="html/P_Sandbox_ModAPI_Ingame_IMySensorBlock_BottomExtend.htm" />
@@ -3733,10 +3838,10 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyShipGrinder.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyShipMergeBlock interface">
-    <HelpKINode Title="IMyShipMergeBlock Interface" Url="html/T_Sandbox_ModAPI_IMyShipMergeBlock.htm" />
     <HelpKINode Title="IMyShipMergeBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyShipMergeBlock.htm" />
-    <HelpKINode Title="about IMyShipMergeBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyShipMergeBlock.htm" />
+    <HelpKINode Title="IMyShipMergeBlock Interface" Url="html/T_Sandbox_ModAPI_IMyShipMergeBlock.htm" />
     <HelpKINode Title="about IMyShipMergeBlock interface" Url="html/T_Sandbox_ModAPI_IMyShipMergeBlock.htm" />
+    <HelpKINode Title="about IMyShipMergeBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyShipMergeBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyShipMergeBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyShipMergeBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyShipMergeBlock.htm" />
@@ -3761,18 +3866,18 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyShipWelder.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock interface">
-    <HelpKINode Title="IMySlimBlock Interface" Url="html/T_Sandbox_ModAPI_IMySlimBlock.htm" />
     <HelpKINode Title="IMySlimBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMySlimBlock.htm" />
-    <HelpKINode Title="about IMySlimBlock interface" Url="html/T_Sandbox_ModAPI_IMySlimBlock.htm" />
+    <HelpKINode Title="IMySlimBlock Interface" Url="html/T_Sandbox_ModAPI_IMySlimBlock.htm" />
     <HelpKINode Title="about IMySlimBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMySlimBlock.htm" />
+    <HelpKINode Title="about IMySlimBlock interface" Url="html/T_Sandbox_ModAPI_IMySlimBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMySlimBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMySlimBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMySlimBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMySlimBlock.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.AccumulatedDamage property">
-    <HelpKINode Title="IMySlimBlock.AccumulatedDamage Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_AccumulatedDamage.htm" />
     <HelpKINode Title="IMySlimBlock.AccumulatedDamage Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_AccumulatedDamage.htm" />
+    <HelpKINode Title="IMySlimBlock.AccumulatedDamage Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_AccumulatedDamage.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.AddNeighbours method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_AddNeighbours.htm" />
   <HelpKINode Title="IMySlimBlock.ApplyAccumulatedDamage method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_ApplyAccumulatedDamage.htm" />
@@ -3793,8 +3898,8 @@
     <HelpKINode Title="IMySlimBlock.CubeGrid Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_CubeGrid.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.CurrentDamage property">
-    <HelpKINode Title="IMySlimBlock.CurrentDamage Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_CurrentDamage.htm" />
     <HelpKINode Title="IMySlimBlock.CurrentDamage Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_CurrentDamage.htm" />
+    <HelpKINode Title="IMySlimBlock.CurrentDamage Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_CurrentDamage.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.DamageRatio property">
     <HelpKINode Title="IMySlimBlock.DamageRatio Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_DamageRatio.htm" />
@@ -3822,24 +3927,24 @@
     <HelpKINode Title="IMySlimBlock.IsDestroyed Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_IsDestroyed.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.IsFullIntegrity property">
-    <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_IsFullIntegrity.htm" />
     <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_IsFullIntegrity.htm" />
+    <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_IsFullIntegrity.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.IsFullyDismounted property">
     <HelpKINode Title="IMySlimBlock.IsFullyDismounted Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_IsFullyDismounted.htm" />
     <HelpKINode Title="IMySlimBlock.IsFullyDismounted Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_IsFullyDismounted.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.MaxDeformation property">
-    <HelpKINode Title="IMySlimBlock.MaxDeformation Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_MaxDeformation.htm" />
     <HelpKINode Title="IMySlimBlock.MaxDeformation Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_MaxDeformation.htm" />
+    <HelpKINode Title="IMySlimBlock.MaxDeformation Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_MaxDeformation.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.MaxIntegrity property">
     <HelpKINode Title="IMySlimBlock.MaxIntegrity Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_MaxIntegrity.htm" />
     <HelpKINode Title="IMySlimBlock.MaxIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_MaxIntegrity.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.Position property">
-    <HelpKINode Title="IMySlimBlock.Position Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_Position.htm" />
     <HelpKINode Title="IMySlimBlock.Position Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_Position.htm" />
+    <HelpKINode Title="IMySlimBlock.Position Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_Position.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.RemoveNeighbours method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_RemoveNeighbours.htm" />
   <HelpKINode Title="IMySlimBlock.SetToConstructionSite method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_SetToConstructionSite.htm" />
@@ -3850,12 +3955,12 @@
   <HelpKINode Title="IMySlimBlock.SpawnConstructionStockpile method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_SpawnConstructionStockpile.htm" />
   <HelpKINode Title="IMySlimBlock.SpawnFirstItemInConstructionStockpile method" Url="html/M_Sandbox_ModAPI_IMySlimBlock_SpawnFirstItemInConstructionStockpile.htm" />
   <HelpKINode Title="IMySlimBlock.StockpileAllocated property">
-    <HelpKINode Title="IMySlimBlock.StockpileAllocated Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_StockpileAllocated.htm" />
     <HelpKINode Title="IMySlimBlock.StockpileAllocated Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_StockpileAllocated.htm" />
+    <HelpKINode Title="IMySlimBlock.StockpileAllocated Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_StockpileAllocated.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.StockpileEmpty property">
-    <HelpKINode Title="IMySlimBlock.StockpileEmpty Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_StockpileEmpty.htm" />
     <HelpKINode Title="IMySlimBlock.StockpileEmpty Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_StockpileEmpty.htm" />
+    <HelpKINode Title="IMySlimBlock.StockpileEmpty Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_StockpileEmpty.htm" />
   </HelpKINode>
   <HelpKINode Title="IMySlimBlock.UpdateVisual method">
     <HelpKINode Title="IMySlimBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_Ingame_IMySlimBlock_UpdateVisual.htm" />
@@ -3924,16 +4029,16 @@
   <HelpKINode Title="IMyTerminalActionsHelper.GetTerminalSystemForGrid method" Url="html/M_Sandbox_ModAPI_IMyTerminalActionsHelper_GetTerminalSystemForGrid.htm" />
   <HelpKINode Title="IMyTerminalActionsHelper.SearchActionsOfName method" Url="html/M_Sandbox_ModAPI_IMyTerminalActionsHelper_SearchActionsOfName.htm" />
   <HelpKINode Title="IMyTerminalBlock interface">
-    <HelpKINode Title="IMyTerminalBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
     <HelpKINode Title="IMyTerminalBlock Interface" Url="html/T_Sandbox_ModAPI_IMyTerminalBlock.htm" />
-    <HelpKINode Title="about IMyTerminalBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
+    <HelpKINode Title="IMyTerminalBlock Interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
     <HelpKINode Title="about IMyTerminalBlock interface" Url="html/T_Sandbox_ModAPI_IMyTerminalBlock.htm" />
+    <HelpKINode Title="about IMyTerminalBlock interface" Url="html/T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Sandbox_ModAPI_IMyTerminalBlock.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyTerminalBlock.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Sandbox_ModAPI_IMyTerminalBlock.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_IMyTerminalBlock.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Sandbox_ModAPI_Ingame_IMyTerminalBlock.htm" />
   </HelpKINode>
   <HelpKINode Title="IMyTerminalBlock.CustomName property" Url="html/P_Sandbox_ModAPI_Ingame_IMyTerminalBlock_CustomName.htm" />
   <HelpKINode Title="IMyTerminalBlock.CustomNameChanged event" Url="html/E_Sandbox_ModAPI_IMyTerminalBlock_CustomNameChanged.htm" />
@@ -4117,12 +4222,14 @@
   </HelpKINode>
   <HelpKINode Title="Initialize method" Url="html/M_VRage_Crc32_Initialize.htm" />
   <HelpKINode Title="InitOrientation method" Url="html/Overload_Sandbox_ModAPI_IMySlimBlock_InitOrientation.htm" />
+  <HelpKINode Title="InnerExceptions property" Url="html/P_ParallelTasks_TaskException_InnerExceptions.htm" />
   <HelpKINode Title="InputInventory field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ProductionBlock_InputInventory.htm" />
   <HelpKINode Title="InScene enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyPersistentEntityFlags2.htm" />
   <HelpKINode Title="InScene property" Url="html/P_Sandbox_ModAPI_IMyEntity_InScene.htm" />
   <HelpKINode Title="Instance property">
     <HelpKINode Title="EnumComparer(TEnum).Instance Property " Url="html/P_VRage_EnumComparer_1_Instance.htm" />
     <HelpKINode Title="MyRandom.Instance Property " Url="html/P_VRage_MyRandom_Instance.htm" />
+    <HelpKINode Title="Singleton(T).Instance Property " Url="html/P_ParallelTasks_Singleton_1_Instance.htm" />
   </HelpKINode>
   <HelpKINode Title="InstanceComparer(Of T) class">
     <HelpKINode Title="InstanceComparer(T) Class" Url="html/T_VRage_InstanceComparer_1.htm" />
@@ -4224,6 +4331,13 @@
   <HelpKINode Title="InvokeOnGameThread method" Url="html/M_Sandbox_ModAPI_IMyUtilities_InvokeOnGameThread.htm" />
   <HelpKINode Title="IP field" Url="html/F_Sandbox_Common_ObjectBuilders_MyConfigDedicatedData_IP.htm" />
   <HelpKINode Title="IP property" Url="html/P_Sandbox_ModAPI_IMyConfigDedicated_IP.htm" />
+  <HelpKINode Title="IPrioritizedWork interface">
+    <HelpKINode Title="IPrioritizedWork Interface" Url="html/T_ParallelTasks_IPrioritizedWork.htm" />
+    <HelpKINode Title="about IPrioritizedWork interface" Url="html/T_ParallelTasks_IPrioritizedWork.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_IPrioritizedWork.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_IPrioritizedWork.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IPrioritizedWork.Priority property" Url="html/P_ParallelTasks_IPrioritizedWork_Priority.htm" />
   <HelpKINode Title="IResourceLock interface">
     <HelpKINode Title="IResourceLock Interface" Url="html/T_VRage_IResourceLock.htm" />
     <HelpKINode Title="about IResourceLock interface" Url="html/T_VRage_IResourceLock.htm" />
@@ -4258,6 +4372,10 @@
   <HelpKINode Title="IsBoxIntersectingBoundingBoxOfThisVoxelMap method" Url="html/M_Sandbox_ModAPI_IMyVoxelMap_IsBoxIntersectingBoundingBoxOfThisVoxelMap.htm" />
   <HelpKINode Title="IsCameraAwaitingEntity property" Url="html/P_Sandbox_ModAPI_IMySession_IsCameraAwaitingEntity.htm" />
   <HelpKINode Title="IsCCDForProjectiles property" Url="html/P_Sandbox_ModAPI_IMyEntity_IsCCDForProjectiles.htm" />
+  <HelpKINode Title="IsComplete property">
+    <HelpKINode Title="Future(T).IsComplete Property " Url="html/P_ParallelTasks_Future_1_IsComplete.htm" />
+    <HelpKINode Title="Task.IsComplete Property " Url="html/P_ParallelTasks_Task_IsComplete.htm" />
+  </HelpKINode>
   <HelpKINode Title="IsConnectedTo method" Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_IsConnectedTo.htm" />
   <HelpKINode Title="IsConstant property" Url="html/P_VRageMath_Curve_IsConstant.htm" />
   <HelpKINode Title="IsContentWorlds field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_LastSession_IsContentWorlds.htm" />
@@ -4280,8 +4398,8 @@
   <HelpKINode Title="IsFounder method" Url="html/M_Sandbox_ModAPI_IMyFaction_IsFounder.htm" />
   <HelpKINode Title="IsFull property" Url="html/P_Sandbox_ModAPI_Interfaces_IMyInventory_IsFull.htm" />
   <HelpKINode Title="IsFullIntegrity property">
-    <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_IsFullIntegrity.htm" />
     <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_IsFullIntegrity.htm" />
+    <HelpKINode Title="IMySlimBlock.IsFullIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_IsFullIntegrity.htm" />
   </HelpKINode>
   <HelpKINode Title="IsFullyDismounted property">
     <HelpKINode Title="IMySlimBlock.IsFullyDismounted Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_IsFullyDismounted.htm" />
@@ -4489,6 +4607,23 @@
   <HelpKINode Title="ITerminalProperty&lt;TValue&gt;.GetValue method" Url="html/M_Sandbox_ModAPI_Interfaces_ITerminalProperty_1_GetValue.htm" />
   <HelpKINode Title="ITerminalProperty&lt;TValue&gt;.SetValue method" Url="html/M_Sandbox_ModAPI_Interfaces_ITerminalProperty_1_SetValue.htm" />
   <HelpKINode Title="Ivory property" Url="html/P_VRageMath_Color_Ivory.htm" />
+  <HelpKINode Title="IWork interface">
+    <HelpKINode Title="IWork Interface" Url="html/T_ParallelTasks_IWork.htm" />
+    <HelpKINode Title="about IWork interface" Url="html/T_ParallelTasks_IWork.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_IWork.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_IWork.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IWork.DoWork method" Url="html/M_ParallelTasks_IWork_DoWork.htm" />
+  <HelpKINode Title="IWork.Options property" Url="html/P_ParallelTasks_IWork_Options.htm" />
+  <HelpKINode Title="IWorkScheduler interface">
+    <HelpKINode Title="IWorkScheduler Interface" Url="html/T_ParallelTasks_IWorkScheduler.htm" />
+    <HelpKINode Title="about IWorkScheduler interface" Url="html/T_ParallelTasks_IWorkScheduler.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_IWorkScheduler.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_IWorkScheduler.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IWorkScheduler.Schedule method" Url="html/M_ParallelTasks_IWorkScheduler_Schedule.htm" />
+  <HelpKINode Title="IWorkScheduler.ThreadCount property" Url="html/P_ParallelTasks_IWorkScheduler_ThreadCount.htm" />
+  <HelpKINode Title="IWorkScheduler.WaitForTasksToFinish method" Url="html/M_ParallelTasks_IWorkScheduler_WaitForTasksToFinish.htm" />
   <HelpKINode Title="JetpackEnabled field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Character_JetpackEnabled.htm" />
   <HelpKINode Title="JoinRequests property" Url="html/P_Sandbox_ModAPI_IMyFaction_JoinRequests.htm" />
   <HelpKINode Title="Jump method" Url="html/M_Sandbox_ModAPI_Interfaces_IMyControllableEntity_Jump.htm" />
@@ -4662,6 +4797,7 @@
   <HelpKINode Title="LoopPeriod field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SoundBlock_LoopPeriod.htm" />
   <HelpKINode Title="LoopPeriod property" Url="html/P_Sandbox_ModAPI_Ingame_IMySoundBlock_LoopPeriod.htm" />
   <HelpKINode Title="LootingCounter field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Character_LootingCounter.htm" />
+  <HelpKINode Title="Low enumeration member" Url="html/T_ParallelTasks_WorkPriority.htm" />
   <HelpKINode Title="LowerLimit property" Url="html/P_Sandbox_ModAPI_Ingame_IMyMotorStator_LowerLimit.htm" />
   <HelpKINode Title="M11 field">
     <HelpKINode Title="Matrix.M11 Field" Url="html/F_VRageMath_Matrix_M11.htm" />
@@ -5034,8 +5170,8 @@
   </HelpKINode>
   <HelpKINode Title="MaxAngle field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_MotorStator_MaxAngle.htm" />
   <HelpKINode Title="MaxDeformation property">
-    <HelpKINode Title="IMySlimBlock.MaxDeformation Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_MaxDeformation.htm" />
     <HelpKINode Title="IMySlimBlock.MaxDeformation Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_MaxDeformation.htm" />
+    <HelpKINode Title="IMySlimBlock.MaxDeformation Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_MaxDeformation.htm" />
   </HelpKINode>
   <HelpKINode Title="MaxFloatingObjects field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SessionSettings_MaxFloatingObjects.htm" />
   <HelpKINode Title="MaxFloatingObjects property">
@@ -5043,6 +5179,7 @@
     <HelpKINode Title="MyObjectBuilder_Checkpoint.MaxFloatingObjects Property " Url="html/P_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_MaxFloatingObjects.htm" />
   </HelpKINode>
   <HelpKINode Title="MaxGlassDistSq property" Url="html/P_Sandbox_ModAPI_IMyEntity_MaxGlassDistSq.htm" />
+  <HelpKINode Title="MaximumThreads property" Url="html/P_ParallelTasks_WorkOptions_MaximumThreads.htm" />
   <HelpKINode Title="MaxIntegrity property">
     <HelpKINode Title="IMySlimBlock.MaxIntegrity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_MaxIntegrity.htm" />
     <HelpKINode Title="IMySlimBlock.MaxIntegrity Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_MaxIntegrity.htm" />
@@ -5124,8 +5261,8 @@
   <HelpKINode Title="Min property">
     <HelpKINode Title="IMyCubeBlock.Min Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_Min.htm" />
     <HelpKINode Title="IMyCubeBlock.Min Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_Min.htm" />
-    <HelpKINode Title="IMyCubeGrid.Min Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_Min.htm" />
     <HelpKINode Title="IMyCubeGrid.Min Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeGrid_Min.htm" />
+    <HelpKINode Title="IMyCubeGrid.Min Property " Url="html/P_Sandbox_ModAPI_IMyCubeGrid_Min.htm" />
   </HelpKINode>
   <HelpKINode Title="MinAngle field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_MotorStator_MinAngle.htm" />
   <HelpKINode Title="MinLimit field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_PistonBase_MinLimit.htm" />
@@ -7876,13 +8013,13 @@
   <HelpKINode Title="MyUShort4.Y field" Url="html/F_VRageMath_MyUShort4_Y.htm" />
   <HelpKINode Title="MyUShort4.Z field" Url="html/F_VRageMath_MyUShort4_Z.htm" />
   <HelpKINode Title="Name field">
-    <HelpKINode Title="MyObjectBuilder_EntityBase.Name Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_EntityBase_Name.htm" />
-    <HelpKINode Title="MyObjectBuilder_FracturedBlock.ShapeB.Name Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_FracturedBlock_ShapeB_Name.htm" />
-    <HelpKINode Title="MyObjectBuilder_FracturedPiece.Shape.Name Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_FracturedPiece_Shape_Name.htm" />
     <HelpKINode Title="MyObjectBuilder_BlockGroup.Name Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_BlockGroup_Name.htm" />
     <HelpKINode Title="MyObjectBuilder_Checkpoint.ModItem.Name Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_ModItem_Name.htm" />
     <HelpKINode Title="MyObjectBuilder_Checkpoint.PlayerItem.Name Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_PlayerItem_Name.htm" />
     <HelpKINode Title="MyObjectBuilder_Client.Name Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Client_Name.htm" />
+    <HelpKINode Title="MyObjectBuilder_FracturedBlock.ShapeB.Name Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_FracturedBlock_ShapeB_Name.htm" />
+    <HelpKINode Title="MyObjectBuilder_EntityBase.Name Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_EntityBase_Name.htm" />
+    <HelpKINode Title="MyObjectBuilder_FracturedPiece.Shape.Name Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_FracturedPiece_Shape_Name.htm" />
   </HelpKINode>
   <HelpKINode Title="name field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Gps_Entry_name.htm" />
   <HelpKINode Title="Name property">
@@ -7945,6 +8082,7 @@
   </HelpKINode>
   <HelpKINode Title="NONE enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_TextPanelAccessFlag.htm" />
   <HelpKINode Title="NonPlayerIdentities field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_NonPlayerIdentities.htm" />
+  <HelpKINode Title="Normal enumeration member" Url="html/T_ParallelTasks_WorkPriority.htm" />
   <HelpKINode Title="NORMAL enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyEnvironmentHostilityEnum.htm" />
   <HelpKINode Title="Normal field">
     <HelpKINode Title="Plane.Normal Field" Url="html/F_VRageMath_Plane_Normal.htm" />
@@ -8024,6 +8162,10 @@
   <HelpKINode Title="Open property" Url="html/P_Sandbox_ModAPI_Ingame_IMyDoor_Open.htm" />
   <HelpKINode Title="Opening field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Door_Opening.htm" />
   <HelpKINode Title="OpenSound field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Door_OpenSound.htm" />
+  <HelpKINode Title="Options property">
+    <HelpKINode Title="ActionWork.Options Property " Url="html/P_ParallelTasks_ActionWork_Options.htm" />
+    <HelpKINode Title="IWork.Options Property " Url="html/P_ParallelTasks_IWork_Options.htm" />
+  </HelpKINode>
   <HelpKINode Title="Orange property" Url="html/P_VRageMath_Color_Orange.htm" />
   <HelpKINode Title="OrangeRed property" Url="html/P_VRageMath_Color_OrangeRed.htm" />
   <HelpKINode Title="Orchid property" Url="html/P_VRageMath_Color_Orchid.htm" />
@@ -8111,7 +8253,52 @@
   <HelpKINode Title="PaleTurquoise property" Url="html/P_VRageMath_Color_PaleTurquoise.htm" />
   <HelpKINode Title="PaleVioletRed property" Url="html/P_VRageMath_Color_PaleVioletRed.htm" />
   <HelpKINode Title="PapayaWhip property" Url="html/P_VRageMath_Color_PapayaWhip.htm" />
+  <HelpKINode Title="Parallel class">
+    <HelpKINode Title="Parallel Class" Url="html/T_ParallelTasks_Parallel.htm" />
+    <HelpKINode Title="about Parallel class" Url="html/T_ParallelTasks_Parallel.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_ParallelTasks_Parallel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_Parallel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_Parallel.htm" />
+  </HelpKINode>
   <HelpKINode Title="Parallel field" Url="html/F_Sandbox_ModAPI_MyAPIGateway_Parallel.htm" />
+  <HelpKINode Title="Parallel.Clean method" Url="html/M_ParallelTasks_Parallel_Clean.htm" />
+  <HelpKINode Title="Parallel.DefaultOptions field" Url="html/F_ParallelTasks_Parallel_DefaultOptions.htm" />
+  <HelpKINode Title="Parallel.Do method" Url="html/Overload_ParallelTasks_Parallel_Do.htm" />
+  <HelpKINode Title="Parallel.For method" Url="html/Overload_ParallelTasks_Parallel_For.htm" />
+  <HelpKINode Title="Parallel.ForEach(Of T) method" Url="html/M_ParallelTasks_Parallel_ForEach__1.htm" />
+  <HelpKINode Title="Parallel.ForEach&lt;T&gt; method" Url="html/M_ParallelTasks_Parallel_ForEach__1.htm" />
+  <HelpKINode Title="Parallel.ProcessorAffinity property" Url="html/P_ParallelTasks_Parallel_ProcessorAffinity.htm" />
+  <HelpKINode Title="Parallel.RunCallbacks method" Url="html/M_ParallelTasks_Parallel_RunCallbacks.htm" />
+  <HelpKINode Title="Parallel.Scheduler property" Url="html/P_ParallelTasks_Parallel_Scheduler.htm" />
+  <HelpKINode Title="Parallel.Start method" Url="html/Overload_ParallelTasks_Parallel_Start.htm" />
+  <HelpKINode Title="Parallel.StartBackground method" Url="html/Overload_ParallelTasks_Parallel_StartBackground.htm" />
+  <HelpKINode Title="Parallel.StartOnEachWorker method" Url="html/M_ParallelTasks_Parallel_StartOnEachWorker.htm" />
+  <HelpKINode Title="Parallel.WaitForAll method" Url="html/M_ParallelTasks_Parallel_WaitForAll.htm" />
+  <HelpKINode Title="ParallelTasks namespace" Url="html/N_ParallelTasks.htm" />
+  <HelpKINode Title="ParallelTasks.ActionWork class" Url="html/T_ParallelTasks_ActionWork.htm" />
+  <HelpKINode Title="ParallelTasks.FixedPriorityScheduler class" Url="html/T_ParallelTasks_FixedPriorityScheduler.htm" />
+  <HelpKINode Title="ParallelTasks.Future(Of T) structure" Url="html/T_ParallelTasks_Future_1.htm" />
+  <HelpKINode Title="ParallelTasks.Future&lt;T&gt; structure" Url="html/T_ParallelTasks_Future_1.htm" />
+  <HelpKINode Title="ParallelTasks.Hashtable(Of Key, Data) class" Url="html/T_ParallelTasks_Hashtable_2.htm" />
+  <HelpKINode Title="ParallelTasks.Hashtable&lt;Key, Data&gt; class" Url="html/T_ParallelTasks_Hashtable_2.htm" />
+  <HelpKINode Title="ParallelTasks.IPrioritizedWork interface" Url="html/T_ParallelTasks_IPrioritizedWork.htm" />
+  <HelpKINode Title="ParallelTasks.IWork interface" Url="html/T_ParallelTasks_IWork.htm" />
+  <HelpKINode Title="ParallelTasks.IWorkScheduler interface" Url="html/T_ParallelTasks_IWorkScheduler.htm" />
+  <HelpKINode Title="ParallelTasks.Parallel class" Url="html/T_ParallelTasks_Parallel.htm" />
+  <HelpKINode Title="ParallelTasks.Pool(Of T) class" Url="html/T_ParallelTasks_Pool_1.htm" />
+  <HelpKINode Title="ParallelTasks.Pool&lt;T&gt; class" Url="html/T_ParallelTasks_Pool_1.htm" />
+  <HelpKINode Title="ParallelTasks.Semaphore class" Url="html/T_ParallelTasks_Semaphore.htm" />
+  <HelpKINode Title="ParallelTasks.SimpleScheduler class" Url="html/T_ParallelTasks_SimpleScheduler.htm" />
+  <HelpKINode Title="ParallelTasks.Singleton(Of T) class" Url="html/T_ParallelTasks_Singleton_1.htm" />
+  <HelpKINode Title="ParallelTasks.Singleton&lt;T&gt; class" Url="html/T_ParallelTasks_Singleton_1.htm" />
+  <HelpKINode Title="ParallelTasks.SpinLock structure" Url="html/T_ParallelTasks_SpinLock.htm" />
+  <HelpKINode Title="ParallelTasks.SpinLockRef class" Url="html/T_ParallelTasks_SpinLockRef.htm" />
+  <HelpKINode Title="ParallelTasks.SpinLockRef.Token structure" Url="html/T_ParallelTasks_SpinLockRef_Token.htm" />
+  <HelpKINode Title="ParallelTasks.Task structure" Url="html/T_ParallelTasks_Task.htm" />
+  <HelpKINode Title="ParallelTasks.TaskException class" Url="html/T_ParallelTasks_TaskException.htm" />
+  <HelpKINode Title="ParallelTasks.WorkOptions structure" Url="html/T_ParallelTasks_WorkOptions.htm" />
+  <HelpKINode Title="ParallelTasks.WorkPriority enumeration" Url="html/T_ParallelTasks_WorkPriority.htm" />
+  <HelpKINode Title="ParallelTasks.WorkStealingScheduler class" Url="html/T_ParallelTasks_WorkStealingScheduler.htm" />
   <HelpKINode Title="Parent property" Url="html/P_Sandbox_ModAPI_IMyEntity_Parent.htm" />
   <HelpKINode Title="Parse method" Url="html/M_Sandbox_Common_ObjectBuilders_MyObjectBuilderType_Parse.htm" />
   <HelpKINode Title="ParseBackwardsCompatible method" Url="html/M_Sandbox_Common_ObjectBuilders_MyObjectBuilderType_ParseBackwardsCompatible.htm" />
@@ -8264,6 +8451,26 @@
     <HelpKINode Title="MyQuad.Point3 Field" Url="html/F_VRageMath_MyQuad_Point3.htm" />
     <HelpKINode Title="MyQuadD.Point3 Field" Url="html/F_VRageMath_MyQuadD_Point3.htm" />
   </HelpKINode>
+  <HelpKINode Title="Pool(Of T) class">
+    <HelpKINode Title="Pool(T) Class" Url="html/T_ParallelTasks_Pool_1.htm" />
+    <HelpKINode Title="about Pool(Of T) class" Url="html/T_ParallelTasks_Pool_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_ParallelTasks_Pool_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_Pool_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Pool(Of T).Clean method" Url="html/M_ParallelTasks_Pool_1_Clean.htm" />
+  <HelpKINode Title="Pool(Of T).Get method" Url="html/M_ParallelTasks_Pool_1_Get.htm" />
+  <HelpKINode Title="Pool(Of T).Pool constructor" Url="html/M_ParallelTasks_Pool_1__ctor.htm" />
+  <HelpKINode Title="Pool(Of T).Return method" Url="html/M_ParallelTasks_Pool_1_Return.htm" />
+  <HelpKINode Title="Pool&lt;T&gt; class">
+    <HelpKINode Title="Pool(T) Class" Url="html/T_ParallelTasks_Pool_1.htm" />
+    <HelpKINode Title="about Pool&lt;T&gt; class" Url="html/T_ParallelTasks_Pool_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_ParallelTasks_Pool_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_Pool_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Pool&lt;T&gt;.Clean method" Url="html/M_ParallelTasks_Pool_1_Clean.htm" />
+  <HelpKINode Title="Pool&lt;T&gt;.Get method" Url="html/M_ParallelTasks_Pool_1_Get.htm" />
+  <HelpKINode Title="Pool&lt;T&gt;.Pool constructor" Url="html/M_ParallelTasks_Pool_1__ctor.htm" />
+  <HelpKINode Title="Pool&lt;T&gt;.Return method" Url="html/M_ParallelTasks_Pool_1_Return.htm" />
   <HelpKINode Title="Position field">
     <HelpKINode Title="CompressedPositionOrientation.Position Field" Url="html/F_VRageMath_CompressedPositionOrientation_Position.htm" />
     <HelpKINode Title="MyObjectBuilder_Sector.Position Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Sector_Position.htm" />
@@ -8276,8 +8483,8 @@
   <HelpKINode Title="Position property">
     <HelpKINode Title="ByteStream.Position Property " Url="html/P_VRage_ByteStream_Position.htm" />
     <HelpKINode Title="CurveKey.Position Property " Url="html/P_VRageMath_CurveKey_Position.htm" />
-    <HelpKINode Title="IMyCubeBlock.Position Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_Position.htm" />
     <HelpKINode Title="IMyCubeBlock.Position Property " Url="html/P_Sandbox_ModAPI_IMyCubeBlock_Position.htm" />
+    <HelpKINode Title="IMyCubeBlock.Position Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyCubeBlock_Position.htm" />
     <HelpKINode Title="IMySlimBlock.Position Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_Position.htm" />
     <HelpKINode Title="IMySlimBlock.Position Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_Position.htm" />
     <HelpKINode Title="ResetableMemoryStream.Position Property " Url="html/P_VRage_ResetableMemoryStream_Position.htm" />
@@ -8302,10 +8509,12 @@
   </HelpKINode>
   <HelpKINode Title="PreviousEnvironmentHostility field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_PreviousEnvironmentHostility.htm" />
   <HelpKINode Title="PrimaryLookaround property" Url="html/P_Sandbox_ModAPI_Interfaces_IMyControllableEntity_PrimaryLookaround.htm" />
+  <HelpKINode Title="Priority property" Url="html/P_ParallelTasks_IPrioritizedWork_Priority.htm" />
   <HelpKINode Title="PRIVATE enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyOnlineModeEnum.htm" />
   <HelpKINode Title="PrivateInfo property" Url="html/P_Sandbox_ModAPI_IMyFaction_PrivateInfo.htm" />
   <HelpKINode Title="ProceduralDensity field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SessionSettings_ProceduralDensity.htm" />
   <HelpKINode Title="ProceduralSeed field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SessionSettings_ProceduralSeed.htm" />
+  <HelpKINode Title="ProcessorAffinity property" Url="html/P_ParallelTasks_Parallel_ProcessorAffinity.htm" />
   <HelpKINode Title="ProducerEnabled field">
     <HelpKINode Title="MyObjectBuilder_Battery.ProducerEnabled Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Battery_ProducerEnabled.htm" />
     <HelpKINode Title="MyObjectBuilder_BatteryBlock.ProducerEnabled Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_BatteryBlock_ProducerEnabled.htm" />
@@ -8428,6 +8637,7 @@
     <HelpKINode Title="MyDynamicAABBTreeD.Query Method " Url="html/M_VRageMath_MyDynamicAABBTreeD_Query.htm" />
   </HelpKINode>
   <HelpKINode Title="Queue field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ProductionBlock_Queue.htm" />
+  <HelpKINode Title="QueueFIFO property" Url="html/P_ParallelTasks_WorkOptions_QueueFIFO.htm" />
   <HelpKINode Title="QueueItem structure">
     <HelpKINode Title="fields" Url="html/Fields_T_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ProductionBlock_QueueItem.htm" />
   </HelpKINode>
@@ -8604,6 +8814,7 @@
   </HelpKINode>
   <HelpKINode Title="Relation field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_FactionRelation_Relation.htm" />
   <HelpKINode Title="Relations field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_FactionCollection_Relations.htm" />
+  <HelpKINode Title="Release method" Url="html/M_ParallelTasks_Semaphore_Release.htm" />
   <HelpKINode Title="ReleaseExclusive method">
     <HelpKINode Title="FastResourceLock.ReleaseExclusive Method " Url="html/M_VRage_FastResourceLock_ReleaseExclusive.htm" />
     <HelpKINode Title="IResourceLock.ReleaseExclusive Method " Url="html/M_VRage_IResourceLock_ReleaseExclusive.htm" />
@@ -8643,7 +8854,10 @@
   <HelpKINode Title="RemapEntityId method" Url="html/M_Sandbox_Common_ObjectBuilders_IMyRemapHelper_RemapEntityId.htm" />
   <HelpKINode Title="RemapObjectBuilder method" Url="html/M_Sandbox_ModAPI_IMyEntities_RemapObjectBuilder.htm" />
   <HelpKINode Title="RemapObjectBuilderCollection method" Url="html/M_Sandbox_ModAPI_IMyEntities_RemapObjectBuilderCollection.htm" />
-  <HelpKINode Title="Remove method" Url="html/M_VRageMath_CurveKeyCollection_Remove.htm" />
+  <HelpKINode Title="Remove method">
+    <HelpKINode Title="CurveKeyCollection.Remove Method " Url="html/M_VRageMath_CurveKeyCollection_Remove.htm" />
+    <HelpKINode Title="Hashtable(Key, Data).Remove Method " Url="html/M_ParallelTasks_Hashtable_2_Remove.htm" />
+  </HelpKINode>
   <HelpKINode Title="RemoveAt method" Url="html/M_VRageMath_CurveKeyCollection_RemoveAt.htm" />
   <HelpKINode Title="RemoveBlock method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_RemoveBlock.htm" />
   <HelpKINode Title="RemoveControlledEntity method" Url="html/M_Sandbox_ModAPI_IMyPlayerCollection_RemoveControlledEntity.htm" />
@@ -8708,6 +8922,7 @@
   <HelpKINode Title="RespawnShipId field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_RespawnCooldownItem_RespawnShipId.htm" />
   <HelpKINode Title="Restitution field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SpaceBall_Restitution.htm" />
   <HelpKINode Title="ResultEnum enumeration" Url="html/T_Sandbox_ModAPI_ResultEnum.htm" />
+  <HelpKINode Title="Return method" Url="html/M_ParallelTasks_Pool_1_Return.htm" />
   <HelpKINode Title="Reverse field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_PistonBase_Reverse.htm" />
   <HelpKINode Title="Right enumeration member">
     <HelpKINode Title="Base27Directions.Direction Enumeration" Url="html/T_VRageMath_Base27Directions_Direction.htm" />
@@ -8752,6 +8967,7 @@
   <HelpKINode Title="RoyalBlue property" Url="html/P_VRageMath_Color_RoyalBlue.htm" />
   <HelpKINode Title="RPMToRadiansPerMillisec field" Url="html/F_VRageMath_MathHelper_RPMToRadiansPerMillisec.htm" />
   <HelpKINode Title="RPMToRadiansPerSecond field" Url="html/F_VRageMath_MathHelper_RPMToRadiansPerSecond.htm" />
+  <HelpKINode Title="RunCallbacks method" Url="html/M_ParallelTasks_Parallel_RunCallbacks.htm" />
   <HelpKINode Title="SaddleBrown property" Url="html/P_VRageMath_Color_SaddleBrown.htm" />
   <HelpKINode Title="SAFE enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyEnvironmentHostilityEnum.htm" />
   <HelpKINode Title="Salmon property" Url="html/P_VRageMath_Color_Salmon.htm" />
@@ -9079,6 +9295,13 @@
     <HelpKINode Title="MyObjectBuilder_Checkpoint.Scenario Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_Scenario.htm" />
   </HelpKINode>
   <HelpKINode Title="Scenario property" Url="html/P_Sandbox_ModAPI_IMyConfigDedicated_Scenario.htm" />
+  <HelpKINode Title="Schedule method">
+    <HelpKINode Title="FixedPriorityScheduler.Schedule Method " Url="html/M_ParallelTasks_FixedPriorityScheduler_Schedule.htm" />
+    <HelpKINode Title="IWorkScheduler.Schedule Method " Url="html/M_ParallelTasks_IWorkScheduler_Schedule.htm" />
+    <HelpKINode Title="SimpleScheduler.Schedule Method " Url="html/M_ParallelTasks_SimpleScheduler_Schedule.htm" />
+    <HelpKINode Title="WorkStealingScheduler.Schedule Method " Url="html/M_ParallelTasks_WorkStealingScheduler_Schedule.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Scheduler property" Url="html/P_ParallelTasks_Parallel_Scheduler.htm" />
   <HelpKINode Title="SCurve3 method" Url="html/Overload_VRageMath_MathHelper_SCurve3.htm" />
   <HelpKINode Title="SCurve5 method" Url="html/Overload_VRageMath_MathHelper_SCurve5.htm" />
   <HelpKINode Title="SeaGreen property" Url="html/P_VRageMath_Color_SeaGreen.htm" />
@@ -9107,6 +9330,15 @@
   <HelpKINode Title="SelectedSlot field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Toolbar_SelectedSlot.htm" />
   <HelpKINode Title="SelectStringByLetter method" Url="html/M_VRage_Partition_SelectStringByLetter.htm" />
   <HelpKINode Title="SelectStringGroupOfTenByLetter method" Url="html/M_VRage_Partition_SelectStringGroupOfTenByLetter.htm" />
+  <HelpKINode Title="Semaphore class">
+    <HelpKINode Title="Semaphore Class" Url="html/T_ParallelTasks_Semaphore.htm" />
+    <HelpKINode Title="about Semaphore class" Url="html/T_ParallelTasks_Semaphore.htm" />
+    <HelpKINode Title="constructor" Url="html/M_ParallelTasks_Semaphore__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_Semaphore.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Semaphore.Release method" Url="html/M_ParallelTasks_Semaphore_Release.htm" />
+  <HelpKINode Title="Semaphore.Semaphore constructor" Url="html/M_ParallelTasks_Semaphore__ctor.htm" />
+  <HelpKINode Title="Semaphore.WaitOne method" Url="html/M_ParallelTasks_Semaphore_WaitOne.htm" />
   <HelpKINode Title="SemiautoEnabled field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_BatteryBlock_SemiautoEnabled.htm" />
   <HelpKINode Title="SendEntitiesCreated method" Url="html/M_Sandbox_ModAPI_IMyMultiplayer_SendEntitiesCreated.htm" />
   <HelpKINode Title="SendJoinRequest method" Url="html/M_Sandbox_ModAPI_IMyFactionCollection_SendJoinRequest.htm" />
@@ -9264,8 +9496,8 @@
   <HelpKINode Title="ShowMessage method" Url="html/M_Sandbox_ModAPI_IMyUtilities_ShowMessage.htm" />
   <HelpKINode Title="ShowMissionScreen method" Url="html/M_Sandbox_ModAPI_IMyUtilities_ShowMissionScreen.htm" />
   <HelpKINode Title="ShowNotification method" Url="html/M_Sandbox_ModAPI_IMyUtilities_ShowNotification.htm" />
-  <HelpKINode Title="ShowOnHUD field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_TerminalBlock_ShowOnHUD.htm" />
   <HelpKINode Title="showOnHud field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Gps_Entry_showOnHud.htm" />
+  <HelpKINode Title="ShowOnHUD field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_TerminalBlock_ShowOnHUD.htm" />
   <HelpKINode Title="ShowOnHUD property" Url="html/P_Sandbox_ModAPI_Ingame_IMyTerminalBlock_ShowOnHUD.htm" />
   <HelpKINode Title="ShowOnHUDChanged event" Url="html/E_Sandbox_ModAPI_IMyTerminalBlock_ShowOnHUDChanged.htm" />
   <HelpKINode Title="ShowParts property">
@@ -9291,7 +9523,34 @@
     <HelpKINode Title="Vector3D.SignNonZero Method " Url="html/M_VRageMath_Vector3D_SignNonZero.htm" />
   </HelpKINode>
   <HelpKINode Title="Silver property" Url="html/P_VRageMath_Color_Silver.htm" />
+  <HelpKINode Title="SimpleScheduler class">
+    <HelpKINode Title="SimpleScheduler Class" Url="html/T_ParallelTasks_SimpleScheduler.htm" />
+    <HelpKINode Title="about SimpleScheduler class" Url="html/T_ParallelTasks_SimpleScheduler.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_ParallelTasks_SimpleScheduler__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_SimpleScheduler.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_SimpleScheduler.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SimpleScheduler.Schedule method" Url="html/M_ParallelTasks_SimpleScheduler_Schedule.htm" />
+  <HelpKINode Title="SimpleScheduler.SimpleScheduler constructor" Url="html/Overload_ParallelTasks_SimpleScheduler__ctor.htm" />
+  <HelpKINode Title="SimpleScheduler.ThreadCount property" Url="html/P_ParallelTasks_SimpleScheduler_ThreadCount.htm" />
+  <HelpKINode Title="SimpleScheduler.WaitForTasksToFinish method" Url="html/M_ParallelTasks_SimpleScheduler_WaitForTasksToFinish.htm" />
   <HelpKINode Title="Single to MyFixedPoint conversion" Url="html/M_VRage_MyFixedPoint_op_Explicit_2.htm" />
+  <HelpKINode Title="Singleton(Of T) class">
+    <HelpKINode Title="Singleton(T) Class" Url="html/T_ParallelTasks_Singleton_1.htm" />
+    <HelpKINode Title="about Singleton(Of T) class" Url="html/T_ParallelTasks_Singleton_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_ParallelTasks_Singleton_1__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_Singleton_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Singleton(Of T).Instance property" Url="html/P_ParallelTasks_Singleton_1_Instance.htm" />
+  <HelpKINode Title="Singleton(Of T).Singleton constructor" Url="html/M_ParallelTasks_Singleton_1__ctor.htm" />
+  <HelpKINode Title="Singleton&lt;T&gt; class">
+    <HelpKINode Title="Singleton(T) Class" Url="html/T_ParallelTasks_Singleton_1.htm" />
+    <HelpKINode Title="about Singleton&lt;T&gt; class" Url="html/T_ParallelTasks_Singleton_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_ParallelTasks_Singleton_1__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_Singleton_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Singleton&lt;T&gt;.Instance property" Url="html/P_ParallelTasks_Singleton_1_Instance.htm" />
+  <HelpKINode Title="Singleton&lt;T&gt;.Singleton constructor" Url="html/M_ParallelTasks_Singleton_1__ctor.htm" />
   <HelpKINode Title="Size field" Url="html/F_VRageMath_RectangleF_Size.htm" />
   <HelpKINode Title="Size method">
     <HelpKINode Title="BoundingBox.Size Method " Url="html/M_VRageMath_BoundingBox_Size.htm" />
@@ -9357,12 +9616,42 @@
   <HelpKINode Title="SpinAcquireExclusive method" Url="html/M_VRage_FastResourceLock_SpinAcquireExclusive.htm" />
   <HelpKINode Title="SpinAcquireShared method" Url="html/M_VRage_FastResourceLock_SpinAcquireShared.htm" />
   <HelpKINode Title="SpinConvertSharedToExclusive method" Url="html/M_VRage_FastResourceLock_SpinConvertSharedToExclusive.htm" />
+  <HelpKINode Title="SpinLock structure">
+    <HelpKINode Title="SpinLock Structure" Url="html/T_ParallelTasks_SpinLock.htm" />
+    <HelpKINode Title="about SpinLock structure" Url="html/T_ParallelTasks_SpinLock.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_SpinLock.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SpinLock.Enter method" Url="html/M_ParallelTasks_SpinLock_Enter.htm" />
+  <HelpKINode Title="SpinLock.Exit method" Url="html/M_ParallelTasks_SpinLock_Exit.htm" />
+  <HelpKINode Title="SpinLock.TryEnter method" Url="html/M_ParallelTasks_SpinLock_TryEnter.htm" />
+  <HelpKINode Title="SpinLockRef class">
+    <HelpKINode Title="SpinLockRef Class" Url="html/T_ParallelTasks_SpinLockRef.htm" />
+    <HelpKINode Title="about SpinLockRef class" Url="html/T_ParallelTasks_SpinLockRef.htm" />
+    <HelpKINode Title="constructor" Url="html/M_ParallelTasks_SpinLockRef__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_SpinLockRef.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SpinLockRef.Acquire method" Url="html/M_ParallelTasks_SpinLockRef_Acquire.htm" />
+  <HelpKINode Title="SpinLockRef.SpinLockRef constructor" Url="html/M_ParallelTasks_SpinLockRef__ctor.htm" />
+  <HelpKINode Title="SpinLockRef.Token structure">
+    <HelpKINode Title="SpinLockRef.Token Structure" Url="html/T_ParallelTasks_SpinLockRef_Token.htm" />
+    <HelpKINode Title="about SpinLockRef.Token structure" Url="html/T_ParallelTasks_SpinLockRef_Token.htm" />
+    <HelpKINode Title="constructor" Url="html/M_ParallelTasks_SpinLockRef_Token__ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SpinLockRef.Token.Dispose method" Url="html/M_ParallelTasks_SpinLockRef_Token_Dispose.htm" />
+  <HelpKINode Title="SpinLockRef.Token.Token constructor" Url="html/M_ParallelTasks_SpinLockRef_Token__ctor.htm" />
   <HelpKINode Title="SpringGreen property" Url="html/P_VRageMath_Color_SpringGreen.htm" />
-  <HelpKINode Title="Start method" Url="html/Overload_Sandbox_ModAPI_IMyParallelTask_Start.htm" />
-  <HelpKINode Title="StartBackground method" Url="html/Overload_Sandbox_ModAPI_IMyParallelTask_StartBackground.htm" />
+  <HelpKINode Title="Start method">
+    <HelpKINode Title="IMyParallelTask.Start Method " Url="html/Overload_Sandbox_ModAPI_IMyParallelTask_Start.htm" />
+    <HelpKINode Title="Parallel.Start Method " Url="html/Overload_ParallelTasks_Parallel_Start.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StartBackground method">
+    <HelpKINode Title="IMyParallelTask.StartBackground Method " Url="html/Overload_Sandbox_ModAPI_IMyParallelTask_StartBackground.htm" />
+    <HelpKINode Title="Parallel.StartBackground Method " Url="html/Overload_ParallelTasks_Parallel_StartBackground.htm" />
+  </HelpKINode>
   <HelpKINode Title="StartDirection field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ConveyorLine_StartDirection.htm" />
   <HelpKINode Title="StartedProducing event" Url="html/E_Sandbox_ModAPI_IMyProductionBlock_StartedProducing.htm" />
   <HelpKINode Title="StartNewGridPlacement method" Url="html/M_Sandbox_ModAPI_IMyCubeBuilder_StartNewGridPlacement.htm" />
+  <HelpKINode Title="StartOnEachWorker method" Url="html/M_ParallelTasks_Parallel_StartOnEachWorker.htm" />
   <HelpKINode Title="StartPosition field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ConveyorLine_StartPosition.htm" />
   <HelpKINode Title="StartVertices field">
     <HelpKINode Title="MyOrientedBoundingBox.StartVertices Field" Url="html/F_VRageMath_MyOrientedBoundingBox_StartVertices.htm" />
@@ -9394,11 +9683,11 @@
   <HelpKINode Title="Statistics structure">
     <HelpKINode Title="fields" Url="html/Fields_T_VRage_FastResourceLock_Statistics.htm" />
   </HelpKINode>
+  <HelpKINode Title="SteamID field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Player_SteamID.htm" />
   <HelpKINode Title="SteamId field">
     <HelpKINode Title="MyObjectBuilder_Client.SteamId Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Client_SteamId.htm" />
     <HelpKINode Title="MyObjectBuilder_Checkpoint.PlayerItem.SteamId Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_PlayerItem_SteamId.htm" />
   </HelpKINode>
-  <HelpKINode Title="SteamID field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Player_SteamID.htm" />
   <HelpKINode Title="SteamIDOwner field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ModInfo_SteamIDOwner.htm" />
   <HelpKINode Title="SteamPort field" Url="html/F_Sandbox_Common_ObjectBuilders_MyConfigDedicatedData_SteamPort.htm" />
   <HelpKINode Title="SteamPort property" Url="html/P_Sandbox_ModAPI_IMyConfigDedicated_SteamPort.htm" />
@@ -9414,12 +9703,12 @@
     <HelpKINode Title="Vector3D.Step Method " Url="html/M_VRageMath_Vector3D_Step.htm" />
   </HelpKINode>
   <HelpKINode Title="StockpileAllocated property">
-    <HelpKINode Title="IMySlimBlock.StockpileAllocated Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_StockpileAllocated.htm" />
     <HelpKINode Title="IMySlimBlock.StockpileAllocated Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_StockpileAllocated.htm" />
+    <HelpKINode Title="IMySlimBlock.StockpileAllocated Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_StockpileAllocated.htm" />
   </HelpKINode>
   <HelpKINode Title="StockpileEmpty property">
-    <HelpKINode Title="IMySlimBlock.StockpileEmpty Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_StockpileEmpty.htm" />
     <HelpKINode Title="IMySlimBlock.StockpileEmpty Property " Url="html/P_Sandbox_ModAPI_Ingame_IMySlimBlock_StockpileEmpty.htm" />
+    <HelpKINode Title="IMySlimBlock.StockpileEmpty Property " Url="html/P_Sandbox_ModAPI_IMySlimBlock_StockpileEmpty.htm" />
   </HelpKINode>
   <HelpKINode Title="StoppedProducing event" Url="html/E_Sandbox_ModAPI_IMyProductionBlock_StoppedProducing.htm" />
   <HelpKINode Title="Storage field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_MyProgrammableBlock_Storage.htm" />
@@ -9495,6 +9784,27 @@
   <HelpKINode Title="TargetMissiles field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_TurretBase_TargetMissiles.htm" />
   <HelpKINode Title="TargetMoving field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_TurretBase_TargetMoving.htm" />
   <HelpKINode Title="TargetVelocity field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_MotorStator_TargetVelocity.htm" />
+  <HelpKINode Title="Task structure">
+    <HelpKINode Title="Task Structure" Url="html/T_ParallelTasks_Task.htm" />
+    <HelpKINode Title="about Task structure" Url="html/T_ParallelTasks_Task.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_ParallelTasks_Task.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_Task.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_Task.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Task.Exceptions property" Url="html/P_ParallelTasks_Task_Exceptions.htm" />
+  <HelpKINode Title="Task.IsComplete property" Url="html/P_ParallelTasks_Task_IsComplete.htm" />
+  <HelpKINode Title="Task.valid field" Url="html/F_ParallelTasks_Task_valid.htm" />
+  <HelpKINode Title="Task.Wait method" Url="html/M_ParallelTasks_Task_Wait.htm" />
+  <HelpKINode Title="TaskException class">
+    <HelpKINode Title="TaskException Class" Url="html/T_ParallelTasks_TaskException.htm" />
+    <HelpKINode Title="about TaskException class" Url="html/T_ParallelTasks_TaskException.htm" />
+    <HelpKINode Title="constructor" Url="html/M_ParallelTasks_TaskException__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_TaskException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_TaskException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TaskException.InnerExceptions property" Url="html/P_ParallelTasks_TaskException_InnerExceptions.htm" />
+  <HelpKINode Title="TaskException.TaskException constructor" Url="html/M_ParallelTasks_TaskException__ctor.htm" />
+  <HelpKINode Title="TaskException.ToString method" Url="html/M_ParallelTasks_TaskException_ToString.htm" />
   <HelpKINode Title="Teal property" Url="html/P_VRageMath_Color_Teal.htm" />
   <HelpKINode Title="TEN_TIMES enumeration member">
     <HelpKINode Title="MySessionGameType Enumeration" Url="html/T_Sandbox_Common_ObjectBuilders_MySessionGameType.htm" />
@@ -9546,6 +9856,12 @@
   <HelpKINode Title="TextPanelAccessFlag enumeration" Url="html/T_Sandbox_Common_ObjectBuilders_TextPanelAccessFlag.htm" />
   <HelpKINode Title="ThirdPersonSpectator enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MyCameraControllerEnum.htm" />
   <HelpKINode Title="Thistle property" Url="html/P_VRageMath_Color_Thistle.htm" />
+  <HelpKINode Title="ThreadCount property">
+    <HelpKINode Title="FixedPriorityScheduler.ThreadCount Property " Url="html/P_ParallelTasks_FixedPriorityScheduler_ThreadCount.htm" />
+    <HelpKINode Title="IWorkScheduler.ThreadCount Property " Url="html/P_ParallelTasks_IWorkScheduler_ThreadCount.htm" />
+    <HelpKINode Title="SimpleScheduler.ThreadCount Property " Url="html/P_ParallelTasks_SimpleScheduler_ThreadCount.htm" />
+    <HelpKINode Title="WorkStealingScheduler.ThreadCount Property " Url="html/P_ParallelTasks_WorkStealingScheduler_ThreadCount.htm" />
+  </HelpKINode>
   <HelpKINode Title="THREE_TIMES enumeration member" Url="html/T_Sandbox_Common_ObjectBuilders_MySessionGameType.htm" />
   <HelpKINode Title="ThrowAll(Of TException) method" Url="html/M_VRage_Exceptions_ThrowAll__1.htm" />
   <HelpKINode Title="ThrowAll&lt;TException&gt; method" Url="html/M_VRage_Exceptions_ThrowAll__1.htm" />
@@ -9585,6 +9901,9 @@
     <HelpKINode Title="LineD.To Field" Url="html/F_VRageMath_LineD_To.htm" />
   </HelpKINode>
   <HelpKINode Title="ToDegrees method" Url="html/Overload_VRageMath_MathHelper_ToDegrees.htm" />
+  <HelpKINode Title="Token structure">
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_SpinLockRef_Token.htm" />
+  </HelpKINode>
   <HelpKINode Title="Tomato property" Url="html/P_VRageMath_Color_Tomato.htm" />
   <HelpKINode Title="ToMatrix method" Url="html/M_VRageMath_CompressedPositionOrientation_ToMatrix.htm" />
   <HelpKINode Title="Toolbar field">
@@ -9631,6 +9950,7 @@
     <HelpKINode Title="RayD.ToString Method " Url="html/M_VRageMath_RayD_ToString.htm" />
     <HelpKINode Title="Rectangle.ToString Method " Url="html/M_VRageMath_Rectangle_ToString.htm" />
     <HelpKINode Title="RectangleF.ToString Method " Url="html/M_VRageMath_RectangleF_ToString.htm" />
+    <HelpKINode Title="TaskException.ToString Method " Url="html/M_ParallelTasks_TaskException_ToString.htm" />
     <HelpKINode Title="Vector2.ToString Method " Url="html/M_VRageMath_Vector2_ToString.htm" />
     <HelpKINode Title="Vector2I.ToString Method " Url="html/M_VRageMath_Vector2I_ToString.htm" />
     <HelpKINode Title="Vector3.ToString Method " Url="html/Overload_VRageMath_Vector3_ToString.htm" />
@@ -9652,12 +9972,12 @@
     <HelpKINode Title="QuaternionD.ToVector4 Method " Url="html/M_VRageMath_QuaternionD_ToVector4.htm" />
   </HelpKINode>
   <HelpKINode Title="TransferItemFrom method">
-    <HelpKINode Title="IMyInventory.TransferItemFrom Method " Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_TransferItemFrom.htm" />
     <HelpKINode Title="IMyInventory.TransferItemFrom Method " Url="html/Overload_Sandbox_ModAPI_IMyInventory_TransferItemFrom.htm" />
+    <HelpKINode Title="IMyInventory.TransferItemFrom Method " Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_TransferItemFrom.htm" />
   </HelpKINode>
   <HelpKINode Title="TransferItemTo method">
-    <HelpKINode Title="IMyInventory.TransferItemTo Method " Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_TransferItemTo.htm" />
     <HelpKINode Title="IMyInventory.TransferItemTo Method " Url="html/Overload_Sandbox_ModAPI_IMyInventory_TransferItemTo.htm" />
+    <HelpKINode Title="IMyInventory.TransferItemTo Method " Url="html/M_Sandbox_ModAPI_Interfaces_IMyInventory_TransferItemTo.htm" />
   </HelpKINode>
   <HelpKINode Title="Transform method">
     <HelpKINode Title="BoundingBox.Transform Method " Url="html/Overload_VRageMath_BoundingBox_Transform.htm" />
@@ -9718,7 +10038,9 @@
     <HelpKINode Title="IResourceLock.TryAcquireShared Method " Url="html/M_VRage_IResourceLock_TryAcquireShared.htm" />
   </HelpKINode>
   <HelpKINode Title="TryConvertSharedToExclusive method" Url="html/M_VRage_FastResourceLock_TryConvertSharedToExclusive.htm" />
+  <HelpKINode Title="TryEnter method" Url="html/M_ParallelTasks_SpinLock_TryEnter.htm" />
   <HelpKINode Title="TryExtendControl method" Url="html/M_Sandbox_ModAPI_IMyPlayerCollection_TryExtendControl.htm" />
+  <HelpKINode Title="TryGet method" Url="html/M_ParallelTasks_Hashtable_2_TryGet.htm" />
   <HelpKINode Title="TryGetEntityById method" Url="html/M_Sandbox_ModAPI_IMyEntities_TryGetEntityById.htm" />
   <HelpKINode Title="TryGetEntityByName method" Url="html/M_Sandbox_ModAPI_IMyEntities_TryGetEntityByName.htm" />
   <HelpKINode Title="TryGetFactionById method" Url="html/M_Sandbox_ModAPI_IMyFactionCollection_TryGetFactionById.htm" />
@@ -9789,6 +10111,7 @@
   <HelpKINode Title="UnregisterComponent method" Url="html/M_Sandbox_ModAPI_IMySession_UnregisterComponent.htm" />
   <HelpKINode Title="UnregisterForDraw method" Url="html/M_Sandbox_ModAPI_IMyEntities_UnregisterForDraw.htm" />
   <HelpKINode Title="UnregisterForUpdate method" Url="html/M_Sandbox_ModAPI_IMyEntities_UnregisterForUpdate.htm" />
+  <HelpKINode Title="UnsafeSet method" Url="html/M_ParallelTasks_Hashtable_2_UnsafeSet.htm" />
   <HelpKINode Title="Up enumeration member">
     <HelpKINode Title="Base27Directions.Direction Enumeration" Url="html/T_VRageMath_Base27Directions_Direction.htm" />
     <HelpKINode Title="Base6Directions.Direction Enumeration" Url="html/T_VRageMath_Base6Directions_Direction.htm" />
@@ -9811,15 +10134,15 @@
   <HelpKINode Title="UpdateComponents method" Url="html/M_Sandbox_ModAPI_IMySession_UpdateComponents.htm" />
   <HelpKINode Title="UpdateGamePruningStructure method" Url="html/M_Sandbox_ModAPI_IMyEntity_UpdateGamePruningStructure.htm" />
   <HelpKINode Title="UpdateIsWorking method">
-    <HelpKINode Title="IMyCubeBlock.UpdateIsWorking Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_UpdateIsWorking.htm" />
     <HelpKINode Title="IMyCubeBlock.UpdateIsWorking Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_UpdateIsWorking.htm" />
+    <HelpKINode Title="IMyCubeBlock.UpdateIsWorking Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_UpdateIsWorking.htm" />
   </HelpKINode>
   <HelpKINode Title="UpdateOwnership method" Url="html/M_Sandbox_ModAPI_IMyCubeGrid_UpdateOwnership.htm" />
   <HelpKINode Title="UpdateVisual method">
     <HelpKINode Title="IMyCubeBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_IMyCubeBlock_UpdateVisual.htm" />
     <HelpKINode Title="IMyCubeBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_Ingame_IMyCubeBlock_UpdateVisual.htm" />
-    <HelpKINode Title="IMySlimBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_IMySlimBlock_UpdateVisual.htm" />
     <HelpKINode Title="IMySlimBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_Ingame_IMySlimBlock_UpdateVisual.htm" />
+    <HelpKINode Title="IMySlimBlock.UpdateVisual Method " Url="html/M_Sandbox_ModAPI_IMySlimBlock_UpdateVisual.htm" />
   </HelpKINode>
   <HelpKINode Title="UpDown enumeration member" Url="html/T_VRageMath_Base6Directions_Axis.htm" />
   <HelpKINode Title="Upgrade method" Url="html/M_Sandbox_Common_ObjectBuilders_MyObjectBuilder_CubeBlock_Upgrade.htm" />
@@ -9854,6 +10177,7 @@
   <HelpKINode Title="UseTransparency property" Url="html/P_Sandbox_ModAPI_IMyCubeBuilder_UseTransparency.htm" />
   <HelpKINode Title="UsingLadder field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Character_UsingLadder.htm" />
   <HelpKINode Title="Utilities field" Url="html/F_Sandbox_ModAPI_MyAPIGateway_Utilities.htm" />
+  <HelpKINode Title="valid field" Url="html/F_ParallelTasks_Task_valid.htm" />
   <HelpKINode Title="Value field" Url="html/F_VRage_MyEnum_1_MaxValue_Value.htm" />
   <HelpKINode Title="Value property" Url="html/P_VRageMath_CurveKey_Value.htm" />
   <HelpKINode Title="Values field" Url="html/F_VRage_MyEnum_1_Values.htm" />
@@ -10441,6 +10765,8 @@
     <HelpKINode Title="IMyMotorStator.Velocity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyMotorStator_Velocity.htm" />
     <HelpKINode Title="IMyPistonBase.Velocity Property " Url="html/P_Sandbox_ModAPI_Ingame_IMyPistonBase_Velocity.htm" />
   </HelpKINode>
+  <HelpKINode Title="VeryHigh enumeration member" Url="html/T_ParallelTasks_WorkPriority.htm" />
+  <HelpKINode Title="VeryLow enumeration member" Url="html/T_ParallelTasks_WorkPriority.htm" />
   <HelpKINode Title="ViewDistance field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SessionSettings_ViewDistance.htm" />
   <HelpKINode Title="Violet property" Url="html/P_VRageMath_Color_Violet.htm" />
   <HelpKINode Title="VirtualMass field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SpaceBall_VirtualMass.htm" />
@@ -10608,6 +10934,15 @@
     <HelpKINode Title="Vector4I.W Field" Url="html/F_VRageMath_Vector4I_W.htm" />
     <HelpKINode Title="Vector4UByte.W Field" Url="html/F_VRageMath_Vector4UByte_W.htm" />
   </HelpKINode>
+  <HelpKINode Title="Wait method" Url="html/M_ParallelTasks_Task_Wait.htm" />
+  <HelpKINode Title="WaitForAll method" Url="html/M_ParallelTasks_Parallel_WaitForAll.htm" />
+  <HelpKINode Title="WaitForTasksToFinish method">
+    <HelpKINode Title="FixedPriorityScheduler.WaitForTasksToFinish Method " Url="html/M_ParallelTasks_FixedPriorityScheduler_WaitForTasksToFinish.htm" />
+    <HelpKINode Title="IWorkScheduler.WaitForTasksToFinish Method " Url="html/M_ParallelTasks_IWorkScheduler_WaitForTasksToFinish.htm" />
+    <HelpKINode Title="SimpleScheduler.WaitForTasksToFinish Method " Url="html/M_ParallelTasks_SimpleScheduler_WaitForTasksToFinish.htm" />
+    <HelpKINode Title="WorkStealingScheduler.WaitForTasksToFinish Method " Url="html/M_ParallelTasks_WorkStealingScheduler_WaitForTasksToFinish.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WaitOne method" Url="html/M_ParallelTasks_Semaphore_WaitOne.htm" />
   <HelpKINode Title="Walk method" Url="html/M_Sandbox_ModAPI_Interfaces_IMyControllableEntity_Walk.htm" />
   <HelpKINode Title="WeaponsEnabled field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_SessionSettings_WeaponsEnabled.htm" />
   <HelpKINode Title="WeaponsEnabled property">
@@ -10621,11 +10956,31 @@
   <HelpKINode Title="WhiteSmoke property" Url="html/P_VRageMath_Color_WhiteSmoke.htm" />
   <HelpKINode Title="Width field" Url="html/F_VRageMath_Rectangle_Width.htm" />
   <HelpKINode Title="Width property" Url="html/P_VRageMath_RectangleF_Width.htm" />
+  <HelpKINode Title="WorkOptions structure">
+    <HelpKINode Title="WorkOptions Structure" Url="html/T_ParallelTasks_WorkOptions.htm" />
+    <HelpKINode Title="about WorkOptions structure" Url="html/T_ParallelTasks_WorkOptions.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_WorkOptions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WorkOptions.DetachFromParent property" Url="html/P_ParallelTasks_WorkOptions_DetachFromParent.htm" />
+  <HelpKINode Title="WorkOptions.MaximumThreads property" Url="html/P_ParallelTasks_WorkOptions_MaximumThreads.htm" />
+  <HelpKINode Title="WorkOptions.QueueFIFO property" Url="html/P_ParallelTasks_WorkOptions_QueueFIFO.htm" />
+  <HelpKINode Title="WorkPriority enumeration" Url="html/T_ParallelTasks_WorkPriority.htm" />
   <HelpKINode Title="WorkshopId field">
     <HelpKINode Title="MyObjectBuilder_Checkpoint.WorkshopId Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_Checkpoint_WorkshopId.htm" />
     <HelpKINode Title="MyObjectBuilder_ModInfo.WorkshopId Field" Url="html/F_Sandbox_Common_ObjectBuilders_MyObjectBuilder_ModInfo_WorkshopId.htm" />
   </HelpKINode>
   <HelpKINode Title="WorkshopId property" Url="html/P_Sandbox_ModAPI_IMySession_WorkshopId.htm" />
+  <HelpKINode Title="WorkStealingScheduler class">
+    <HelpKINode Title="WorkStealingScheduler Class" Url="html/T_ParallelTasks_WorkStealingScheduler.htm" />
+    <HelpKINode Title="about WorkStealingScheduler class" Url="html/T_ParallelTasks_WorkStealingScheduler.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_ParallelTasks_WorkStealingScheduler__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_ParallelTasks_WorkStealingScheduler.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_ParallelTasks_WorkStealingScheduler.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WorkStealingScheduler.Schedule method" Url="html/M_ParallelTasks_WorkStealingScheduler_Schedule.htm" />
+  <HelpKINode Title="WorkStealingScheduler.ThreadCount property" Url="html/P_ParallelTasks_WorkStealingScheduler_ThreadCount.htm" />
+  <HelpKINode Title="WorkStealingScheduler.WaitForTasksToFinish method" Url="html/M_ParallelTasks_WorkStealingScheduler_WaitForTasksToFinish.htm" />
+  <HelpKINode Title="WorkStealingScheduler.WorkStealingScheduler constructor" Url="html/Overload_ParallelTasks_WorkStealingScheduler__ctor.htm" />
   <HelpKINode Title="WorldAABB property" Url="html/P_Sandbox_ModAPI_IMyEntity_WorldAABB.htm" />
   <HelpKINode Title="WorldAABBHr property" Url="html/P_Sandbox_ModAPI_IMyEntity_WorldAABBHr.htm" />
   <HelpKINode Title="WorldHalfExtent method" Url="html/M_Sandbox_ModAPI_IMyEntities_WorldHalfExtent.htm" />
