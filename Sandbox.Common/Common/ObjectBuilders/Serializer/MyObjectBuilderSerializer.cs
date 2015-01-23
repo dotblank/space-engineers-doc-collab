@@ -270,16 +270,22 @@ namespace Sandbox.Common.ObjectBuilders.Serializer
                             MyObjectBuilderSerializer.m_objectFactory.GetProducedType(type));
             }
         }
+
         /// <summary>
-        /// Accessible
+        /// Accessible. Creates a new ObjectBuilder base object.
         /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static MyObjectBuilder_Base CreateNewObject(SerializableDefinitionId id)
         {
             return MyObjectBuilderSerializer.CreateNewObject(id.TypeId, id.SubtypeId);
         }
         /// <summary>
-        /// Accessible
+        /// Accessible. Creates a new ObjectBuilder base object.
         /// </summary>
+        /// <param name="type"></param>
+        /// <param name="subtypeName"></param>
+        /// <returns></returns>
         public static MyObjectBuilder_Base CreateNewObject(MyObjectBuilderType type, string subtypeName)
         {
             MyObjectBuilder_Base newObject = MyObjectBuilderSerializer.CreateNewObject(type);
@@ -287,15 +293,20 @@ namespace Sandbox.Common.ObjectBuilders.Serializer
             return newObject;
         }
         /// <summary>
-        /// Accessible
+        /// Accessible. Creates a new ObjectBuilder base object.
         /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public static MyObjectBuilder_Base CreateNewObject(MyObjectBuilderType type)
         {
             return MyObjectBuilderSerializer.m_objectFactory.CreateInstance(type);
         }
         /// <summary>
-        /// Accessible
+        /// Accessible. Creates a new ObjectBuilder base object.
         /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="subtypeName"></param>
+        /// <returns></returns>
         public static T CreateNewObject<T>(string subtypeName) where T : MyObjectBuilder_Base, new()
         {
             T newObject = MyObjectBuilderSerializer.CreateNewObject<T>();

@@ -6,6 +6,9 @@
 
 namespace ParallelTasks
 {
+    /// <summary>
+    /// Accessible
+    /// </summary>
   public struct WorkOptions
   {
     public bool DetachFromParent { get; set; }

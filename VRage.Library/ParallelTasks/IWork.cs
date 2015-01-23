@@ -6,6 +6,9 @@
 
 namespace ParallelTasks
 {
+    /// <summary>
+    /// Accessible
+    /// </summary>
   public interface IWork
   {
     WorkOptions Options { get; }

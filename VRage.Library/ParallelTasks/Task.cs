@@ -8,6 +8,9 @@ using System;
 
 namespace ParallelTasks
 {
+    /// <summary>
+    /// Accessible
+    /// </summary>
   public struct Task
   {
     public bool valid;
