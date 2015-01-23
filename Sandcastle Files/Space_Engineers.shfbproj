@@ -50,7 +50,7 @@
 <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Conveyors" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Definitions" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Gui" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Serializer" isDocumented="True">The only accessible members of this namespace are some constructor methods of the MyObjectBuilderSerializer class.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Serializer" isDocumented="True">The only accessible members of this namespace are some method overloads of CreateNewObject in the MyObjectBuilderSerializer class.</NamespaceSummaryItem>
 <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Voxels" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.VRageData" isDocumented="False" />
 <NamespaceSummaryItem name="Sandbox.Definitions" isDocumented="False" />
@@ -65,7 +65,7 @@
 <NamespaceSummaryItem name="KeenSoftwareHouse.Library.Extensions" isDocumented="False" />
 <NamespaceSummaryItem name="KeenSoftwareHouse.Library.IO" isDocumented="False" />
 <NamespaceSummaryItem name="LitJson" isDocumented="False" />
-<NamespaceSummaryItem name="ParallelTasks" isDocumented="False" />
+<NamespaceSummaryItem name="ParallelTasks" isDocumented="True">Accessible: IWork, Task, WorkOptions</NamespaceSummaryItem>
 <NamespaceSummaryItem name="ProtoBuf" isDocumented="False" />
 <NamespaceSummaryItem name="ProtoBuf.Meta" isDocumented="False" />
 <NamespaceSummaryItem name="ProtoBuf.ServiceModel" isDocumented="False" />
