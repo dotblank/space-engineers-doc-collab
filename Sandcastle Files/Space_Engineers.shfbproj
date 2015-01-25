@@ -18,7 +18,7 @@
     <HtmlHelpName>SE_Ingame_API</HtmlHelpName>
     <Language>en-US</Language>
     <BuildAssemblerVerbosity>OnlyErrors</BuildAssemblerVerbosity>
-    <HelpFileFormat>Website</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
     <IndentHtml>False</IndentHtml>
     <KeepLogFile>False</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
@@ -41,67 +41,68 @@
     </DocumentationSources>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="Sandbox.Common" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.Components" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.Input" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.Localization" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.News" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders" isDocumented="True" />
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Audio" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Conveyors" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Definitions" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Gui" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Serializer" isDocumented="True">The only accessible members of this namespace are some method overloads of CreateNewObject in the MyObjectBuilderSerializer class.</NamespaceSummaryItem>
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Voxels" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.VRageData" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Definitions" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Engine.Multiplayer" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Engine.Physics" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Game.Entities" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Game.Weapons" isDocumented="False" />
-<NamespaceSummaryItem name="(global)" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.ModAPI" isDocumented="True">Limited access</NamespaceSummaryItem>
-<NamespaceSummaryItem name="VRageMath.PackedVector" isDocumented="False" />
-<NamespaceSummaryItem name="VRageMath.Spatial" isDocumented="False" />
-<NamespaceSummaryItem name="KeenSoftwareHouse.Library.Extensions" isDocumented="False" />
-<NamespaceSummaryItem name="KeenSoftwareHouse.Library.IO" isDocumented="False" />
-<NamespaceSummaryItem name="LitJson" isDocumented="False" />
-<NamespaceSummaryItem name="ParallelTasks" isDocumented="True">Accessible: IWork, Task, WorkOptions</NamespaceSummaryItem>
-<NamespaceSummaryItem name="ProtoBuf" isDocumented="False" />
-<NamespaceSummaryItem name="ProtoBuf.Meta" isDocumented="False" />
-<NamespaceSummaryItem name="ProtoBuf.ServiceModel" isDocumented="False" />
-<NamespaceSummaryItem name="System" isDocumented="False" />
-<NamespaceSummaryItem name="System.Collections.Generic" isDocumented="False" />
-<NamespaceSummaryItem name="System.IO" isDocumented="False" />
-<NamespaceSummaryItem name="System.Linq" isDocumented="False" />
-<NamespaceSummaryItem name="System.Linq.Expressions" isDocumented="False" />
-<NamespaceSummaryItem name="System.Net" isDocumented="False" />
-<NamespaceSummaryItem name="System.Reflection" isDocumented="False" />
-<NamespaceSummaryItem name="System.Runtime.CompilerServices" isDocumented="False" />
-<NamespaceSummaryItem name="System.Text" isDocumented="False" />
-<NamespaceSummaryItem name="VRage" isDocumented="True">Available: MyFixedPoint</NamespaceSummaryItem>
-<NamespaceSummaryItem name="VRage.Algorithms" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Collections" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Common.Utils" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Compiler" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Compression" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Cryptography" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Extensions" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.FileSystem" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Native" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Parallelization" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Profiler" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Reflection" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Security" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Serialization" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Service" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Stats" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Trace" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Utils" isDocumented="False" />
-<NamespaceSummaryItem name="VRage.Win32" isDocumented="False" />
-<NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.AI" isDocumented="False" />
-<NamespaceSummaryItem name="DShowNET" isDocumented="False" />
-<NamespaceSummaryItem name="DShowNET.Device" isDocumented="False" />
-<NamespaceSummaryItem name="DShowNET.Dvd" isDocumented="False" /></NamespaceSummaries>
+      <NamespaceSummaryItem name="Sandbox.Common.Components" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Common.Input" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Common.Localization" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Common.News" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders" isDocumented="True" />
+      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Audio" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Conveyors" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Definitions" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Gui" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Serializer" isDocumented="True">The only accessible members of this namespace are some method overloads of CreateNewObject in the MyObjectBuilderSerializer class.</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.Voxels" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.VRageData" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Definitions" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Engine.Multiplayer" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Engine.Physics" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Game.Entities" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Game.Weapons" isDocumented="False" />
+      <NamespaceSummaryItem name="(global)" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.ModAPI" isDocumented="True">Limited access</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="VRageMath.PackedVector" isDocumented="False" />
+      <NamespaceSummaryItem name="VRageMath.Spatial" isDocumented="False" />
+      <NamespaceSummaryItem name="KeenSoftwareHouse.Library.Extensions" isDocumented="False" />
+      <NamespaceSummaryItem name="KeenSoftwareHouse.Library.IO" isDocumented="False" />
+      <NamespaceSummaryItem name="LitJson" isDocumented="False" />
+      <NamespaceSummaryItem name="ParallelTasks" isDocumented="True">Accessible: IWork, Task, WorkOptions</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="ProtoBuf" isDocumented="False" />
+      <NamespaceSummaryItem name="ProtoBuf.Meta" isDocumented="False" />
+      <NamespaceSummaryItem name="ProtoBuf.ServiceModel" isDocumented="False" />
+      <NamespaceSummaryItem name="System" isDocumented="False" />
+      <NamespaceSummaryItem name="System.Collections.Generic" isDocumented="False" />
+      <NamespaceSummaryItem name="System.IO" isDocumented="False" />
+      <NamespaceSummaryItem name="System.Linq" isDocumented="False" />
+      <NamespaceSummaryItem name="System.Linq.Expressions" isDocumented="False" />
+      <NamespaceSummaryItem name="System.Net" isDocumented="False" />
+      <NamespaceSummaryItem name="System.Reflection" isDocumented="False" />
+      <NamespaceSummaryItem name="System.Runtime.CompilerServices" isDocumented="False" />
+      <NamespaceSummaryItem name="System.Text" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage" isDocumented="True">Available: MyFixedPoint</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="VRage.Algorithms" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Collections" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Common.Utils" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Compiler" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Compression" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Cryptography" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Extensions" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.FileSystem" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Native" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Parallelization" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Profiler" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Reflection" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Security" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Serialization" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Service" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Stats" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Trace" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Utils" isDocumented="False" />
+      <NamespaceSummaryItem name="VRage.Win32" isDocumented="False" />
+      <NamespaceSummaryItem name="Sandbox.Common.ObjectBuilders.AI" isDocumented="False" />
+      <NamespaceSummaryItem name="DShowNET" isDocumented="False" />
+      <NamespaceSummaryItem name="DShowNET.Device" isDocumented="False" />
+      <NamespaceSummaryItem name="DShowNET.Dvd" isDocumented="False" />
+    </NamespaceSummaries>
     <MissingTags>AutoDocumentCtors, AutoDocumentDispose</MissingTags>
     <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
     <FeedbackEMailLinkText>

@@ -1,7 +1,7 @@
 # space-engineers-doc-collab
 ### Current version: 01.066.015 23.1.2015
 This is a collaborative Space Engineers in-game API documentation project.
-Our goal is to accurately document the in-game API's features to make development easier for everyone - online documentation is generated with Sandcastle Help File Builder.
+Our goal is to accurately document the in-game API's features to make development easier for everyone - online documentation is generated with Sandcastle Help File Builder. Altenatively, a Compiled HTML Help (.chm) file has been created for easier offline viewing. This file can be found in the root folder.
 
 # Contributing to the project
 First of all, you'll need to fork, clone or download this repository.
