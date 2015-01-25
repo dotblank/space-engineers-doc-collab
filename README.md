@@ -53,7 +53,7 @@ For example, the summary above will show like this in Visual Studio (click to vi
 In Visual Studio, the XML documentation generation can be enabled like so: Project tab -> Sandbox.Common Properties -> Build tab -> Output section -> Tick "XML documentation file"
 
 # Links
-* [**Download** a local copy here!](https://github.com/jCuber/space-engineers-doc-collab/tree/gh-pages)
+* [**Download** a local copy from here (starts download)!](https://github.com/jCuber/space-engineers-doc-collab/raw/master/SE_Ingame_API.chm)
 * [**Sandcastle Help File Builder**](https://shfb.codeplex.com/)
 * [Related KeenSWH forum thread](http://forums.keenswh.com/post?id=7224725)
 
