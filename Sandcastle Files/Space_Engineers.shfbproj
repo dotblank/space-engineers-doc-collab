@@ -35,10 +35,9 @@
     <HelpTitle>Space Engineers in-game API</HelpTitle>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\Sandbox.Common\Sandbox.Common.csproj" />
-      <DocumentationSource sourceFile="..\VRage.Library\VRage.Library.csproj" />
-      <DocumentationSource sourceFile="..\VRage.Math\VRage.Math.csproj" />
-    </DocumentationSources>
+      <DocumentationSource sourceFile="..\Sandbox.Common\Sandbox.Common.sln" />
+<DocumentationSource sourceFile="..\VRage.Library\VRage.Library.sln" />
+<DocumentationSource sourceFile="..\VRage.Math\VRage.Math.sln" /></DocumentationSources>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="Sandbox.Common" isDocumented="False" />
       <NamespaceSummaryItem name="Sandbox.Common.Components" isDocumented="False" />
