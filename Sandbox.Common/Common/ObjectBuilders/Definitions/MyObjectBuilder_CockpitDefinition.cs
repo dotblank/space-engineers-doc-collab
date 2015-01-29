@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CockpitDefinition
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
+// MVID: 52862CFB-4672-4671-9CE3-6D19982FB841
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -13,26 +13,33 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders.Definitions
 {
-    [ProtoContract]
-    [MyObjectBuilderDefinition]
-    public class MyObjectBuilder_CockpitDefinition : MyObjectBuilder_ShipControllerDefinition
-    {
-        [XmlIgnore] private string m_characterAnimation;
-        [ModdableContentFile("mwm")] public string GlassModel;
-        [ModdableContentFile("mwm")] public string InteriorModel;
-        [XmlIgnore] [ModdableContentFile("mwm")] public string CharacterAnimationFile;
+  [MyObjectBuilderDefinition]
+  [ProtoContract]
+  public class MyObjectBuilder_CockpitDefinition : MyObjectBuilder_ShipControllerDefinition
+  {
+    [XmlIgnore]
+    private string m_characterAnimation;
+    [ModdableContentFile("mwm")]
+    public string GlassModel;
+    [ModdableContentFile("mwm")]
+    public string InteriorModel;
+    [ModdableContentFile("mwm")]
+    [XmlIgnore]
+    public string CharacterAnimationFile;
 
-        public string CharacterAnimation
-        {
-            get { return this.m_characterAnimation; }
-            set
-            {
-                if (Enumerable.Contains<char>((IEnumerable<char>) value, Path.AltDirectorySeparatorChar) ||
-                    Enumerable.Contains<char>((IEnumerable<char>) value, Path.DirectorySeparatorChar))
-                    this.CharacterAnimationFile = value;
-                else
-                    this.m_characterAnimation = value;
-            }
-        }
+    public string CharacterAnimation
+    {
+      get
+      {
+        return this.m_characterAnimation;
+      }
+      set
+      {
+        if (Enumerable.Contains<char>((IEnumerable<char>) value, Path.AltDirectorySeparatorChar) || Enumerable.Contains<char>((IEnumerable<char>) value, Path.DirectorySeparatorChar))
+          this.CharacterAnimationFile = value;
+        else
+          this.m_characterAnimation = value;
+      }
     }
+  }
 }

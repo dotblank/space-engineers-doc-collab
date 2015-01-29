@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.Trace.MyTrace
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 3595035D-D240-4390-9773-1FE64718FDDB
+// MVID: F987C912-6032-4943-850E-69DEE0217B30
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
@@ -27,8 +27,8 @@ namespace VRage.Trace
     {
     }
 
-    [Conditional("DEVELOP")]
     [Conditional("DEBUG")]
+    [Conditional("DEVELOP")]
     private static void InitInternal(InitTraceHandler handler)
     {
       MyTrace.m_traces = new Dictionary<int, ITrace>();

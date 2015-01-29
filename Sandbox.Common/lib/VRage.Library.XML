@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VRage.Library</name>
+    </assembly>
+    <members>
+        <member name="T:ParallelTasks.IWork">
+            <summary>
+            Accessible
+            </summary>
+        </member>
+        <member name="T:ParallelTasks.Task">
+            <summary>
+            Accessible
+            </summary>
+        </member>
+        <member name="T:ParallelTasks.WorkOptions">
+            <summary>
+            Accessible
+            </summary>
+        </member>
+    </members>
+</doc>

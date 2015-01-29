@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.Common.Utils.MyCheckSumStream
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 3595035D-D240-4390-9773-1FE64718FDDB
+// MVID: F987C912-6032-4943-850E-69DEE0217B30
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using System;
@@ -90,7 +90,9 @@ namespace VRage.Common.Utils
     {
       int num1 = (int) (this.m_lastPosition - this.m_stream.Position);
       int num2 = this.m_stream.Read(array, offset, count);
-      this.m_verifier.HashObject.TransformBlock(array, offset + num1, num2 - num1, (byte[]) null, 0);
+      int num3 = offset + num1;
+      if (num2 - num1 > 0 && num3 > 0)
+        this.m_verifier.HashObject.TransformBlock(array, offset + num1, num2 - num1, (byte[]) null, 0);
       this.m_lastPosition = this.m_stream.Position;
       return num2;
     }

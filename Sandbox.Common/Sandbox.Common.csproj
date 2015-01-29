@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C3770E1-819C-4C8A-B130-A07CA9EFF6E8}</ProjectGuid>
+    <ProjectGuid>{C15BFFF3-1585-4B69-8588-810CFDACEFE4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Sandbox.Common</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -34,77 +34,57 @@
     <DocumentationFile>bin\Release\Sandbox.Common.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
     <Reference Include="System.Xml" />
+    <Reference Include="VRage.Library">
+      <HintPath>lib\VRage.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Math">
+      <HintPath>lib\VRage.Math.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="VRage.Common">
       <HintPath>lib\VRage.Common.dll</HintPath>
     </Reference>
-    <Reference Include="VRage.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\VRage.Library\bin\Release\VRage.Library.dll</HintPath>
-    </Reference>
-    <Reference Include="VRage.Math, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\VRage.Math\bin\Release\VRage.Math.dll</HintPath>
-    </Reference>
+    <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\IMyNamedComponent.cs" />
-    <Compile Include="Common\IMyUserInputComponent.cs" />
-    <Compile Include="Common\MyUpdateOrder.cs" />
-    <Compile Include="Common\MySessionComponentDescriptor.cs" />
-    <Compile Include="Common\MySessionComponentBase.cs" />
-    <Compile Include="Common\IMyTriangePruningStructure.cs" />
-    <Compile Include="Common\MyIntersectionResultLineTriangle.cs" />
-    <Compile Include="Common\MyIntersectionResultLineTriangleEx.cs" />
-    <Compile Include="Common\MyMesh.cs" />
-    <Compile Include="Common\MyMeshMaterial.cs" />
-    <Compile Include="Common\CustomRootReader.cs" />
-    <Compile Include="Common\CustomRootWriter.cs" />
-    <Compile Include="Common\MyAbstractXmlSerializer`1.cs" />
-    <Compile Include="Common\MyEngineConstants.cs" />
-    <Compile Include="Common\MyEntityUpdateEnum.cs" />
-    <Compile Include="Common\MyQuickLaunchType.cs" />
-    <Compile Include="Common\MyFontEnum.cs" />
-    <Compile Include="Common\MyMaterialType.cs" />
-    <Compile Include="Common\Keys.cs" />
-    <Compile Include="Common\MyRelationsBetweenFactions.cs" />
-    <Compile Include="Common\MyRelationsBetweenPlayerAndBlock.cs" />
-    <Compile Include="Common\MyFinalBuildConstants.cs" />
-    <Compile Include="Common\MyMath.cs" />
-    <Compile Include="Common\Vector3Extensions.cs" />
-    <Compile Include="Common\BoundingBoxExtensions.cs" />
-    <Compile Include="Common\BoundingFrustumExtensions.cs" />
-    <Compile Include="Common\MyObjectFactory`2.cs" />
-    <Compile Include="Common\MyFactoryTagAttribute.cs" />
-    <Compile Include="Common\MyCuboidSide.cs" />
     <Compile Include="Common\MyCuboid.cs" />
-    <Compile Include="Common\MyControllerData.cs" />
+    <Compile Include="Common\MyCuboidSide.cs" />
+    <Compile Include="Common\MyFactoryTagAttribute.cs" />
+    <Compile Include="Common\MyObjectFactory`2.cs" />
+    <Compile Include="Common\BoundingFrustumExtensions.cs" />
+    <Compile Include="Common\BoundingBoxExtensions.cs" />
+    <Compile Include="Common\Vector3Extensions.cs" />
+    <Compile Include="Common\MyMath.cs" />
+    <Compile Include="Common\MyFinalBuildConstants.cs" />
+    <Compile Include="Common\MyRelationsBetweenPlayerAndBlock.cs" />
+    <Compile Include="Common\MyRelationsBetweenFactions.cs" />
+    <Compile Include="Common\Keys.cs" />
+    <Compile Include="Common\MyMaterialType.cs" />
+    <Compile Include="Common\MyFontEnum.cs" />
+    <Compile Include="Common\MyQuickLaunchType.cs" />
+    <Compile Include="Common\MyEntityUpdateEnum.cs" />
+    <Compile Include="Common\MyEngineConstants.cs" />
+    <Compile Include="Common\MyAbstractXmlSerializer`1.cs" />
+    <Compile Include="Common\CustomRootWriter.cs" />
+    <Compile Include="Common\CustomRootReader.cs" />
+    <Compile Include="Common\MyMeshMaterial.cs" />
+    <Compile Include="Common\MyMesh.cs" />
+    <Compile Include="Common\MyIntersectionResultLineTriangleEx.cs" />
+    <Compile Include="Common\MyIntersectionResultLineTriangle.cs" />
+    <Compile Include="Common\IMyTriangePruningStructure.cs" />
+    <Compile Include="Common\MySessionComponentBase.cs" />
+    <Compile Include="Common\MySessionComponentDescriptor.cs" />
+    <Compile Include="Common\MyUpdateOrder.cs" />
+    <Compile Include="Common\IMyUserInputComponent.cs" />
+    <Compile Include="Common\IMyNamedComponent.cs" />
     <Compile Include="Common\MyFactionMember.cs" />
-    <Compile Include="Common\Components\MyComponentContainer.cs" />
-    <Compile Include="Common\Components\MyEntityComponentDescriptor.cs" />
-    <Compile Include="Common\Components\MyComponentBase.cs" />
-    <Compile Include="Common\Components\MyDebugRenderComponentBase.cs" />
-    <Compile Include="Common\Components\MyGameLogicComponent.cs" />
-    <Compile Include="Common\Components\MyHierarchyComponentBase.cs" />
-    <Compile Include="Common\Components\MyIngameScript.cs" />
-    <Compile Include="Common\Components\MyPhysicsComponentBase.cs" />
-    <Compile Include="Common\Components\MyPositionComponentBase.cs" />
-    <Compile Include="Common\Components\MyRenderComponentBase.cs" />
-    <Compile Include="Common\Components\MySyncComponentBase.cs" />
-    <Compile Include="Common\Input\MyInputRecordingSession.cs" />
-    <Compile Include="Common\Input\MyInputRecording.cs" />
-    <Compile Include="Common\Input\MyInputSnapshot.cs" />
-    <Compile Include="Common\Input\MyJoystickStateSnapshot.cs" />
-    <Compile Include="Common\Input\MyMouseSnapshot.cs" />
-    <Compile Include="Common\Localization\MyLanguageDescriptionAttribute.cs" />
-    <Compile Include="Common\Localization\MyLanguagesEnum.cs" />
-    <Compile Include="Common\Localization\MyTextsWrapper.cs" />
-    <Compile Include="Common\Localization\MyTextsWrapperEnum.cs" />
-    <Compile Include="Common\News\MyNews.cs" />
-    <Compile Include="Common\News\MyNewsEntry.cs" />
+    <Compile Include="Common\MyControllerData.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_Base.cs" />
+    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_CubeBlock.cs" />
+    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_TerminalBlock.cs" />
+    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_FunctionalBlock.cs" />
+    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_UserControllableGun.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_ChatHistory.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_PlayerChatHistory.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_FactionChatHistory.cs" />
@@ -115,9 +95,6 @@
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_EntityBase.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_FracturedPiece.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_Gps.cs" />
-    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_CubeBlock.cs" />
-    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_TerminalBlock.cs" />
-    <Compile Include="Common\ObjectBuilders\MyObjectBuilder_FunctionalBlock.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_MyProgrammableBlock.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_SoundBlock.cs" />
     <Compile Include="Common\ObjectBuilders\MyObjectBuilder_SpaceBall.cs" />
@@ -425,7 +402,40 @@
     <Compile Include="Common\ObjectBuilders\VRageData\SerializableVector3I.cs" />
     <Compile Include="Common\ObjectBuilders\VRageData\SerializableVector3UByte.cs" />
     <Compile Include="Common\ObjectBuilders\Voxels\MyObjectBuilder_VoxelMap.cs" />
-    <Compile Include="Common\Resources\MyTexts.cs" />
+    <Compile Include="Common\News\MyNews.cs" />
+    <Compile Include="Common\News\MyNewsEntry.cs" />
+    <Compile Include="Common\Input\MyInputRecordingSession.cs" />
+    <Compile Include="Common\Input\MyInputRecording.cs" />
+    <Compile Include="Common\Input\MyInputSnapshot.cs" />
+    <Compile Include="Common\Input\MyJoystickStateSnapshot.cs" />
+    <Compile Include="Common\Input\MyMouseSnapshot.cs" />
+    <Compile Include="Common\Components\MyComponentContainer.cs" />
+    <Compile Include="Common\Components\MyEntityComponentDescriptor.cs" />
+    <Compile Include="Common\Components\MyComponentBase.cs" />
+    <Compile Include="Common\Components\MyDebugRenderComponentBase.cs" />
+    <Compile Include="Common\Components\MyGameLogicComponent.cs" />
+    <Compile Include="Common\Components\MyHierarchyComponentBase.cs" />
+    <Compile Include="Common\Components\MyIngameScript.cs" />
+    <Compile Include="Common\Components\MyPhysicsComponentBase.cs" />
+    <Compile Include="Common\Components\MyPositionComponentBase.cs" />
+    <Compile Include="Common\Components\MyRenderComponentBase.cs" />
+    <Compile Include="Common\Components\MySyncComponentBase.cs" />
+    <Compile Include="Game\Weapons\MyObjectBuilder_ToolBase.cs" />
+    <Compile Include="Game\Entities\MyEntityIdentifier.cs" />
+    <Compile Include="Engine\Multiplayer\Container`1.cs" />
+    <Compile Include="Engine\Multiplayer\MyMultiplayerWorldData.cs" />
+    <Compile Include="Engine\Physics\MyPhysicsForceType.cs" />
+    <Compile Include="Engine\Physics\RigidBodyFlag.cs" />
+    <Compile Include="Engine\Physics\IntersectionFlags.cs" />
+    <Compile Include="Definitions\ErrorSeverity.cs" />
+    <Compile Include="Definitions\MyDefinitionErrors.cs" />
+    <Compile Include="Definitions\MyModContext.cs" />
+    <Compile Include="Definitions\MyMusicTrack.cs" />
+    <Compile Include="Definitions\MyDefinitionBase.cs" />
+    <Compile Include="Definitions\MyAudioDefinition.cs" />
+    <Compile Include="Definitions\MyDefinitionId.cs" />
+    <Compile Include="Definitions\DefinitionIdBlit.cs" />
+    <Compile Include="Definitions\MyDefinitionTypeAttribute.cs" />
     <Compile Include="ModAPI\IMyMeteor.cs" />
     <Compile Include="ModAPI\IMyCharacter.cs" />
     <Compile Include="ModAPI\IMyConfigDedicated.cs" />
@@ -516,6 +526,7 @@
     <Compile Include="ModAPI\Ingame\IMyShipToolBase.cs" />
     <Compile Include="ModAPI\Ingame\IMyShipGrinder.cs" />
     <Compile Include="ModAPI\Ingame\IMyShipWelder.cs" />
+    <Compile Include="ModAPI\Ingame\IMyUserControllableGun.cs" />
     <Compile Include="ModAPI\Ingame\IMySmallGatlingGun.cs" />
     <Compile Include="ModAPI\Ingame\IMySmallMissileLauncher.cs" />
     <Compile Include="ModAPI\Ingame\IMySmallMissileLauncherReload.cs" />
@@ -542,26 +553,7 @@
     <Compile Include="ModAPI\Interfaces\ITerminalProperty`1.cs" />
     <Compile Include="ModAPI\Interfaces\TerminalPropertyExtensions.cs" />
     <Compile Include="ModAPI\Interfaces\ITerminalAction.cs" />
-    <Compile Include="Definitions\ErrorSeverity.cs" />
-    <Compile Include="Definitions\MyDefinitionErrors.cs" />
-    <Compile Include="Definitions\MyModContext.cs" />
-    <Compile Include="Definitions\MyMusicTrack.cs" />
-    <Compile Include="Definitions\MyDefinitionBase.cs" />
-    <Compile Include="Definitions\MyAudioDefinition.cs" />
-    <Compile Include="Definitions\MyDefinitionId.cs" />
-    <Compile Include="Definitions\DefinitionIdBlit.cs" />
-    <Compile Include="Definitions\MyDefinitionTypeAttribute.cs" />
-    <Compile Include="Engine\Multiplayer\Container`1.cs" />
-    <Compile Include="Engine\Multiplayer\MyMultiplayerWorldData.cs" />
-    <Compile Include="Engine\Physics\MyPhysicsForceType.cs" />
-    <Compile Include="Engine\Physics\RigidBodyFlag.cs" />
-    <Compile Include="Engine\Physics\IntersectionFlags.cs" />
-    <Compile Include="Game\Weapons\MyObjectBuilder_ToolBase.cs" />
-    <Compile Include="Game\Entities\MyEntityIdentifier.cs" />
     <Compile Include="AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Common\Resources\MyTexts.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

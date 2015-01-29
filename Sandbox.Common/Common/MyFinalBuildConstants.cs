@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.MyFinalBuildConstants
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 4DE4FF21-FB6F-425F-A186-B73142DACE15
+// MVID: 52862CFB-4672-4671-9CE3-6D19982FB841
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using System.Text;
@@ -12,8 +12,8 @@ namespace Sandbox.Common
   public class MyFinalBuildConstants
   {
     public static bool STEAM_DEMO = false;
-    public static readonly StringBuilder APP_VERSION_STRING = new StringBuilder(MyBuildNumbers.ConvertBuildNumberFromIntToString(1066015));
-    public const int APP_VERSION = 1066015;
+    public static readonly StringBuilder APP_VERSION_STRING = new StringBuilder(MyBuildNumbers.ConvertBuildNumberFromIntToString(1067005));
+    public const int APP_VERSION = 1067005;
     public const bool IS_CLOUD_GAMING = false;
     public const bool IS_OFFICIAL = true;
     public const bool IS_DEBUG = false;

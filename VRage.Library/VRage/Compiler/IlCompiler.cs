@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: VRage.Compiler.IlCompiler
 // Assembly: VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 3595035D-D240-4390-9773-1FE64718FDDB
+// MVID: F987C912-6032-4943-850E-69DEE0217B30
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\VRage.Library.dll
 
 using Microsoft.CSharp;
@@ -99,7 +99,7 @@ namespace VRage.Compiler
               Type failed;
               if (!IlChecker.CheckIl(IlCompiler.m_reader.ReadInstructions(method), out failed, isIngameScript, allowedTypes) || IlChecker.HasMethodInvalidAtrributes(method.Attributes))
               {
-                errors.Add(string.Format("Type {0} used in {1} not allowed in script", failed == (Type) null ? (object) "FIXME" : (object) failed.FullName, (object) method.Name));
+                errors.Add(string.Format("Type {0} used in {1} not allowed in script", failed == (Type) null ? (object) "FIXME" : (object) failed.ToString(), (object) method.Name));
                 assembly = (Assembly) null;
                 return false;
               }

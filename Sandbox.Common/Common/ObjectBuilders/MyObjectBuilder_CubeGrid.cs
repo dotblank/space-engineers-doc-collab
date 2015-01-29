@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_CubeGrid
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
+// MVID: 52862CFB-4672-4671-9CE3-6D19982FB841
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -14,37 +14,57 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-    [MyObjectBuilderDefinition]
-    [ProtoContract]
-    public class MyObjectBuilder_CubeGrid : MyObjectBuilder_EntityBase
+  [MyObjectBuilderDefinition]
+  [ProtoContract]
+  public class MyObjectBuilder_CubeGrid : MyObjectBuilder_EntityBase
+  {
+    [ProtoMember(46)]
+    [XmlArrayItem("MyObjectBuilder_CubeBlock", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_CubeBlock>))]
+    public List<MyObjectBuilder_CubeBlock> CubeBlocks = new List<MyObjectBuilder_CubeBlock>();
+    [ProtoMember(57)]
+    [DefaultValue(true)]
+    public bool DampenersEnabled = true;
+    [ProtoMember(58)]
+    public List<MyObjectBuilder_ConveyorLine> ConveyorLines = new List<MyObjectBuilder_ConveyorLine>();
+    [ProtoMember(59)]
+    public List<MyObjectBuilder_BlockGroup> BlockGroups = new List<MyObjectBuilder_BlockGroup>();
+    [NonSerialized]
+    public bool CreatePhysics = true;
+    [ProtoMember(44)]
+    public MyCubeSize GridSizeEnum;
+    [ProtoMember(47)]
+    public bool IsStatic;
+    [ProtoMember(48)]
+    public List<BoneInfo> Skeleton;
+    [ProtoMember(49)]
+    public SerializableVector3 LinearVelocity;
+    [ProtoMember(50)]
+    public SerializableVector3 AngularVelocity;
+    [ProtoMember(51)]
+    public SerializableVector3I? XMirroxPlane;
+    [ProtoMember(52)]
+    public SerializableVector3I? YMirroxPlane;
+    [ProtoMember(53)]
+    public SerializableVector3I? ZMirroxPlane;
+    [ProtoMember(54)]
+    [DefaultValue(false)]
+    public bool XMirroxOdd;
+    [ProtoMember(55)]
+    [DefaultValue(false)]
+    public bool YMirroxOdd;
+    [ProtoMember(56)]
+    [DefaultValue(false)]
+    public bool ZMirroxOdd;
+    [ProtoMember(60)]
+    public bool Handbrake;
+    [ProtoMember(61)]
+    public string DisplayName;
+
+    public override void Remap(IMyRemapHelper remapHelper)
     {
-        [XmlArrayItem("MyObjectBuilder_CubeBlock", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_CubeBlock>))] [ProtoMember(46)] public List<MyObjectBuilder_CubeBlock> CubeBlocks = new List<MyObjectBuilder_CubeBlock>();
-        [ProtoMember(57)] [DefaultValue(true)] public bool DampenersEnabled = true;
-
-        [ProtoMember(58)] public List<MyObjectBuilder_ConveyorLine> ConveyorLines =
-            new List<MyObjectBuilder_ConveyorLine>();
-
-        [ProtoMember(59)] public List<MyObjectBuilder_BlockGroup> BlockGroups = new List<MyObjectBuilder_BlockGroup>();
-        [NonSerialized] public bool CreatePhysics = true;
-        [ProtoMember(44)] public MyCubeSize GridSizeEnum;
-        [ProtoMember(47)] public bool IsStatic;
-        [ProtoMember(48)] public List<BoneInfo> Skeleton;
-        [ProtoMember(49)] public SerializableVector3 LinearVelocity;
-        [ProtoMember(50)] public SerializableVector3 AngularVelocity;
-        [ProtoMember(51)] public SerializableVector3I? XMirroxPlane;
-        [ProtoMember(52)] public SerializableVector3I? YMirroxPlane;
-        [ProtoMember(53)] public SerializableVector3I? ZMirroxPlane;
-        [DefaultValue(false)] [ProtoMember(54)] public bool XMirroxOdd;
-        [ProtoMember(55)] [DefaultValue(false)] public bool YMirroxOdd;
-        [DefaultValue(false)] [ProtoMember(56)] public bool ZMirroxOdd;
-        [ProtoMember(60)] public bool Handbrake;
-        [ProtoMember(61)] public string DisplayName;
-
-        public override void Remap(IMyRemapHelper remapHelper)
-        {
-            base.Remap(remapHelper);
-            foreach (MyObjectBuilder_CubeBlock builderCubeBlock in this.CubeBlocks)
-                builderCubeBlock.Remap(remapHelper);
-        }
+      base.Remap(remapHelper);
+      foreach (MyObjectBuilder_CubeBlock builderCubeBlock in this.CubeBlocks)
+        builderCubeBlock.Remap(remapHelper);
     }
+  }
 }

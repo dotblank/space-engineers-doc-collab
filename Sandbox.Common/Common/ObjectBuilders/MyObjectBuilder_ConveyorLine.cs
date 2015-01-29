@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_ConveyorLine
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 87AD5BE9-1B9D-42F5-8000-067AE4AE8CE7
+// MVID: 52862CFB-4672-4671-9CE3-6D19982FB841
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -14,47 +14,50 @@ using VRageMath;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-    [ProtoContract]
-    [MyObjectBuilderDefinition]
-    public class MyObjectBuilder_ConveyorLine : MyObjectBuilder_Base
+  [ProtoContract]
+  [MyObjectBuilderDefinition]
+  public class MyObjectBuilder_ConveyorLine : MyObjectBuilder_Base
+  {
+    [ProtoMember(5)]
+    public List<MyObjectBuilder_ConveyorPacket> PacketsForward = new List<MyObjectBuilder_ConveyorPacket>();
+    [ProtoMember(6)]
+    public List<MyObjectBuilder_ConveyorPacket> PacketsBackward = new List<MyObjectBuilder_ConveyorPacket>();
+    [ProtoMember(1)]
+    public SerializableVector3I StartPosition;
+    [ProtoMember(2)]
+    public Base6Directions.Direction StartDirection;
+    [ProtoMember(3)]
+    public SerializableVector3I EndPosition;
+    [ProtoMember(4)]
+    public Base6Directions.Direction EndDirection;
+    [XmlArrayItem("Section")]
+    [ProtoMember(7)]
+    [DefaultValue(null)]
+    public List<SerializableLineSectionInformation> Sections;
+    [ProtoMember(8)]
+    [DefaultValue(MyObjectBuilder_ConveyorLine.LineType.DEFAULT_LINE)]
+    public MyObjectBuilder_ConveyorLine.LineType ConveyorLineType;
+
+    public bool ShouldSerializePacketsForward()
     {
-        [ProtoMember(5)] public List<MyObjectBuilder_ConveyorPacket> PacketsForward =
-            new List<MyObjectBuilder_ConveyorPacket>();
-
-        [ProtoMember(6)] public List<MyObjectBuilder_ConveyorPacket> PacketsBackward =
-            new List<MyObjectBuilder_ConveyorPacket>();
-
-        [ProtoMember(1)] public SerializableVector3I StartPosition;
-        [ProtoMember(2)] public Base6Directions.Direction StartDirection;
-        [ProtoMember(3)] public SerializableVector3I EndPosition;
-        [ProtoMember(4)] public Base6Directions.Direction EndDirection;
-
-        [ProtoMember(7)] [XmlArrayItem("Section")] [DefaultValue(null)] public List<SerializableLineSectionInformation>
-            Sections;
-
-        [DefaultValue(MyObjectBuilder_ConveyorLine.LineType.DEFAULT_LINE)] [ProtoMember(8)] public
-            MyObjectBuilder_ConveyorLine.LineType ConveyorLineType;
-
-        public bool ShouldSerializePacketsForward()
-        {
-            return this.PacketsForward.Count != 0;
-        }
-
-        public bool ShouldSerializePacketsBackward()
-        {
-            return this.PacketsBackward.Count != 0;
-        }
-
-        public bool ShouldSerializeSections()
-        {
-            return this.Sections != null;
-        }
-
-        public enum LineType
-        {
-            DEFAULT_LINE,
-            SMALL_LINE,
-            LARGE_LINE,
-        }
+      return this.PacketsForward.Count != 0;
     }
+
+    public bool ShouldSerializePacketsBackward()
+    {
+      return this.PacketsBackward.Count != 0;
+    }
+
+    public bool ShouldSerializeSections()
+    {
+      return this.Sections != null;
+    }
+
+    public enum LineType
+    {
+      DEFAULT_LINE,
+      SMALL_LINE,
+      LARGE_LINE,
+    }
+  }
 }
