@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipConnector
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 52862CFB-4672-4671-9CE3-6D19982FB841
+// MVID: 65B9437C-6443-4388-AFE3-5DD75CE6625F
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -24,8 +24,8 @@ namespace Sandbox.Common.ObjectBuilders
     [ProtoMember(4)]
     [DefaultValue(false)]
     public bool Connected;
-    [ProtoMember(5)]
     [DefaultValue(0)]
+    [ProtoMember(5)]
     public long ConnectedEntityId;
 
     public MyObjectBuilder_ShipConnector()

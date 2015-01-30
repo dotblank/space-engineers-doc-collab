@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_Character
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 52862CFB-4672-4671-9CE3-6D19982FB841
+// MVID: 65B9437C-6443-4388-AFE3-5DD75CE6625F
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -13,8 +13,8 @@ using System.Xml.Serialization;
 
 namespace Sandbox.Common.ObjectBuilders
 {
-  [MyObjectBuilderDefinition]
   [ProtoContract]
+  [MyObjectBuilderDefinition]
   public class MyObjectBuilder_Character : MyObjectBuilder_EntityBase
   {
     public static Dictionary<string, SerializableVector3> CharacterModels = new Dictionary<string, SerializableVector3>()
@@ -63,8 +63,8 @@ namespace Sandbox.Common.ObjectBuilders
     public string CharacterModel;
     [ProtoMember(2)]
     public MyObjectBuilder_Inventory Inventory;
-    [XmlElement("HandWeapon", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_EntityBase>))]
     [ProtoMember(3)]
+    [XmlElement("HandWeapon", Type = typeof (MyAbstractXmlSerializer<MyObjectBuilder_EntityBase>))]
     public MyObjectBuilder_EntityBase HandWeapon;
     [ProtoMember(4)]
     public MyObjectBuilder_Battery Battery;

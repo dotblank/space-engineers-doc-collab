@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_CubeBlock
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 52862CFB-4672-4671-9CE3-6D19982FB841
+// MVID: 65B9437C-6443-4388-AFE3-5DD75CE6625F
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -26,8 +26,8 @@ namespace Sandbox.Common.ObjectBuilders
     public float BuildPercent = 1f;
     [ProtoMember(9)]
     public SerializableVector3 ColorMaskHSV = new SerializableVector3(0.0f, -1f, 0.0f);
-    [DefaultValue(0)]
     [ProtoMember(1)]
+    [DefaultValue(0)]
     public long EntityId;
     [ProtoMember(2)]
     public SerializableVector3I Min;
@@ -37,11 +37,11 @@ namespace Sandbox.Common.ObjectBuilders
     [DefaultValue(null)]
     [ProtoMember(8)]
     public MyObjectBuilder_Inventory ConstructionInventory;
-    [DefaultValue(null)]
     [ProtoMember(10)]
+    [DefaultValue(null)]
     public MyObjectBuilder_ConstructionStockpile ConstructionStockpile;
-    [ProtoMember(11)]
     [DefaultValue(0)]
+    [ProtoMember(11)]
     public long Owner;
     [ProtoMember(14)]
     public MyOwnershipShareModeEnum ShareMode;

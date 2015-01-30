@@ -1,7 +1,7 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Sandbox.Common.ObjectBuilders.MyObjectBuilder_FactionChatItem
 // Assembly: Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 52862CFB-4672-4671-9CE3-6D19982FB841
+// MVID: 65B9437C-6443-4388-AFE3-5DD75CE6625F
 // Assembly location: D:\Games\Steam Library\SteamApps\common\SpaceEngineers\Bin64\Sandbox.Common.dll
 
 using ProtoBuf;
@@ -15,8 +15,8 @@ namespace Sandbox.Common.ObjectBuilders
   [MyObjectBuilderDefinition]
   public class MyObjectBuilder_FactionChatItem : MyObjectBuilder_Base
   {
-    [XmlAttribute("t")]
     [ProtoMember(1)]
+    [XmlAttribute("t")]
     public string Text;
     [XmlElement(ElementName = "I")]
     [ProtoMember(2)]
@@ -25,12 +25,12 @@ namespace Sandbox.Common.ObjectBuilders
     [ProtoMember(3)]
     public long TimestampMs;
     [DefaultValue(null)]
-    [ProtoMember(4)]
     [XmlElement(ElementName = "PTST")]
+    [ProtoMember(4)]
     public List<long> PlayersToSendToUniqueNumber;
+    [XmlElement(ElementName = "IAST")]
     [ProtoMember(5)]
     [DefaultValue(null)]
-    [XmlElement(ElementName = "IAST")]
     public List<bool> IsAlreadySentTo;
   }
 }
