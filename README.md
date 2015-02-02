@@ -1,1 +1,1 @@
-Visit https://jcuber.github.io/space-engineers-doc-collab/ to view the documentation.
+Visit https://cubrr.github.io/space-engineers-doc-collab/ to view the documentation.
