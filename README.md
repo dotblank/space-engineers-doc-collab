@@ -1,4 +1,17 @@
 # space-engineers-doc-collab
+
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+## READ:
+### KeenSWH has began generating this documentation as of 01.068 (5.2.2015). The file `Documentation.chm` can be found from the `Tools` folder in your main Space Engineers folder.
+
+
+-----------------------------------------------
+-----------------------------------------------
+
 ### Current version: 01.067.007 30.1.2015
 This is a collaborative Space Engineers in-game API documentation project.
 Our goal is to accurately document the in-game API's features to make development easier for everyone - online documentation is generated with Sandcastle Help File Builder. Altenatively, a Compiled HTML Help (.chm) file has been created for easier offline viewing. This file can be found in the root folder.
